@@ -1,0 +1,46 @@
+{
+  "variant": "warm-gold-white",
+  "outer_corner_radius_mm": 9.8,
+  "hinge_corner_radius_mm": 1.7,
+  "folded": {
+    "width_mm": 83.6,
+    "height_mm": 117.8,
+    "thickness_mm": 10.68,
+    "screen_width_mm": 77.60514018691589,
+    "screen_height_mm": 113.75,
+    "screen_center_x_mm": 0.8,
+    "screen_corner_radii_mm": [
+      0.6,
+      7.7,
+      7.7,
+      0.6
+    ]
+  },
+  "unfolded": {
+    "width_mm": 163.8,
+    "height_mm": 117.8,
+    "thickness_mm": 5.02,
+    "screen_width_mm": 157.8,
+    "screen_height_mm": 111.60812182741118,
+    "screen_center_x_mm": 0,
+    "screen_corner_radii_mm": [
+      7.9,
+      7.9,
+      7.9,
+      7.9
+    ]
+  },
+  "production_scope": "front-focused solid3D; rear occluders only",
+  "screen_front_clearance_mm": 0.2,
+  "screen_front_clearance_basis": "Renderer diagnostic separation from opaque bezel underlay, not an official physical glass thickness. Screen and selfie punch shifted together; UV/XY/body parameters unchanged.",
+  "bezel_black_border_mm": 0.85,
+  "screen_boundary_basis": "Estimated from raw official raster scanlines, not nominal diagonal alone. Inner screen conservative due mild perspective/hand occlusion. Blackmask distinct from exposed metal front frame.",
+  "selfie_inner_center_mm": [
+    74.59459710133343,
+    51.688056833092
+  ],
+  "front_aluminum_roughness": 0.38,
+  "bezel_black_border_basis": "Estimated ~2 native raster pixels / 192px body *83.6mm ≈0.87mm; use0.85mm uniform world-space offset, not official CAD.",
+  "hinge_profile": "shallow-ellipse",
+  "hinge_profile_basis": "Original shallow curved solid profile within unchanged official body bbox, guided by soft metal edge reference; exact cross section estimated, not factory CAD. Replaces prior constant-normal slab."
+}

@@ -1,0 +1,1 @@
+See docs/RESEARCH.md and research.json. Geometry is original; vendor render images are cache-only. PhysicalDimensions exclude camera protrusion. Screen/glass dimensions and all detailed structures are estimated.

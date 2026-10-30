@@ -1,0 +1,101 @@
+{
+  "deviceId": "mix-fold-4",
+  "verificationStatus": "partial_reconstruction",
+  "fields": {
+    "folded.width_mm": {
+      "value": 73.1,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Actual official product body; thickness excludes screen bezel and camera Deco"
+    },
+    "folded.height_mm": {
+      "value": 159.37,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Actual official product body; thickness excludes screen bezel and camera Deco"
+    },
+    "folded.thickness_mm": {
+      "value": 9.47,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Actual official product body; thickness excludes screen bezel and camera Deco"
+    },
+    "folded.screen_width_mm": {
+      "value": 66.0,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Estimated 154mm visible height multiplied by official pixel ratio1080/2520 outer or2224/2488 inner; absolute active size is not official"
+    },
+    "folded.screen_height_mm": {
+      "value": 154,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "154mm visible height is estimated; no official active millimeter height"
+    },
+    "unfolded.width_mm": {
+      "value": 143.3,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Actual official product body; thickness excludes screen bezel and camera Deco"
+    },
+    "unfolded.height_mm": {
+      "value": 159.37,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Actual official product body; thickness excludes screen bezel and camera Deco"
+    },
+    "unfolded.thickness_mm": {
+      "value": 4.59,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Actual official product body; thickness excludes screen bezel and camera Deco"
+    },
+    "unfolded.screen_width_mm": {
+      "value": 137.65916398713824,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "mix-cdn-specs-body",
+      "notes": "Estimated 154mm visible height multiplied by official pixel ratio1080/2520 outer or2224/2488 inner; absolute active size is not official"
+    },
+    "unfolded.screen_height_mm": {
+      "value": 154,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "154mm visible height is estimated; no official active millimeter height"
+    },
+    "corner_radius_mm": {
+      "value": 6,
+      "confidence": "estimated",
+      "notes": "Visual approximation; no calibrated measurements"
+    },
+    "camera_profile": {
+      "value": "quad",
+      "confidence": "estimated",
+      "notes": "Visual approximation; no calibrated measurements"
+    }
+  },
+  "unknown": [
+    "factory CAD",
+    "precise hinge profile",
+    "camera protrusion official dimension",
+    "cover glass construction"
+  ],
+  "sourceLedger": "../xiaomi-18-fold/sources.json",
+  "cameraEvidence": {
+    "sourceIds": [
+      "mix-official-back-render",
+      "mix-official-unfolded-line-diagram"
+    ],
+    "known": "four lens positions; lower-right square periscope; right-side flash region; curved lower Deco edge",
+    "estimated": "all component millimeter sizes/positions, PBR material values, corner profiles"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "deviceId": "xiaomi-18-fold",
+  "formalName": "Xiaomi 18 Fold",
+  "verificationStatus": "partial_reconstruction",
+  "selectedPath": "A_with_estimated_details",
+  "supersedes": "Prior generic fallback research: now actual official product-specific body and multiviews retrieved. wide-fold remains distinct and is not renamed.",
+  "selectedVariant": "暖金白 regular DragonCrystalGlass3.0; ceramic special edition not mixed",
+  "fields": {
+    "folded.width_mm": {
+      "value": 83.6,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body",
+      "notes": "Manufacturer body numeric dimension; camera bump not included in reconstruction manifest"
+    },
+    "folded.height_mm": {
+      "value": 117.8,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body",
+      "notes": "Manufacturer body numeric dimension; camera bump not included in reconstruction manifest"
+    },
+    "folded.thickness_mm": {
+      "value": 10.68,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body",
+      "notes": "Manufacturer body numeric dimension; camera bump not included in reconstruction manifest"
+    },
+    "folded.screen_width_mm": {
+      "value": 77.60514018691589,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "official-spec-1314",
+      "notes": "Estimated from original-resolution official front raster boundary; official pixel aspect preserved. Outer ±0.44mm one raster pixel; inner approximately ±0.5–1mm due mild perspective, hand/AA ambiguity. Not factory CAD."
+    },
+    "folded.screen_height_mm": {
+      "value": 113.75,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "official-spec-1314",
+      "notes": "Estimated from original-resolution official front raster boundary; official pixel aspect preserved. Outer ±0.44mm one raster pixel; inner approximately ±0.5–1mm due mild perspective, hand/AA ambiguity. Not factory CAD."
+    },
+    "unfolded.width_mm": {
+      "value": 163.8,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body",
+      "notes": "Manufacturer body numeric dimension; camera bump not included in reconstruction manifest"
+    },
+    "unfolded.height_mm": {
+      "value": 117.8,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body",
+      "notes": "Manufacturer body numeric dimension; camera bump not included in reconstruction manifest"
+    },
+    "unfolded.thickness_mm": {
+      "value": 5.02,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body",
+      "notes": "Manufacturer body numeric dimension; camera bump not included in reconstruction manifest"
+    },
+    "unfolded.screen_width_mm": {
+      "value": 157.8,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "official-overview-7811",
+      "notes": "Estimated from original-resolution official front raster boundary; official pixel aspect preserved. Outer ±0.44mm one raster pixel; inner approximately ±0.5–1mm due mild perspective, hand/AA ambiguity. Not factory CAD."
+    },
+    "unfolded.screen_height_mm": {
+      "value": 111.60812182741118,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "official-overview-7811",
+      "notes": "Estimated from original-resolution official front raster boundary; official pixel aspect preserved. Outer ±0.44mm one raster pixel; inner approximately ±0.5–1mm due mild perspective, hand/AA ambiguity. Not factory CAD."
+    },
+    "outer_corner_radius_mm": {
+      "value": 9.8,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceIds": [
+        "official-spec-1310",
+        "official-overview-7814"
+      ],
+      "notes": "Visual proportion reconstruction, not factoryCAD or calibrated measurement"
+    },
+    "hinge_corner_radius_mm": {
+      "value": 1.7,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceIds": [
+        "official-spec-1310",
+        "official-overview-7814"
+      ],
+      "notes": "Visual proportion reconstruction, not factoryCAD or calibrated measurement"
+    },
+    "camera_center_from_top_mm": {
+      "value": 19.5,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceIds": [
+        "official-spec-1310",
+        "official-overview-7814"
+      ],
+      "notes": "Visual proportion reconstruction, not factoryCAD or calibrated measurement; removed from current production model by front-focused scope",
+      "referenceOnly": true
+    },
+    "camera_width_mm": {
+      "value": 63.8,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceIds": [
+        "official-spec-1310",
+        "official-overview-7814"
+      ],
+      "notes": "Visual proportion reconstruction, not factoryCAD or calibrated measurement; removed from current production model by front-focused scope",
+      "referenceOnly": true
+    },
+    "camera_height_mm": {
+      "value": 22.5,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceIds": [
+        "official-spec-1310",
+        "official-overview-7814"
+      ],
+      "notes": "Visual proportion reconstruction, not factoryCAD or calibrated measurement; removed from current production model by front-focused scope",
+      "referenceOnly": true
+    }
+  },
+  "pixels": {
+    "folded": [
+      1168,
+      1712
+    ],
+    "unfolded": [
+      2364,
+      1672
+    ],
+    "confidence": "official",
+    "sourceId": "specs-body"
+  },
+  "materialFamily": {
+    "frame": "7-series aluminum",
+    "regularBack": "DragonCrystalGlass3.0",
+    "specialBack": "Si3N4 ceramic (not modeled)",
+    "confidence": "official",
+    "sourceId": "overview-body"
+  },
+  "estimatedOptics": "PBR base colors/metallicity/roughness are artistic, not measured manufacturer values",
+  "unknown": [
+    "exact active rectangle and corner curves",
+    "hinge hardware cross-section/internal mechanism",
+    "camera/keys/port factory millimeters",
+    "physical optical BRDF"
+  ],
+  "contactSheet": ".cache/references/xiaomi-18-fold-refresh/contact-sheet.png",
+  "sourceLedger": "sources.json",
+  "productionScope": "User-requested front-focused solid3D; no rear camera/Deco/inactive outside-screen renderables; simple rear occluders retained"
+}

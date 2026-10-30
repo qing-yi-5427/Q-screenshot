@@ -1,0 +1,195 @@
+{
+  "generator": "tools/generate_redmi_fixture.py",
+  "original": true,
+  "privacy": "Entirely synthetic. No personal account, gallery, notifications, or user image.",
+  "dimensionsPurpose": "Official input aspect verified separately by device research; these are image pixels, not dp or body millimeters.",
+  "colorSpace": "SDR sRGB numerical RGB values",
+  "files": [
+    {
+      "file": "tests/fixtures/redmi-k90-pro-max-1200x2608.png",
+      "size": [
+        1200,
+        2608
+      ],
+      "mode": "RGB",
+      "sha256": "2377958a1f60eec513a56ddc079364d3e37b0d4df52521ebf32c6004d10f2efd"
+    },
+    {
+      "file": "app/src/main/assets/fixtures/redmi.png",
+      "size": [
+        1200,
+        2608
+      ],
+      "mode": "RGB",
+      "sha256": "2377958a1f60eec513a56ddc079364d3e37b0d4df52521ebf32c6004d10f2efd"
+    },
+    {
+      "file": "app/src/main/assets/demo-redmi.png",
+      "size": [
+        1200,
+        2608
+      ],
+      "mode": "RGB",
+      "sha256": "e3bc14ad8a84b122eb81ded64d548a0ca57d02015f6fb21a70d8acdaab50184b"
+    }
+  ],
+  "diagnosticColorPatches": [
+    {
+      "rgb": [
+        255,
+        0,
+        0
+      ],
+      "center": [
+        156,
+        1647
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        0,
+        255,
+        0
+      ],
+      "center": [
+        332,
+        1647
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        0,
+        0,
+        255
+      ],
+      "center": [
+        508,
+        1647
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        0,
+        255,
+        255
+      ],
+      "center": [
+        684,
+        1647
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        255,
+        0,
+        255
+      ],
+      "center": [
+        860,
+        1647
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        255,
+        255,
+        0
+      ],
+      "center": [
+        1036,
+        1647
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "center": [
+        156,
+        1782
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "center": [
+        332,
+        1782
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        32,
+        32,
+        32
+      ],
+      "center": [
+        508,
+        1782
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        96,
+        96,
+        96
+      ],
+      "center": [
+        684,
+        1782
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        160,
+        160,
+        160
+      ],
+      "center": [
+        860,
+        1782
+      ],
+      "safeSampleRadius": 10
+    },
+    {
+      "rgb": [
+        224,
+        224,
+        224
+      ],
+      "center": [
+        1036,
+        1782
+      ],
+      "safeSampleRadius": 10
+    }
+  ],
+  "cornerOrder": [
+    "1 TL",
+    "2 TR",
+    "3 BL",
+    "4 BR"
+  ],
+  "fontSizesPx": [
+    12,
+    16,
+    20,
+    24,
+    32
+  ]
+}

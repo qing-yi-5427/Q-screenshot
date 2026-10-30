@@ -1,0 +1,36 @@
+material {
+ name : QingFrameScreen,
+ shadingModel : unlit,
+ doubleSided : false,
+ requires : [ uv0, tangents ],
+ parameters : [
+  { type : sampler2d, name : screenshot },
+  { type : samplerCubemap, name : studio },
+  { type : float4, name : mapping },
+  { type : float, name : reflection },
+  { type : float, name : environmentRotation },
+  { type : float, name : portrait }
+ ]
+}
+fragment {
+ void material(inout MaterialInputs material) {
+  prepareMaterial(material);
+  // gltfio converts glTF V into its runtime texture convention. Normalize to top-left once.
+  vec2 uv = vec2(getUV0().x,1.0-getUV0().y);
+  if (materialParams.portrait > 0.5) { uv = vec2(uv.y,1.0-uv.x); }
+  uv = uv * materialParams.mapping.xy + materialParams.mapping.zw;
+  vec3 color = vec3(0.0);
+  if (all(greaterThanEqual(uv,vec2(0.0))) && all(lessThanEqual(uv,vec2(1.0)))) { color = texture(materialParams_screenshot,uv).rgb; }
+  vec3 n = getWorldNormalVector();
+  vec3 v = normalize(getWorldCameraPosition()-getWorldPosition());
+  vec3 r = reflect(-v,n);
+  float c=cos(materialParams.environmentRotation),s=sin(materialParams.environmentRotation);
+  r=vec3(c*r.x+s*r.z,r.y,-s*r.x+c*r.z);
+  vec3 environment=textureLod(materialParams_studio,r,1.0).rgb;
+  float fresnel = 0.025 + 0.975*pow(1.0-clamp(dot(n,v),0.0,1.0),5.0);
+  // Preserve a restrained low end and make the deliberately strong presentation end visible.
+  float amount = materialParams.reflection;
+  float strength = 0.15*amount + 6.0*amount*amount;
+  material.baseColor = vec4(color + environment * strength * fresnel,1.0);
+ }
+}

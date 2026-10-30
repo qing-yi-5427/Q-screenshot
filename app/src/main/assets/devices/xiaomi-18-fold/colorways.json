@@ -1,0 +1,210 @@
+{
+  "deviceId": "xiaomi-18-fold",
+  "defaultColorwayId": "warm-gold-white",
+  "estimateNotice": "All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements.",
+  "materialMapping": {
+    "frame": [
+      "x18_7series_warm_silver"
+    ],
+    "frontAluminum": [
+      "x18_front_satin_aluminum"
+    ],
+    "back": [
+      "x18_warm_gold_white_AG_glass"
+    ]
+  },
+  "colorways": [
+    {
+      "id": "warm-gold-white",
+      "officialNameZh": "暖金白",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          221,
+          219,
+          210
+        ],
+        "metallic": 0.95,
+        "roughness": 0.3,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry",
+        "runtimeTuning": "Side/hinge-only satin broadening; actual Android same-pose A/B. FrontAluminum .38, global IBL/exposure unchanged."
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          221,
+          219,
+          210
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          237,
+          232,
+          222
+        ],
+        "metallic": 0,
+        "roughness": 0.37,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "Xiaomi_DragonCrystalGlass_3.0",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1310.png"
+      ],
+      "geometry": {
+        "foldedBodyThicknessMm": 10.68,
+        "unfoldedBodyThicknessMm": 5.02,
+        "confidence": "official_family_dimensions_not_color_specific_measurement",
+        "sameFrontContract": true,
+        "notes": "Official dimension paragraph is common to product; no independently stated color-specific CAD delta found."
+      },
+      "notes": ""
+    },
+    {
+      "id": "black",
+      "officialNameZh": "黑色",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          64,
+          65,
+          67
+        ],
+        "metallic": 0.95,
+        "roughness": 0.3,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry",
+        "runtimeTuning": "Side/hinge-only satin broadening; actual Android same-pose A/B. FrontAluminum .38, global IBL/exposure unchanged."
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          64,
+          65,
+          67
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          32,
+          33,
+          34
+        ],
+        "metallic": 0,
+        "roughness": 0.37,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "Xiaomi_DragonCrystalGlass_3.0",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1312.png"
+      ],
+      "geometry": {
+        "foldedBodyThicknessMm": 10.68,
+        "unfoldedBodyThicknessMm": 5.02,
+        "confidence": "official_family_dimensions_not_color_specific_measurement",
+        "sameFrontContract": true,
+        "notes": "Official dimension paragraph is common to product; no independently stated color-specific CAD delta found."
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiye-red",
+      "officialNameZh": "西野红",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          170,
+          29,
+          46
+        ],
+        "metallic": 0.95,
+        "roughness": 0.3,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry",
+        "runtimeTuning": "Side/hinge-only satin broadening; actual Android same-pose A/B. FrontAluminum .38, global IBL/exposure unchanged."
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          170,
+          29,
+          46
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          118,
+          21,
+          41
+        ],
+        "metallic": 0,
+        "roughness": 0.37,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "Xiaomi_DragonCrystalGlass_3.0",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1313.png"
+      ],
+      "geometry": {
+        "foldedBodyThicknessMm": 10.68,
+        "unfoldedBodyThicknessMm": 5.02,
+        "confidence": "official_family_dimensions_not_color_specific_measurement",
+        "sameFrontContract": true,
+        "notes": "Official dimension paragraph is common to product; no independently stated color-specific CAD delta found."
+      },
+      "notes": ""
+    },
+    {
+      "id": "ceramic-special",
+      "officialNameZh": "陶瓷特别版",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          215,
+          182,
+          175
+        ],
+        "metallic": 0.95,
+        "roughness": 0.3,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry",
+        "runtimeTuning": "Side/hinge-only satin broadening; actual Android same-pose A/B. FrontAluminum .38, global IBL/exposure unchanged."
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          215,
+          182,
+          175
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          232,
+          203,
+          196
+        ],
+        "metallic": 0,
+        "roughness": 0.24,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "silicon_nitride_ceramic",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1311.png"
+      ],
+      "geometry": {
+        "foldedBodyThicknessMm": 10.68,
+        "unfoldedBodyThicknessMm": 5.02,
+        "confidence": "official_family_dimensions_not_color_specific_measurement",
+        "sameFrontContract": true,
+        "notes": "Official dimension paragraph is common to product; no independently stated color-specific CAD delta found."
+      },
+      "notes": "Official name remains陶瓷特别版; FAQ describes粉色 and overview says color inspired by淡粉釉. Do not rename official selection粉色. Official nitrogen-silicon ceramic replaces ordinary glass back. Geometry difference beyond material not separately verified; simplified rear kept."
+    }
+  ]
+}

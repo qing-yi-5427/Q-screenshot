@@ -1,0 +1,15 @@
+material {
+ name : QingFrameBackground,
+ shadingModel : unlit,
+ doubleSided : true,
+ depthWrite : false,
+ parameters : [ { type : float3, name : colorA }, { type : float3, name : colorB }, { type : float, name : gradient } ]
+}
+fragment {
+ void material(inout MaterialInputs material) {
+  prepareMaterial(material);
+  vec2 uv=getNormalizedViewportCoord().xy;
+  float t=clamp(uv.y*0.8+uv.x*0.2,0.0,1.0)*materialParams.gradient;
+  material.baseColor=vec4(mix(materialParams.colorB,materialParams.colorA,t),1.0);
+ }
+}

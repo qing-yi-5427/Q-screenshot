@@ -1,0 +1,1 @@
+See docs/XIAOMI18_RESEARCH_REFRESH.md. Official images and contact sheet are cache-only. Main dimensions/identity/pixels/material families now verified from actual product-specific public bundles, not search excerpts. All component dimensions/corners/hinge and PBR parameters remain approximate.

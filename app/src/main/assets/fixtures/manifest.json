@@ -1,0 +1,14 @@
+{
+  "original": true,
+  "files": {
+    "inner-landscape.png": {
+      "sha256": "9efd97bece390ca073c827747575126123ef65ee5808f42a2424ca2916713be7"
+    },
+    "outer.png": {
+      "sha256": "3ec7f12e702df679e663f1790c22dabf927520dc584ac73687e775bb73656f79"
+    },
+    "inner-portrait.png": {
+      "sha256": "ca0f474c5ec35358333bcf546a4235576de7b27864a32193fb4be998474c8c23"
+    }
+  }
+}

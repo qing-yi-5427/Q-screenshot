@@ -1,0 +1,2 @@
+# QingFrame continuation
+Read docs/IMPLEMENTATION_SPEC.md and docs/TASKS.md. Work only in this project. Preserve truthful evidence: never label Blender output Android output. No new license acceptance, account registration, paid downloads, publication, private upload or global configuration changes. Default app has no INTERNET permission. All geometry uses meters, +Z front, node names from device.json. Filament calls stay on main owner thread; immutable project state drives preview/export. Unknown target identity must remain marked approximate.

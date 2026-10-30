@@ -1,0 +1,14 @@
+.gradle/
+.cache/
+**/build/
+local.properties
+tools/bin/
+*.blend1
+.kotlin/
+__pycache__/
+*.pyc
+deliverables/
+*.jks
+*.keystore
+keystore.properties
+.DS_Store

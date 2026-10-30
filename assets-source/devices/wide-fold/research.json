@@ -1,0 +1,93 @@
+{
+  "deviceId": "wide-fold",
+  "verificationStatus": "generic_approximation",
+  "fields": {
+    "folded.width_mm": {
+      "value": 84,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "folded.height_mm": {
+      "value": 120,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "folded.thickness_mm": {
+      "value": 10.8,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "folded.screen_width_mm": {
+      "value": 79,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "folded.screen_height_mm": {
+      "value": 115.8,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "unfolded.width_mm": {
+      "value": 166.5,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "unfolded.height_mm": {
+      "value": 120,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "unfolded.thickness_mm": {
+      "value": 5.2,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "unfolded.screen_width_mm": {
+      "value": 161.4,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "unfolded.screen_height_mm": {
+      "value": 114.2,
+      "unit": "mm",
+      "confidence": "estimated",
+      "sourceId": "original-modeling-estimate",
+      "notes": "Finite modeling assumption; not a verified manufacturer dimension"
+    },
+    "corner_radius_mm": {
+      "value": 7,
+      "confidence": "estimated",
+      "notes": "Visual approximation; no calibrated measurements"
+    },
+    "camera_profile": {
+      "value": "racetrack",
+      "confidence": "estimated",
+      "notes": "Visual approximation; no calibrated measurements"
+    }
+  },
+  "unknown": [
+    "factory CAD",
+    "precise hinge profile",
+    "camera protrusion official dimension",
+    "cover glass construction"
+  ],
+  "sourceLedger": "../xiaomi-18-fold/sources.json"
+}

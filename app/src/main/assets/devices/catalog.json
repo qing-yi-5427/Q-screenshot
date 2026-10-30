@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "defaultDevice": "redmi-k90-pro-max",
+  "devices": [
+    {
+      "schemaVersion": 1,
+      "id": "xiaomi-18-fold",
+      "deviceId": "xiaomi-18-fold",
+      "name": "Xiaomi 18 Fold · 外观重建",
+      "displayName": "Xiaomi 18 Fold · 外观重建",
+      "manufacturer": "Xiaomi",
+      "verificationStatus": "partial_reconstruction",
+      "assetVersion": "1.3.0",
+      "approximationNotes": "官方专属正文与多视角核实正式机型、长宽厚、屏幕像素/标称对角、7系铝中框与普通玻璃背板。支持官方四款配色，机身分区PBR估计；按用户要求以正面套壳为范围：真实两层/两半实体、非对称圆角、侧厚、铰链与金属边缘保留，背面简化为遮挡/投影用闭合几何，不含相机Deco、镜头或背部外屏细节。有效屏幕毫米由官方正面栅格图校准并保持官方像素比，仍为估计；黑边与金属分层，黑mask约0.85mm为估计，局部圆角/孔位与PBR非原厂CAD。",
+      "coordinateSystem": "+X right, +Y up, +Z front; meters",
+      "physicalDimensions": {
+        "units": "meters",
+        "includesCameraBump": false,
+        "states": {
+          "folded": [
+            0.0836,
+            0.1178,
+            0.01068
+          ],
+          "unfolded": [
+            0.1638,
+            0.1178,
+            0.005019999999999999
+          ]
+        }
+      },
+      "states": {
+        "folded": {
+          "id": "folded",
+          "asset": "devices/xiaomi-18-fold/folded.glb",
+          "modelPath": "devices/xiaomi-18-fold/folded.glb",
+          "activeScreenNode": "screen_outer_content",
+          "screenMaterial": "screen_content",
+          "screenSizeMeters": [
+            0.07760514018691589,
+            0.11375
+          ],
+          "bodySizeMeters": [
+            0.0836,
+            0.1178,
+            0.01068
+          ],
+          "glassNode": null,
+          "frontDirection": [
+            0,
+            0,
+            1
+          ],
+          "uvOrigin": "top-left",
+          "verificationStatus": "partial_reconstruction",
+          "screenBindings": [
+            {
+              "contentNode": "screen_outer_content",
+              "glassNode": null,
+              "materialSlot": 0,
+              "active": true
+            }
+          ],
+          "screenAspectRatio": 0.6822429906542056,
+          "inputSizeHints": [
+            {
+              "width": 1168,
+              "height": 1712,
+              "source": "official_display_pixels"
+            }
+          ],
+          "orientationPresets": [
+            "landscape",
+            "portrait"
+          ],
+          "assetHash": "604c8bb98d092dd4d833d8e86e282765bd332671c1c2ef1fa5066ecdd065bba9",
+          "screenCenterMeters": [
+            0.0008,
+            0,
+            0
+          ],
+          "screenSizeVerification": "estimated_from_official_front_raster_preserving_official_pixel_aspect"
+        },
+        "unfolded": {
+          "id": "unfolded",
+          "asset": "devices/xiaomi-18-fold/unfolded.glb",
+          "modelPath": "devices/xiaomi-18-fold/unfolded.glb",
+          "activeScreenNode": "screen_inner_content",
+          "screenMaterial": "screen_content",
+          "screenSizeMeters": [
+            0.15780000000000002,
+            0.11160812182741119
+          ],
+          "bodySizeMeters": [
+            0.1638,
+            0.1178,
+            0.005019999999999999
+          ],
+          "glassNode": null,
+          "frontDirection": [
+            0,
+            0,
+            1
+          ],
+          "uvOrigin": "top-left",
+          "verificationStatus": "partial_reconstruction",
+          "screenBindings": [
+            {
+              "contentNode": "screen_inner_content",
+              "glassNode": null,
+              "materialSlot": 0,
+              "active": true
+            }
+          ],
+          "screenAspectRatio": 1.4138755980861244,
+          "inputSizeHints": [
+            {
+              "width": 2364,
+              "height": 1672,
+              "source": "official_display_pixels"
+            },
+            {
+              "width": 1672,
+              "height": 2364,
+              "source": "rotated_composition"
+            }
+          ],
+          "orientationPresets": [
+            "landscape",
+            "portrait"
+          ],
+          "assetHash": "7302125c9273210594c5f24f2d24a28beb704d189027497b9389d4285205b16a",
+          "screenCenterMeters": [
+            0.0,
+            0,
+            0
+          ],
+          "screenSizeVerification": "estimated_from_official_front_raster_preserving_official_pixel_aspect"
+        }
+      },
+      "materialVariants": [
+        {
+          "id": "warm-gold-white",
+          "label": "暖金白",
+          "basis": "Official name/material family; original region PBR estimates"
+        },
+        {
+          "id": "black",
+          "label": "黑色",
+          "basis": "Official name/material family; original region PBR estimates"
+        },
+        {
+          "id": "xiye-red",
+          "label": "西野红",
+          "basis": "Official name/material family; original region PBR estimates"
+        },
+        {
+          "id": "ceramic-special",
+          "label": "陶瓷特别版",
+          "basis": "Official name/material family; original region PBR estimates"
+        }
+      ],
+      "defaultPose": {
+        "yaw": -22,
+        "pitch": 12,
+        "roll": -5
+      },
+      "cameraFit": {
+        "margin": 1.18
+      },
+      "attribution": "Original parametric reconstruction from official public references. No photos, logos or wallpaper embedded.",
+      "modelScope": "front-focused solid3D; simplified rear occluders",
+      "screenFrontClearanceMm": 0.2,
+      "blackMaskWidthMm": 0.85,
+      "blackMaskWidthVerification": "estimated_from_official_raster_uniform_world_space_offset",
+      "frontAluminumMaterial": {
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "baseColorLinear": [
+          0.78,
+          0.77,
+          0.73
+        ],
+        "verification": "original_physically_lit_satin_estimate"
+      },
+      "colorwayManifest": "devices/xiaomi-18-fold/colorways.json"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "redmi-k90-pro-max",
+      "deviceId": "redmi-k90-pro-max",
+      "name": "REDMI K90 Pro Max · 外观重建",
+      "displayName": "REDMI K90 Pro Max · 外观重建",
+      "manufacturer": "Xiaomi / REDMI",
+      "verificationStatus": "partial_reconstruction",
+      "assetVersion": "1.2.0",
+      "approximationNotes": "官方核实黑色/流金白163.33×77.82×7.9mm、1200×2608像素OLED直屏、6系铝中框及玻纤背盖。支持黑色/流金白/丹宁/冠军版白的前侧配色，丹宁受控8.3mm派生；冠军背部联名图案/特殊后摄仍省略，独立厚度未核实；屏幕绝对有效毫米尺寸、圆角、倒角、按键/孔位/相机/扬声器细节尺寸及PBR数值为估计。三摄+辅助传感器阵列+背部独立低音单元按官方图重建，非原厂CAD。",
+      "coordinateSystem": "+X right, +Y up, +Z front; meters",
+      "physicalDimensions": {
+        "units": "meters",
+        "includesCameraBump": false,
+        "states": {
+          "portrait": [
+            0.07782,
+            0.16333,
+            0.0079
+          ]
+        }
+      },
+      "states": {
+        "portrait": {
+          "id": "portrait",
+          "asset": "devices/redmi-k90-pro-max/portrait.glb",
+          "modelPath": "devices/redmi-k90-pro-max/portrait.glb",
+          "activeScreenNode": "screen_main_content",
+          "screenMaterial": "screen_content",
+          "screenSizeMeters": [
+            0.07306748466257669,
+            0.15880000000000002
+          ],
+          "bodySizeMeters": [
+            0.07782,
+            0.16333,
+            0.0079
+          ],
+          "glassNode": null,
+          "frontDirection": [
+            0,
+            0,
+            1
+          ],
+          "uvOrigin": "top-left",
+          "verificationStatus": "partial_reconstruction",
+          "screenBindings": [
+            {
+              "contentNode": "screen_main_content",
+              "glassNode": null,
+              "materialSlot": 0,
+              "active": true
+            }
+          ],
+          "screenAspectRatio": 0.4601226993865031,
+          "inputSizeHints": [
+            {
+              "width": 1200,
+              "height": 2608,
+              "source": "official_specification"
+            }
+          ],
+          "orientationPresets": [
+            "portrait",
+            "landscape"
+          ],
+          "assetHash": "4d4422eed3129c07749f8845d95b76f8e59d160b655766920f69d7d17f067134",
+          "colorwayAssets": {
+            "denim": "devices/redmi-k90-pro-max/portrait-denim.glb"
+          },
+          "colorwayAssetHashes": {
+            "denim": "476702da19950341ff39aca2d01a90b955fc8c2e58fcc0ff2a60ed4ae21f994a"
+          },
+          "colorwayBodySizeMeters": {
+            "denim": [
+              0.07782,
+              0.16333,
+              0.0083
+            ]
+          }
+        }
+      },
+      "materialVariants": [
+        {
+          "id": "flowing-gold-white",
+          "label": "流金白",
+          "basis": "Official name/material family; original region PBR estimates"
+        },
+        {
+          "id": "black",
+          "label": "黑色",
+          "basis": "Official name/material family; original region PBR estimates"
+        },
+        {
+          "id": "denim",
+          "label": "丹宁色",
+          "basis": "Official name/material family; original region PBR estimates"
+        },
+        {
+          "id": "champion-white",
+          "label": "K90 Pro Max 冠军版",
+          "basis": "Official name/material family; original region PBR estimates"
+        }
+      ],
+      "defaultPose": {
+        "yaw": -22,
+        "pitch": 12,
+        "roll": -5
+      },
+      "cameraFit": {
+        "margin": 1.18
+      },
+      "attribution": "Original parametric geometry; no vendor photos, logos or wallpaper embedded.",
+      "materialParameters": {
+        "k90_aircraft_aluminum": {
+          "baseColorLinear": [
+            0.72,
+            0.74,
+            0.76
+          ],
+          "metallic": 0.95,
+          "roughness": 0.21
+        },
+        "k90_sculpted_aluminum_deco": {
+          "baseColorLinear": [
+            0.58,
+            0.58,
+            0.55
+          ],
+          "metallic": 0.9,
+          "roughness": 0.26
+        },
+        "k90_warm_white_glass_fiber": {
+          "baseColorLinear": [
+            0.7,
+            0.685,
+            0.64
+          ],
+          "metallic": 0,
+          "roughness": 0.42
+        },
+        "k90_optical_coating": {
+          "baseColorLinear": [
+            0.008,
+            0.014,
+            0.02
+          ],
+          "metallic": 0,
+          "roughness": 0.12
+        }
+      },
+      "colorwayManifest": "devices/redmi-k90-pro-max/colorways.json"
+    }
+  ]
+}

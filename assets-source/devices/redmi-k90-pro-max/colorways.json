@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Front-focused original PBR palette research; no geometry or runtime edits",
+  "colorSpace": "baseColorSrgb8 values are display-referred sRGB approximations. Convert sRGB to linear once before Filament baseColor linear input. Do not pass255 RGB or double-convert.",
+  "estimateNotice": "All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements.",
+  "scope": "Keep simplified rear occluders; no logos, wallpaper, co-brand graphics or new camera geometry. Color does not imply factory component geometry.",
+  "protectedMaterials": [
+    "screen_content"
+  ],
+  "runtimeAdvice": "Override only named region materials. Keep optical black, front bezel and screenshot unlit material unchanged. Back color must not tint front frame.",
+  "retrievedAt": "2026-10-30T11:37:46.585122+00:00",
+  "deviceId": "redmi-k90-pro-max",
+  "productUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+  "defaultColorwayId": "flowing-gold-white",
+  "sources": [
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-pro-max/entry-1778678001254.js",
+      "cachePath": ".cache/references/colorways/redmi-k90-pro-max-overview.js",
+      "sha256": "cbae838071265b16a6b1b35cbd1dc413e1a52321352cf76525bb11b12f4cbf26",
+      "retrievedAt": "2026-10-30T11:37:46.585122+00:00",
+      "verifiedContent": "product-specific body text, not navigation title"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-pro-max/specs/entry-1778678001254.js",
+      "cachePath": ".cache/references/colorways/redmi-k90-pro-max-specs.js",
+      "sha256": "803dbe25c6d8b6b780dbed9538443994f7037c25adfb8697241a45d538a626ab",
+      "retrievedAt": "2026-10-30T11:37:46.585122+00:00",
+      "verifiedContent": "product-specific body text, not navigation title"
+    }
+  ],
+  "materialMapping": {
+    "frame": [
+      "k90_aircraft_aluminum"
+    ],
+    "deco": [
+      "k90_sculpted_aluminum_deco"
+    ],
+    "back": [
+      "k90_warm_white_glass_fiber"
+    ],
+    "frontAluminum": []
+  },
+  "unchangedMaterials": [
+    "screen_content",
+    "k90_bezel",
+    "k90_optical_black",
+    "k90_optical_coating",
+    "k90_flash_diffuser",
+    "k90_woofer_brushed_mesh"
+  ],
+  "colorways": [
+    {
+      "id": "flowing-gold-white",
+      "officialNameZh": "流金白",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          222,
+          223,
+          220
+        ],
+        "metallic": 0.95,
+        "roughness": 0.21,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          222,
+          223,
+          220
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          229,
+          226,
+          216
+        ],
+        "metallic": 0,
+        "roughness": 0.42,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "glass_fiber",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/3074.png",
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/1818.png"
+      ],
+      "geometry": {
+        "bodyThicknessMm": 7.9,
+        "confidence": "official",
+        "sameFrontContract": true
+      },
+      "notes": "",
+      "deco": {
+        "baseColorSrgb8": [
+          205,
+          205,
+          199
+        ],
+        "metallic": 0.9,
+        "roughness": 0.26,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      }
+    },
+    {
+      "id": "black",
+      "officialNameZh": "黑色",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          63,
+          66,
+          69
+        ],
+        "metallic": 0.95,
+        "roughness": 0.21,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          63,
+          66,
+          69
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          39,
+          41,
+          44
+        ],
+        "metallic": 0,
+        "roughness": 0.42,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "glass_fiber",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/3074.png",
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/1822.png"
+      ],
+      "geometry": {
+        "bodyThicknessMm": 7.9,
+        "confidence": "official",
+        "sameFrontContract": true
+      },
+      "notes": "",
+      "deco": {
+        "baseColorSrgb8": [
+          63,
+          65,
+          67
+        ],
+        "metallic": 0.9,
+        "roughness": 0.26,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      }
+    },
+    {
+      "id": "denim",
+      "officialNameZh": "丹宁色",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          184,
+          190,
+          198
+        ],
+        "metallic": 0.95,
+        "roughness": 0.21,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          184,
+          190,
+          198
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          64,
+          85,
+          118
+        ],
+        "metallic": 0,
+        "roughness": 0.52,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "Tech-Denim",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/3074.png",
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/1809.png"
+      ],
+      "geometry": {
+        "bodyThicknessMm": 8.3,
+        "confidence": "official",
+        "sameFrontContract": true
+      },
+      "notes": "Official220g versus standard218g. Silver-gray frame is separate from blue back. Pure PBR color does not reproduce textile weave. Front boundary unchanged; physical rear depth differs. Do not silently claim existing7.9mm GLB exactly represents8.3mm hardware. Global Zscale8.3/7.9 would also alter every protrusion and spacing; prefer explicit device-depth metadata or controlled rear/body depth adaptation; not implemented here.",
+      "deco": {
+        "baseColorSrgb8": [
+          196,
+          201,
+          206
+        ],
+        "metallic": 0.9,
+        "roughness": 0.26,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      }
+    },
+    {
+      "id": "champion-white",
+      "officialNameZh": "K90 Pro Max 冠军版",
+      "nameConfidence": "official_body",
+      "frame": {
+        "baseColorSrgb8": [
+          156,
+          158,
+          158
+        ],
+        "metallic": 0.95,
+        "roughness": 0.21,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "frontAluminum": {
+        "baseColorSrgb8": [
+          156,
+          158,
+          158
+        ],
+        "metallic": 0.95,
+        "roughness": 0.38,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "back": {
+        "baseColorSrgb8": [
+          226,
+          226,
+          219
+        ],
+        "metallic": 0,
+        "roughness": 0.42,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      },
+      "backMaterial": "glass_fiber_family_exact_champion_substrate_not_separately_stated",
+      "referenceImageUrls": [
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/3074.png",
+        "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/1813.png"
+      ],
+      "geometry": {
+        "bodyThicknessMm": null,
+        "confidence": "not_separately_verified",
+        "sameFrontContract": true
+      },
+      "notes": "Official FAQ calls冠军版（白色）. Front-visible trim is reflective silver/darkgray; not blue/gold invention. Official body states rear cameras redesigned andY-pattern/SC63/brand marks. Current front-focused palette omits rear graphics/logos and special rear geometry intentionally; do not claim full champion replica. Champion thickness not separately isolated in retrieved dimensional paragraph.",
+      "deco": {
+        "baseColorSrgb8": [
+          30,
+          33,
+          34
+        ],
+        "metallic": 0.9,
+        "roughness": 0.26,
+        "confidence": "estimated_visual_reference_not_manufacturer_colorimetry"
+      }
+    }
+  ]
+}

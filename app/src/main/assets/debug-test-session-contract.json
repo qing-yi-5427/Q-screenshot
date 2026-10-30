@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "intentExtra": "test_session",
+  "projectRoot": "files/test-projects/{session}",
+  "exportRoot": "files/exports/{session}",
+  "sessionPattern": "[A-Za-z0-9-]{1,48}",
+  "normalProjectRoot": "files/project",
+  "requiresDebugBuild": true,
+  "syntheticImportExtra": "test_import_fixture"
+}

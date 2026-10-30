@@ -1,0 +1,219 @@
+{
+  "E01.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E02-left.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E02-right.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E03.png": {
+    "size": [
+      2048,
+      1638
+    ],
+    "transparent": false
+  },
+  "E04.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E05-fit.png": {
+    "size": [
+      2048,
+      1638
+    ],
+    "transparent": false
+  },
+  "E05-fill.png": {
+    "size": [
+      2048,
+      1638
+    ],
+    "transparent": false
+  },
+  "E06.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": true
+  },
+  "E07.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": true
+  },
+  "E08-portrait.png": {
+    "size": [
+      2160,
+      3840
+    ],
+    "transparent": false
+  },
+  "E08-landscape.png": {
+    "size": [
+      3840,
+      2160
+    ],
+    "transparent": false
+  },
+  "E09-zero.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E09-default.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E09-strong.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E10-gradient.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E10-solid.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E11.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "E12.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "D-left.png": {
+    "size": [
+      2048,
+      2560
+    ],
+    "transparent": false
+  },
+  "D-right-cool.png": {
+    "size": [
+      2048,
+      2560
+    ],
+    "transparent": false
+  },
+  "S30.png": {
+    "size": [
+      2048,
+      1638
+    ],
+    "transparent": false
+  },
+  "S10-01.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-02.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-03.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-04.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-05.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-06.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-07.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-08.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-09.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  },
+  "S10-10.png": {
+    "size": [
+      1638,
+      2048
+    ],
+    "transparent": false
+  }
+}
