@@ -4,7 +4,7 @@
 
 **[下载最新版 APK](https://github.com/qing-yi-5427/Q-screenshot/releases/latest/download/Q-screenshot.apk)** · [版本说明与历史下载](https://github.com/qing-yi-5427/Q-screenshot/releases)
 
-当前版本 **0.7.1**，适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
+本地构建默认版本 **0.7.1**，发布版本以 [Releases](https://github.com/qing-yi-5427/Q-screenshot/releases) 为准。适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
 
 ## 实机界面
 
@@ -62,6 +62,14 @@ python3 tools/build_android.py --output Q-screenshot-debug.apk
 ```
 
 普通构建使用仓库自带的 GLB、材质和 Filament AAR，不需要运行 Blender。完整依赖版本与来源见[工具链](docs/TOOLCHAIN.md)。如需运行 Android 测试，仅在授权设备或模拟器连接后执行 `./gradlew :app:connectedDebugAndroidTest`。
+
+## 自动构建与发布
+
+推送严格的 `vMAJOR.MINOR.PATCH` tag（例如 `v0.7.2`）后，GitHub Actions 构建 Debug 签名测试版，并发布固定附件 `Q-screenshot.apk` 与 `SHA256SUMS.txt`。上方「下载最新版 APK」无需随版本修改；重跑旧 tag 不会把最新版指回旧版本。tag 应指向已合并到默认分支、包含工作流的提交。
+
+CI 的版本名来自 tag，版本码为 `major × 1000000 + minor × 1000 + patch`，如 `v0.7.2 → 7002`；同 tag 重跑不变。本地普通构建仍使用源码默认版本。也可在 Actions 手动运行 **Android APK**，输入版本，仅生成可下载 Artifact，不发布 Release。
+
+维护者须配置仓库 Secret `QSCREENSHOT_DEBUG_KEYSTORE_BASE64`，复用现有测试签名；缺失或证书不一致时构建明确失败，不生成随机签名。该测试密钥不进入源码或附件。版本范围、签名与 Runner 依据见[发布说明](docs/RELEASING.md)。
 
 ## 技术与边界
 

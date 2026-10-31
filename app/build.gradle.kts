@@ -1,4 +1,16 @@
 plugins { id("com.android.application"); id("org.jetbrains.kotlin.plugin.compose") }
+// CI injects a deterministic tag version; normal local builds retain their defaults.
+val ciVersionName = providers.gradleProperty("ciVersionName").orNull
+val ciVersionCode = providers.gradleProperty("ciVersionCode").orNull
+require((ciVersionName == null) == (ciVersionCode == null)) { "Supply both ciVersionName and ciVersionCode" }
+if (ciVersionName != null) {
+    val parts = ciVersionName.split('.').map { it.toIntOrNull() }
+    require(parts.size == 3 && parts.all { it != null } && ciVersionName.matches(Regex("""(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)"""))) { "Invalid CI version name" }
+    val major = parts[0]!!; val minor = parts[1]!!; val patch = parts[2]!!
+    require(major in 0..2099 && minor in 0..999 && patch in 0..999) { "CI version components out of range" }
+    val expected = major * 1_000_000 + minor * 1_000 + patch
+    require(expected > 0 && ciVersionCode?.toIntOrNull() == expected) { "CI versionCode does not match versionName" }
+}
 android {
     namespace = "dev.qingframe"
     compileSdk { version = release(37) { minorApiLevel = 0 } }
@@ -6,8 +18,8 @@ android {
         applicationId = "dev.qingframe"
         minSdk = 29
         targetSdk = 36
-        versionCode = 8
-        versionName = "0.7.1"
+        versionCode = ciVersionCode?.toInt() ?: 8
+        versionName = ciVersionName ?: "0.7.1"
         ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
