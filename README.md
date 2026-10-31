@@ -2,7 +2,9 @@
 
 在 Android 上离线制作真实 3D 手机套壳截图。导入图片，调整机型、配色、角度和光影，保存透明或带背景的 PNG；也可以从其他应用分享一张图片，按默认参数自动生成后继续分享。
 
-源码仓库：[qing-yi-5427/Q-screenshot](https://github.com/qing-yi-5427/Q-screenshot)。当前版本 **0.7.1**，可按下方说明自行构建。
+**[下载最新版 APK](https://github.com/qing-yi-5427/Q-screenshot/releases/latest/download/Q-screenshot.apk)** · [版本说明与历史下载](https://github.com/qing-yi-5427/Q-screenshot/releases)
+
+当前版本 **0.7.1**，适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
 
 ## 实机界面
 
