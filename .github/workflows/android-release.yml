@@ -56,11 +56,40 @@ jobs:
           fi
       - name: Prepare Android SDK 37.0
         run: |
-          # Ubuntu24.04 includes these packages and accepted SDK licenses. Never auto-accept new terms.
-          sdkmanager --install 'platforms;android-37.0' 'build-tools;36.0.0' </dev/null
-          test -f "$ANDROID_HOME/platforms/android-37.0/android.jar"
-          test -x "$ANDROID_HOME/build-tools/36.0.0/apksigner"
-          printf 'sdk.dir=%s\n' "$ANDROID_HOME" > local.properties
+          # Inspect only SDK locations; never dump the complete environment or accept new licenses.
+          printf 'ANDROID_HOME=%s\nANDROID_SDK_ROOT=%s\n' "${ANDROID_HOME:-<unset>}" "${ANDROID_SDK_ROOT:-<unset>}"
+          sdk_root=''
+          for candidate in "${ANDROID_HOME:-}" "${ANDROID_SDK_ROOT:-}" /usr/local/lib/android/sdk; do
+            if [[ -n "$candidate" && ( -d "$candidate/platforms" || -d "$candidate/cmdline-tools" ) ]]; then
+              sdk_root="$candidate"
+              break
+            fi
+          done
+          if [[ -z "$sdk_root" ]]; then
+            echo '::error::Android SDK not found in runner environment or documented Ubuntu SDK location.'
+            ls -ld /usr/local/lib/android /usr/local/lib/android/sdk 2>/dev/null || true
+            exit 1
+          fi
+          printf 'Using Android SDK: %s\n' "$sdk_root"
+          ls -d "$sdk_root"/platforms/* "$sdk_root"/build-tools/* 2>/dev/null || true
+          if [[ ! -f "$sdk_root/platforms/android-37.0/android.jar" || ! -x "$sdk_root/build-tools/36.0.0/apksigner" ]]; then
+            manager=$(command -v sdkmanager || true)
+            if [[ -z "$manager" ]]; then
+              for tool in "$sdk_root/cmdline-tools/latest/bin/sdkmanager" "$sdk_root"/cmdline-tools/*/bin/sdkmanager "$sdk_root/tools/bin/sdkmanager"; do
+                if [[ -x "$tool" ]]; then manager="$tool"; break; fi
+              done
+            fi
+            if [[ -z "$manager" ]]; then
+              echo '::error::Required SDK package missing and no sdkmanager executable found.'
+              ls -d "$sdk_root"/cmdline-tools/*/bin 2>/dev/null || true
+              exit 1
+            fi
+            "$manager" --sdk_root="$sdk_root" --install 'platforms;android-37.0' 'build-tools;36.0.0' </dev/null
+          fi
+          test -f "$sdk_root/platforms/android-37.0/android.jar"
+          test -x "$sdk_root/build-tools/36.0.0/apksigner"
+          printf 'ANDROID_HOME=%s\n' "$sdk_root" >> "$GITHUB_ENV"
+          printf 'sdk.dir=%s\n' "$sdk_root" > local.properties
       - name: Restore the existing test signing key
         env:
           DEBUG_KEYSTORE_BASE64: ${{ secrets.QSCREENSHOT_DEBUG_KEYSTORE_BASE64 }}
