@@ -76,9 +76,9 @@ def join_prefix(prefix,name):
  for ob in obs:ob.select_set(True)
  bpy.context.view_layer.objects.active=obs[0];bpy.ops.object.convert(target='MESH');bpy.ops.object.join();obs[0].name=name
 
-def build(state,out=None,hinge_profile=None):
+def build(state,out=None,hinge_profile=None,geometry=None):
  bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
- g=json.loads((ROOT/'assets-source/devices'/DEVICE/'geometry.json').read_text());s=g[state];w,h,d=[s[k]*.001 for k in ['width_mm','height_mm','thickness_mm']];sw,sh=[s[k]*.001 for k in ['screen_width_mm','screen_height_mm']]
+ g=geometry if geometry is not None else json.loads((ROOT/'assets-source/devices'/DEVICE/'geometry.json').read_text());s=g[state];w,h,d=[s[k]*.001 for k in ['width_mm','height_mm','thickness_mm']];sw,sh=[s[k]*.001 for k in ['screen_width_mm','screen_height_mm']]
  clearance=g.get('screen_front_clearance_mm',0.0)*.001 # explicit rendering separation, not hardware measurement
  hinge_profile=hinge_profile or g.get('hinge_profile','shallow-ellipse')
  black_border=g.get('bezel_black_border_mm',.85)*.001

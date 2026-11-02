@@ -1,0 +1,494 @@
+{
+  "baseline": "788f8fa592bb75fe0c6784af6737f27fdcc4f712",
+  "reports": {
+    "fold-final": {
+      "status": "contract_passed",
+      "models": [
+        {
+          "modelPath": "devices/xiaomi-18-fold/folded.glb",
+          "sha256": "ff8bc34b3115cf6decac112b80e0984837fb727ee52b6270468dd33b2d95b7a4",
+          "acceptedSha256": "604c8bb98d092dd4d833d8e86e282765bd332671c1c2ef1fa5066ecdd065bba9",
+          "byteIdentical": false,
+          "semanticIdentical": true,
+          "binaryIdentical": true,
+          "jsonExceptGeneratorIdentical": true,
+          "acceptedGenerator": "Khronos glTF Blender I/O v4.5.47",
+          "generatedGenerator": "Khronos glTF Blender I/O v4.5.48"
+        },
+        {
+          "modelPath": "devices/xiaomi-18-fold/unfolded.glb",
+          "sha256": "e4a9745ae22eb5a779cc8357053b8a5959424041c3d619a8f9155f680fa13ca0",
+          "acceptedSha256": "7302125c9273210594c5f24f2d24a28beb704d189027497b9389d4285205b16a",
+          "byteIdentical": false,
+          "semanticIdentical": true,
+          "binaryIdentical": true,
+          "jsonExceptGeneratorIdentical": true,
+          "acceptedGenerator": "Khronos glTF Blender I/O v4.5.47",
+          "generatedGenerator": "Khronos glTF Blender I/O v4.5.48"
+        }
+      ],
+      "profileSha256": "37677ead49a6b3f316b78754ae97cff4715ef900ef217b0d7074f03aa038b1cf",
+      "blenderVersion": "Blender 4.5.3 LTS",
+      "khronos": "PASS",
+      "scope": "Primary model per state; derived denim excluded",
+      "visualReview": "NOT_RUN",
+      "androidFilament": "NOT_RUN"
+    },
+    "redmi-final": {
+      "status": "contract_passed",
+      "models": [
+        {
+          "modelPath": "devices/redmi-k90-pro-max/portrait.glb",
+          "sha256": "f4b67517a41d182198282bc837dfab73fdb515c9333ada3b42db324906a20b1e",
+          "acceptedSha256": "4d4422eed3129c07749f8845d95b76f8e59d160b655766920f69d7d17f067134",
+          "byteIdentical": false,
+          "semanticIdentical": true,
+          "binaryIdentical": true,
+          "jsonExceptGeneratorIdentical": true,
+          "acceptedGenerator": "Khronos glTF Blender I/O v4.5.47",
+          "generatedGenerator": "Khronos glTF Blender I/O v4.5.48"
+        }
+      ],
+      "profileSha256": "fb7333f344f9c12fc65900e211b43dc3af973ae2607587476d301b734921b49a",
+      "blenderVersion": "Blender 4.5.3 LTS",
+      "khronos": "PASS",
+      "scope": "Primary model per state; derived denim excluded",
+      "visualReview": "NOT_RUN",
+      "androidFilament": "NOT_RUN"
+    },
+    "slab-final": {
+      "status": "contract_passed",
+      "models": [
+        {
+          "modelPath": "devices/fixture-phone/portrait.glb",
+          "sha256": "d84516293895aa3eb21dd781e515d3320f5baf0150c7faaae0eebe5cbb6cb3fc",
+          "acceptedSha256": null,
+          "byteIdentical": false
+        }
+      ],
+      "profileSha256": "2ec6a8105b5327cd83df63e63193dd4502b775de48ece68ba4b399a46e626201",
+      "blenderVersion": "Blender 4.5.3 LTS",
+      "khronos": "PASS",
+      "scope": "Primary model per state; derived denim excluded",
+      "visualReview": "NOT_RUN",
+      "androidFilament": "NOT_RUN"
+    },
+    "fold-refreshed-build": {
+      "status": "contract_passed",
+      "models": [
+        {
+          "modelPath": "devices/xiaomi-18-fold/folded.glb",
+          "sha256": "ff8bc34b3115cf6decac112b80e0984837fb727ee52b6270468dd33b2d95b7a4",
+          "acceptedSha256": "604c8bb98d092dd4d833d8e86e282765bd332671c1c2ef1fa5066ecdd065bba9",
+          "byteIdentical": false,
+          "semanticIdentical": true,
+          "binaryIdentical": true,
+          "jsonExceptGeneratorIdentical": true,
+          "acceptedGenerator": "Khronos glTF Blender I/O v4.5.47",
+          "generatedGenerator": "Khronos glTF Blender I/O v4.5.48"
+        },
+        {
+          "modelPath": "devices/xiaomi-18-fold/unfolded.glb",
+          "sha256": "e4a9745ae22eb5a779cc8357053b8a5959424041c3d619a8f9155f680fa13ca0",
+          "acceptedSha256": "7302125c9273210594c5f24f2d24a28beb704d189027497b9389d4285205b16a",
+          "byteIdentical": false,
+          "semanticIdentical": true,
+          "binaryIdentical": true,
+          "jsonExceptGeneratorIdentical": true,
+          "acceptedGenerator": "Khronos glTF Blender I/O v4.5.47",
+          "generatedGenerator": "Khronos glTF Blender I/O v4.5.48"
+        }
+      ],
+      "profileSha256": "59dd75b2d689a3f50bd415179baf976e1952850ce5a38b7b202cb494384b66ca",
+      "blenderVersion": "Blender 4.5.3 LTS",
+      "khronos": "PASS",
+      "scope": "Primary model per state; derived denim excluded",
+      "visualReview": "NOT_RUN",
+      "androidFilament": "NOT_RUN"
+    }
+  },
+  "khronos": [
+    {
+      "run": "fold-final",
+      "file": "model-khronos-xiaomi-18-fold-folded.glb.json",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "run": "fold-final",
+      "file": "model-khronos-xiaomi-18-fold-unfolded.glb.json",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "run": "redmi-final",
+      "file": "model-khronos-redmi-k90-pro-max-portrait.glb.json",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "run": "slab-final",
+      "file": "model-khronos-fixture-phone-portrait.glb.json",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "run": "fold-refreshed-build",
+      "file": "model-khronos-xiaomi-18-fold-folded.glb.json",
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "run": "fold-refreshed-build",
+      "file": "model-khronos-xiaomi-18-fold-unfolded.glb.json",
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "sourceProvenance": [
+    {
+      "sourceId": "source-bac18ecb833f",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-18-fold",
+      "finalUrl": "https://www.mi.com/prod/xiaomi-18-fold",
+      "sha256": "ddfa48ae0e844e4e2f350dffb243cbe69b29146830263dd5e18229d70c834e81",
+      "retrievedAt": "2026-11-02T12:00:57.807505+00:00",
+      "mime": "text/html",
+      "mode": "live"
+    },
+    {
+      "sourceId": "source-93d931abd131",
+      "pageUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-fold/specs/index.html",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-fold/specs/index.html",
+      "sha256": "143f501b1366beacb478e6394a424a0843c788938df79b0df002b6b40b8731d3",
+      "retrievedAt": "2026-11-02T12:01:04.752832+00:00",
+      "mime": "text/html",
+      "mode": "live"
+    },
+    {
+      "sourceId": "source-95decf21aef8",
+      "pageUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-fold/index.html",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-fold/index.html",
+      "sha256": "a5f70e6328b348d6aea755270eaf51f947a34d63ca42442084b62cf0245a9856",
+      "retrievedAt": "2026-11-02T12:01:08.385056+00:00",
+      "mime": "text/html",
+      "mode": "live"
+    },
+    {
+      "sourceId": "source-93f4272ae26a",
+      "pageUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-fold/specs/entry-1792032063000.js",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-fold/specs/entry-1792032063000.js",
+      "sha256": "e786212fb71a63094ae2d27ccd87e6f1ce84ee9fed65bcd250a1f9271c64d490",
+      "retrievedAt": "2026-11-02T12:01:12.474001+00:00",
+      "mime": "application/javascript",
+      "mode": "live"
+    },
+    {
+      "sourceId": "source-62313ff46eba",
+      "pageUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-fold/entry-1792032063000.js",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-fold/entry-1792032063000.js",
+      "sha256": "317e9cd4ef5911cebe1f92b2624d492fba2a41b1059cd45211a4903354ea20e2",
+      "retrievedAt": "2026-11-02T12:01:16.738417+00:00",
+      "mime": "application/javascript",
+      "mode": "live"
+    }
+  ],
+  "liveCollectionCounts": {
+    "sources": 5,
+    "candidates": 9,
+    "images": 20,
+    "colors": 3,
+    "failures": 0
+  },
+  "resolvedBodyFields": {
+    "folded.height_mm": {
+      "value": 117.8,
+      "confidence": "official",
+      "sourceIds": [
+        "source-93f4272ae26a"
+      ],
+      "evidence": [
+        ">a(\"div\",{class:\"div_103\"},[a(\"span\",{class:\"text_104\"},[n(\"长度：117.8mm\"),a(\"br\"),n(\"宽度：163.8mm（展开） 83.6mm（闭合）\"),a(\"br\"),n(\"厚度：5.02"
+      ],
+      "identityEvidence": "Product-specific specs entry declares imageFDSPath xiaomi-18-fold_37057 and matching root class; opened actual official JS body.",
+      "scopeEvidence": "117.8mm common length; explicit 展开/闭合 suffix on width/thickness in same dimensions paragraph. Standard body, excluding rear camera protrusion; no special-edition inference.",
+      "conflictResolution": null,
+      "confidenceScore": 0.9,
+      "notes": "Official reported number; not a measured CAD parameter"
+    },
+    "unfolded.height_mm": {
+      "value": 117.8,
+      "confidence": "official",
+      "sourceIds": [
+        "source-93f4272ae26a"
+      ],
+      "evidence": [
+        ">a(\"div\",{class:\"div_103\"},[a(\"span\",{class:\"text_104\"},[n(\"长度：117.8mm\"),a(\"br\"),n(\"宽度：163.8mm（展开） 83.6mm（闭合）\"),a(\"br\"),n(\"厚度：5.02"
+      ],
+      "identityEvidence": "Product-specific specs entry declares imageFDSPath xiaomi-18-fold_37057 and matching root class; opened actual official JS body.",
+      "scopeEvidence": "117.8mm common length; explicit 展开/闭合 suffix on width/thickness in same dimensions paragraph. Standard body, excluding rear camera protrusion; no special-edition inference.",
+      "conflictResolution": null,
+      "confidenceScore": 0.9,
+      "notes": "Official reported number; not a measured CAD parameter"
+    },
+    "unfolded.width_mm": {
+      "value": 163.8,
+      "confidence": "official",
+      "sourceIds": [
+        "source-93f4272ae26a"
+      ],
+      "evidence": [
+        "宽度：163.8mm（展开） 83.6mm（闭合）"
+      ],
+      "identityEvidence": "Product-specific specs entry declares imageFDSPath xiaomi-18-fold_37057 and matching root class; opened actual official JS body.",
+      "scopeEvidence": "117.8mm common length; explicit 展开/闭合 suffix on width/thickness in same dimensions paragraph. Standard body, excluding rear camera protrusion; no special-edition inference.",
+      "conflictResolution": null,
+      "confidenceScore": 0.9,
+      "notes": "Official reported number; not a measured CAD parameter"
+    },
+    "folded.width_mm": {
+      "value": 83.6,
+      "confidence": "official",
+      "sourceIds": [
+        "source-93f4272ae26a"
+      ],
+      "evidence": [
+        "宽度：163.8mm（展开） 83.6mm（闭合）"
+      ],
+      "identityEvidence": "Product-specific specs entry declares imageFDSPath xiaomi-18-fold_37057 and matching root class; opened actual official JS body.",
+      "scopeEvidence": "117.8mm common length; explicit 展开/闭合 suffix on width/thickness in same dimensions paragraph. Standard body, excluding rear camera protrusion; no special-edition inference.",
+      "conflictResolution": null,
+      "confidenceScore": 0.9,
+      "notes": "Official reported number; not a measured CAD parameter"
+    },
+    "unfolded.thickness_mm": {
+      "value": 5.02,
+      "confidence": "official",
+      "sourceIds": [
+        "source-93f4272ae26a"
+      ],
+      "evidence": [
+        "厚度：5.02mm（展开） 10.68mm（闭合）"
+      ],
+      "identityEvidence": "Product-specific specs entry declares imageFDSPath xiaomi-18-fold_37057 and matching root class; opened actual official JS body.",
+      "scopeEvidence": "117.8mm common length; explicit 展开/闭合 suffix on width/thickness in same dimensions paragraph. Standard body, excluding rear camera protrusion; no special-edition inference.",
+      "conflictResolution": null,
+      "confidenceScore": 0.9,
+      "notes": "Official reported number; not a measured CAD parameter"
+    },
+    "folded.thickness_mm": {
+      "value": 10.68,
+      "confidence": "official",
+      "sourceIds": [
+        "source-93f4272ae26a"
+      ],
+      "evidence": [
+        "厚度：5.02mm（展开） 10.68mm（闭合）"
+      ],
+      "identityEvidence": "Product-specific specs entry declares imageFDSPath xiaomi-18-fold_37057 and matching root class; opened actual official JS body.",
+      "scopeEvidence": "117.8mm common length; explicit 展开/闭合 suffix on width/thickness in same dimensions paragraph. Standard body, excluding rear camera protrusion; no special-edition inference.",
+      "conflictResolution": null,
+      "confidenceScore": 0.9,
+      "notes": "Official reported number; not a measured CAD parameter"
+    }
+  },
+  "visualObservations": {
+    "images": [
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1329.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "front_folded",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 395,
+        "height": 285,
+        "sha256": "a7110ef808bd4b7f497582888bdf521539e801c4924fea04763c2e94e2639f64",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1329.png",
+        "mime": "image/png",
+        "confidenceScore": 0.75,
+        "notes": "Rotated external-screen outline; not unfolded display. Hinge edge and single punch visible; compare source research before measurement."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/130.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "decoration",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 130,
+        "height": 84,
+        "sha256": "ee175f0c952d5e63cbf850a9736ff0281a5510afda7949b42cf1dfd041831332",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/130.png",
+        "mime": "image/png",
+        "confidenceScore": 0.95,
+        "notes": "Diagonal UI artwork; exclude from modeling."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1330.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "decoration",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 128,
+        "height": 73,
+        "sha256": "e8598cbc539dcfda74bf7a254ea4eb87a603d5b70f407178ca31e61f7b4d827a",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1330.png",
+        "mime": "image/png",
+        "confidenceScore": 0.95,
+        "notes": "Diagonal UI artwork; exclude from modeling."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/162.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "back",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 503,
+        "height": 365,
+        "sha256": "53391d6e2c35cbdb5424fa938eec3a84f27751f34b89b6dbd893eb021fbf1813",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/162.png",
+        "mime": "image/png",
+        "confidenceScore": 0.8,
+        "notes": "Rotated rear outline; not a calibrated factory drawing."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1311.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "back",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 193,
+        "height": 270,
+        "sha256": "48e6c1e13ffadab5bdc7a92a2215accf8aa4b178706dc0e059898a1aad1a0792",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1311.png",
+        "mime": "image/png",
+        "confidenceScore": 0.9,
+        "notes": "Pink rear render; ceramic identity requires accompanying text, not color alone."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1310.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "back",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 193,
+        "height": 270,
+        "sha256": "e12fbfd18d9b83e6fa07b870998cb00838c719a98d5bd2321a84f0577b011b69",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1310.png",
+        "mime": "image/png",
+        "confidenceScore": 0.9,
+        "notes": "Light rear render; PBR color cannot be measured from rendered lighting."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1312.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "back",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 193,
+        "height": 270,
+        "sha256": "136a5552fecb8c2ccfe5b9bd39ca9bef84a1a94d5fd28d4627b58fae38ffe112",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1312.png",
+        "mime": "image/png",
+        "confidenceScore": 0.9,
+        "notes": "Dark rear render."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1313.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "back",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 193,
+        "height": 270,
+        "sha256": "f8e5096f8186d7092d9d9fee50d1195648213003065d21aca37a8c2b8a5bba05",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1313.png",
+        "mime": "image/png",
+        "confidenceScore": 0.9,
+        "notes": "Red rear render."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1314.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "front_folded",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 193,
+        "height": 270,
+        "sha256": "31c68e210c3719f58ac8bed39e9bdbccbe9ed1effd0bd20afc56c3602e6cf264",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1314.png",
+        "mime": "image/png",
+        "confidenceScore": 0.9,
+        "notes": "Closed front render with hinge on left; screen perspective/rounded area not factory CAD."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1309.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "decoration",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 379,
+        "height": 62,
+        "sha256": "1f22f6aea1b6621b32b27a2d2b35801597150701bbf6a4a086feccb7a7e5ba0b",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1309.png",
+        "mime": "image/png",
+        "confidenceScore": 0.9,
+        "notes": "Brand/footer graphic; exclude from geometry and application packaging."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1534.png",
+        "sourceId": "source-93f4272ae26a",
+        "viewHints": [],
+        "view": "unknown",
+        "classification": "visual_observation",
+        "productPathMatch": true,
+        "usage": "local_visual_reference_only",
+        "redistributionPermission": "not_verified",
+        "width": 244,
+        "height": 31,
+        "sha256": "bb9670f1524f95baec6f4ee92a88fe477b8b9e219ab2d9e8ca405566d212c9e3",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-fold_37057/images/1534.png",
+        "mime": "image/png",
+        "confidenceScore": 0.2,
+        "notes": "Small white strip; insufficient visible device information."
+      }
+    ],
+    "coverage": [
+      "back",
+      "decoration",
+      "front_folded",
+      "unknown"
+    ],
+    "limitations": "Visual observations do not establish official dimensions, materials or redistribution rights"
+  },
+  "tests": "test_actual_blender_replay_twice_and_new_slab (test_xiaomi_pipeline.PipelineTests.test_actual_blender_replay_twice_and_new_slab) ... ok\ntest_allowlist_and_redirect (test_xiaomi_pipeline.PipelineTests.test_allowlist_and_redirect) ... ok\ntest_compile_estimated_slab_and_impossible_diagonal (test_xiaomi_pipeline.PipelineTests.test_compile_estimated_slab_and_impossible_diagonal) ... ok\ntest_conflicts_block_until_explained (test_xiaomi_pipeline.PipelineTests.test_conflicts_block_until_explained) ... ok\ntest_dimensions_manifest_and_nan (test_xiaomi_pipeline.PipelineTests.test_dimensions_manifest_and_nan) ... ok\ntest_fold_labels_and_literal_image_expansion (test_xiaomi_pipeline.PipelineTests.test_fold_labels_and_literal_image_expansion) ... ok\ntest_identity_and_field_mismatch_block (test_xiaomi_pipeline.PipelineTests.test_identity_and_field_mismatch_block) ... ok\ntest_image_wrong_mime_not_saved (test_xiaomi_pipeline.PipelineTests.test_image_wrong_mime_not_saved) ... ok\ntest_js_unicode_and_units (test_xiaomi_pipeline.PipelineTests.test_js_unicode_and_units) ... ok\ntest_offline_collection_and_missing_resources (test_xiaomi_pipeline.PipelineTests.test_offline_collection_and_missing_resources) ... ok\ntest_output_guards (test_xiaomi_pipeline.PipelineTests.test_output_guards) ... ok\ntest_reconcile_blocks_changed_dimensions (test_xiaomi_pipeline.PipelineTests.test_reconcile_blocks_changed_dimensions) ... ok\ntest_replay_dry_run_no_mutation_and_injection (test_xiaomi_pipeline.PipelineTests.test_replay_dry_run_no_mutation_and_injection) ... ok\ntest_view_review_requires_download_hash_and_keeps_license_unknown (test_xiaomi_pipeline.PipelineTests.test_view_review_requires_download_hash_and_keeps_license_unknown) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 5.720s\n\nOK\n",
+  "existingTests": "test_deterministic_code_and_android_bounds (test_ci_version.CiVersionTest.test_deterministic_code_and_android_bounds) ... ok\ntest_invalid_versions_cannot_publish (test_ci_version.CiVersionTest.test_invalid_versions_cannot_publish) ... ok\ntest_missing_current_release_fails_closed (test_ci_version.CiVersionTest.test_missing_current_release_fails_closed) ... ok\ntest_numeric_order_pages_and_draft_filter (test_ci_version.CiVersionTest.test_numeric_order_pages_and_draft_filter) ... ok\ntest_old_tag_rerun_never_replaces_latest (test_ci_version.CiVersionTest.test_old_tag_rerun_never_replaces_latest) ... ok\ntest_semver_order_is_strictly_increasing (test_ci_version.CiVersionTest.test_semver_order_is_strictly_increasing) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n"
+}

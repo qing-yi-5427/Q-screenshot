@@ -20,9 +20,9 @@ def disc(name,x,y,z,r,mat,n=32):
  vs=[cv((x,y,z))]+[cv((x+r*math.cos(i*2*math.pi/n),y+r*math.sin(i*2*math.pi/n),z)) for i in range(n)]
  mesh=bpy.data.meshes.new(name);mesh.from_pydata(vs,[],[(0,(i+1)%n+1,i+1) for i in range(n)]);mesh.update();ob=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(ob);mesh.materials.append(mat);return ob
 
-def build(out=None,revision=3):
+def build(out=None,revision=3,geometry=None):
  bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
- g=json.loads((ROOT/'assets-source/devices'/DEVICE/'geometry.json').read_text());w,h,d=[g[k]*.001 for k in ['width_mm','height_mm','thickness_mm']];r=g['corner_radius_mm']*.001
+ g=geometry if geometry is not None else json.loads((ROOT/'assets-source/devices'/DEVICE/'geometry.json').read_text());w,h,d=[g[k]*.001 for k in ['width_mm','height_mm','thickness_mm']];r=g['corner_radius_mm']*.001
  def pbr(name,color,metal=0,rough=.3):
   settings=g.get('material_parameters',{}).get(name,{})
   return material(name,tuple(settings.get('baseColorLinear',color)),settings.get('metallic',metal),settings.get('roughness',rough))

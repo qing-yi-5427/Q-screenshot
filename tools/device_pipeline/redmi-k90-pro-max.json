@@ -1,0 +1,23 @@
+{
+  "deviceId": "redmi-k90-pro-max",
+  "aliases": [
+    "REDMI K90 Pro Max"
+  ],
+  "pages": [
+    {
+      "url": "https://www.mi.com/prod/redmi-k90-pro-max/specs"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/redmi-k90-pro-max/specs/index.html"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-pro-max/specs/entry-1778678001254.js"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/redmi-k90-pro-max/index.html"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-pro-max/entry-1778678001254.js"
+    }
+  ]
+}

@@ -82,3 +82,7 @@ Kotlin、Jetpack Compose / Material 3、Google Filament 1.79.0 / gltfio；GLB �
 ## 许可
 
 原创代码与资源采用 [Apache License 2.0](LICENSE)，依赖许可见 [第三方声明](THIRD_PARTY_NOTICES.md)。本项目与 Xiaomi / REDMI 无隶属关系；相关品牌与产品设计权利属于各自权利人。
+
+### 小米机型资料与隔离建模
+
+新增机型或回归模型请先阅读 [可复用资料采集与参数化建模流水线](docs/XIAOMI_DEVICE_PIPELINE.md)。支持官方资料候选采集、来源/置信度台账、隔离 GLB 构建及合同校验；[本轮测试结果](docs/XIAOMI_PIPELINE_TEST_RESULTS.md)。
