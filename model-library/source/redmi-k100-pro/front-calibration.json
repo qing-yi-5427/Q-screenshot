@@ -1,0 +1,12 @@
+{
+  "referenceImageUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100-pro_70972/images/15814.png",
+  "referenceSha256": "04c972f40d99971b5d2719a6d852898bb36cfb7fdba96735c91c7c955c64e010",
+  "method": "Official closeup1452x753: leftouterfrontx888, innerblackx900..911(12px), darkgreenactive912 onward; camera centerednear1276 implies fullfrontwidth~776px.12/776*75.25≈1.16mm ->coarse1.20mm. Right image cropped; symmetry and perspective are estimates, uncertainty~0.3mm. Original active retained.",
+  "blackMaskWidth_mm": 1.2,
+  "frontLipDerivedXY_mm": [
+    1.414234107005018,
+    1.5268145402963598
+  ],
+  "confidence": "estimated_visual_reference",
+  "policy": "All official dimensions/pixel ratios retained; no shared arbitrary active enlargement; acceptedK90ProMax not rebuilt."
+}

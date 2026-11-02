@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "redmi-k80-pro",
+  "adapter": "slab-front",
+  "geometry": {
+    "width_mm": 74.95,
+    "height_mm": 160.26,
+    "thickness_mm": 8.39,
+    "screen_width_mm": 69.52316290369026,
+    "screen_height_mm": 154.49591756375614,
+    "corner_radius_mm": 6.2,
+    "screen_corner_radius_mm": 4.6,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 75.03,
+        "radius_mm": 1.2
+      },
+      "frameCurve_mm": 0.4,
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 26,
+          "length_mm": 18,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 12,
+          "length_mm": 9,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [
+        {
+          "edge": "bottom",
+          "x_mm": 0,
+          "width_mm": 8.2,
+          "height_mm": 2.3
+        }
+      ],
+      "antennaBands": [],
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, a1104d71fdb5fe827aebc7490f5aebf175cc351864fc0e479f6a8f57da9c3f6d, a4ba508d5e55e69c43e00b9d2cc2fb329d23675be5e5d54343fe4001a0c656d1, b5486ad95304a43fca049ae8f5aa6172ffef0c01fe8de03157196c17b97abf3d, 54974d1686c7b71d82014baeedbbfe3f60719964da0d91a01a1b1ea60a2f46cd, fb9f089bd747207593ad4b685cc0d5baf662f709983ee8574aaba65d2e160acb, 1b3e8322dc0bf2a73ab377b1b148dfe8aed32f503aa7def9178e62676c1f370c, 703793c588f03dd65465b5d86e0f6654a9987968d8d2937e75bfb896924e83fc, 705941d9c164b6041f51fc5e26d9b1677d9009058fe4520f430c4e79c8eb53f7, f424f6a5ba719dbf8823d68c417afc32891d9b421403eeb81c1181a9f5f3ee73, b77509d49ec9d016661a879c484dc8d523f9c5117a755de960be64a938fe9bb0, 4fd02c2e1fd7395d3c3170e64d76d851b29e0b7f858e7ff5e463270bcf400ed2, e4c56b95c6f764f313f6e3b731fd46970fb11220d214f8c6bac5c5b3479b6c18, bc43ec7f9d21691ebda737a0eec979965893df72df9da0b18b964a24fc7ae50a, 96459a2c9d73718574a94cdc89b9428c243ac59c926759c2ef0edb6d5d012bff USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "redmi-k80-pro",
+    "deviceId": "redmi-k80-pro",
+    "name": "REDMI K80 Pro",
+    "displayName": "REDMI K80 Pro",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07495,
+          0.16025999999999999,
+          0.00839
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/redmi-k80-pro/portrait.glb",
+        "asset": "devices/redmi-k80-pro/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.06952316290369026,
+          0.15449591756375614
+        ],
+        "bodySizeMeters": [
+          0.07495,
+          0.16025999999999999,
+          0.00839
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.45,
+        "inputSizeHints": [
+          {
+            "width": 1440,
+            "height": 3200,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "night-black",
+        "label": "玄夜黑"
+      },
+      {
+        "id": "snow-white",
+        "label": "雪岩白"
+      },
+      {
+        "id": "mountain-green",
+        "label": "山峦青"
+      },
+      {
+        "id": "champion-green",
+        "label": "冠军版 · 绿色"
+      },
+      {
+        "id": "champion-gray",
+        "label": "冠军版 · 深灰色"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "coordinateSystem": "+X right, +Y up, +Z front; meters"
+  },
+  "research": {
+    "deviceId": "redmi-k80-pro",
+    "formalName": "REDMI K80 Pro",
+    "fields": {
+      "width_mm": {
+        "value": 74.95,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-pro-0"
+        ],
+        "evidence": "Explicit target specification width_mm 74.95; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "height_mm": {
+        "value": 160.26,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-pro-0"
+        ],
+        "evidence": "Explicit target specification height_mm 160.26; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "thickness_mm": {
+        "value": 8.39,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-pro-0"
+        ],
+        "evidence": "Explicit target specification thickness_mm 8.39; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "diagonal_inches": {
+        "value": 6.67,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-pro-0"
+        ],
+        "evidence": "Explicit target specification diagonal_inches 6.67; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "display_pixels": {
+        "value": [
+          1440,
+          3200
+        ],
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-pro-0"
+        ],
+        "evidence": "Explicit target specification display_pixels [1440, 3200]; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "corner_radius_mm": {
+        "value": 6.2,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, a1104d71fdb5fe827aebc7490f5aebf175cc351864fc0e479f6a8f57da9c3f6d, a4ba508d5e55e69c43e00b9d2cc2fb329d23675be5e5d54343fe4001a0c656d1, b5486ad95304a43fca049ae8f5aa6172ffef0c01fe8de03157196c17b97abf3d, 54974d1686c7b71d82014baeedbbfe3f60719964da0d91a01a1b1ea60a2f46cd, fb9f089bd747207593ad4b685cc0d5baf662f709983ee8574aaba65d2e160acb, 1b3e8322dc0bf2a73ab377b1b148dfe8aed32f503aa7def9178e62676c1f370c, 703793c588f03dd65465b5d86e0f6654a9987968d8d2937e75bfb896924e83fc, 705941d9c164b6041f51fc5e26d9b1677d9009058fe4520f430c4e79c8eb53f7, f424f6a5ba719dbf8823d68c417afc32891d9b421403eeb81c1181a9f5f3ee73, b77509d49ec9d016661a879c484dc8d523f9c5117a755de960be64a938fe9bb0, 4fd02c2e1fd7395d3c3170e64d76d851b29e0b7f858e7ff5e463270bcf400ed2, e4c56b95c6f764f313f6e3b731fd46970fb11220d214f8c6bac5c5b3479b6c18, bc43ec7f9d21691ebda737a0eec979965893df72df9da0b18b964a24fc7ae50a, 96459a2c9d73718574a94cdc89b9428c243ac59c926759c2ef0edb6d5d012bff"
+      },
+      "screen_corner_radius_mm": {
+        "value": 4.6,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, a1104d71fdb5fe827aebc7490f5aebf175cc351864fc0e479f6a8f57da9c3f6d, a4ba508d5e55e69c43e00b9d2cc2fb329d23675be5e5d54343fe4001a0c656d1, b5486ad95304a43fca049ae8f5aa6172ffef0c01fe8de03157196c17b97abf3d, 54974d1686c7b71d82014baeedbbfe3f60719964da0d91a01a1b1ea60a2f46cd, fb9f089bd747207593ad4b685cc0d5baf662f709983ee8574aaba65d2e160acb, 1b3e8322dc0bf2a73ab377b1b148dfe8aed32f503aa7def9178e62676c1f370c, 703793c588f03dd65465b5d86e0f6654a9987968d8d2937e75bfb896924e83fc, 705941d9c164b6041f51fc5e26d9b1677d9009058fe4520f430c4e79c8eb53f7, f424f6a5ba719dbf8823d68c417afc32891d9b421403eeb81c1181a9f5f3ee73, b77509d49ec9d016661a879c484dc8d523f9c5117a755de960be64a938fe9bb0, 4fd02c2e1fd7395d3c3170e64d76d851b29e0b7f858e7ff5e463270bcf400ed2, e4c56b95c6f764f313f6e3b731fd46970fb11220d214f8c6bac5c5b3479b6c18, bc43ec7f9d21691ebda737a0eec979965893df72df9da0b18b964a24fc7ae50a, 96459a2c9d73718574a94cdc89b9428c243ac59c926759c2ef0edb6d5d012bff"
+      },
+      "screen_height_mm": {
+        "value": 154.49591756375614,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Nominal full-rectangle diagonal/pixel aspect calculation; visible area unverified"
+      },
+      "screen_width_mm": {
+        "value": 69.52316290369026,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-pro/specs/entry-1775557342075.js",
+        "sha256": "c81fe99bbedb52bb29f385ef2c806c5acc2c4f3ff69851b582d90f91173ae009",
+        "kind": "specs/",
+        "id": "redmi-k80-pro-0",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k80-pro route and matching REDMI product title in source body"
+      },
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-pro/entry-1775557342075.js",
+        "sha256": "9aa15c9240d7889ce8ff34d928b46ff82a581bc77c4b9955a846b0c4ca19d9d8",
+        "kind": "overview",
+        "id": "redmi-k80-pro-1",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k80-pro route and matching REDMI product title in source body"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-pro/specs/entry-1775557342075.js",
+      "sha256": "c81fe99bbedb52bb29f385ef2c806c5acc2c4f3ff69851b582d90f91173ae009",
+      "kind": "specs/",
+      "id": "redmi-k80-pro-0",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k80-pro route and matching REDMI product title in source body"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-pro/entry-1775557342075.js",
+      "sha256": "9aa15c9240d7889ce8ff34d928b46ff82a581bc77c4b9955a846b0c4ca19d9d8",
+      "kind": "overview",
+      "id": "redmi-k80-pro-1",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k80-pro route and matching REDMI product title in source body"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament per-model appearance/export acceptance; Blender QA is separate"
+  ]
+}

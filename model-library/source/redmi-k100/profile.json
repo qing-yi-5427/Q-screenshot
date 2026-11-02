@@ -40,7 +40,12 @@
         }
       ],
       "antennaBands": [],
-      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 0d98e7cb87c9766217f668f2a8a16c4a6e86c264bd3ff809ec4f3640d82ddaae, 895ab067a329d8bc964861688b45b9e2e467bb2fdbce19d700cda4232f4c1992, bc05e34a24afe519d543290fe8ee51b8e409c59d10b214077721d923a63277ef, 70fe508c8a4c9b023391c7e14cc9874947e6870f3539e5d5d1d749e25c22a594, 3480302489c1d6f351d4519a01c34869c6feb8e5907d98f9b59232886035c1c5, fbdfe850e78cb9be557986320043b191a4bd45966a46cd46cc1936a485276863, 988f8f341d34069af655fe13b7e03607d068b368b761598d4ffd3a0a0c8d5e39, 2df66a1a85f0b308afdca5a034fe740f4a3d4b2fc1148504bf7b988e161c3334, e4c190b020a771cc6e6618cb1a68a91b9249ed4bdf54b16f7030aeca65713185, 65629c38ef603d765400edaed2f763b7f694a3b634b0400f2f7290eaba9d3564, 26027e52d12ed1895c7e98497e3d505509493891c996d1ebc91a6c8119a81ac7, 2cf59165c6844162b446fef4820356f4121e7e4e8b578ad1b305a7c29c759ded, c14c50e28aa31d046828b812f71a2e9838ac3b62e37c26248645efcd7c88fe2a, d442c5bb8ff77da4ff0d9aff66d834f01f6bfb257e12004034c75b5e61693ff4 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 0d98e7cb87c9766217f668f2a8a16c4a6e86c264bd3ff809ec4f3640d82ddaae, 895ab067a329d8bc964861688b45b9e2e467bb2fdbce19d700cda4232f4c1992, bc05e34a24afe519d543290fe8ee51b8e409c59d10b214077721d923a63277ef, 70fe508c8a4c9b023391c7e14cc9874947e6870f3539e5d5d1d749e25c22a594, 3480302489c1d6f351d4519a01c34869c6feb8e5907d98f9b59232886035c1c5, fbdfe850e78cb9be557986320043b191a4bd45966a46cd46cc1936a485276863, 988f8f341d34069af655fe13b7e03607d068b368b761598d4ffd3a0a0c8d5e39, 2df66a1a85f0b308afdca5a034fe740f4a3d4b2fc1148504bf7b988e161c3334, e4c190b020a771cc6e6618cb1a68a91b9249ed4bdf54b16f7030aeca65713185, 65629c38ef603d765400edaed2f763b7f694a3b634b0400f2f7290eaba9d3564, 26027e52d12ed1895c7e98497e3d505509493891c996d1ebc91a6c8119a81ac7, 2cf59165c6844162b446fef4820356f4121e7e4e8b578ad1b305a7c29c759ded, c14c50e28aa31d046828b812f71a2e9838ac3b62e37c26248645efcd7c88fe2a, d442c5bb8ff77da4ff0d9aff66d834f01f6bfb257e12004034c75b5e61693ff4 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated. R3 fixed blackmask offset: Official triptych2560x1180: atrow500 separate side/fronttrim1846..1877, pureblack1878..1882 plusAA1883, greenactive1884 onward; frontfacewidth~310px gives localblack~1.3–1.5mm. Official1.3mm phrase names metalwrapframe, NOT blackmask. Choose mask1.3mm estimated; resultingmetal remainder~1.3mm is only a cross-check. Preserve original active; uncertainty~0.35mm.",
+      "blackMaskWidth_mm": 1.3,
+      "frontLipDerivedXY_mm": [
+        1.3010627013164864,
+        1.404348287538508
+      ]
     }
   },
   "device": {
@@ -51,7 +56,7 @@
     "displayName": "REDMI K100",
     "manufacturer": "Xiaomi",
     "verificationStatus": "partial_reconstruction",
-    "assetVersion": "1.0.0",
+    "assetVersion": "1.0.1",
     "physicalDimensions": {
       "units": "meters",
       "includesCameraBump": false,
@@ -133,7 +138,7 @@
       "margin": 1.18
     },
     "attribution": "Original parametric geometry; no vendor imagery embedded.",
-    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
     "coordinateSystem": "+X right, +Y up, +Z front; meters"
   },
   "research": {

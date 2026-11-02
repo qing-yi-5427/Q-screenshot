@@ -1,0 +1,12 @@
+{
+  "referenceImageUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90_40387/images/25426.png",
+  "referenceSha256": "3ba3dc75300b910474df81295f9d1b99521d532f58364ad32e6d0a563c7e4ad8",
+  "method": "Official enlargedfront711x600, y500 bodyouterx102..609=508px, blackleft110..117/right591..598=8px each, active118..590≈473px; x300 topmetal242..248,black249..257≈9px,active258. Approx8/508*75.25=1.185mm ->1.20mm.473/508*75.25≈70.06mm supports retained original70.0215mm active. Uncertainty~0.25mm. C1active enlargement/C2shrink discarded.",
+  "blackMaskWidth_mm": 1.2,
+  "frontLipDerivedXY_mm": [
+    1.414234107005018,
+    1.5268145402963598
+  ],
+  "confidence": "estimated_visual_reference",
+  "policy": "All official dimensions/pixel ratios retained; no shared arbitrary active enlargement; acceptedK90ProMax not rebuilt."
+}

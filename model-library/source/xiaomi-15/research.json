@@ -72,22 +72,28 @@
       "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
     },
     "screen_height_mm": {
-      "value": 149.0,
+      "value": 147.6,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png SHA256 26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581. Rotated image [214, 452], contour X [[0.0, 3.0, 7.0], [204.30769230769232, 208.0, 211.30769230769232]] and Y [[0.0, 3.6538461538461537, 7.0], [444.0, 448.0, 451.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 147.6mm, metal lip 1.0mm, body radius 9.4mm, camera top offset 6.4mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     },
     "corner_radius_mm": {
-      "value": 6.8,
+      "value": 9.4,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png SHA256 26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581. Rotated image [214, 452], contour X [[0.0, 3.0, 7.0], [204.30769230769232, 208.0, 211.30769230769232]] and Y [[0.0, 3.6538461538461537, 7.0], [444.0, 448.0, 451.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 147.6mm, metal lip 1.0mm, body radius 9.4mm, camera top offset 6.4mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     },
     "screen_corner_radius_mm": {
-      "value": 5.5,
+      "value": 7.009,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png SHA256 26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581. Rotated image [214, 452], contour X [[0.0, 3.0, 7.0], [204.30769230769232, 208.0, 211.30769230769232]] and Y [[0.0, 3.6538461538461537, 7.0], [444.0, 448.0, 451.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 147.6mm, metal lip 1.0mm, body radius 9.4mm, camera top offset 6.4mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
+    },
+    "screen_width_mm": {
+      "value": 66.33707865168539,
+      "confidence": "estimated",
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png SHA256 26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581. Rotated image [214, 452], contour X [[0.0, 3.0, 7.0], [204.30769230769232, 208.0, 211.30769230769232]] and Y [[0.0, 3.6538461538461537, 7.0], [444.0, 448.0, 451.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 147.6mm, metal lip 1.0mm, body radius 9.4mm, camera top offset 6.4mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     }
   },
   "sources": [
@@ -287,5 +293,88 @@
       "Official specs lists all20 names and152.3mm/71.2mm/8.08mm/2670x1200; overview explicitly aluminum PVD high-gloss frame andtwo frame colors."
     ],
     "materialEstimateNotice": "All PBR numeric values original visual estimates; no official imagery embedded."
+  },
+  "frontLipReview": {
+    "version": "1.0.2",
+    "officialImage": {
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png",
+      "sha256": "26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581"
+    },
+    "outlineMeasurement": {
+      "imageIndex": 15,
+      "sha256": "26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581",
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png",
+      "imageSize": [
+        214,
+        452
+      ],
+      "xContours": [
+        [
+          0.0,
+          3.0,
+          7.0
+        ],
+        [
+          204.30769230769232,
+          208.0,
+          211.30769230769232
+        ]
+      ],
+      "yContours": [
+        [
+          0.0,
+          3.6538461538461537,
+          7.0
+        ],
+        [
+          444.0,
+          448.0,
+          451.0
+        ]
+      ],
+      "activeWidthMm": 66.483,
+      "activeHeightMm": 147.572,
+      "frontLipMm": 1.011,
+      "cameraTopOffsetMm": 6.377,
+      "bodyRadiusMm": 9.366,
+      "method": "Alpha>=50 contour clusters, separate axes calibrated against official body; illustration and AA not CAD; estimates only"
+    },
+    "method": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5319.png SHA256 26480ac14da08e860ab9011c367fecad084be19b067cd1c0bd190071d251d581. Rotated image [214, 452], contour X [[0.0, 3.0, 7.0], [204.30769230769232, 208.0, 211.30769230769232]] and Y [[0.0, 3.6538461538461537, 7.0], [444.0, 448.0, 451.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 147.6mm, metal lip 1.0mm, body radius 9.4mm, camera top offset 6.4mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending. C2 blackMaskWidth_mm=1.35: constant outward offset of active W/H and inner radius, based on this device official middle-to-inner contour; remaining body front surface is metal and may differ in X/Y width. Do not resize activity to force equal metal width; active dimensions unchanged from reviewed per-device outline. Numerical mask width estimated, not manufacturer CAD.",
+    "previousGeometry": {
+      "width_mm": 71.2,
+      "height_mm": 152.3,
+      "thickness_mm": 8.08,
+      "screen_width_mm": 66.96629213483146,
+      "screen_height_mm": 149.0,
+      "corner_radius_mm": 6.8,
+      "screen_corner_radius_mm": 5.5,
+      "frontDetails": {
+        "camera": {
+          "x_mm": 0,
+          "y_mm": 71.35,
+          "radius_mm": 1.18
+        },
+        "buttons": [
+          {
+            "side": "right",
+            "y_mm": 39.598,
+            "length_mm": 13,
+            "depth_mm": 0.35
+          },
+          {
+            "side": "right",
+            "y_mm": 15.23,
+            "length_mm": 7.5,
+            "depth_mm": 0.35
+          }
+        ],
+        "ports": [],
+        "frameCurve_mm": 0.65,
+        "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      }
+    },
+    "newAndroidReview": "NOT_RUN",
+    "revision": "C2",
+    "blackMaskWidthMm": 1.35
   }
 }

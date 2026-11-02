@@ -72,22 +72,28 @@
       "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
     },
     "screen_height_mm": {
-      "value": 160.99,
+      "value": 158.9,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816. Rotated image [245, 507], contour X [[1.6, 4.921760391198044, 8.0], [235.0, 238.44819819819818, 242.0]] and Y [[1.0, 4.899182561307902], [499.0, 502.4236111111111]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 158.9mm, metal lip 1.1mm, body radius 12.0mm, camera top offset 7.3mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     },
     "corner_radius_mm": {
-      "value": 12.2,
+      "value": 12.0,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816. Rotated image [245, 507], contour X [[1.6, 4.921760391198044, 8.0], [235.0, 238.44819819819818, 242.0]] and Y [[1.0, 4.899182561307902], [499.0, 502.4236111111111]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 158.9mm, metal lip 1.1mm, body radius 12.0mm, camera top offset 7.3mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     },
     "screen_corner_radius_mm": {
-      "value": 10.899999999999999,
+      "value": 9.766,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816. Rotated image [245, 507], contour X [[1.6, 4.921760391198044, 8.0], [235.0, 238.44819819819818, 242.0]] and Y [[1.0, 4.899182561307902], [499.0, 502.4236111111111]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 158.9mm, metal lip 1.1mm, body radius 12.0mm, camera top offset 7.3mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
+    },
+    "screen_width_mm": {
+      "value": 73.15213414634147,
+      "confidence": "estimated",
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816. Rotated image [245, 507], contour X [[1.6, 4.921760391198044, 8.0], [235.0, 238.44819819819818, 242.0]] and Y [[1.0, 4.899182561307902], [499.0, 502.4236111111111]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 158.9mm, metal lip 1.1mm, body radius 12.0mm, camera top offset 7.3mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     }
   },
   "sources": [
@@ -148,5 +154,86 @@
       "类型：AMOLED  分辨率： 2624 x 1208 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持BT.2020超广色域 最低亮度：1nit 多场景峰值亮度：4000nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0      * 屏幕全亮度区间，默认支持单脉冲DC调光。     背屏 2.9英寸 低功耗超级阳光屏 ",
       "类型：AMOLED  分辨率： 976 x 596 显示帧率：最高 120Hz 触控采样率：最高 120Hz 色域：支持BT.2020超广色域 最低亮度：1nit 多场景峰值亮度：4000nits 全亮度DC调光*  硬件防窥屏｜专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 正屏显示认证：HDR10+丨HDR Vivid｜Dolby Vision"
     ]
+  },
+  "frontLipReview": {
+    "version": "1.0.1",
+    "officialImage": {
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png",
+      "sha256": "6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816"
+    },
+    "outlineMeasurement": {
+      "imageIndex": 0,
+      "sha256": "6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816",
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png",
+      "imageSize": [
+        245,
+        507
+      ],
+      "xContours": [
+        [
+          1.6,
+          4.921760391198044,
+          8.0
+        ],
+        [
+          235.0,
+          238.44819819819818,
+          242.0
+        ]
+      ],
+      "yContours": [
+        [
+          1.0,
+          4.899182561307902
+        ],
+        [
+          499.0,
+          502.4236111111111
+        ]
+      ],
+      "activeWidthMm": 73.275,
+      "activeHeightMm": 158.869,
+      "frontLipMm": 1.072,
+      "cameraTopOffsetMm": 7.332,
+      "bodyRadiusMm": 12.028,
+      "method": "Alpha>=50 contour clusters, separate axes calibrated against official body; illustration and AA not CAD; estimates only"
+    },
+    "method": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816. Rotated image [245, 507], contour X [[1.6, 4.921760391198044, 8.0], [235.0, 238.44819819819818, 242.0]] and Y [[1.0, 4.899182561307902], [499.0, 502.4236111111111]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 158.9mm, metal lip 1.1mm, body radius 12.0mm, camera top offset 7.3mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending. C2 blackMaskWidth_mm=1.0: constant outward offset of active W/H and inner radius, based on this device official middle-to-inner contour; remaining body front surface is metal and may differ in X/Y width. Do not resize activity to force equal metal width; active dimensions unchanged from reviewed per-device outline. Numerical mask width estimated, not manufacturer CAD.",
+    "previousGeometry": {
+      "width_mm": 77.6,
+      "height_mm": 163.39,
+      "thickness_mm": 8.39,
+      "screen_width_mm": 74.11429878048781,
+      "screen_height_mm": 160.99,
+      "corner_radius_mm": 12.2,
+      "screen_corner_radius_mm": 10.899999999999999,
+      "frontDetails": {
+        "camera": {
+          "x_mm": 0,
+          "y_mm": 76.895,
+          "radius_mm": 1.25
+        },
+        "buttons": [
+          {
+            "side": "right",
+            "y_mm": 42.481,
+            "length_mm": 15,
+            "depth_mm": 0.35
+          },
+          {
+            "side": "right",
+            "y_mm": 16.339,
+            "length_mm": 7.5,
+            "depth_mm": 0.35
+          }
+        ],
+        "ports": [],
+        "frameCurve_mm": 0.65,
+        "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      }
+    },
+    "newAndroidReview": "NOT_RUN",
+    "revision": "C2",
+    "blackMaskWidthMm": 1.0
   }
 }

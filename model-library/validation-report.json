@@ -1,192 +1,310 @@
 {
   "catalogItems": 25,
   "downloadablePackages": 24,
-  "packageBytes": 8966825,
+  "packageBytes": 9802366,
   "downloadableGlbs": 43,
-  "downloadableColors": 138,
-  "bundledColors": 4,
-  "checks": [
-    "ZIP limits",
-    "package/device/catalog identity+version",
-    "material override names",
-    "GLB hashes",
-    "No vendor images/textures/external buffers",
-    "Safe paths"
-  ],
+  "downloadableColorFrameCombinations": 138,
+  "bundledColorFrameCombinations": 4,
+  "status": "PASS_PACKAGE_AUDIT_AND_ANDROID_EMULATOR_RENDER_REVIEW",
   "packages": [
     {
       "id": "redmi-k100-pro-max",
-      "packageBytes": 196935,
+      "modelVersion": "1.0.1",
+      "packageSha256": "2f7ca97fde417ff0e6492e1c76de6e68041f76a7dede9d520fb0dc772c378c8f",
+      "packageBytes": 217336,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k100-pro",
-      "packageBytes": 195478,
+      "modelVersion": "1.0.1",
+      "packageSha256": "ed029acf76216f2c7c66fc5c10858c312ba279c991a43b899cbe78360c345dd5",
+      "packageBytes": 216396,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k100",
-      "packageBytes": 196061,
+      "modelVersion": "1.0.1",
+      "packageSha256": "0b33c1c018b076a1be626788f37a846697afbe6ccb23470cf168f5b7cd65792c",
+      "packageBytes": 216297,
       "files": 3,
+      "glbs": 1,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k80-pro",
-      "packageBytes": 195993,
+      "modelVersion": "1.0.1",
+      "packageSha256": "3af0e3047657396a7c90c3f61a03436aa62d3573077980b33e3cf3963a025840",
+      "packageBytes": 217199,
       "files": 3,
+      "glbs": 1,
       "colors": 5,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k80-ultra",
-      "packageBytes": 194742,
+      "modelVersion": "1.0.1",
+      "packageSha256": "50d0d118bc7fb4d759c1b7bb7e508bace8a53337984ada0e02ed5a32080a1a6f",
+      "packageBytes": 215712,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k80",
-      "packageBytes": 195996,
+      "modelVersion": "1.0.1",
+      "packageSha256": "1e50c97eac88f3bbb81b6458d7cc896545b0e45ba0210230d767aa97ad513ce3",
+      "packageBytes": 217201,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k90-max",
-      "packageBytes": 195257,
+      "modelVersion": "1.0.1",
+      "packageSha256": "c0f3624f0c119372967afc7f237d4c6171722a948bd182e514199827493b3fd4",
+      "packageBytes": 216174,
       "files": 3,
+      "glbs": 1,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k90-pro-max",
+      "modelVersion": "1.2.0",
+      "packageSha256": "aa098092534a3e7ea0d8385612d24042d27f9bb5e799f60a4c6319539db9e927",
       "packageBytes": 1641786,
       "files": 4,
+      "glbs": 2,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k90-ultra",
-      "packageBytes": 196738,
+      "modelVersion": "1.0.1",
+      "packageSha256": "9436971f40542a83e2c0314822ad87d98e1b1f18fb5e87648fc7b3112e7bcba9",
+      "packageBytes": 216581,
       "files": 3,
+      "glbs": 1,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "redmi-k90",
-      "packageBytes": 196468,
+      "modelVersion": "1.0.1",
+      "packageSha256": "55ab64343fd2eba940d079a894bd73eecafae609213ec66a4562fb55a2260b5a",
+      "packageBytes": 216283,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-15-pro",
-      "packageBytes": 357133,
+      "modelVersion": "1.0.1",
+      "packageSha256": "e5a32bc67bb387b316b7764de0c3317ca631b00307aed86e3d538ebe76c6e8cc",
+      "packageBytes": 396979,
       "files": 4,
+      "glbs": 2,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-15-ultra",
-      "packageBytes": 1245286,
+      "modelVersion": "1.0.1",
+      "packageSha256": "f24769971a9a76122ce360dbd1c6383d31dd7c201d2ba6711efce940fc55e32f",
+      "packageBytes": 1381498,
       "files": 9,
+      "glbs": 7,
       "colors": 8,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-15",
-      "packageBytes": 831852,
+      "modelVersion": "1.0.2",
+      "packageSha256": "99f21b838891612a14df9ba9a7e3359a8168db1c3c537a8562dc380bc0ce6bc9",
+      "packageBytes": 940958,
       "files": 7,
+      "glbs": 5,
       "colors": 48,
       "checks": "PASS",
-      "modelVersion": "1.0.1",
-      "release": "models-2026-11-r2"
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-15s-pro",
-      "packageBytes": 179449,
+      "modelVersion": "1.0.1",
+      "packageSha256": "653b541d529dbdff5ceb3ee091197aadc64943bc088ddb9c53ea95ee7d95abcd",
+      "packageBytes": 199071,
       "files": 3,
+      "glbs": 1,
       "colors": 2,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17-max",
-      "packageBytes": 337495,
+      "modelVersion": "1.0.1",
+      "packageSha256": "ea877db04621a699da0e29347a04c21f7f66044eb6e7d98d89ab1695d04ecf6b",
+      "packageBytes": 378342,
       "files": 4,
+      "glbs": 2,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17-pro-max",
-      "packageBytes": 169577,
+      "modelVersion": "1.0.1",
+      "packageSha256": "96a8ab510d3b3f50a19a2068238b73ea00fcbae4cfa5da7cdeef1fd2e57485c8",
+      "packageBytes": 190626,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17-pro",
-      "packageBytes": 169902,
+      "modelVersion": "1.0.1",
+      "packageSha256": "f41056952701bd5bb68af765fe8052b51b8e7001582ad3d6525a2dc1d3c7daa9",
+      "packageBytes": 189910,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17-ultra-byleica",
-      "packageBytes": 587150,
+      "modelVersion": "1.0.1",
+      "packageSha256": "91f68188925311cf9d59019b94492496ca9f5ad9be48d0b0a605af0e5ea4e952",
+      "packageBytes": 649243,
       "files": 5,
+      "glbs": 3,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17-ultra",
-      "packageBytes": 169699,
+      "modelVersion": "1.0.1",
+      "packageSha256": "7446448028be98d9a5751d860c9e8a25e590c59d5dc7de673e62541531dd9249",
+      "packageBytes": 189998,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17",
-      "packageBytes": 169485,
+      "modelVersion": "1.0.1",
+      "packageSha256": "38a268d914802d189999a1e37bfe7365666469ff236ba91bd5a676f7fe728378",
+      "packageBytes": 189472,
       "files": 3,
+      "glbs": 1,
       "colors": 4,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17t-pro",
-      "packageBytes": 168631,
+      "modelVersion": "1.0.1",
+      "packageSha256": "fa8d5792a0ede11ec03c3bd0e2d6e6ec0e533219eb95e0018816fa39d59521ad",
+      "packageBytes": 188838,
       "files": 3,
+      "glbs": 1,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-17t",
-      "packageBytes": 169849,
+      "modelVersion": "1.0.1",
+      "packageSha256": "a2e8afe9621615a892f8b5811d452cd2e2ed5ea505462983b7bd56cd5c8261fc",
+      "packageBytes": 190224,
       "files": 3,
+      "glbs": 1,
       "colors": 3,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-18-pro-max",
-      "packageBytes": 502576,
+      "modelVersion": "1.0.1",
+      "packageSha256": "f126d5ace4730ee5314c033c6b07d8585817dc1f7e37588622b4c6f1ca261e81",
+      "packageBytes": 564311,
       "files": 5,
+      "glbs": 3,
       "colors": 5,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     },
     {
       "id": "xiaomi-18-pro",
-      "packageBytes": 503287,
+      "modelVersion": "1.0.1",
+      "packageSha256": "ca1878eed6ebf6cc27dd4625db1a323abde0cda632172ed726772675d8f48a69",
+      "packageBytes": 561931,
       "files": 5,
+      "glbs": 3,
       "colors": 5,
-      "checks": "PASS"
+      "checks": "PASS",
+      "android": "PASS_FINAL_SHA_PALETTE_AND_REPRESENTATIVE_THREE_VIEWS"
     }
   ],
-  "androidVisualReview": {
-    "status": "PENDING",
-    "scope": "24 default colorways, front/angle exports; Xiaomi15 original1.0.0 geometry/default unchanged in1.0.1, new40color combinations require separate Android verification"
+  "androidValidation": {
+    "environment": "Android API36 ARM64 emulator, actual Filament exports; not each physical phone",
+    "colorFrameCombinations": 138,
+    "paletteResolution": [
+      256,
+      320
+    ],
+    "models": 24,
+    "representativeViews": 72,
+    "representativeResolution": [
+      1638,
+      2048
+    ],
+    "evidence": [
+      {
+        "file": "deliverables/model-library/android/final-android-evidence.json",
+        "sha256": "4b366195cc7763163be3eb4dde46da97f36512d5f656dc18a7cbd86694502403"
+      },
+      {
+        "file": "deliverables/model-library/android/independent-final-redmi-review.json",
+        "sha256": "537f5ae3ee7ca0346284ea934cc59953b44929f128be9da6e8501f59717a928f"
+      },
+      {
+        "file": "deliverables/model-library/android/xiaomi-r3-independent-visual.json",
+        "sha256": "ca4dabc48e5e92def679eb61b5a6fdb0201a0fc48b15d0de043efda2c0dab0ac"
+      }
+    ],
+    "limits": "Representative default colors visually reviewed; palette checks verify loading/export/alpha, not measured color fidelity. Geometry and PBR remain documented estimates."
+  },
+  "networkValidation": {
+    "release": "models-2026-11-r2",
+    "direct": "Release connection timed out",
+    "existingConnectProxy": "TLS index and 24 package checks passed",
+    "r3": "Pending publication and HTTPS verification; local final SHA tests passed"
   }
 }

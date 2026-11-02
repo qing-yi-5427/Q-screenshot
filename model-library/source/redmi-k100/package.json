@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "id": "redmi-k100",
   "name": "REDMI K100",
-  "modelVersion": "1.0.0",
+  "modelVersion": "1.0.1",
   "states": [
     "portrait"
   ],
   "defaultState": "portrait",
-  "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+  "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
   "defaultColorwayId": "black",
   "colors": [
     {
@@ -25,6 +25,11 @@
           "srgb": "#363A3E",
           "metallic": 0,
           "roughness": 0.4
+        },
+        "front_lip_estimated": {
+          "srgb": "#363A3E",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
       "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
@@ -44,6 +49,11 @@
           "srgb": "#B5D976",
           "metallic": 0,
           "roughness": 0.4
+        },
+        "front_lip_estimated": {
+          "srgb": "#B5D976",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
       "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
@@ -63,6 +73,11 @@
           "srgb": "#DEE1D9",
           "metallic": 0,
           "roughness": 0.4
+        },
+        "front_lip_estimated": {
+          "srgb": "#DEE1D9",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
       "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
@@ -71,7 +86,7 @@
   "validation": {
     "contract": "PASS",
     "khronos": "PASS",
-    "visual": "BLENDER_FOUR_VIEW_REVIEWED",
-    "android": "NOT_RUN"
+    "visual": "SEE_EXTERNAL_VERSIONED_QA_REPORT",
+    "android": "NOT_RUN_AT_PACKAGE_BUILD_SEE_EXTERNAL_QA"
   }
 }

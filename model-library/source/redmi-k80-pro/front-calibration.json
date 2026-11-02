@@ -1,0 +1,12 @@
+{
+  "referenceImageUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/redmi-k80-pro_736022/images/22280.png",
+  "referenceSha256": "6bb5a8e58b0babd599c8cc33c7a59162bc0f1f9eb5dc3928f832d29d92152cb8",
+  "method": "Independent target official front-oblique image supports a narrow black band inside front trim; same published bodyW/H/pixels and nominal diagonal asK80. Perspective prevents precise width; approx1.6mm coarse mask, uncertainty~0.4mm, not an official material/dimension declaration. Keep original active region.",
+  "blackMaskWidth_mm": 1.6,
+  "frontLipDerivedXY_mm": [
+    1.1134185481548697,
+    1.2820412181219267
+  ],
+  "confidence": "estimated_visual_reference",
+  "policy": "All official dimensions/pixel ratios retained; no shared arbitrary active enlargement; acceptedK90ProMax not rebuilt."
+}

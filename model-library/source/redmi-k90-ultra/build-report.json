@@ -3,15 +3,15 @@
   "models": [
     {
       "modelPath": "devices/redmi-k90-ultra/portrait.glb",
-      "sha256": "79292ad8f89f5a9c75a7601ef4f66656daf7dd986e712ac253192e7f58729432",
+      "sha256": "aac80af48d36782eba8d374e85b26067589e3c0d8e5e6472422ccb8c9e7a4696",
       "acceptedSha256": null,
       "byteIdentical": false
     }
   ],
-  "profileSha256": "40298eced4a3a4532be572aada3d740d7c8684867b9652389ce3ff826138f044",
+  "profileSha256": "64ac86ae1686c435b609420abbd73a2a3f5935cfea30a9f771752af53aceda73",
   "blenderVersion": "Blender 4.5.0",
   "khronos": "PASS",
   "scope": "Primary model per state; derived denim excluded",
-  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "visualReview": "NOT_RUN",
   "androidFilament": "NOT_RUN"
 }

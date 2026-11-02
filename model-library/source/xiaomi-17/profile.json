@@ -6,14 +6,14 @@
     "width_mm": 71.8,
     "height_mm": 151.1,
     "thickness_mm": 8.06,
-    "screen_width_mm": 68.07379518072288,
-    "screen_height_mm": 148.2,
-    "corner_radius_mm": 9.4,
-    "screen_corner_radius_mm": 8.1,
+    "screen_width_mm": 67.24698795180723,
+    "screen_height_mm": 146.4,
+    "corner_radius_mm": 11.9,
+    "screen_corner_radius_mm": 9.587,
     "frontDetails": {
       "camera": {
         "x_mm": 0,
-        "y_mm": 70.75,
+        "y_mm": 68.75,
         "radius_mm": 1.18
       },
       "buttons": [
@@ -32,7 +32,10 @@
       ],
       "ports": [],
       "frameCurve_mm": 0.65,
-      "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed. Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png SHA256 2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75. Rotated image [214, 447], contour X [[0.0, 3.0, 6.461538461538462], [205.0, 209.0, 212.0]] and Y [[0.0, 3.4583333333333335, 6.461538461538462], [439.5, 443.0, 446.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 146.4mm, metal lip 1.0mm, body radius 11.9mm, camera top offset 6.8mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending. C2 blackMaskWidth_mm=1.2: constant outward offset of active W/H and inner radius, based on this device official middle-to-inner contour; remaining body front surface is metal and may differ in X/Y width. Do not resize activity to force equal metal width; active dimensions unchanged from reviewed per-device outline. Numerical mask width estimated, not manufacturer CAD.",
+      "frontLip_mm": 1.0,
+      "blackBezelInset_mm": 1.0,
+      "blackMaskWidth_mm": 1.2
     }
   },
   "device": {
@@ -43,7 +46,7 @@
     "displayName": "Xiaomi 17 · 正面外观重建",
     "manufacturer": "Xiaomi",
     "verificationStatus": "partial_reconstruction",
-    "assetVersion": "1.0.0",
+    "assetVersion": "1.0.1",
     "physicalDimensions": {
       "units": "meters",
       "includesCameraBump": false,
@@ -63,8 +66,8 @@
         "activeScreenNode": "screen_main_content",
         "screenMaterial": "screen_content",
         "screenSizeMeters": [
-          0.06807379518072289,
-          0.1482
+          0.06724698795180722,
+          0.1464
         ],
         "bodySizeMeters": [
           0.0718,
@@ -117,7 +120,7 @@
       "margin": 1.18
     },
     "attribution": "Original parametric geometry; no vendor imagery embedded.",
-    "approximationNotes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。"
+    "approximationNotes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。"
   },
   "research": {
     "schemaVersion": 1,
@@ -193,28 +196,28 @@
         "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
       },
       "screen_height_mm": {
-        "value": 148.2,
+        "value": 146.4,
         "confidence": "estimated",
-        "confidenceScore": 0.55,
-        "notes": "Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+        "confidenceScore": 0.6,
+        "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png SHA256 2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75. Rotated image [214, 447], contour X [[0.0, 3.0, 6.461538461538462], [205.0, 209.0, 212.0]] and Y [[0.0, 3.4583333333333335, 6.461538461538462], [439.5, 443.0, 446.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 146.4mm, metal lip 1.0mm, body radius 11.9mm, camera top offset 6.8mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
       },
       "corner_radius_mm": {
-        "value": 9.4,
+        "value": 11.9,
         "confidence": "estimated",
-        "confidenceScore": 0.55,
-        "notes": "Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+        "confidenceScore": 0.6,
+        "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png SHA256 2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75. Rotated image [214, 447], contour X [[0.0, 3.0, 6.461538461538462], [205.0, 209.0, 212.0]] and Y [[0.0, 3.4583333333333335, 6.461538461538462], [439.5, 443.0, 446.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 146.4mm, metal lip 1.0mm, body radius 11.9mm, camera top offset 6.8mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
       },
       "screen_corner_radius_mm": {
-        "value": 8.1,
+        "value": 9.587,
         "confidence": "estimated",
-        "confidenceScore": 0.55,
-        "notes": "Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+        "confidenceScore": 0.6,
+        "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png SHA256 2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75. Rotated image [214, 447], contour X [[0.0, 3.0, 6.461538461538462], [205.0, 209.0, 212.0]] and Y [[0.0, 3.4583333333333335, 6.461538461538462], [439.5, 443.0, 446.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 146.4mm, metal lip 1.0mm, body radius 11.9mm, camera top offset 6.8mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
       },
       "screen_width_mm": {
-        "value": 68.07379518072288,
+        "value": 67.24698795180723,
         "confidence": "estimated",
-        "confidenceScore": 0.5,
-        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+        "confidenceScore": 0.6,
+        "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png SHA256 2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75. Rotated image [214, 447], contour X [[0.0, 3.0, 6.461538461538462], [205.0, 209.0, 212.0]] and Y [[0.0, 3.4583333333333335, 6.461538461538462], [439.5, 443.0, 446.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 146.4mm, metal lip 1.0mm, body radius 11.9mm, camera top offset 6.8mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
       }
     },
     "sources": [
@@ -249,6 +252,13 @@
         "view": "front",
         "confidenceScore": 0.8,
         "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+      },
+      {
+        "sha256": "309493d210df58b48f2fbbb4932098fd85a8ff178f3e63790de3b85f082cab35",
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/6007.png",
+        "view": "detail",
+        "confidenceScore": 0.7,
+        "notes": "Actually viewed official specification outline/side-control drawing in contact sheet. Supports placement/layout only; exact dimensions remain estimates."
       }
     ],
     "officialExcerpts": {
@@ -268,6 +278,89 @@
       "类型": [
         "类型：OLED柔性直屏 分辨率：2656 x 1220 显示帧率：最高 120Hz 触控采样率：最高 300Hz 多场景峰值亮度：3500nits 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+ l HDR Vivid l Dolby Vision   "
       ]
+    },
+    "frontLipReview": {
+      "version": "1.0.1",
+      "officialImage": {
+        "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png",
+        "sha256": "2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75"
+      },
+      "outlineMeasurement": {
+        "imageIndex": 8,
+        "sha256": "2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75",
+        "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png",
+        "imageSize": [
+          214,
+          447
+        ],
+        "xContours": [
+          [
+            0.0,
+            3.0,
+            6.461538461538462
+          ],
+          [
+            205.0,
+            209.0,
+            212.0
+          ]
+        ],
+        "yContours": [
+          [
+            0.0,
+            3.4583333333333335,
+            6.461538461538462
+          ],
+          [
+            439.5,
+            443.0,
+            446.0
+          ]
+        ],
+        "activeWidthMm": 67.241,
+        "activeHeightMm": 146.357,
+        "frontLipMm": 1.016,
+        "cameraTopOffsetMm": 6.777,
+        "bodyRadiusMm": 11.869,
+        "method": "Alpha>=50 contour clusters, separate axes calibrated against official body; illustration and AA not CAD; estimates only"
+      },
+      "method": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7019.png SHA256 2e34f35af195dbd216d728582afc28215c0dd803a72b2a1145b47fd91550fe75. Rotated image [214, 447], contour X [[0.0, 3.0, 6.461538461538462], [205.0, 209.0, 212.0]] and Y [[0.0, 3.4583333333333335, 6.461538461538462], [439.5, 443.0, 446.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 146.4mm, metal lip 1.0mm, body radius 11.9mm, camera top offset 6.8mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending. C2 blackMaskWidth_mm=1.2: constant outward offset of active W/H and inner radius, based on this device official middle-to-inner contour; remaining body front surface is metal and may differ in X/Y width. Do not resize activity to force equal metal width; active dimensions unchanged from reviewed per-device outline. Numerical mask width estimated, not manufacturer CAD.",
+      "previousGeometry": {
+        "width_mm": 71.8,
+        "height_mm": 151.1,
+        "thickness_mm": 8.06,
+        "screen_width_mm": 68.07379518072288,
+        "screen_height_mm": 148.2,
+        "corner_radius_mm": 9.4,
+        "screen_corner_radius_mm": 8.1,
+        "frontDetails": {
+          "camera": {
+            "x_mm": 0,
+            "y_mm": 70.75,
+            "radius_mm": 1.18
+          },
+          "buttons": [
+            {
+              "side": "right",
+              "y_mm": 39.286,
+              "length_mm": 13,
+              "depth_mm": 0.35
+            },
+            {
+              "side": "right",
+              "y_mm": 15.11,
+              "length_mm": 7.5,
+              "depth_mm": 0.35
+            }
+          ],
+          "ports": [],
+          "frameCurve_mm": 0.65,
+          "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+        }
+      },
+      "newAndroidReview": "NOT_RUN",
+      "revision": "C2",
+      "blackMaskWidthMm": 1.2
     }
   },
   "sources": [

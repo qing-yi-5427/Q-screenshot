@@ -1,0 +1,12 @@
+{
+  "referenceImageUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-ultra_21874/images/12268.png",
+  "referenceSha256": "47dba20ce290f28120a78fe309ca6d964cd9b55b5086e6b4303a1e42399fa0e0",
+  "method": "Independent Ultra bluefront upper detail shows narrow black border between active blue and highlighted trim. Oblique artwork lacks calibrated physical axes; choose coarse1.25mm mask with~0.4mm uncertainty. Preserve nominal-diagonal active dimensions; not a verified manufacturer bezel-mm.",
+  "blackMaskWidth_mm": 1.25,
+  "frontLipDerivedXY_mm": [
+    1.3510627013164864,
+    1.454348287538508
+  ],
+  "confidence": "estimated_visual_reference",
+  "policy": "All official dimensions/pixel ratios retained; no shared arbitrary active enlargement; acceptedK90ProMax not rebuilt."
+}

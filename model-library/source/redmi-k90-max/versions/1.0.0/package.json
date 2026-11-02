@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi-k90-max",
+  "name": "REDMI K90 Max",
+  "modelVersion": "1.0.0",
+  "states": [
+    "portrait"
+  ],
+  "defaultState": "portrait",
+  "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 独立K90 Max官方身份，天玑9500；中框/背盖基材在本次取得正文未明确，材质仅原创视觉估计；非K90至尊版别名。",
+  "defaultColorwayId": "space-silver",
+  "colors": [
+    {
+      "id": "space-silver",
+      "title": "太空银",
+      "backMaterial": "unknown_not_published_in_retrieved_text",
+      "thicknessMeters": 0.00818,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#CBCFD0",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#CBCFD0",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "sky-blue",
+      "title": "天际蓝",
+      "backMaterial": "unknown_not_published_in_retrieved_text",
+      "thicknessMeters": 0.00818,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#769BB4",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#769BB4",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "shadow-black",
+      "title": "暗影黑",
+      "backMaterial": "unknown_not_published_in_retrieved_text",
+      "thicknessMeters": 0.00818,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#3E414C",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#3E414C",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    }
+  ],
+  "validation": {
+    "contract": "PASS",
+    "khronos": "PASS",
+    "visual": "BLENDER_FOUR_VIEW_REVIEWED",
+    "android": "NOT_RUN"
+  }
+}

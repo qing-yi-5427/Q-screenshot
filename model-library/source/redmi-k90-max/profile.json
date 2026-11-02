@@ -40,7 +40,12 @@
         }
       ],
       "antennaBands": [],
-      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 8f0e4c70abd975209558a95c8eddeda37013ded3165880ea22f586317be81172, 65f4ce9d1d2dcab0bf584490f82cd9c75d3bdaf115acc92cb99e88d37e93e7ff, 45457d60dc890131b4fb71227394a6cd666ee74c0c725acc964c24f298c8efe8, 47df585f3685304517a21ce3a43eaef3572248591ddce25b320be553dec14a7e, 41852296e602fccf98497f050c9da3a960d4f7cd8d6684874eebb88ced7cdc1c, 127742cc0b914f92ac0fcbe3fdd47f11082cffecf5bc10bb1db6266bb60d1d94, b9542607049cbcff3aeda3ca2d47ca48e260fbc8350f6b9752938c409781fa67, 1b35977ea043d9928ce1c962f1c6bf679a099536d6af2627b369d8e72be8a660, a95fa1f0230b37169b153485c2a12a8747d51237cf1f1f2e820324bc05f8f7f0, 9c77d355001abd6caaf388e3a418aa34f1be7581afdbd080714d42dabec8fa5b, a9fed4fffd9a725c87f94b1910122636764a8f38b5c0ac5a988d56c9095db37b, 87cd2de5cb6db5327e2b03166a8c6f26939d129dc8adec0b8d53861cf6783398, aa58d08d32b085e256f9a179f1f533642eacdebdf16f48766ef216d3f009bcd6, 9740eb418742152b0f5f9bd8e358fc31542bd7194fc7e0a8597bd3b1973bb5e3 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 8f0e4c70abd975209558a95c8eddeda37013ded3165880ea22f586317be81172, 65f4ce9d1d2dcab0bf584490f82cd9c75d3bdaf115acc92cb99e88d37e93e7ff, 45457d60dc890131b4fb71227394a6cd666ee74c0c725acc964c24f298c8efe8, 47df585f3685304517a21ce3a43eaef3572248591ddce25b320be553dec14a7e, 41852296e602fccf98497f050c9da3a960d4f7cd8d6684874eebb88ced7cdc1c, 127742cc0b914f92ac0fcbe3fdd47f11082cffecf5bc10bb1db6266bb60d1d94, b9542607049cbcff3aeda3ca2d47ca48e260fbc8350f6b9752938c409781fa67, 1b35977ea043d9928ce1c962f1c6bf679a099536d6af2627b369d8e72be8a660, a95fa1f0230b37169b153485c2a12a8747d51237cf1f1f2e820324bc05f8f7f0, 9c77d355001abd6caaf388e3a418aa34f1be7581afdbd080714d42dabec8fa5b, a9fed4fffd9a725c87f94b1910122636764a8f38b5c0ac5a988d56c9095db37b, 87cd2de5cb6db5327e2b03166a8c6f26939d129dc8adec0b8d53861cf6783398, aa58d08d32b085e256f9a179f1f533642eacdebdf16f48766ef216d3f009bcd6, 9740eb418742152b0f5f9bd8e358fc31542bd7194fc7e0a8597bd3b1973bb5e3 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated. R3 fixed blackmask offset: Independent Max front hand-held source711x560: y300 outertrimx236..239, blackx240..242, coloredwallpaper244 onward; visiblefrontwidth about246px. Approx3.5/246*77.93≈1.1mm. Promotional perspective/black wallpaper imposes~0.35mm uncertainty; original active retained, not copied fromUltra.",
+      "blackMaskWidth_mm": 1.1,
+      "frontLipDerivedXY_mm": [
+        1.5010627013164863,
+        1.604348287538508
+      ]
     }
   },
   "device": {
@@ -51,7 +56,7 @@
     "displayName": "REDMI K90 Max",
     "manufacturer": "Xiaomi",
     "verificationStatus": "partial_reconstruction",
-    "assetVersion": "1.0.0",
+    "assetVersion": "1.0.1",
     "physicalDimensions": {
       "units": "meters",
       "includesCameraBump": false,
@@ -133,7 +138,7 @@
       "margin": 1.18
     },
     "attribution": "Original parametric geometry; no vendor imagery embedded.",
-    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
     "coordinateSystem": "+X right, +Y up, +Z front; meters"
   },
   "research": {

@@ -40,7 +40,12 @@
         }
       ],
       "antennaBands": [],
-      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, e86ea0e4bed235820bc577e645cadaa8e8639e337faf3ede70f607b4c4ae57a1, e0fa4a13126f3ea6fbd73da48ab3b02a3361e236659cca21c073cef9aac8adfa, 98f340f5d7982e71e2e88a62df7de355b5fdfbb7c8dd301eba27d5702840d89d, 21e5061ee870d792e0c7febf9f48b56b184891b1987aa4e0d573b8130f1a3a2e, 088a263ca24c70e4e761d0367c898b059cbb35e87a889eee27a58f3f9bae70a2, 18679337655b255034fd7b31f265f26e7f2ceb862e7b0084d75d121259947077, 5ecfef4f25c627bdfcff91983ce35c6bb5c97319b48b31accec509d62cb37dcb, 17fd5ae6e9f2536f3c1077058e9a579d33ecd3224faab264f1098c37f1c03369, f7591ee2658575cb0081fc6bc5da96969413d4f98616ac3d34eb405c6338d766, fe25f8623d1df9cf71873c86bc1c29d0b32db4cbc72c5f74612d2fa87ebd26fc, fff0f6e3d84f44170e8bdfc5477ac01f7b5518a6171fc7aa5f5bb36f6ff6e6bd, 7094b52965f8fd54536c0a0b16658cb820578d2333be1730ba01868a86048aa5 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, e86ea0e4bed235820bc577e645cadaa8e8639e337faf3ede70f607b4c4ae57a1, e0fa4a13126f3ea6fbd73da48ab3b02a3361e236659cca21c073cef9aac8adfa, 98f340f5d7982e71e2e88a62df7de355b5fdfbb7c8dd301eba27d5702840d89d, 21e5061ee870d792e0c7febf9f48b56b184891b1987aa4e0d573b8130f1a3a2e, 088a263ca24c70e4e761d0367c898b059cbb35e87a889eee27a58f3f9bae70a2, 18679337655b255034fd7b31f265f26e7f2ceb862e7b0084d75d121259947077, 5ecfef4f25c627bdfcff91983ce35c6bb5c97319b48b31accec509d62cb37dcb, 17fd5ae6e9f2536f3c1077058e9a579d33ecd3224faab264f1098c37f1c03369, f7591ee2658575cb0081fc6bc5da96969413d4f98616ac3d34eb405c6338d766, fe25f8623d1df9cf71873c86bc1c29d0b32db4cbc72c5f74612d2fa87ebd26fc, fff0f6e3d84f44170e8bdfc5477ac01f7b5518a6171fc7aa5f5bb36f6ff6e6bd, 7094b52965f8fd54536c0a0b16658cb820578d2333be1730ba01868a86048aa5 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated. R3 fixed blackmask offset: Target official front-oblique image shows separate highlighted front trim, inner black band and green active area. Foreshortening prevents reliable sub-mm recovery; approx1.6mm black mask is a coarse original estimate (uncertainty~0.4mm), same nominal body/display front asK80Pro. Keep official-diagonal-derived active area; no screen enlargement.",
+      "blackMaskWidth_mm": 1.6,
+      "frontLipDerivedXY_mm": [
+        1.1134185481548697,
+        1.2820412181219267
+      ]
     }
   },
   "device": {
@@ -51,7 +56,7 @@
     "displayName": "REDMI K80",
     "manufacturer": "Xiaomi",
     "verificationStatus": "partial_reconstruction",
-    "assetVersion": "1.0.0",
+    "assetVersion": "1.0.1",
     "physicalDimensions": {
       "units": "meters",
       "includesCameraBump": false,
@@ -137,7 +142,7 @@
       "margin": 1.18
     },
     "attribution": "Original parametric geometry; no vendor imagery embedded.",
-    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
     "coordinateSystem": "+X right, +Y up, +Z front; meters"
   },
   "research": {

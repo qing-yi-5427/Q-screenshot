@@ -72,22 +72,28 @@
       "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
     },
     "screen_height_mm": {
-      "value": 158.78,
+      "value": 157.8,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 aad669c397be5ca354e1a937f6e943326155a771f3da857af51cf34a9508d82b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/199.png. Scale uses official body 77.51 x 162.28 mm. Corner radius 8.0mm corresponds to outer bend ~0.103 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png SHA256 9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13. Rotated image [243, 504], contour X [[0.0, 2.619047619047619, 7.0], [234.0, 237.5425101214575, 241.0]] and Y [[0.0, 2.9411764705882355, 7.0], [496.0, 500.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 157.8mm, metal lip 0.85mm, body radius 9.3mm, camera top offset 7.2mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     },
     "corner_radius_mm": {
-      "value": 8.0,
+      "value": 9.3,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 aad669c397be5ca354e1a937f6e943326155a771f3da857af51cf34a9508d82b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/199.png. Scale uses official body 77.51 x 162.28 mm. Corner radius 8.0mm corresponds to outer bend ~0.103 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png SHA256 9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13. Rotated image [243, 504], contour X [[0.0, 2.619047619047619, 7.0], [234.0, 237.5425101214575, 241.0]] and Y [[0.0, 2.9411764705882355, 7.0], [496.0, 500.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 157.8mm, metal lip 0.85mm, body radius 9.3mm, camera top offset 7.2mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     },
     "screen_corner_radius_mm": {
-      "value": 6.7,
+      "value": 7.019,
       "confidence": "estimated",
-      "confidenceScore": 0.55,
-      "notes": "Original proportional front reconstruction; Image SHA256 aad669c397be5ca354e1a937f6e943326155a771f3da857af51cf34a9508d82b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/199.png. Scale uses official body 77.51 x 162.28 mm. Corner radius 8.0mm corresponds to outer bend ~0.103 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png SHA256 9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13. Rotated image [243, 504], contour X [[0.0, 2.619047619047619, 7.0], [234.0, 237.5425101214575, 241.0]] and Y [[0.0, 2.9411764705882355, 7.0], [496.0, 500.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 157.8mm, metal lip 0.85mm, body radius 9.3mm, camera top offset 7.2mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
+    },
+    "screen_width_mm": {
+      "value": 72.86580086580086,
+      "confidence": "estimated",
+      "confidenceScore": 0.6,
+      "notes": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png SHA256 9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13. Rotated image [243, 504], contour X [[0.0, 2.619047619047619, 7.0], [234.0, 237.5425101214575, 241.0]] and Y [[0.0, 2.9411764705882355, 7.0], [496.0, 500.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 157.8mm, metal lip 0.85mm, body radius 9.3mm, camera top offset 7.2mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending."
     }
   },
   "sources": [
@@ -141,5 +147,87 @@
     "类型": [
       "类型：OLED柔性直屏 分辨率：2772 x 1280 显示帧率：最高 144Hz 触控报点率：最高 480Hz 多场景峰值亮度：3500nits 全局DC调光* 专业原色屏｜多屏同色｜DCI-P3｜超动态显示｜HDR10+丨HDR Vivid｜Dolby Vision｜帧享超高清认证  | 湿手触控      *全局DC调光：屏幕全亮度区间下，默认支持单脉"
     ]
+  },
+  "frontLipReview": {
+    "version": "1.0.1",
+    "officialImage": {
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png",
+      "sha256": "9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13"
+    },
+    "outlineMeasurement": {
+      "imageIndex": 0,
+      "sha256": "9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13",
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png",
+      "imageSize": [
+        243,
+        504
+      ],
+      "xContours": [
+        [
+          0.0,
+          2.619047619047619,
+          7.0
+        ],
+        [
+          234.0,
+          237.5425101214575,
+          241.0
+        ]
+      ],
+      "yContours": [
+        [
+          0.0,
+          2.9411764705882355,
+          7.0
+        ],
+        [
+          496.0,
+          500.0
+        ]
+      ],
+      "activeWidthMm": 73.007,
+      "activeHeightMm": 157.763,
+      "frontLipMm": 0.842,
+      "cameraTopOffsetMm": 7.229,
+      "bodyRadiusMm": 9.344,
+      "method": "Alpha>=50 contour clusters, separate axes calibrated against official body; illustration and AA not CAD; estimates only"
+    },
+    "method": "Front-layer correction from this device's official front outline https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/115.png SHA256 9403d1dc88f52d9b4b1bfdc4b938c4e5de4a004a875185ef2d09b37bc295cb13. Rotated image [243, 504], contour X [[0.0, 2.619047619047619, 7.0], [234.0, 237.5425101214575, 241.0]] and Y [[0.0, 2.9411764705882355, 7.0], [496.0, 500.0]]; calibrate body axes separately, inspect raster AA, preserve declared main pixel aspect. Rounded estimated active height 157.8mm, metal lip 0.85mm, body radius 9.3mm, camera top offset 7.2mm. Circle fit on outer corner is an illustration estimate, not CAD or statistical metrology. Black mask and metal must be separate. Actual Android revised resource review pending. C2 blackMaskWidth_mm=1.4: constant outward offset of active W/H and inner radius, based on this device official middle-to-inner contour; remaining body front surface is metal and may differ in X/Y width. Do not resize activity to force equal metal width; active dimensions unchanged from reviewed per-device outline. Numerical mask width estimated, not manufacturer CAD.",
+    "previousGeometry": {
+      "width_mm": 77.51,
+      "height_mm": 162.28,
+      "thickness_mm": 8.25,
+      "screen_width_mm": 73.31832611832611,
+      "screen_height_mm": 158.78,
+      "corner_radius_mm": 8.0,
+      "screen_corner_radius_mm": 6.7,
+      "frontDetails": {
+        "camera": {
+          "x_mm": 0,
+          "y_mm": 76.34,
+          "radius_mm": 1.18
+        },
+        "buttons": [
+          {
+            "side": "right",
+            "y_mm": 42.193,
+            "length_mm": 15,
+            "depth_mm": 0.35
+          },
+          {
+            "side": "right",
+            "y_mm": 16.228,
+            "length_mm": 7.5,
+            "depth_mm": 0.35
+          }
+        ],
+        "ports": [],
+        "frameCurve_mm": 0.65,
+        "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 aad669c397be5ca354e1a937f6e943326155a771f3da857af51cf34a9508d82b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/Xiaomi-17T-Pro_122/images/199.png. Scale uses official body 77.51 x 162.28 mm. Corner radius 8.0mm corresponds to outer bend ~0.103 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      }
+    },
+    "newAndroidReview": "NOT_RUN",
+    "revision": "C2",
+    "blackMaskWidthMm": 1.4
   }
 }

@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "id": "xiaomi-15",
   "name": "Xiaomi 15 · 正面外观重建",
-  "modelVersion": "1.0.1",
+  "modelVersion": "1.0.2",
   "states": [
     "portrait"
   ],
   "defaultState": "portrait",
-  "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。 1.0.1补入官方定制版20背板色×亮银/亮黑PVD高亮中框40组合（全48配色），定制版官网独立规格8.08mm；颜色反射仍为原创估计。",
+  "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。 1.0.1补入官方定制版20背板色×亮银/亮黑PVD高亮中框40组合（全48配色），定制版官网独立规格8.08mm；颜色反射仍为原创估计。 1.0.2按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
   "defaultColorwayId": "color-1",
   "colors": [
     {
@@ -25,9 +25,14 @@
           "srgb": "#B7B6D5",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-2",
@@ -44,9 +49,14 @@
           "srgb": "#C4D1BB",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-3",
@@ -63,9 +73,14 @@
           "srgb": "#292D30",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#292D30",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-4",
@@ -82,9 +97,14 @@
           "srgb": "#E4E4DF",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-5",
@@ -101,9 +121,14 @@
           "srgb": "#CED0D0",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-6",
@@ -120,9 +145,14 @@
           "srgb": "#DADBD9",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-7",
@@ -139,9 +169,14 @@
           "srgb": "#96948F",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "color-8",
@@ -158,9 +193,14 @@
           "srgb": "#D96836",
           "metallic": 0,
           "roughness": 0.42
+        },
+        "front_lip_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos. Front lip is a separate original estimated metal region; color follows frame, not black screen mask."
     },
     {
       "id": "custom-lavender-purple-bright-silver",
@@ -177,9 +217,14 @@
           "srgb": "#CBB2D8",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 薰衣草紫 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 薰衣草紫 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "薰衣草紫",
       "officialFrameColor": "亮银色"
@@ -199,9 +244,14 @@
           "srgb": "#CBB2D8",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 薰衣草紫 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 薰衣草紫 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "薰衣草紫",
       "officialFrameColor": "亮黑色"
@@ -221,9 +271,14 @@
           "srgb": "#B8B8B5",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 大地灰 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 大地灰 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "大地灰",
       "officialFrameColor": "亮银色"
@@ -243,9 +298,14 @@
           "srgb": "#B8B8B5",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 大地灰 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 大地灰 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "大地灰",
       "officialFrameColor": "亮黑色"
@@ -265,9 +325,14 @@
           "srgb": "#B5C9DB",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 奶油蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 奶油蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "奶油蓝",
       "officialFrameColor": "亮银色"
@@ -287,9 +352,14 @@
           "srgb": "#B5C9DB",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 奶油蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 奶油蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "奶油蓝",
       "officialFrameColor": "亮黑色"
@@ -309,9 +379,14 @@
           "srgb": "#C6C0B6",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 卡其色 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 卡其色 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "卡其色",
       "officialFrameColor": "亮银色"
@@ -331,9 +406,14 @@
           "srgb": "#C6C0B6",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 卡其色 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 卡其色 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "卡其色",
       "officialFrameColor": "亮黑色"
@@ -353,9 +433,14 @@
           "srgb": "#BCDBCF",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 糖果绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 糖果绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "糖果绿",
       "officialFrameColor": "亮银色"
@@ -375,9 +460,14 @@
           "srgb": "#BCDBCF",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 糖果绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 糖果绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "糖果绿",
       "officialFrameColor": "亮黑色"
@@ -397,9 +487,14 @@
           "srgb": "#E1DF89",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 嫩芽黄 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 嫩芽黄 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "嫩芽黄",
       "officialFrameColor": "亮银色"
@@ -419,9 +514,14 @@
           "srgb": "#E1DF89",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 嫩芽黄 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 嫩芽黄 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "嫩芽黄",
       "officialFrameColor": "亮黑色"
@@ -441,9 +541,14 @@
           "srgb": "#D6D7D4",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 杏仁奶白 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 杏仁奶白 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "杏仁奶白",
       "officialFrameColor": "亮银色"
@@ -463,9 +568,14 @@
           "srgb": "#D6D7D4",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 杏仁奶白 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 杏仁奶白 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "杏仁奶白",
       "officialFrameColor": "亮黑色"
@@ -485,9 +595,14 @@
           "srgb": "#284FD6",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 宝蓝色 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 宝蓝色 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "宝蓝色",
       "officialFrameColor": "亮银色"
@@ -507,9 +622,14 @@
           "srgb": "#284FD6",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 宝蓝色 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 宝蓝色 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "宝蓝色",
       "officialFrameColor": "亮黑色"
@@ -529,9 +649,14 @@
           "srgb": "#D62968",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 荧光红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 荧光红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "荧光红",
       "officialFrameColor": "亮银色"
@@ -551,9 +676,14 @@
           "srgb": "#D62968",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 荧光红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 荧光红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "荧光红",
       "officialFrameColor": "亮黑色"
@@ -573,9 +703,14 @@
           "srgb": "#F1CB51",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 奶油黄 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 奶油黄 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "奶油黄",
       "officialFrameColor": "亮银色"
@@ -595,9 +730,14 @@
           "srgb": "#F1CB51",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 奶油黄 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 奶油黄 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "奶油黄",
       "officialFrameColor": "亮黑色"
@@ -617,9 +757,14 @@
           "srgb": "#0CA991",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 孔雀绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 孔雀绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "孔雀绿",
       "officialFrameColor": "亮银色"
@@ -639,9 +784,14 @@
           "srgb": "#0CA991",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 孔雀绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 孔雀绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "孔雀绿",
       "officialFrameColor": "亮黑色"
@@ -661,9 +811,14 @@
           "srgb": "#81D0D4",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 冰晶蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 冰晶蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "冰晶蓝",
       "officialFrameColor": "亮银色"
@@ -683,9 +838,14 @@
           "srgb": "#81D0D4",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 冰晶蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 冰晶蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "冰晶蓝",
       "officialFrameColor": "亮黑色"
@@ -705,9 +865,14 @@
           "srgb": "#D7B3C3",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 树莓粉 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 树莓粉 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "树莓粉",
       "officialFrameColor": "亮银色"
@@ -727,9 +892,14 @@
           "srgb": "#D7B3C3",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 树莓粉 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 树莓粉 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "树莓粉",
       "officialFrameColor": "亮黑色"
@@ -749,9 +919,14 @@
           "srgb": "#9CAE50",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 牛油果绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 牛油果绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "牛油果绿",
       "officialFrameColor": "亮银色"
@@ -771,9 +946,14 @@
           "srgb": "#9CAE50",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 牛油果绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 牛油果绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "牛油果绿",
       "officialFrameColor": "亮黑色"
@@ -793,9 +973,14 @@
           "srgb": "#9D1848",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 胭脂红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 胭脂红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "胭脂红",
       "officialFrameColor": "亮银色"
@@ -815,9 +1000,14 @@
           "srgb": "#9D1848",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 胭脂红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 胭脂红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "胭脂红",
       "officialFrameColor": "亮黑色"
@@ -837,9 +1027,14 @@
           "srgb": "#087B63",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 冷杉绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 冷杉绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "冷杉绿",
       "officialFrameColor": "亮银色"
@@ -859,9 +1054,14 @@
           "srgb": "#087B63",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 冷杉绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 冷杉绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "冷杉绿",
       "officialFrameColor": "亮黑色"
@@ -881,9 +1081,14 @@
           "srgb": "#B9231E",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 宝石红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 宝石红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "宝石红",
       "officialFrameColor": "亮银色"
@@ -903,9 +1108,14 @@
           "srgb": "#B9231E",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 宝石红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 宝石红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "宝石红",
       "officialFrameColor": "亮黑色"
@@ -925,9 +1135,14 @@
           "srgb": "#301C99",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 龙胆蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 龙胆蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "龙胆蓝",
       "officialFrameColor": "亮银色"
@@ -947,9 +1162,14 @@
           "srgb": "#301C99",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 龙胆蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 龙胆蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "龙胆蓝",
       "officialFrameColor": "亮黑色"
@@ -969,9 +1189,14 @@
           "srgb": "#EE681C",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 珊瑚橙 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 珊瑚橙 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "珊瑚橙",
       "officialFrameColor": "亮银色"
@@ -991,9 +1216,14 @@
           "srgb": "#EE681C",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 珊瑚橙 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 珊瑚橙 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "珊瑚橙",
       "officialFrameColor": "亮黑色"
@@ -1013,9 +1243,14 @@
           "srgb": "#9D4CCA",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 海葵紫 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 海葵紫 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "海葵紫",
       "officialFrameColor": "亮银色"
@@ -1035,9 +1270,14 @@
           "srgb": "#9D4CCA",
           "metallic": 0,
           "roughness": 0.36
+        },
+        "front_lip_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.75,
+          "roughness": 0.38
         }
       },
-      "notes": "Official custom-edition back color 海葵紫 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "notes": "Official custom-edition back color 海葵紫 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced. Front lip is a separate original estimated metal region; color follows frame, not black screen mask.",
       "edition": "custom",
       "officialBackColor": "海葵紫",
       "officialFrameColor": "亮黑色"

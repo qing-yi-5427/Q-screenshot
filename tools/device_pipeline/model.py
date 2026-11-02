@@ -140,6 +140,15 @@ def validate_profile(p):
                 raise ValueError(f'{state}: geometry/manifest {key} mismatch')
         if abs(manifest['screenAspectRatio'] - sw/sh) > 1e-6:
             raise ValueError('Screen aspect does not match geometry')
+        details=g.get('frontDetails',{})
+        for detail_key in ('frontLip_mm','blackBezelInset_mm','blackMaskWidth_mm'):
+            if detail_key in details:
+                v=details[detail_key]
+                if type(v) not in (int,float) or not math.isfinite(v) or v<0:
+                    raise ValueError('Invalid front layer width')
+        mask=details.get('blackMaskWidth_mm')
+        if mask is not None and (mask<=0 or sw+2*mask>=w-.2 or sh+2*mask>=h-.2):
+            raise ValueError('Black mask offset must leave positive front metal lip')
         if manifest['modelPath'] != f"devices/{p['deviceId']}/{state}.glb":
             raise ValueError('Unsafe or mismatched modelPath')
         body_radius=p['geometry'].get('outer_corner_radius_mm',g.get('corner_radius_mm'))

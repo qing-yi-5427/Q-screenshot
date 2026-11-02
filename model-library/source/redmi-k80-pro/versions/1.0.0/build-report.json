@@ -1,0 +1,17 @@
+{
+  "status": "contract_passed",
+  "models": [
+    {
+      "modelPath": "devices/redmi-k80-pro/portrait.glb",
+      "sha256": "69f3358b2f7cd217c93b02bb7625ab750e7450ceac685d1d439564cf13e6c312",
+      "acceptedSha256": null,
+      "byteIdentical": false
+    }
+  ],
+  "profileSha256": "0f05b697492a0013a9684a7e88c3877f099e30d3034c57de372c95c95cbc6776",
+  "blenderVersion": "Blender 4.5.0",
+  "khronos": "PASS",
+  "scope": "Primary model per state; derived denim excluded",
+  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "androidFilament": "NOT_RUN"
+}

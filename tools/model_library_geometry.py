@@ -16,7 +16,22 @@ def build(profile,target,export=True):
     frame_curve=details.get('frameCurve_mm',0)*.001
     shape('chassis_main',w,h,d,r,(0,0,0),metal,frame_curve or .00035)
     shape('back_panel_main',w-.0004,h-.0004,.0002,r-.0002,(0,0,-d/2),back,.00004)
-    shape('screen_bezel',w-.0004,h-.0004,.0001,r-.0002,(0,0,d/2),dark,.00002)
+    lip=details.get('frontLip_mm',0)*.001
+    inset=details.get('blackBezelInset_mm',details.get('frontLip_mm',0))*.001
+    mask=details.get('blackMaskWidth_mm')
+    if lip or mask is not None:
+        # Opt-in only: preserve every old-profile byte path unless a reviewed profile
+        # explicitly requests the front metal lip / black mask separation.
+        front_metal=material('front_lip_estimated',(.65,.65,.65),.75,.38)
+        shape('front_metal_lip',w-.0002,h-.0002,.00005,r-.0001,(0,0,d/2+.000075),front_metal,.00001)
+        if mask is not None:
+            mask=mask*.001
+            mw,mh,mr=sw+2*mask,sh+2*mask,sr+mask
+            if mask<=0 or mw>=w-.0002 or mh>=h-.0002:raise ValueError('Black mask offset must leave positive front metal lip')
+        else:mw,mh,mr=w-2*inset,h-2*inset,max(.0002,r-inset)
+        shape('screen_bezel',mw,mh,.00005,mr,(0,0,d/2+.00015),dark,.00001)
+    else:
+        shape('screen_bezel',w-.0004,h-.0004,.0001,r-.0002,(0,0,d/2),dark,.00002)
     screen('screen_main_content',sw,sh,sr,d/2+.00025,content)
     camera=details.get('camera')
     if camera:

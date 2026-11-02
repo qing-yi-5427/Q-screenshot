@@ -55,10 +55,18 @@ def pack(asset_root, device_id, meta, output):
     if len(data)>64*1024**2: raise ValueError('Compressed package limit')
     return {'id':device_id,'name':meta['name'],'states':meta['states'],'defaultState':meta['defaultState'],'notes':meta['notes'],'modelVersion':meta['modelVersion'],'minAppVersionCode':8000,'packageUrl':'https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11/'+output.name,'packageSha256':sha(data),'packageBytes':len(data),'previewUrl':None,'downloadable':True,'verificationStatus':device.get('verificationStatus','partial_reconstruction')}
 def main():
-    parser=argparse.ArgumentParser(); parser.add_argument('--device',required=True); parser.add_argument('--asset-root',type=Path,default=ROOT/'app/src/main/assets'); parser.add_argument('--metadata',type=Path); parser.add_argument('--output',type=Path); args=parser.parse_args()
+    parser=argparse.ArgumentParser(); parser.add_argument('--device',required=True); parser.add_argument('--asset-root',type=Path,default=ROOT/'app/src/main/assets'); parser.add_argument('--metadata',type=Path); parser.add_argument('--output',type=Path); parser.add_argument('--entry-output',type=Path,help='Save verified catalog descriptor; requires --output'); parser.add_argument('--release-tag',default='models-2026-11',help='Immutable GitHub release tag for this package'); args=parser.parse_args()
+    if args.entry_output and not args.output: parser.error('--entry-output requires --output')
+    if not re.fullmatch(r'[a-zA-Z0-9._-]+',args.release_tag): parser.error('Invalid release tag')
     folder=args.asset_root/'devices'/args.device
     device=json.loads((folder/'device.json').read_text())
     meta=json.loads(args.metadata.read_text()) if args.metadata else metadata(device,json.loads((folder/'colorways.json').read_text()))
     target=ROOT/'model-library'/('builtin' if args.device=='xiaomi-18-fold' else 'source')/args.device/'package.json'; target.parent.mkdir(parents=True,exist_ok=True); target.write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
-    if args.output: print(json.dumps(pack(args.asset_root,args.device,meta,args.output),ensure_ascii=False,indent=2))
+    if args.output:
+        entry=pack(args.asset_root,args.device,meta,args.output)
+        entry['packageUrl']=entry['packageUrl'].replace('/models-2026-11/','/'+args.release_tag+'/')
+        if args.entry_output:
+            args.entry_output.parent.mkdir(parents=True,exist_ok=True)
+            args.entry_output.write_text(json.dumps(entry,ensure_ascii=False,indent=2)+'\n')
+        print(json.dumps(entry,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

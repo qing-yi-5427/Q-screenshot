@@ -3,15 +3,15 @@
   "models": [
     {
       "modelPath": "devices/redmi-k90/portrait.glb",
-      "sha256": "c3f4b402c084f95d431de51b0e1535379005add0ff5e564e909c0dd1229c3fd4",
+      "sha256": "ea87f6ad33cb3a7ab6d084965137145f149fc169ca597b16334a1c0e1a581287",
       "acceptedSha256": null,
       "byteIdentical": false
     }
   ],
-  "profileSha256": "5ab386668ad34555853f610b905ddb98a34fef3c6d4d71021908e23fc7c8cd32",
+  "profileSha256": "301a7ff5743725ad11712b81a3f95c3f4c3d248afc9d0e7fbaf3050f4248bd03",
   "blenderVersion": "Blender 4.5.0",
   "khronos": "PASS",
   "scope": "Primary model per state; derived denim excluded",
-  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "visualReview": "NOT_RUN",
   "androidFilament": "NOT_RUN"
 }

@@ -3,15 +3,15 @@
   "models": [
     {
       "modelPath": "devices/redmi-k100-pro-max/portrait.glb",
-      "sha256": "d16a791c983241070c8e18ef3428c52bdb5dadc54127f0ae64aa42a57ffac31a",
+      "sha256": "4e98767ab3d2c97751eb8ca575d68a359875495dcd047469034f01b51e42be31",
       "acceptedSha256": null,
       "byteIdentical": false
     }
   ],
-  "profileSha256": "68eb9a1fe515a4c0230341555a91f09dc3cb2f20d0244bff06a86b79faf9d042",
+  "profileSha256": "38deb82e024896cc8fb1c7d6e3a572a928d2ec405159736012434559c69ba28f",
   "blenderVersion": "Blender 4.5.0",
   "khronos": "PASS",
   "scope": "Primary model per state; derived denim excluded",
-  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "visualReview": "NOT_RUN",
   "androidFilament": "NOT_RUN"
 }

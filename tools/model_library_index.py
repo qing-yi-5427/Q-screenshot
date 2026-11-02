@@ -3,11 +3,11 @@ import argparse,json,hashlib,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def main():
- p=argparse.ArgumentParser();p.add_argument('--entries',type=Path,default=ROOT/'.cache/model-library-entries');p.add_argument('--packages',type=Path,default=ROOT/'deliverables/model-library');p.add_argument('--output',type=Path,default=ROOT/'model-library/catalog.json');a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--entries',type=Path,default=ROOT/'.cache/model-library-entries');p.add_argument('--packages',type=Path,default=ROOT/'deliverables/model-library');p.add_argument('--fallback-packages',action='append',type=Path,default=[],help='Read-only previous release directories for unchanged package URLs');p.add_argument('--output',type=Path,default=ROOT/'model-library/catalog.json');a=p.parse_args()
  meta=json.loads((ROOT/'model-library/builtin/xiaomi-18-fold/package.json').read_text())
  devices=[dict(id=meta['id'],name=meta['name'],states=meta['states'],defaultState=meta['defaultState'],notes=meta['notes'],modelVersion=meta['modelVersion'],minAppVersionCode=8000,builtin=True,downloadable=False,packageUrl=None,packageSha256=None,packageBytes=0,previewUrl=None,verificationStatus='partial_reconstruction')]
  for path in sorted(a.entries.glob('*.json')):
-  entry=json.loads(path.read_text());package=a.packages/entry['packageUrl'].rsplit('/',1)[1];data=package.read_bytes()
+  entry=json.loads(path.read_text());filename=entry['packageUrl'].rsplit('/',1)[1];package=next((folder/filename for folder in [a.packages,*a.fallback_packages] if (folder/filename).is_file()),a.packages/filename);data=package.read_bytes()
   if len(data)!=entry['packageBytes'] or hashlib.sha256(data).hexdigest()!=entry['packageSha256']:raise ValueError('Index/package mismatch '+str(package))
   with zipfile.ZipFile(package) as z:
    meta=json.loads(z.read('package.json'))

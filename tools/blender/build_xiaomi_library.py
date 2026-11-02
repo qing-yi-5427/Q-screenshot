@@ -63,14 +63,24 @@ def build(profile, target):
     w,h,d,r,sw,sh,sr = [g[k]*.001 for k in
         ('width_mm','height_mm','thickness_mm','corner_radius_mm',
          'screen_width_mm','screen_height_mm','screen_corner_radius_mm')]
+    inset = details.get('blackBezelInset_mm', 0)*.001
+    mask = details.get('blackMaskWidth_mm')
+    if mask is not None:
+        mask *= .001
+        outer_w, outer_h, outer_r = sw+2*mask, sh+2*mask, sr+mask
+    else:
+        outer_w, outer_h = (w-2*inset, h-2*inset) if inset else (w-.0004,h-.0004)
+        outer_r = r-inset if inset else r-.0002
+    if (inset or mask is not None) and (curve > .00014 or outer_w <= sw or outer_h <= sh or outer_w >= w or outer_h >= h):
+        raise ValueError('Reviewed microcurve mask must stay above metal lip and outside content')
     rings, vertices = 12, []
     for layer in range(rings + 1):
         t = layer / rings
         # Equal-depth perimeter: curve away from the planar screenshot along
         # all four edges; the screen's authored UV contract stays unchanged.
-        rw = sw + (w - .0004 - sw)*t
-        rh = sh + (h - .0004 - sh)*t
-        rr = sr + (r - .0002 - sr)*t
+        rw = sw + (outer_w - sw)*t
+        rh = sh + (outer_h - sh)*t
+        rr = sr + (outer_r - sr)*t
         z = d/2 + .00025 - curve*t*t
         vertices.extend(cv((x,y,z)) for x,y in outline(rw,rh,rr,32))
     count = len(vertices)//(rings+1)

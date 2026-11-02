@@ -1,0 +1,17 @@
+{
+  "status": "contract_passed",
+  "models": [
+    {
+      "modelPath": "devices/redmi-k90-max/portrait.glb",
+      "sha256": "8899d3f1b4cb4022de42289af69d647c9246a867d966049cc34fe4a16551b692",
+      "acceptedSha256": null,
+      "byteIdentical": false
+    }
+  ],
+  "profileSha256": "fd8921dde62d20e35842a154ffa919f99de0de82fd83b6cc76d46dd22a96547a",
+  "blenderVersion": "Blender 4.5.0",
+  "khronos": "PASS",
+  "scope": "Primary model per state; derived denim excluded",
+  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front,left/right30deg,side85deg; not Android",
+  "androidFilament": "NOT_RUN"
+}

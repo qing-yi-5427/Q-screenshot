@@ -26,3 +26,25 @@ K90 Pro Max原验收资源以原字节导出：主GLB SHA256 `4d4422eed3129c0774
 新增资源经过隔离Blender构建、既有screen/UV/节点/尺寸合同检查与Khronos验证。另做四视角Blender诊断渲染，不称为Android截图或逐机Android验收。Android实际加载/替换截图/版本锁检查由运行时端执行；未测项目在说明中保留。
 
 完整性复核另补 K90 Max：独立官网 `/prod/redmi-k90-max` 与专属 specs `entry-1781696320547.js` 有匹配正式名、天玑9500、227g与三色；不得与骁龙8至尊版的K90至尊版混同。官方Max后部风扇格栅不同，本轮前向资源省略背部风扇。单独查看Max官网正面与侧面图后估计10.8mm外圆角、9.25mm屏角、右侧按键与0.55mm框倒角；这些数值均非官方测量。取得正文没有明确后盖/中框基材，`backMaterial=unknown_not_published_in_retrieved_text`，不沿用Ultra材料声明。补项同样通过合同/Khronos与四视角Blender检查，Android逐机仍未验。
+
+## r3 前唇与等宽黑mask修正
+
+Android实际2048导出揭示初版共享前面黑面覆盖body→active整个间隙，金属前唇几乎只剩细线；“没有穿模”不足以通过外观验收。r3保留9款新增REDMI原active尺寸与竖向像素比，依据各机官方图分别估计黑mask宽，使用 `maskOuterWidth=activeWidth+2m`、`maskOuterHeight=activeHeight+2m`、`maskOuterRadius=activeRadius+m`；剩余body外缘是独立前唇材质，横纵金属宽可不同。前唇金属感、色值和粗糙度是原创PBR估计，不能将未知基材升为官方事实。
+
+| 机型 | 黑mask粗估mm | 主要依据/局限 |
+|---|---:|---|
+| K80 | 1.60 | 本机front-oblique，透视大，约±0.4mm判断量级；与Pro同公开正面尺寸/像素，不伪造几何差异 |
+| K80 Pro | 1.60 | 独立本机front-oblique，同样保留原有效区 |
+| K80 至尊版 | 1.10 | 本机正面手持图，局部高光前唇与黑带可分，壁纸暗部不适合精密分割 |
+| K90 | 1.20 | 官网711×600放大图，y500外轮廓x102..609=508px、左右黑带各8px、active约473px；顶黑约9px |
+| K90 Max | 1.10 | 本机711×560正面图，y300前唇236..239、黑240..242、内容244起，约246px宽 |
+| K90 至尊版 | 1.25 | 本机蓝色front局部，斜视/宣传图仍只支持粗估 |
+| K100 | 1.30 | 本机front triptych黑带像素与剩余前唇交叉判断；官方“1.3mm”指金属反包中框，不是黑mask官方数据 |
+| K100 Pro | 1.20 | 本机1452×753局部：黑x900..911约12px；自拍孔中心推定完整正面宽约776px，约1.17mm |
+| K100 Pro Max | 1.25 | 本机透视黑壁纸无法可靠分割active，保留6.9英寸/像素比推导active，只把mask宽作为视觉估计 |
+
+完整图片URL、SHA256、三轮廓线段、估计边界及前唇横纵余量见各机 `front-calibration.json`。K90放大图实测473/508×75.25≈70.06mm支持原70.0215mm active；早先误漏右金属边导致C1放大，以及随后未发C2缩小active的方案均丢弃。不要引用这些候选参数作为最终资源。
+
+先在Android实际点测K90/K100ProMax各正面与左右斜角。最终方法候选C3的黑带直边像素：K90左/右/顶/底13/13/13/13，K100ProMax13/13/14/14（约1px抗锯齿判断差），内容完整、金属分层可见。对应GLB与最终1.0.1逐字节相同；版本/SHA和实际看过的PNG台账在 `deliverables/model-library/android/r3-c3-independent-review.json`。其他最终资源的Android矩阵验证另记，不把此两款样本冒充全部型号精度通过。
+
+全部9款升1.0.1，旧1.0.0 ZIP保留、源profile/package/build报告在 `versions/1.0.0`。K90 Pro Max既有主/丹宁两GLB、1.2.0包和其SHA完全不变。复建用 `tools/rebuild_redmi_library.py`，默认新staging且明确拒绝重建原K90ProMax；最终候选集中 `deliverables/model-library-r3-final`，审核前不发布。

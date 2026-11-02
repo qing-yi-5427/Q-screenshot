@@ -1,0 +1,12 @@
+{
+  "referenceImageUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100-pro-max_67020/images/7.png",
+  "referenceSha256": "77f9429904a00079b6c852fb31b389cc4f5d0b83a5b727dbfe4614b217c86468",
+  "method": "Target official front/back/side artwork is perspective and black wallpaper makes active boundary ambiguous. Keep official6.9inch+1200/2608 nominal-derived73.2583×159.2146mm active. No published blackmask-mm verified;1.25mm is original visual estimate of narrow black rim, uncertainty~0.4mm. C1active enlargement/C2shrink discarded.",
+  "blackMaskWidth_mm": 1.25,
+  "frontLipDerivedXY_mm": [
+    1.090869863150992,
+    0.8876905025814921
+  ],
+  "confidence": "estimated_visual_reference",
+  "policy": "All official dimensions/pixel ratios retained; no shared arbitrary active enlargement; acceptedK90ProMax not rebuilt."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "contract_passed",
+  "models": [
+    {
+      "modelPath": "devices/redmi-k100/portrait.glb",
+      "sha256": "5cb255d9919ee72ea032c5ac98d89b27d31c85dcf55b603d639eaa9932131e06",
+      "acceptedSha256": null,
+      "byteIdentical": false
+    }
+  ],
+  "profileSha256": "6331c9d349bf966b928a6a22b5dba5a445cb0ee154d5e3f40d1193a3ee1928c0",
+  "blenderVersion": "Blender 4.5.0",
+  "khronos": "PASS",
+  "scope": "Primary model per state; derived denim excluded",
+  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "androidFilament": "NOT_RUN"
+}

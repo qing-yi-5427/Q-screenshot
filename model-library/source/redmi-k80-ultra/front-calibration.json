@@ -1,0 +1,12 @@
+{
+  "referenceImageUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/redmi-k80-ultra_602218/images/7173.png",
+  "referenceSha256": "4d6eacd2b1f849ccc98854ffc08972502cb3b6bc44f003d89a7d990df72044e1",
+  "method": "Official front handheld view: atrow1000, local highlighted trim approximatelyx757..762, innerdark boundary approximatelyx763..765 before colored wallpaper; targetfrontwidth about280px. Perspective/dark wallpaper limits exact segmentation; choose coarse1.1mm mask (uncertainty~0.35mm), preserving nominal-derived active area.",
+  "blackMaskWidth_mm": 1.1,
+  "frontLipDerivedXY_mm": [
+    1.5010627013164863,
+    1.689348287538516
+  ],
+  "confidence": "estimated_visual_reference",
+  "policy": "All official dimensions/pixel ratios retained; no shared arbitrary active enlargement; acceptedK90ProMax not rebuilt."
+}

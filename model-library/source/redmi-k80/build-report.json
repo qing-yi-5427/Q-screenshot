@@ -3,15 +3,15 @@
   "models": [
     {
       "modelPath": "devices/redmi-k80/portrait.glb",
-      "sha256": "7cf628da9b014595eeca884e491ade26574cc77518a0cee26a21bbbf57b6c35d",
+      "sha256": "a852e41a425f2c2395fc5f6416337ec35de5678cd0b4e5deaee27d6b494aeb89",
       "acceptedSha256": null,
       "byteIdentical": false
     }
   ],
-  "profileSha256": "6cb1be75ef67e9afdcae77f733eab4a3a8b5a6da57f058bd7b0e8420ab89dd01",
+  "profileSha256": "95eec70ec42d681c3209fcdb736784e6d9cd7a9a3a89bbb8bc7982f0013972b8",
   "blenderVersion": "Blender 4.5.0",
   "khronos": "PASS",
   "scope": "Primary model per state; derived denim excluded",
-  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "visualReview": "NOT_RUN",
   "androidFilament": "NOT_RUN"
 }
