@@ -81,6 +81,6 @@ fun fitCamera(width:Float,height:Float,depth:Float,m:FloatArray,aspect:Float,fov
 
 /** Existing angle actions fit a front-facing screenshot, without changing its canvas or source. */
 fun anglePreset(s:ProjectState,name:String):ProjectState {
- val pose=when(name){"正面"->Quaternion();"左前"->Quaternion.euler(-30f,12f,-6f);"右前"->Quaternion.euler(30f,12f,6f);"俯视"->Quaternion.euler(-12f,35f,-5f);else->Quaternion.euler(-18f,15f,90f)}
+ val pose=when(name){"正面"->Quaternion();"左前"->Quaternion.euler(-30f,-18f,-6f);"右前"->Quaternion.euler(30f,-18f,6f);"俯视"->Quaternion.euler(-12f,35f,-5f);else->Quaternion.euler(-18f,15f,90f)}
  return s.copy(pose=pose,orthographic=name=="正面",reflection=if(name=="正面")0f else s.reflection,zoom=1f,offsetX=0f,offsetY=0f)
 }

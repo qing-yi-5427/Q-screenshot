@@ -4,7 +4,7 @@
 
 **[下载最新版 APK](https://github.com/qing-yi-5427/Q-screenshot/releases/latest/download/Q-screenshot.apk)** · [版本说明与历史下载](https://github.com/qing-yi-5427/Q-screenshot/releases)
 
-本地构建默认版本 **0.7.1**，发布版本以 [Releases](https://github.com/qing-yi-5427/Q-screenshot/releases) 为准。适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
+本地构建默认版本 **0.7.6**，发布版本以 [Releases](https://github.com/qing-yi-5427/Q-screenshot/releases) 为准。适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
 
 ## 实机界面
 
@@ -77,7 +77,7 @@ Kotlin、Jetpack Compose / Material 3、Google Filament 1.79.0 / gltfio；GLB �
 
 模型参考官方尺寸、屏幕比例与公开多角度图重建，**不是原厂 CAD**。局部圆角、铰链曲率、PBR 色值与粗糙度为估计，未做实物色号或反射率测量。模型以正面截图为目标，背部结构简化；冠军版联名图案与特殊后摄细节不复刻。厂商照片、Logo 和壁纸未作为模型纹理打包。
 
-0.7.0 的默认参数与外部分享流程已完成 31 项 Android 回归，并用不同 UID 的测试发送器和接收器验证实际 PNG 授权读取；0.7.1 仅更新公开名称与保存目录。实机界面与透明导出另经 Redmi 检查。尚未进行全面机型兼容、峰值性能、功耗或多图批量验证。
+0.7.0 的默认参数与外部分享流程已完成 31 项 Android 回归，并用不同 UID 的测试发送器和接收器验证实际 PNG 授权读取；0.7.1 仅更新公开名称与保存目录。实机界面与透明导出另经 Redmi 检查；0.7.2 针对 Xiaomi 18 Fold 外屏短高布局调整，并在该机检查菜单、默认参数及保存分享流程。尚未进行全面机型兼容、峰值性能、功耗或多图批量验证。
 
 ## 许可
 

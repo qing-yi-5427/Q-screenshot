@@ -42,6 +42,12 @@ class RenderController(private val context:Context, private val store:ProjectSto
  private var nativeSurface:Surface?=null
  private var textureView:TextureView?=null
  private var width=1;private var height=1
+ private val memoryManager=context.getSystemService(Context.ACTIVITY_SERVICE) as android.app.ActivityManager
+ private val lowMemory=memoryManager.isLowRamDevice||memoryManager.memoryClass<256
+ private val maxTextureSize=Texture.getMaxTextureSize(engine,Texture.Sampler.SAMPLER_2D)
+ var debugNativeSampling=false
+ var debugCustomResolve=false
+ var debugAllowSampling=false
  private var closeRequested=false;private var closed=false;private var paused=false;private var frames=0;private var scheduled=false
  private var state=ProjectState();private var applied:ProjectState?=null
  private var screenAspect=1f;private var bodyWidth=.084f;private var bodyHeight=.12f;private var bodyDepth=.0108f
@@ -90,7 +96,7 @@ class RenderController(private val context:Context, private val store:ProjectSto
   renderer.clearOptions=Renderer.ClearOptions().apply{clear=true;discard=true;setClearColor(doubleArrayOf(0.0,0.0,0.0,0.0))}
   applyState(state)
  }
- private fun configureView(v:com.google.android.filament.View){v.blendMode=com.google.android.filament.View.BlendMode.TRANSLUCENT;v.colorGrading=colorGrading;v.antiAliasing=com.google.android.filament.View.AntiAliasing.FXAA;v.isPostProcessingEnabled=true;v.isShadowingEnabled=true;v.shadowType=com.google.android.filament.View.ShadowType.VSM;v.vsmShadowOptions=com.google.android.filament.View.VsmShadowOptions().apply{mipmapping=true;anisotropy=1;lightBleedReduction=.1f};v.sampleCount=4}
+ private fun configureView(v:com.google.android.filament.View,supersampled:Boolean=false){v.blendMode=com.google.android.filament.View.BlendMode.TRANSLUCENT;v.colorGrading=colorGrading;v.antiAliasing=if(supersampled)com.google.android.filament.View.AntiAliasing.NONE else com.google.android.filament.View.AntiAliasing.FXAA;v.isPostProcessingEnabled=true;v.isShadowingEnabled=true;v.shadowType=com.google.android.filament.View.ShadowType.VSM;v.vsmShadowOptions=com.google.android.filament.View.VsmShadowOptions().apply{mipmapping=true;anisotropy=1;lightBleedReduction=.1f};v.multiSampleAntiAliasingOptions=com.google.android.filament.View.MultiSampleAntiAliasingOptions().apply{enabled=true;sampleCount=4;customResolve=dev.qingframe.BuildConfig.DEBUG&&debugCustomResolve}}
  private fun checkOwner(){check(Looper.myLooper()==Looper.getMainLooper()){ "Filament owner thread violation" }}
  private fun readAsset(path:String)=context.assets.open(path).use{val bytes=it.readBytes();ByteBuffer.allocateDirect(bytes.size).order(ByteOrder.nativeOrder()).put(bytes).apply{flip()}}
  private fun loadMaterial(name:String):Material {val data=readAsset("materials/$name.filamat");return Material.Builder().payload(data,data.remaining()).build(engine)}
@@ -100,7 +106,17 @@ class RenderController(private val context:Context, private val store:ProjectSto
   override fun onSurfaceTextureDestroyed(t:android.graphics.SurfaceTexture):Boolean {swapChain?.let{engine.destroySwapChain(it)};swapChain=null;engine.flushAndWait();nativeSurface?.release();nativeSurface=null;return true}
   override fun onSurfaceTextureUpdated(t:android.graphics.SurfaceTexture){}
  };if(target.isAvailable){target.surfaceTexture?.let{target.surfaceTextureListener?.onSurfaceTextureAvailable(it,target.width,target.height)}} }
- private fun resize(w:Int,h:Int){width=max(1,w);height=max(1,h);view.viewport=Viewport(0,0,width,height);updateScene(state,width,height);requestFrames()}
+ private fun resolution(w:Int,h:Int,preview:Boolean):RenderResolution {
+  val pressure=android.app.ActivityManager.MemoryInfo().also{memoryManager.getMemoryInfo(it)}.lowMemory
+  return renderResolution(w,h,preview,((lowMemory||pressure)&&!(dev.qingframe.BuildConfig.DEBUG&&debugAllowSampling))||(dev.qingframe.BuildConfig.DEBUG&&debugNativeSampling),maxTextureSize)
+ }
+ private fun resize(w:Int,h:Int){
+  val plan=resolution(max(1,w),max(1,h),true);width=plan.width;height=plan.height
+  textureView?.surfaceTexture?.setDefaultBufferSize(width,height)
+  configureView(view,plan.exceeds(w,h));view.viewport=Viewport(0,0,width,height)
+  if(dev.qingframe.BuildConfig.DEBUG)Log.i("QF_RENDER","AA preview ${w}x$h -> ${width}x$height msaa=4 fxaa=${!plan.exceeds(w,h)} lowMemory=$lowMemory")
+  updateScene(state,width,height);requestFrames()
+ }
  fun applyState(new:ProjectState){checkOwner();if(closed)return;if(exporting){pendingState=new;return};state=new.safe();try {
   val modelChanged=applied?.deviceId!=state.deviceId || applied?.stateId!=state.stateId || (applied?.colorwayId=="denim")!=(state.colorwayId=="denim")
   if(modelChanged)loadModel(state)
@@ -202,6 +218,7 @@ class RenderController(private val context:Context, private val store:ProjectSto
  fun cancelExport(){exportCancel=true}
  fun export(snapshot:ProjectState,w:Int,h:Int,done:(Result<Bitmap>)->Unit){
   checkOwner();Log.i("QF_EXPORT","start ${w}x${h} ready=$ready");if(exporting){done(Result.failure(IllegalStateException("已有导出任务")));return};if(!ready){done(Result.failure(IllegalStateException(loadFailure?:"模型与截图仍在加载")));return};if(!validateOutput(w,h)){done(Result.failure(IllegalArgumentException("导出范围为 256–3840 像素")));return}
+  if(w>maxTextureSize||h>maxTextureSize){done(Result.failure(IllegalArgumentException("此设备支持的导出边长上限为 $maxTextureSize 像素")));return}
   val front=snapshot.safe();if(dev.qingframe.BuildConfig.DEBUG){val e=front.pose.euler();Log.i("QF_EXPORT","front yaw=${e[0]} pitch=${e[1]} roll=${e[2]} facing=${FrontRotation.facing(front)}")};exporting=true;exportCancel=false;state=front;applyExport(front,w,h,done)
  }
  private fun applyExport(snapshot:ProjectState,w:Int,h:Int,done:(Result<Bitmap>)->Unit){
@@ -221,32 +238,40 @@ class RenderController(private val context:Context, private val store:ProjectSto
  private fun performReadback(snapshot:ProjectState,w:Int,h:Int,done:(Result<Bitmap>)->Unit){
   Log.i("QF_EXPORT","performReadback ${w}x${h}")
   val start=System.nanoTime();val allocations=ExportResources()
+  val plan=resolution(w,h,false);val rw=plan.width;val rh=plan.height
+  Log.i("QF_EXPORT","AA target ${w}x$h -> ${rw}x$rh msaa=4 fxaa=${!plan.exceeds(w,h)} custom=$debugCustomResolve")
   val cleanup={allocations.close(engine);screenshotBuffer=null;finishExport()}
   try {
    if(exportCancel){cleanup();done(Result.failure(IllegalStateException("导出已取消")));return}
-   val color=Texture.Builder().width(w).height(h).levels(1).sampler(Texture.Sampler.SAMPLER_2D).format(Texture.InternalFormat.RGBA8).usage(Texture.Usage.COLOR_ATTACHMENT or Texture.Usage.BLIT_SRC or Texture.Usage.SAMPLEABLE).build(engine).also{allocations.color=it;failAllocation(1)}
-   val depth=Texture.Builder().width(w).height(h).levels(1).format(Texture.InternalFormat.DEPTH24).usage(Texture.Usage.DEPTH_ATTACHMENT).build(engine).also{allocations.depth=it;failAllocation(2)}
+   val color=Texture.Builder().width(rw).height(rh).levels(1).sampler(Texture.Sampler.SAMPLER_2D).format(Texture.InternalFormat.RGBA8).usage(Texture.Usage.COLOR_ATTACHMENT or Texture.Usage.BLIT_SRC or Texture.Usage.SAMPLEABLE).build(engine).also{allocations.color=it;failAllocation(1)}
+   val depth=Texture.Builder().width(rw).height(rh).levels(1).format(Texture.InternalFormat.DEPTH24).usage(Texture.Usage.DEPTH_ATTACHMENT).build(engine).also{allocations.depth=it;failAllocation(2)}
    val target=RenderTarget.Builder().texture(RenderTarget.AttachmentPoint.COLOR0,color).texture(RenderTarget.AttachmentPoint.DEPTH,depth).build(engine).also{allocations.target=it;failAllocation(3)}
    val exportView=engine.createView().also{allocations.view=it;failAllocation(4)}
-   exportView.scene=scene;exportView.camera=camera;configureView(exportView)
+   exportView.scene=scene;exportView.camera=camera;configureView(exportView,plan.exceeds(w,h))
    // Temporal display dithering can add 1/255 alpha to an empty RGBA canvas on
    // Adreno. A still PNG needs exact transparent pixels and stable color values.
    exportView.dithering=com.google.android.filament.View.Dithering.NONE
-   exportView.viewport=Viewport(0,0,w,h);exportView.renderTarget=target
-   updateScene(snapshot,w,h)
-   val buffer=ByteBuffer.allocateDirect(w*h*4).order(ByteOrder.nativeOrder());screenshotBuffer=buffer
+   exportView.viewport=Viewport(0,0,rw,rh);exportView.renderTarget=target
+   updateScene(snapshot,rw,rh)
+   val buffer=ByteBuffer.allocateDirect(rw*rh*4).order(ByteOrder.nativeOrder());screenshotBuffer=buffer
    repeat(2){renderer.renderStandaloneView(exportView);Log.i("QF_EXPORT","standalone frame $it submitted")}
-   renderer.readPixels(target,0,0,w,h,Texture.PixelBufferDescriptor(buffer,Texture.Format.RGBA,Texture.Type.UBYTE,1,0,0,0,handler,Runnable {
+   renderer.readPixels(target,0,0,rw,rh,Texture.PixelBufferDescriptor(buffer,Texture.Format.RGBA,Texture.Type.UBYTE,1,0,0,0,handler,Runnable {
     if(closed)return@Runnable
     val cancelled=exportCancel;cleanup()
     if(cancelled){done(Result.failure(IllegalStateException("导出已取消")));return@Runnable}
     io.execute{try{
-     buffer.rewind();val pixels=IntArray(w*h)
+     buffer.rewind();val pixels=IntArray(rw*rh)
      // Target readback is top-left RGBA, verified against preview / world-axis markers.
-     for(y in 0 until h)for(x in 0 until w){val r=buffer.get().toInt()and 255;val g=buffer.get().toInt()and 255;val b=buffer.get().toInt()and 255;val a=buffer.get().toInt()and 255;pixels[y*w+x]=unpremultiplyArgb(r,g,b,a)}
-     val result=Bitmap.createBitmap(w,h,Bitmap.Config.ARGB_8888);result.setPixels(pixels,0,w,0,0,w,h)
+     for(y in 0 until rh)for(x in 0 until rw){val r=buffer.get().toInt()and 255;val g=buffer.get().toInt()and 255;val b=buffer.get().toInt()and 255;val a=buffer.get().toInt()and 255;pixels[y*rw+x]=unpremultiplyArgb(r,g,b,a)}
+     val sampled=Bitmap.createBitmap(rw,rh,Bitmap.Config.ARGB_8888)
+     val result=try{
+      sampled.setPixels(pixels,0,rw,0,0,rw,rh)
+      // Android filters its premultiplied Bitmap, so transparent edges never acquire a matte.
+      if(plan.exceeds(w,h))Bitmap.createScaledBitmap(sampled,w,h,true)else sampled
+     }catch(e:Throwable){sampled.recycle();throw e}
+     if(result!==sampled)sampled.recycle()
      Log.i("QF_EXPORT","readback ${w}x${h} elapsedMs=${(System.nanoTime()-start)/1_000_000}")
-     handler.post{done(Result.success(result))}
+     handler.post{if(exportCancel||closed){result.recycle();done(Result.failure(IllegalStateException("导出已取消")))}else done(Result.success(result))}
     }catch(e:Throwable){handler.post{done(Result.failure(e))}}}
    }))
    Log.i("QF_EXPORT","readPixels submitted");engine.flush();Log.i("QF_EXPORT","async flush submitted")

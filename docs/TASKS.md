@@ -1,3 +1,37 @@
+# 0.7.6 蓝白分组 UI（完成，2026-11-02）
+
+- 按用户 iOS 设计指南重做控件层：中性背景/白分组/单蓝accent；矢量顶栏与五tab、按内容高度的分组Inspector、姿态图形tile、细轨圆thumb Slider、外置标签inset输入。保留传统/阔屏大布局及所有回调，不改Renderer/模型/材质/scene算法。
+- 最终26逻辑测试、构建、lint通过（0错12警告）；最终Android核心单项1/1通过15.955s。模拟器425×623/1.5字号/412×915完成，五tab/必要滚动scene不变、新Slider实拖+Undo恢复、保存弹框检查通过。关键导航/姿态/预览动作实际触区≥48dp、间隔8dp。
+- 最终蓝UI APK `deliverables/ui-polish/apk/Q-screenshot-ui-polish-debug.apk`，0.7.6/code7006，SHA256 `65fdcc54febe134c2dc7a9c6e67ffb10590a98c457c8c59d380f9c2cb70cfbdd`；最终截图在`final-emulator`，报告明确区分否决的绿色候选与UIAutomator大字空root重试。仅模拟器，无真机实测声明。
+- 正常草稿hash与默认存在性不变，模拟器尺寸/密度/字号/旋转已恢复读回，最后请求正常入口后停止读取/采图。未提交、推送或发布。
+
+# 0.7.5 按钮间距与手势优先变换（完成，2026-11-01）
+
+- 相邻按钮统一6dp布局间距：预设2×2、模型/配色、通用选项、顶栏、预览操作和底部类别；保持48dp触控、原有Material设计语言。大字截图按钮单行，不缩字体。
+- 变换默认仅手势提示/四预设/更多设置；五个精确调节、相机、清晰适配和重置收进同区展开内容。开关/切tab不改scene，预览手势、Renderer/材质/模型/构图/导出不改。
+- 构建/26逻辑测试/lint通过；最终Android核心单项1/1通过11.265s，真实展开滚达/状态不变/拖动pose变化。425及1.5字号点击bounds实测最小间隙6.18dp，相关目标均≥48dp；传统412×915上下布局短验通过，模拟器设置已恢复。截图与范围见忽略目录`deliverables/spacing-transform/REPORT.md`。
+- 最终0.7.5/code7005 APK `deliverables/spacing-transform/apk/Q-screenshot-gestures-debug.apk`，SHA256 `ead5d9b12c53bb0df1a854626aac7a8e2f44d4ae5dde205ff2407e85b2c25dfd`；真机已覆盖安装同hash。用户再次解锁后真机隔离补验通过：默认/更多/四预设间距、全项滚达、开关及tab/滚动scene不变、真实预览拖动pose改变，正常draft/default hash不变；timeout已恢复60000ms并读回，已回正常无test extras入口，此后不再采图/读取正常内容。未提交、推送或发布。
+
+# 0.7.4 阔屏并排工作台（完成，2026-11-01）
+
+- 完整窗口宽≥600dp，或宽≥400dp且高/宽≤1.65使用左预览/右约152dp独立滚动参数栏；传统长竖屏保持原布局。沿用现有Material设计语言，系统insets/不对称圆角动态避让，全屏仅改变UI。
+- 按用户最新要求移除横放预设入口，保留手动旋转与内屏横向构图；左前/右前改为适度仰视，真机确认底部中框可见。旧草稿、默认与Renderer/模型/材质/导出算法不重置、不改动。
+- 26逻辑测试、构建/lint通过；传统3项Android检查、候选宽屏3项通过，最终包真实侧栏触摸/状态不变/全屏返回单项复验通过。最终1.5字号单行导入与稳定横屏完整模型已目视；早期横屏截图为旋转过渡态，scene未变，未通过fit掩盖。
+- 真机隔离会话保存PNG/分享chooser返回、左右仰视与最终布局烟测完成，正常草稿/默认不变；timeout已恢复60000ms并读回，最终已回正常启动入口。模拟器设置亦全部恢复。
+- 最终APK位于忽略目录`deliverables/wide-workspace/apk/Q-screenshot-workspace-debug.apk`，0.7.4/code7004，SHA256 `e4f77609dac9c99e983fccb81a9529c74917595150262da86e6d85a081540e95`，已安装base.apk同hash。范围与候选/最终证据见本轮`REPORT.md`。无待测试项，未提交、推送或发布。
+
+# 0.7.3 边缘质量（2026-10-31）
+
+- MSAA4保留，受预算限制的最多1.5倍边长超采样，预览2MP/导出增加采样8MP，低内存/压力退回原尺寸；不改模型/材质/黑环/构图。
+- 最终a095 APK真机同态A/B、透明黑白合成、2160×3840、实际UI取消后同controller保存通过；24逻辑测试/lint通过。候选ad8单项Android质量回归通过，范围详见本轮简报。
+- 普通草稿/默认不变，超时已恢复60000并读回；交付位于忽略目录deliverables/edge-quality，未提交或发布。
+
+# 0.7.2 Xiaomi 18 Fold 短外屏（2026-10-31）
+
+- 实机1168×1712/440dpi（约425×623dp）短高响应式：收起态缩放移到变换，紧凑占位面板；只变viewport。
+- 用户手动安装0.7.2/code7002，installed SHA与交付一致；21逻辑测试与1项短高布局Android实测通过。真机五tab/滚动末项/默认保存/真实PNG保存/分享chooser返回完成，正常草稿与默认保留；timeout恢复60000ms并读回。
+- 证据与APK位于忽略目录 deliverables/fold-cover-fit；未发布本轮版本。
+
 # 0.7 默认参数与外部分享（2026-10-31）
 
 最终APK `deliverables/defaults-share/apk/qing-frame-defaults-share-debug.apk`；SHA`5722e868e9ec1c53e8f5c625eeaa9953f8751893643a79b4179671d315b9f21d`；runtime`2fe32482118281056af7707cf6f8f5a33d0c99bf`。
