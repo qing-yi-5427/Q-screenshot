@@ -68,7 +68,7 @@ class PipelineTests(unittest.TestCase):
             with self.assertRaises(ValueError):m.safe_output(path)
         with tempfile.TemporaryDirectory() as td:
             with self.assertRaises(ValueError):m.safe_output(td)
-            self.assertEqual(m.safe_output(Path(td)/'new'),Path(td)/'new')
+            self.assertEqual(m.safe_output(Path(td)/'new'),Path(td).resolve()/'new')
             link=Path(td)/'alias';link.symlink_to(m.ROOT/'app',target_is_directory=True)
             with self.assertRaises(ValueError):m.safe_output(link/'new')
 
@@ -112,6 +112,32 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('https://cdn.cnbj1.fds.api.mi-img.com/product-images/test_123/images/1.png',r.links(js,'https://www.mi.com/prod/test'))
         _,colors,_=r.extract('color:#fff; backgroundColor:#000','s',['test'])
         self.assertFalse(colors)
+
+    def test_adjacent_dimension_labels_have_exact_scopes(self):
+        samples = [
+            'Xiaomi Test 宽度：160mm（展开）80mm（闭合） 高度：160mm（展开）80mm（闭合） 厚度：5mm（展开）10mm（闭合）',
+            '<h1>Xiaomi Test</h1><div>Width:160mm(unfolded)80mm(folded)</div><div>Height:160mm(unfolded)80mm(folded)</div><div>Depth:5mm(unfolded)10mm(folded)</div>',
+        ]
+        expected = [('width_mm',160.0,'unfolded'),('width_mm',80.0,'folded'),
+                    ('height_mm',160.0,'unfolded'),('height_mm',80.0,'folded'),
+                    ('thickness_mm',5.0,'unfolded'),('thickness_mm',10.0,'folded')]
+        for text in samples:
+            with self.subTest(text=text):
+                rows,_,_=r.extract(text,'s',['Xiaomi Test'])
+                self.assertEqual([(x['field'],x['value'],x['state']) for x in rows],expected)
+                data={'deviceId':'test-phone','formalName':'Xiaomi Test',
+                      'sources':[{'sourceId':'s','identityMention':True,'mode':'live'}], 'candidates':rows}
+                selections={state+'.'+field:{'candidateIndices':[i],
+                    'identityEvidence':'Product heading checked','scopeEvidence':'Explicit state suffix'}
+                    for i,(field,_,state) in enumerate(expected)}
+                result=r.resolve(data,selections)
+                self.assertEqual(result['fields']['folded.width_mm']['value'],80.0)
+                self.assertTrue(all(x['conflictResolution'] is None for x in result['fields'].values()))
+
+    def test_equal_dimension_values_keep_separate_label_scopes(self):
+        rows,_,_=r.extract('Xiaomi Test Width:80mm Width:80mm(folded)','s',['Xiaomi Test'])
+        self.assertEqual([(x['field'],x['value'],x['state']) for x in rows],
+                         [('width_mm',80.0,None),('width_mm',80.0,'folded')])
 
     def test_image_wrong_mime_not_saved(self):
         from device_pipeline.images import download

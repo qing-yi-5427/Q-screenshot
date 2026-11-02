@@ -99,23 +99,42 @@ def extract(text, source_id, aliases, state=None, variant=None):
         'display_pixels': r'(?:分辨率|Resolution)\s*[：:"\s,]*([0-9]{3,4})\s*[×xX*]\s*([0-9]{3,4})',
     }
     candidates = []
+    candidate_positions = {}
     for field, pattern in patterns.items():
         for m in re.finditer(pattern, plain, re.I):
             value = [int(m[1]), int(m[2])] if field == 'display_pixels' else float(m[1])
+            candidate_positions[len(candidates)] = m.start()
             candidates.append(dict(field=field, value=value, sourceId=source_id,
                                    state=state, variant=variant, status='candidate',
                                    classification='unknown', identityMention=identity,
                                    evidence=plain[max(0, m.start()-60):m.end()+60]))
-    # Multi-value dimensions such as 163.8mm（展开）83.6mm（闭合）.
-    for field, label in [('width_mm','宽度|Width'),('height_mm','长度|高度|Height|Length'),('thickness_mm','厚度|Thickness|Depth')]:
-        for line in re.finditer(r'(?:'+label+r')[：:\s]+([^"\'<>;\n]{1,100})', plain, re.I):
-            parts=list(re.finditer(r'([0-9]+(?:\.[0-9]+)?)\s*(?:mm|毫米)\s*[（(](展开|闭合|合拢|folded|unfolded)[）)]',line[1],re.I))
-            if parts:
-                candidates=[r for r in candidates if not (r['field']==field and r['value']==float(parts[0][1]))]
-                for part in parts:
-                    candidates.append(dict(field=field,value=float(part[1]),sourceId=source_id,
-                        state='unfolded' if part[2].lower() in ('展开','unfolded') else 'folded',variant=variant,
-                        status='candidate',classification='unknown',identityMention=identity,evidence=line[0]))
+    # Bound each dimension to its own label. HTML stripping can place several
+    # fields on one line; a following width/height/thickness starts a new scope.
+    dimension_labels = re.compile(
+        r'(宽度|Width|长度|高度|Height|Length|厚度|Thickness|Depth)[：:\s]+', re.I)
+    labels = list(dimension_labels.finditer(plain))
+    scoped_rows, replaced_positions = [], set()
+    field_by_label = {'宽度': 'width_mm', 'width': 'width_mm',
+                      '长度': 'height_mm', '高度': 'height_mm',
+                      'height': 'height_mm', 'length': 'height_mm',
+                      '厚度': 'thickness_mm', 'thickness': 'thickness_mm', 'depth': 'thickness_mm'}
+    for index, label in enumerate(labels):
+        end = labels[index + 1].start() if index + 1 < len(labels) else len(plain)
+        segment = re.split(r'["\'<>;\n]', plain[label.end():end], maxsplit=1)[0][:100]
+        parts = list(re.finditer(
+            r'([0-9]+(?:\.[0-9]+)?)\s*(?:mm|毫米)\s*[（(](展开|闭合|合拢|folded|unfolded)[）)]',
+            segment, re.I))
+        if parts:
+            replaced_positions.add(label.start())
+            for part in parts:
+                scoped_rows.append(dict(field=field_by_label[label[1].lower()],
+                    value=float(part[1]), sourceId=source_id,
+                    state='unfolded' if part[2].lower() in ('展开', 'unfolded') else 'folded',
+                    variant=variant, status='candidate', classification='unknown',
+                    identityMention=identity, evidence=plain[label.start():label.end()] + segment))
+    candidates = [row for index, row in enumerate(candidates)
+                  if candidate_positions[index] not in replaced_positions]
+    candidates.extend(scoped_rows)
     for match in re.finditer(r'(外屏|内屏)\s+([0-9]+(?:\.[0-9]+)?)\s*英寸',plain):
         candidates.append(dict(field='diagonal_inches',value=float(match[2]),sourceId=source_id,
             state='folded' if match[1]=='外屏' else 'unfolded',variant=variant,status='candidate',

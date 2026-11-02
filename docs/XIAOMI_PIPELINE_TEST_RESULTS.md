@@ -54,3 +54,17 @@ Blender 便携包通过官方下载 SHA256 校验：
 见 [使用说明](XIAOMI_DEVICE_PIPELINE.md)。详细机器报告在同目录 `XIAOMI_PIPELINE_TEST_EVIDENCE.json`；本地运行日志与原始结果位于 `.cache/pipeline/`。新机器需要重新运行联网采集，不能把本次缓存成功视为未来官方链接永久有效。
 
 后续必要工作按机型决定：更多有效视角、Agent 视觉核对、专属孔位与结构、配色PBR调校、App catalog注册与Android成片验证。工具负责消除采集台账、参数校验、构建/验证/复现的重复劳动，不宣称能够自动恢复任意新机型的真实三维结构。
+
+## PR #1 审查修复验证（2026-11-02，macOS）
+
+此节为 PR head `35d57a4` 之后的两处修复验证，不替换以上 Linux 历史记录。
+环境：Darwin arm64、Python 3.14.9、已有 Blender 4.5.0。
+
+- 多状态尺寸解析在下一中英文尺寸标签处截止，并按原文位置替换候选，避免把厚度列作宽度或删除另一范围的同值候选。
+- 新增两项回归：同一行中文和去标签 HTML 英文规格的精确候选集合及无需冲突说明的 resolve；重复同值尺寸保留各自范围。
+- 输出路径测试比较规范化路径，兼容 macOS `/var` 与 `/private/var`。
+- 流水线测试共 16 项：15 项通过，已有完整 Blender 重放矩阵明确跳过；CI version 6/6 通过；`git diff --check` 通过。
+- 单独执行一次合成直板机 staging 构建，Blender 4.5.0 实际运行且合同通过；47 个运行时及 assets-source 文件哈希前后相同。未重复历史两款机型双构建矩阵。
+- 本次 Khronos 为 NOT_RUN；Android、外观验收与联网采集未运行。未新增机型下载或联网运行时功能。
+
+本地验证日志位于 `.cache/review-research/fix-pipeline.log`、`fix-ci-version.log`、`fix-blender.log`；隔离构建及报告位于 `.cache/review-research/blender-check/`。这些忽略目录产物不纳入提交。
