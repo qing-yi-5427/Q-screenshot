@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-17",
+  "formalName": "Xiaomi 17",
+  "fields": {
+    "width_mm": {
+      "value": 71.8,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['宽度：71.8mm 厚度：8.06mm 重量：191g    *以上数据为小米实验室测试数据，手机厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "height_mm": {
+      "value": 151.1,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['长度：151.1mm 宽度：71.8mm 厚度：8.06mm 重量：191g    *以上数据为小米实验室测试数据，手机厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。  ', '长度是\\xa06.3\\xa0英寸\\xa0(实际可视区域较小)。     6.3\\xa0英寸\\xa01.5K\\xa0低功耗超级阳光屏   类型：OLED柔性直屏 分辨率：2656\\xa0x\\xa01220 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 多场景峰值亮度：3500nits 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+\\xa0l\\xa0HDR\\xa0V']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "thickness_mm": {
+      "value": 8.06,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['厚度：8.06mm 重量：191g    *以上数据为小米实验室测试数据，手机厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "display_pixels": {
+      "value": [
+        1220,
+        2656
+      ],
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Explicit portrait [width,height]; first/main display: ['分辨率：2656\\xa0x\\xa01220 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 多场景峰值亮度：3500nits 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+\\xa0l\\xa0HDR\\xa0Vivid\\xa0l\\xa0Dolby\\xa0Vision   ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "diagonal_inches": {
+      "value": 6.3,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Official main display nominal diagonal; not used as exact active area"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "screen_height_mm": {
+      "value": 148.2,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "corner_radius_mm": {
+      "value": 9.4,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "screen_corner_radius_mm": {
+      "value": 8.1,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png. Scale uses official body 71.8 x 151.1 mm. Corner radius 9.4mm corresponds to outer bend ~0.131 of body width; active height is body height minus 2.9mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17/specs/entry-1760062419654.js",
+      "sha256": "07da708ac0d57d41eccec76e373267242caba3f45c266c86441a8df5a2bb79dc",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17/entry-1760062419654.js",
+      "sha256": "4df853f2dd5471c4860cd0ca44acf51750374d41d603eaaedcd7d771b35eb442",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+  "imageObservations": [
+    {
+      "sha256": "2e2a886d7e9e56f5c7a5eb22cbf6f027cdea13dcc7f31498895333168bd53acc",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/7103.png",
+      "view": "front",
+      "confidenceScore": 0.8,
+      "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+    },
+    {
+      "sha256": "309493d210df58b48f2fbbb4932098fd85a8ff178f3e63790de3b85f082cab35",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17_80827/images/6007.png",
+      "view": "detail",
+      "confidenceScore": 0.7,
+      "notes": "Actually viewed official specification outline/side-control drawing in contact sheet. Supports placement/layout only; exact dimensions remain estimates."
+    }
+  ],
+  "officialExcerpts": {
+    "长度": [
+      "长度：151.1mm 宽度：71.8mm 厚度：8.06mm 重量：191g    *以上数据为小米实验室测试数据，手机厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。  ",
+      "长度是 6.3 英寸 (实际可视区域较小)。     6.3 英寸 1.5K 低功耗超级阳光屏   类型：OLED柔性直屏 分辨率：2656 x 1220 显示帧率：最高 120Hz 触控采样率：最高 300Hz 多场景峰值亮度：3500nits 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+ l HDR V"
+    ],
+    "宽度": [
+      "宽度：71.8mm 厚度：8.06mm 重量：191g    *以上数据为小米实验室测试数据，手机厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。  "
+    ],
+    "厚度": [
+      "厚度：8.06mm 重量：191g    *以上数据为小米实验室测试数据，手机厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。  "
+    ],
+    "分辨率": [
+      "分辨率：2656 x 1220 显示帧率：最高 120Hz 触控采样率：最高 300Hz 多场景峰值亮度：3500nits 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+ l HDR Vivid l Dolby Vision   "
+    ],
+    "类型": [
+      "类型：OLED柔性直屏 分辨率：2656 x 1220 显示帧率：最高 120Hz 触控采样率：最高 300Hz 多场景峰值亮度：3500nits 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+ l HDR Vivid l Dolby Vision   "
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-17t",
+  "formalName": "Xiaomi 17T",
+  "fields": {
+    "width_mm": {
+      "value": 75.19,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['宽度：75.19mm']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "height_mm": {
+      "value": 157.63,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['长度：157.63\\xa0mm']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "thickness_mm": {
+      "value": 8.17,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['厚度：8.17\\xa0mm', '厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "display_pixels": {
+      "value": [
+        1268,
+        2756
+      ],
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Explicit portrait [width,height]; first/main display: ['分辨率：2756\\xa0x\\xa01268 显示帧率：最高\\xa0120Hz 触控报点率：最高\\xa0480Hz 多场景峰值亮度：3500nits 3840Hz\\xa0超高频\\xa0PWM\\xa0调光* 专业原色屏｜多屏同色｜DCI-P3｜超动态显示\\xa0|\\xa0HDR10+丨HDR\\xa0Vivid｜Dolby\\xa0Vision｜帧享超高清认证\\xa0\\xa0|\\xa0湿手触控\\xa0     *3840Hz\\xa0超高频\\xa0PWM\\xa0调光，在低亮']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "diagonal_inches": {
+      "value": 6.59,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Official main display nominal diagonal; not used as exact active area"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "screen_height_mm": {
+      "value": 154.23,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 24de51f0f842c826e2b399a64e371880ccdc3f29958408ce0e1ae076080391fa at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17T_63724/images/199.png. Scale uses official body 75.19 x 157.63 mm. Corner radius 7.8mm corresponds to outer bend ~0.104 of body width; active height is body height minus 3.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "corner_radius_mm": {
+      "value": 7.8,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 24de51f0f842c826e2b399a64e371880ccdc3f29958408ce0e1ae076080391fa at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17T_63724/images/199.png. Scale uses official body 75.19 x 157.63 mm. Corner radius 7.8mm corresponds to outer bend ~0.104 of body width; active height is body height minus 3.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "screen_corner_radius_mm": {
+      "value": 6.5,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 24de51f0f842c826e2b399a64e371880ccdc3f29958408ce0e1ae076080391fa at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17T_63724/images/199.png. Scale uses official body 75.19 x 157.63 mm. Corner radius 7.8mm corresponds to outer bend ~0.104 of body width; active height is body height minus 3.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17t/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17t/specs/entry-1782956833440.js",
+      "sha256": "3af7716fbe4472b8fc68f3c6dbb99ee930efd3f996d1816ce7a3f409bb68e7a3",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17t",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17t/entry-1782956833440.js",
+      "sha256": "4b5d4894fb7aec909f07391737a6f709ef32742ae970439295c16b23fa9edb69",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "scope": "China mainland front-only; no rear cameras/logos/vendor textures 大陆专属参数页：不得混用国际版尺寸/配色/电池。",
+  "imageObservations": [
+    {
+      "sha256": "24de51f0f842c826e2b399a64e371880ccdc3f29958408ce0e1ae076080391fa",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17T_63724/images/199.png",
+      "view": "front",
+      "confidenceScore": 0.8,
+      "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+    }
+  ],
+  "officialExcerpts": {
+    "长度": [
+      "长度：157.63 mm"
+    ],
+    "宽度": [
+      "宽度：75.19mm"
+    ],
+    "厚度": [
+      "厚度：8.17 mm",
+      "厚度不含屏幕凸起，依据行业内测量方式不同，实际结果可能略有差异。"
+    ],
+    "分辨率": [
+      "分辨率：2756 x 1268 显示帧率：最高 120Hz 触控报点率：最高 480Hz 多场景峰值亮度：3500nits 3840Hz 超高频 PWM 调光* 专业原色屏｜多屏同色｜DCI-P3｜超动态显示 | HDR10+丨HDR Vivid｜Dolby Vision｜帧享超高清认证  | 湿手触控      *3840Hz 超高频 PWM 调光，在低亮"
+    ],
+    "类型": [
+      "类型：OLED柔性直屏 分辨率：2756 x 1268 显示帧率：最高 120Hz 触控报点率：最高 480Hz 多场景峰值亮度：3500nits 3840Hz 超高频 PWM 调光* 专业原色屏｜多屏同色｜DCI-P3｜超动态显示 | HDR10+丨HDR Vivid｜Dolby Vision｜帧享超高清认证  | 湿手触控      *3840Hz 超高"
+    ]
+  }
+}

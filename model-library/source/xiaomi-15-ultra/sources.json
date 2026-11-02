@@ -1,0 +1,24 @@
+[
+  {
+    "sourceId": "specs",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-15-ultra/specs",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-ultra/specs/entry-1751289276656.js",
+    "sha256": "f2937acf6a213727be0c797bb82fd426b65788011a28f3b8405f7f808d9b8608",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  },
+  {
+    "sourceId": "overview",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-15-ultra",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-ultra/entry-1751289276656.js",
+    "sha256": "6e7caf420feab7d0baf14bb26eccf3a2f97d132a6e80ce683a65fa9adf307272",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  }
+]

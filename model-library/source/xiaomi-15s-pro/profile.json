@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-15s-pro",
+  "adapter": "xiaomi-library",
+  "geometry": {
+    "width_mm": 75.3,
+    "height_mm": 161.3,
+    "thickness_mm": 8.33,
+    "screen_width_mm": 71.145,
+    "screen_height_mm": 158.1,
+    "corner_radius_mm": 6.6,
+    "screen_corner_radius_mm": 5.3,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 75.85,
+        "radius_mm": 1.18
+      },
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 41.938,
+          "length_mm": 15,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 16.13,
+          "length_mm": 7.5,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [],
+      "frameCurve_mm": 0.8,
+      "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 fc118a85727ad5e9e0853764729c555a739f6741fe7b6f6e221b7f9e296c900c at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15s-pro_903875/specs/images/2246.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.6mm corresponds to outer bend ~0.088 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed.",
+      "coverEdgeCurve_mm": 0.22
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "xiaomi-15s-pro",
+    "deviceId": "xiaomi-15s-pro",
+    "name": "Xiaomi 15S Pro · 正面外观重建",
+    "displayName": "Xiaomi 15S Pro · 正面外观重建",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07529999999999999,
+          0.1613,
+          0.00833
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/xiaomi-15s-pro/portrait.glb",
+        "asset": "devices/xiaomi-15s-pro/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.071145,
+          0.1581
+        ],
+        "bodySizeMeters": [
+          0.07529999999999999,
+          0.1613,
+          0.00833
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.45,
+        "inputSizeHints": [
+          {
+            "width": 1440,
+            "height": 3200,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "neutral-estimate",
+        "label": "中性材质估计"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。含全等深微曲盖板边缘与圆润中框；内容面保持可替换平面。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。"
+  },
+  "research": {
+    "schemaVersion": 1,
+    "deviceId": "xiaomi-15s-pro",
+    "formalName": "Xiaomi 15S Pro",
+    "fields": {
+      "width_mm": {
+        "value": 75.3,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['宽度：75.3mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "height_mm": {
+        "value": 161.3,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['长度：161.3mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "thickness_mm": {
+        "value": 8.33,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['厚度：8.33mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "display_pixels": {
+        "value": [
+          1440,
+          3200
+        ],
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Explicit portrait [width,height]; first/main display: ['分辨率：\\xa03200\\xa0x\\xa01440 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz  专业原色屏｜DCI-P3｜超动态显示｜湿手触控｜多屏同色｜LTM\\xa0192分区调节  对比度\\xa08,000,000：1丨HDR10+丨HDR\\xa0Vivid｜Dolby\\xa0Vision 多场景峰值亮度：3200nits 玻璃盖板：小米龙晶玻璃\\xa02.0on     *\\xa0自适应超']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "diagonal_inches": {
+        "value": 6.73,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Official main display nominal diagonal; not used as exact active area"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "screen_height_mm": {
+        "value": 158.1,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 fc118a85727ad5e9e0853764729c555a739f6741fe7b6f6e221b7f9e296c900c at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15s-pro_903875/specs/images/2246.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.6mm corresponds to outer bend ~0.088 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "corner_radius_mm": {
+        "value": 6.6,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 fc118a85727ad5e9e0853764729c555a739f6741fe7b6f6e221b7f9e296c900c at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15s-pro_903875/specs/images/2246.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.6mm corresponds to outer bend ~0.088 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_corner_radius_mm": {
+        "value": 5.3,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 fc118a85727ad5e9e0853764729c555a739f6741fe7b6f6e221b7f9e296c900c at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15s-pro_903875/specs/images/2246.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.6mm corresponds to outer bend ~0.088 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_width_mm": {
+        "value": 71.145,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "sourceId": "specs",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-15s-pro/specs",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15s-pro/specs/entry-1747909525067.js",
+        "sha256": "49f7869a7fac28aee086b00d58dc19cbcd496ced461c76801b3965a8fc09f7ff",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      },
+      {
+        "sourceId": "overview",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-15s-pro",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15s-pro/entry-1747909525067.js",
+        "sha256": "260a8eda0e8a2ba4956f7ecc9c506eac1144d4134564fd1b1b09e798a9a0b23a",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      }
+    ],
+    "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+    "imageObservations": [
+      {
+        "sha256": "fc118a85727ad5e9e0853764729c555a739f6741fe7b6f6e221b7f9e296c900c",
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15s-pro_903875/specs/images/2246.png",
+        "view": "front",
+        "confidenceScore": 0.8,
+        "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+      }
+    ],
+    "officialExcerpts": {
+      "长度": [
+        "长度：161.3mm"
+      ],
+      "宽度": [
+        "宽度：75.3mm"
+      ],
+      "厚度": [
+        "厚度：8.33mm"
+      ],
+      "分辨率": [
+        "分辨率： 3200 x 1440 显示帧率：最高 120Hz 触控采样率：最高 300Hz  专业原色屏｜DCI-P3｜超动态显示｜湿手触控｜多屏同色｜LTM 192分区调节  对比度 8,000,000：1丨HDR10+丨HDR Vivid｜Dolby Vision 多场景峰值亮度：3200nits 玻璃盖板：小米龙晶玻璃 2.0on     * 自适应超"
+      ],
+      "类型": [
+        "类型：AMOLED (全等深微曲屏) 分辨率： 3200 x 1440 显示帧率：最高 120Hz 触控采样率：最高 300Hz  专业原色屏｜DCI-P3｜超动态显示｜湿手触控｜多屏同色｜LTM 192分区调节  对比度 8,000,000：1丨HDR10+丨HDR Vivid｜Dolby Vision 多场景峰值亮度：3200nits 玻璃盖板：小米龙晶"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-15s-pro/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15s-pro/specs/entry-1747909525067.js",
+      "sha256": "49f7869a7fac28aee086b00d58dc19cbcd496ced461c76801b3965a8fc09f7ff",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-15s-pro",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15s-pro/entry-1747909525067.js",
+      "sha256": "260a8eda0e8a2ba4956f7ecc9c506eac1144d4134564fd1b1b09e798a9a0b23a",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament screenshot replacement/export",
+    "Front/left/right comparison; measurements remain estimates"
+  ]
+}

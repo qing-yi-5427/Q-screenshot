@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-17-ultra-byleica",
+  "adapter": "xiaomi-library",
+  "geometry": {
+    "width_mm": 77.6,
+    "height_mm": 162.9,
+    "thickness_mm": 8.32,
+    "screen_width_mm": 73.48159509202453,
+    "screen_height_mm": 159.7,
+    "corner_radius_mm": 10.3,
+    "screen_corner_radius_mm": 9.0,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 76.65,
+        "radius_mm": 1.18
+      },
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 42.354,
+          "length_mm": 15,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 16.29,
+          "length_mm": 7.5,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [],
+      "frameCurve_mm": 0.65,
+      "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 af9e5232201110a077a6a465dce8482c2704a5603835b6943506331850323cc0 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_8068/images/216.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.3mm corresponds to outer bend ~0.133 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed. Official 984-new.png and 8379-new.png viewed: fine transverse ridges on long frame sections. Pitch0.65mm, width0.18mm, relief0.04mm and extent +/-56mm are original proportional estimates; keep button windows smooth. Engraved branding and rear zoom ring omitted per front-only scope.",
+      "knurl": {
+        "pitch_mm": 0.65,
+        "ridge_width_mm": 0.18,
+        "projection_mm": 0.04,
+        "start_y_mm": -56,
+        "end_y_mm": 56
+      }
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "xiaomi-17-ultra-byleica",
+    "deviceId": "xiaomi-17-ultra-byleica",
+    "name": "Xiaomi 17 Ultra 徕卡版 · 正面外观重建",
+    "displayName": "Xiaomi 17 Ultra 徕卡版 · 正面外观重建",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07759999999999999,
+          0.16290000000000002,
+          0.008320000000000001
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/xiaomi-17-ultra-byleica/portrait.glb",
+        "asset": "devices/xiaomi-17-ultra-byleica/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.07348159509202454,
+          0.15969999999999998
+        ],
+        "bodySizeMeters": [
+          0.07759999999999999,
+          0.16290000000000002,
+          0.008320000000000001
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.4601226993865031,
+        "inputSizeHints": [
+          {
+            "width": 1200,
+            "height": 2608,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "neutral-estimate",
+        "label": "中性材质估计"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 独立徕卡版含细条滚花中框几何；黑银8.32mm，黑/米白8.46mm分别重建；背部变焦环/商标省略。"
+  },
+  "research": {
+    "schemaVersion": 1,
+    "deviceId": "xiaomi-17-ultra-byleica",
+    "formalName": "Xiaomi 17 Ultra 徕卡版",
+    "fields": {
+      "width_mm": {
+        "value": 77.6,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['宽度：77.6\\xa0mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "height_mm": {
+        "value": 162.9,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['长度是 6.9 英寸。     超级像素    ', '长度：162.9\\xa0mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "thickness_mm": {
+        "value": 8.32,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['厚度：8.32 mm （黑银色）｜8.46 mm （黑色、米白色）']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "display_pixels": {
+        "value": [
+          1200,
+          2608
+        ],
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Explicit portrait [width,height]; first/main display: ['分辨率：\\xa02608\\xa0x\\xa01200\\xa0超级像素 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 色域：支持\\xa0P3\\xa0广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光 玻璃盖板：小米龙晶玻璃3.0  *屏幕全亮度区间，默认支持单脉冲DC调光。   专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 屏幕显示认证：HDR10']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "diagonal_inches": {
+        "value": 6.9,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Official main display nominal diagonal; not used as exact active area"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "screen_height_mm": {
+        "value": 159.7,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 af9e5232201110a077a6a465dce8482c2704a5603835b6943506331850323cc0 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_8068/images/216.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.3mm corresponds to outer bend ~0.133 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "corner_radius_mm": {
+        "value": 10.3,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 af9e5232201110a077a6a465dce8482c2704a5603835b6943506331850323cc0 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_8068/images/216.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.3mm corresponds to outer bend ~0.133 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_corner_radius_mm": {
+        "value": 9.0,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 af9e5232201110a077a6a465dce8482c2704a5603835b6943506331850323cc0 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_8068/images/216.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.3mm corresponds to outer bend ~0.133 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      }
+    },
+    "sources": [
+      {
+        "sourceId": "specs",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra-byleica/specs",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra-byleica/specs/entry-1772456064594.js",
+        "sha256": "1ca9855f74bcf6e74ce6077cbe84f3f0563fd06ffc8fbac052af805a28508537",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      },
+      {
+        "sourceId": "overview",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra-byleica",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra-byleica/entry-1772456064594.js",
+        "sha256": "6f8030c4682328108bcccb311dc38c1871c8d6ca5798e1e8c3ec0199253393e0",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      }
+    ],
+    "scope": "China mainland front-only; no rear cameras/logos/vendor textures 独立徕卡版含细条滚花中框几何；黑银8.32mm，黑/米白8.46mm分别重建；背部变焦环/商标省略。",
+    "imageObservations": [
+      {
+        "sha256": "af9e5232201110a077a6a465dce8482c2704a5603835b6943506331850323cc0",
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_8068/images/216.png",
+        "view": "front",
+        "confidenceScore": 0.8,
+        "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/318-new.png",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/318-new.png",
+        "sha256": "1969421a83a88126d3806bfc9ec08e73699479e7f3fdd7833353d5c9c5b5c0aa",
+        "view": "detail",
+        "confidenceScore": 0.8,
+        "notes": "Official frame detail actually viewed; knurl pattern location observed, pitch/depth estimated, no image reused in generated geometry."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/984-new.png",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/984-new.png",
+        "sha256": "528fc2eed98baa20b0d9de00cf8eff4e87b0576cce7380a201348cc7099bbe83",
+        "view": "detail",
+        "confidenceScore": 0.8,
+        "notes": "Official frame detail actually viewed; knurl pattern location observed, pitch/depth estimated, no image reused in generated geometry."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/8379-new.png",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/8379-new.png",
+        "sha256": "fb7615c6c45ab851528eb181afba1e650a2652eda24ff1f8774d6481e856627f",
+        "view": "detail",
+        "confidenceScore": 0.8,
+        "notes": "Official frame detail actually viewed; knurl pattern location observed, pitch/depth estimated, no image reused in generated geometry."
+      },
+      {
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/8381-new.png",
+        "finalUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra-byleica_820/images/8381-new.png",
+        "sha256": "67303ae66968592cf7db2a05e8443d7bead1832ea9765950ea01169aec400bcc",
+        "view": "detail",
+        "confidenceScore": 0.8,
+        "notes": "Official frame detail actually viewed; knurl pattern location observed, pitch/depth estimated, no image reused in generated geometry."
+      }
+    ],
+    "officialExcerpts": {
+      "长度": [
+        "长度是 6.9 英寸。     超级像素    ",
+        "长度：162.9 mm"
+      ],
+      "宽度": [
+        "宽度：77.6 mm"
+      ],
+      "厚度": [
+        "厚度：8.32 mm （黑银色）｜8.46 mm （黑色、米白色）"
+      ],
+      "分辨率": [
+        "分辨率： 2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光 玻璃盖板：小米龙晶玻璃3.0  *屏幕全亮度区间，默认支持单脉冲DC调光。   专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 屏幕显示认证：HDR10"
+      ],
+      "类型": [
+        "类型：AMOLED  分辨率： 2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光 玻璃盖板：小米龙晶玻璃3.0  *屏幕全亮度区间，默认支持单脉冲DC调光。   专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 屏"
+      ],
+      "独立徕卡版": "Official specs length162.9 width77.6, thickness8.32 black/silver or8.46 black/off-white; official shop22423 color names; overview explicitly 中框精雕滚花."
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra-byleica/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra-byleica/specs/entry-1772456064594.js",
+      "sha256": "1ca9855f74bcf6e74ce6077cbe84f3f0563fd06ffc8fbac052af805a28508537",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra-byleica",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra-byleica/entry-1772456064594.js",
+      "sha256": "6f8030c4682328108bcccb311dc38c1871c8d6ca5798e1e8c3ec0199253393e0",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament screenshot replacement/export",
+    "Front/left/right comparison; measurements remain estimates"
+  ]
+}

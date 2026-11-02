@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi-k100-pro-max",
+  "name": "REDMI K100 Pro Max",
+  "modelVersion": "1.0.0",
+  "states": [
+    "portrait"
+  ],
+  "defaultState": "portrait",
+  "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+  "defaultColorwayId": "gold-white",
+  "colors": [
+    {
+      "id": "gold-white",
+      "title": "流金白",
+      "backMaterial": "glass_fiber",
+      "thicknessMeters": 0.00845,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#E1DFD4",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#E1DFD4",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "black",
+      "title": "黑色",
+      "backMaterial": "glass_fiber",
+      "thicknessMeters": 0.00845,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#34383E",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#34383E",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "cabernet-red",
+      "title": "赤霞珠红",
+      "backMaterial": "glass_fiber",
+      "thicknessMeters": 0.00845,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#79414D",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#79414D",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "wind-blue",
+      "title": "追风蓝",
+      "backMaterial": "glass_fiber",
+      "thicknessMeters": 0.00845,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#86B3C7",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#86B3C7",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    }
+  ],
+  "validation": {
+    "contract": "PASS",
+    "khronos": "PASS",
+    "visual": "BLENDER_FOUR_VIEW_REVIEWED",
+    "android": "NOT_RUN"
+  }
+}

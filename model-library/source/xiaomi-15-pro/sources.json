@@ -1,0 +1,24 @@
+[
+  {
+    "sourceId": "specs",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-15-pro/specs",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-pro/specs/entry-1751289259006.js",
+    "sha256": "69aa842684ac993ea2196cba2510a8a036f236aaed3ffd12f5a3b965d7af32ff",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  },
+  {
+    "sourceId": "overview",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-15-pro",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-pro/entry-1751289259006.js",
+    "sha256": "74933e0717a74008c6a922cdeb66a2cf06c5ae8753dda08196bc1b11fa9647d1",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  }
+]

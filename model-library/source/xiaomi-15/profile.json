@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-15",
+  "adapter": "slab-front",
+  "geometry": {
+    "width_mm": 71.2,
+    "height_mm": 152.3,
+    "thickness_mm": 8.08,
+    "screen_width_mm": 66.96629213483146,
+    "screen_height_mm": 149.0,
+    "corner_radius_mm": 6.8,
+    "screen_corner_radius_mm": 5.5,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 71.35,
+        "radius_mm": 1.18
+      },
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 39.598,
+          "length_mm": 13,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 15.23,
+          "length_mm": 7.5,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [],
+      "frameCurve_mm": 0.65,
+      "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "xiaomi-15",
+    "deviceId": "xiaomi-15",
+    "name": "Xiaomi 15 · 正面外观重建",
+    "displayName": "Xiaomi 15 · 正面外观重建",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.0712,
+          0.15230000000000002,
+          0.00808
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/xiaomi-15/portrait.glb",
+        "asset": "devices/xiaomi-15/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.06696629213483146,
+          0.149
+        ],
+        "bodySizeMeters": [
+          0.0712,
+          0.15230000000000002,
+          0.00808
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.449438202247191,
+        "inputSizeHints": [
+          {
+            "width": 1200,
+            "height": 2670,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "neutral-estimate",
+        "label": "中性材质估计"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。"
+  },
+  "research": {
+    "schemaVersion": 1,
+    "deviceId": "xiaomi-15",
+    "formalName": "Xiaomi 15",
+    "fields": {
+      "width_mm": {
+        "value": 71.2,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['宽度：71.2mm 厚度：8.08mm（玻璃版）/\\xa08.48mm（亮银版）/\\xa08.36mm（钻石限定版） 重量：191g（玻璃版）/\\xa0192g（亮银版）/\\xa0189g（钻石限定版）    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "height_mm": {
+        "value": 152.3,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['长度：152.3mm 宽度：71.2mm 厚度：8.08mm（玻璃版）/\\xa08.48mm（亮银版）/\\xa08.36mm（钻石限定版） 重量：191g（玻璃版）/\\xa0192g（亮银版）/\\xa0189g（钻石限定版）    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "thickness_mm": {
+        "value": 8.08,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['厚度：8.08mm（玻璃版）/\\xa08.48mm（亮银版）/\\xa08.36mm（钻石限定版） 重量：191g（玻璃版）/\\xa0192g（亮银版）/\\xa0189g（钻石限定版）    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "display_pixels": {
+        "value": [
+          1200,
+          2670
+        ],
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Explicit portrait [width,height]; first/main display: ['分辨率：2670x\\xa01200 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 多场景峰值亮度：3200nits\\xa0 专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色｜帧享超高清认证     *\\xa0全局DC调光：在设备屏幕可使用的全亮度区间下，支持开启单脉冲类DC调光   ']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "diagonal_inches": {
+        "value": 6.36,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Official main display nominal diagonal; not used as exact active area"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "screen_height_mm": {
+        "value": 149.0,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "corner_radius_mm": {
+        "value": 6.8,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_corner_radius_mm": {
+        "value": 5.5,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png. Scale uses official body 71.2 x 152.3 mm. Corner radius 6.8mm corresponds to outer bend ~0.096 of body width; active height is body height minus 3.3mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_width_mm": {
+        "value": 66.96629213483146,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "sourceId": "specs",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-15/specs",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15/specs/entry-1751289214482.js",
+        "sha256": "c37a093872a49ffba0c65e25c158037a4e30a68a0ce8896ae389593d9ce2c8a8",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      },
+      {
+        "sourceId": "overview",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-15",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15/entry-1751289214482.js",
+        "sha256": "7145355e1c05155f9986bfd1336eb1b3a663007729715b2d0d6bab80b021b854",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      }
+    ],
+    "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+    "imageObservations": [
+      {
+        "sha256": "1a9fcd99153eb3e48c20567ca2f2ef8d1a7e527ae904e5898367f527bea12b0b",
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15_852852/specs2/images/5665.png",
+        "view": "front",
+        "confidenceScore": 0.8,
+        "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+      }
+    ],
+    "officialExcerpts": {
+      "长度": [
+        "长度：152.3mm 宽度：71.2mm 厚度：8.08mm（玻璃版）/ 8.48mm（亮银版）/ 8.36mm（钻石限定版） 重量：191g（玻璃版）/ 192g（亮银版）/ 189g（钻石限定版）    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  "
+      ],
+      "宽度": [
+        "宽度：71.2mm 厚度：8.08mm（玻璃版）/ 8.48mm（亮银版）/ 8.36mm（钻石限定版） 重量：191g（玻璃版）/ 192g（亮银版）/ 189g（钻石限定版）    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  "
+      ],
+      "厚度": [
+        "厚度：8.08mm（玻璃版）/ 8.48mm（亮银版）/ 8.36mm（钻石限定版） 重量：191g（玻璃版）/ 192g（亮银版）/ 189g（钻石限定版）    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  "
+      ],
+      "分辨率": [
+        "分辨率：2670x 1200 显示帧率：最高 120Hz 触控采样率：最高 300Hz 多场景峰值亮度：3200nits  专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色｜帧享超高清认证     * 全局DC调光：在设备屏幕可使用的全亮度区间下，支持开启单脉冲类DC调光   "
+      ],
+      "类型": [
+        "类型：OLED柔性直屏 分辨率：2670x 1200 显示帧率：最高 120Hz 触控采样率：最高 300Hz 多场景峰值亮度：3200nits  专业原色屏｜全局DC调光*｜DCI-P3｜超动态显示｜湿手触控｜多屏同色｜帧享超高清认证     * 全局DC调光：在设备屏幕可使用的全亮度区间下，支持开启单脉冲类DC调光   ",
+        "类型｜ 运动抓拍｜人像模式｜全景模式｜萌拍｜专业模式｜延时摄影｜超级夜景 2.0｜前后双景｜文档模式｜ 超级月亮｜慢动作拍摄｜长曝光｜人像虚化调节｜AI 美颜｜超广角边缘畸变矫正｜身份证影印模式｜ 视频滤镜｜视频美颜｜视频超级防抖｜动态照片｜倒计时拍照｜水平仪｜定时连拍｜人脸检测｜HDR｜ 自定义水印｜声控拍照  8K 视频拍摄：24/30fps 4K 视频"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-15/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15/specs/entry-1751289214482.js",
+      "sha256": "c37a093872a49ffba0c65e25c158037a4e30a68a0ce8896ae389593d9ce2c8a8",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-15",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15/entry-1751289214482.js",
+      "sha256": "7145355e1c05155f9986bfd1336eb1b3a663007729715b2d0d6bab80b021b854",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament screenshot replacement/export",
+    "Front/left/right comparison; measurements remain estimates"
+  ]
+}

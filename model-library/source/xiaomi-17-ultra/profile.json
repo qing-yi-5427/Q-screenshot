@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-17-ultra",
+  "adapter": "slab-front",
+  "geometry": {
+    "width_mm": 77.6,
+    "height_mm": 162.9,
+    "thickness_mm": 8.29,
+    "screen_width_mm": 73.48159509202453,
+    "screen_height_mm": 159.7,
+    "corner_radius_mm": 10.2,
+    "screen_corner_radius_mm": 8.899999999999999,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 76.65,
+        "radius_mm": 1.18
+      },
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 42.354,
+          "length_mm": 15,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 16.29,
+          "length_mm": 7.5,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [],
+      "frameCurve_mm": 0.65,
+      "notes": "Button/punch coordinates are image-proportioned estimates, not published dimensions. Original proportional front reconstruction; Image SHA256 7c6cb8582f9243499017d5ee830b599a9955ab4b79916fc19c78fdf37273250a at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra_64894/images/2436.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.2mm corresponds to outer bend ~0.131 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "xiaomi-17-ultra",
+    "deviceId": "xiaomi-17-ultra",
+    "name": "Xiaomi 17 Ultra · 正面外观重建",
+    "displayName": "Xiaomi 17 Ultra · 正面外观重建",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07759999999999999,
+          0.16290000000000002,
+          0.008289999999999999
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/xiaomi-17-ultra/portrait.glb",
+        "asset": "devices/xiaomi-17-ultra/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.07348159509202454,
+          0.15969999999999998
+        ],
+        "bodySizeMeters": [
+          0.07759999999999999,
+          0.16290000000000002,
+          0.008289999999999999
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.4601226993865031,
+        "inputSizeHints": [
+          {
+            "width": 1200,
+            "height": 2608,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "neutral-estimate",
+        "label": "中性材质估计"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。"
+  },
+  "research": {
+    "schemaVersion": 1,
+    "deviceId": "xiaomi-17-ultra",
+    "formalName": "Xiaomi 17 Ultra",
+    "fields": {
+      "width_mm": {
+        "value": 77.6,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['宽度：77.6mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "height_mm": {
+        "value": 162.9,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['长度是 6.9 英寸。    ', '长度：162.9mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "thickness_mm": {
+        "value": 8.29,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "['厚度：8.29mm']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "display_pixels": {
+        "value": [
+          1200,
+          2608
+        ],
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Explicit portrait [width,height]; first/main display: ['分辨率：\\xa02608\\xa0x\\xa01200\\xa0超级像素 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 色域：支持\\xa0P3\\xa0广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光 玻璃盖板：小米龙晶玻璃3.0  *屏幕全亮度区间，默认支持单脉冲DC调光。  专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+丨H']"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "diagonal_inches": {
+        "value": 6.9,
+        "confidence": "official",
+        "confidenceScore": 0.9,
+        "sourceIds": [
+          "specs"
+        ],
+        "evidence": [
+          "Official main display nominal diagonal; not used as exact active area"
+        ],
+        "identityEvidence": "Dedicated product specs entry",
+        "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+      },
+      "screen_height_mm": {
+        "value": 159.7,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 7c6cb8582f9243499017d5ee830b599a9955ab4b79916fc19c78fdf37273250a at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra_64894/images/2436.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.2mm corresponds to outer bend ~0.131 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "corner_radius_mm": {
+        "value": 10.2,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 7c6cb8582f9243499017d5ee830b599a9955ab4b79916fc19c78fdf37273250a at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra_64894/images/2436.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.2mm corresponds to outer bend ~0.131 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_corner_radius_mm": {
+        "value": 8.899999999999999,
+        "confidence": "estimated",
+        "confidenceScore": 0.55,
+        "notes": "Original proportional front reconstruction; Image SHA256 7c6cb8582f9243499017d5ee830b599a9955ab4b79916fc19c78fdf37273250a at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra_64894/images/2436.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.2mm corresponds to outer bend ~0.131 of body width; active height is body height minus 3.2mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+      },
+      "screen_width_mm": {
+        "value": 73.48159509202453,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "sourceId": "specs",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra/specs",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra/specs/entry-1782897917179.js",
+        "sha256": "e458bccb8cdcf193d68ebf54e950c64e7edc322be4340936264ec5144adeb362",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      },
+      {
+        "sourceId": "overview",
+        "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra",
+        "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra/entry-1782897917179.js",
+        "sha256": "c482f341ed35754e3d55b705bc354beb4590c6ff7070c263b7e485b74848be67",
+        "mode": "live",
+        "verifiedProductIdentity": true,
+        "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+        "retrievedAt": "2026-11-02",
+        "redistributionPermission": "not_verified"
+      }
+    ],
+    "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+    "imageObservations": [
+      {
+        "sha256": "7c6cb8582f9243499017d5ee830b599a9955ab4b79916fc19c78fdf37273250a",
+        "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-ultra_64894/images/2436.png",
+        "view": "front",
+        "confidenceScore": 0.8,
+        "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+      }
+    ],
+    "officialExcerpts": {
+      "长度": [
+        "长度是 6.9 英寸。    ",
+        "长度：162.9mm"
+      ],
+      "宽度": [
+        "宽度：77.6mm"
+      ],
+      "厚度": [
+        "厚度：8.29mm"
+      ],
+      "分辨率": [
+        "分辨率： 2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光 玻璃盖板：小米龙晶玻璃3.0  *屏幕全亮度区间，默认支持单脉冲DC调光。  专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 显示认证：HDR10+丨H"
+      ],
+      "类型": [
+        "类型：AMOLED  分辨率： 2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光 玻璃盖板：小米龙晶玻璃3.0  *屏幕全亮度区间，默认支持单脉冲DC调光。  专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 显示"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra/specs/entry-1782897917179.js",
+      "sha256": "e458bccb8cdcf193d68ebf54e950c64e7edc322be4340936264ec5144adeb362",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17-ultra",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-ultra/entry-1782897917179.js",
+      "sha256": "c482f341ed35754e3d55b705bc354beb4590c6ff7070c263b7e485b74848be67",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament screenshot replacement/export",
+    "Front/left/right comparison; measurements remain estimates"
+  ]
+}

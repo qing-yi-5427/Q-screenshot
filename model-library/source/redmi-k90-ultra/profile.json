@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "redmi-k90-ultra",
+  "adapter": "slab-front",
+  "geometry": {
+    "width_mm": 77.93,
+    "height_mm": 162.91,
+    "thickness_mm": 8.18,
+    "screen_width_mm": 72.72787459736703,
+    "screen_height_mm": 157.50130342492298,
+    "corner_radius_mm": 10.6,
+    "screen_corner_radius_mm": 9,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 75.955,
+        "radius_mm": 1.35
+      },
+      "frameCurve_mm": 0.65,
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 27,
+          "length_mm": 18,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 12,
+          "length_mm": 9,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [
+        {
+          "edge": "bottom",
+          "x_mm": 0,
+          "width_mm": 8.2,
+          "height_mm": 2.3
+        }
+      ],
+      "antennaBands": [],
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 92dbb3c66e60f008838170437a81f0249723f66481dd6a500b51af1b2e390212, cbb6e1edd204cc500418247d79b7a51b63a386f138228a0dd94c77ae906d00a6, 19cb278893a5191046e0bfe0f167002c334a940bb8b01bd1b6db6b07f398aa02, 4e7f254af4317a879ab46d991c333b096ddfdf68f18c783f65d9a1a232eb9e99, 494408b1274ce90cccecea3f58596667d8ae39af4344fd87963a6fbd77e792fb, f3a3c9822c2ba8de3f3761fd806788baad77de736d09e3cef7cd85125884d9a6, ccd0b9a47edf82abddb50f6256404c331ff90b8d78f603653a739c679d61687c, eda19fe22215d24551dda45c27888c3075a5d4aa9f46cd11ccb91bdfdbd214c4, 44164c09226837ebcc279ac4fe678a90fb28eea97785e5a67f6b75f2d1bbe5c7, d6f5afa83d2ace5108970632b70d5f2c28577215c69c4677869a837d9bee4f5a, b07fca33437efbbcee3e4a620cfa51e58a10d67cbb7944d7ee5d9d4e666e83a2, 3ab7e9e7d1a79b2730f2b5c4649773833498b995a60a0a1772de088dd2daac06, 5c38d1ec1c0eb158b27c732465ec605eb8cdcc9b94f8462296127f552b5b43aa, 4af87a6bfc9d41361630f8a97bfd688fafd45de558772002da6fd6772b36f161 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "redmi-k90-ultra",
+    "deviceId": "redmi-k90-ultra",
+    "name": "REDMI K90 至尊版",
+    "displayName": "REDMI K90 至尊版",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07793000000000001,
+          0.16291,
+          0.00818
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/redmi-k90-ultra/portrait.glb",
+        "asset": "devices/redmi-k90-ultra/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.07272787459736703,
+          0.15750130342492297
+        ],
+        "bodySizeMeters": [
+          0.07793000000000001,
+          0.16291,
+          0.00818
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.46176046176046176,
+        "inputSizeHints": [
+          {
+            "width": 1280,
+            "height": 2772,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "sky-blue",
+        "label": "天际蓝"
+      },
+      {
+        "id": "space-silver",
+        "label": "太空银"
+      },
+      {
+        "id": "shadow-black",
+        "label": "暗影黑"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "coordinateSystem": "+X right, +Y up, +Z front; meters"
+  },
+  "research": {
+    "deviceId": "redmi-k90-ultra",
+    "formalName": "REDMI K90 至尊版",
+    "fields": {
+      "width_mm": {
+        "value": 77.93,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k90-ultra-0"
+        ],
+        "evidence": "Explicit target specification width_mm 77.93; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "height_mm": {
+        "value": 162.91,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k90-ultra-0"
+        ],
+        "evidence": "Explicit target specification height_mm 162.91; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "thickness_mm": {
+        "value": 8.18,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k90-ultra-0"
+        ],
+        "evidence": "Explicit target specification thickness_mm 8.18; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "diagonal_inches": {
+        "value": 6.83,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k90-ultra-0"
+        ],
+        "evidence": "Explicit target specification diagonal_inches 6.83; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "display_pixels": {
+        "value": [
+          1280,
+          2772
+        ],
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k90-ultra-0"
+        ],
+        "evidence": "Explicit target specification display_pixels [1280, 2772]; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "corner_radius_mm": {
+        "value": 10.6,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 92dbb3c66e60f008838170437a81f0249723f66481dd6a500b51af1b2e390212, cbb6e1edd204cc500418247d79b7a51b63a386f138228a0dd94c77ae906d00a6, 19cb278893a5191046e0bfe0f167002c334a940bb8b01bd1b6db6b07f398aa02, 4e7f254af4317a879ab46d991c333b096ddfdf68f18c783f65d9a1a232eb9e99, 494408b1274ce90cccecea3f58596667d8ae39af4344fd87963a6fbd77e792fb, f3a3c9822c2ba8de3f3761fd806788baad77de736d09e3cef7cd85125884d9a6, ccd0b9a47edf82abddb50f6256404c331ff90b8d78f603653a739c679d61687c, eda19fe22215d24551dda45c27888c3075a5d4aa9f46cd11ccb91bdfdbd214c4, 44164c09226837ebcc279ac4fe678a90fb28eea97785e5a67f6b75f2d1bbe5c7, d6f5afa83d2ace5108970632b70d5f2c28577215c69c4677869a837d9bee4f5a, b07fca33437efbbcee3e4a620cfa51e58a10d67cbb7944d7ee5d9d4e666e83a2, 3ab7e9e7d1a79b2730f2b5c4649773833498b995a60a0a1772de088dd2daac06, 5c38d1ec1c0eb158b27c732465ec605eb8cdcc9b94f8462296127f552b5b43aa, 4af87a6bfc9d41361630f8a97bfd688fafd45de558772002da6fd6772b36f161"
+      },
+      "screen_corner_radius_mm": {
+        "value": 9,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 92dbb3c66e60f008838170437a81f0249723f66481dd6a500b51af1b2e390212, cbb6e1edd204cc500418247d79b7a51b63a386f138228a0dd94c77ae906d00a6, 19cb278893a5191046e0bfe0f167002c334a940bb8b01bd1b6db6b07f398aa02, 4e7f254af4317a879ab46d991c333b096ddfdf68f18c783f65d9a1a232eb9e99, 494408b1274ce90cccecea3f58596667d8ae39af4344fd87963a6fbd77e792fb, f3a3c9822c2ba8de3f3761fd806788baad77de736d09e3cef7cd85125884d9a6, ccd0b9a47edf82abddb50f6256404c331ff90b8d78f603653a739c679d61687c, eda19fe22215d24551dda45c27888c3075a5d4aa9f46cd11ccb91bdfdbd214c4, 44164c09226837ebcc279ac4fe678a90fb28eea97785e5a67f6b75f2d1bbe5c7, d6f5afa83d2ace5108970632b70d5f2c28577215c69c4677869a837d9bee4f5a, b07fca33437efbbcee3e4a620cfa51e58a10d67cbb7944d7ee5d9d4e666e83a2, 3ab7e9e7d1a79b2730f2b5c4649773833498b995a60a0a1772de088dd2daac06, 5c38d1ec1c0eb158b27c732465ec605eb8cdcc9b94f8462296127f552b5b43aa, 4af87a6bfc9d41361630f8a97bfd688fafd45de558772002da6fd6772b36f161"
+      },
+      "screen_height_mm": {
+        "value": 157.50130342492298,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Nominal full-rectangle diagonal/pixel aspect calculation; visible area unverified"
+      },
+      "screen_width_mm": {
+        "value": 72.72787459736703,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-ultra/specs/entry-1782810170815.js",
+        "sha256": "1dc832d1ce908bb2a5096d9df48edf2a2afc763f2a4772c930359f4abdbb2442",
+        "kind": "specs/",
+        "id": "redmi-k90-ultra-0",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k90-ultra route and matching REDMI product title in source body"
+      },
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-ultra/entry-1782810170815.js",
+        "sha256": "db9d2f487763fbceee09d8cb31b384dd9ac5904b54361c2decb41246ec9b45a2",
+        "kind": "overview",
+        "id": "redmi-k90-ultra-1",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k90-ultra route and matching REDMI product title in source body"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-ultra/specs/entry-1782810170815.js",
+      "sha256": "1dc832d1ce908bb2a5096d9df48edf2a2afc763f2a4772c930359f4abdbb2442",
+      "kind": "specs/",
+      "id": "redmi-k90-ultra-0",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k90-ultra route and matching REDMI product title in source body"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-ultra/entry-1782810170815.js",
+      "sha256": "db9d2f487763fbceee09d8cb31b384dd9ac5904b54361c2decb41246ec9b45a2",
+      "kind": "overview",
+      "id": "redmi-k90-ultra-1",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k90-ultra route and matching REDMI product title in source body"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament per-model appearance/export acceptance; Blender QA is separate"
+  ]
+}

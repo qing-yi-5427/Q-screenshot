@@ -1,39 +1,55 @@
 #!/usr/bin/env python3
-"""Rebuild active dedicated device models. Historical generic/MIX outputs are preserved."""
-import argparse,hashlib,json,os,shutil,subprocess
+"""Build into new staging directories; explicitly update only the bundled Fold."""
+import argparse,json,os,shutil
+from datetime import datetime,timezone
 from pathlib import Path
+from device_pipeline import model
 ROOT=Path(__file__).resolve().parents[1]
-# Explicit staging mode bypasses all legacy runtime/catalog/colorway mutations.
-if any(arg == '--profile' or arg.startswith('--profile=') for arg in os.sys.argv[1:]):
- from device_pipeline.model import build
- stage=argparse.ArgumentParser(description='Build a research profile into a new staging directory')
- stage.add_argument('--profile',required=True,type=Path);stage.add_argument('--staging-root',required=True,type=Path)
- stage.add_argument('--blender');stage.add_argument('--dry-run',action='store_true')
- opts=stage.parse_args()
- print(json.dumps(build(opts.profile,opts.staging_root,opts.blender,opts.dry_run),indent=2))
- raise SystemExit(0)
 
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--device',choices=['xiaomi-18-fold','redmi-k90-pro-max']);p.add_argument('--all-states',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--delivery-root',type=Path,default=ROOT/'deliverables/colors-panels');a=p.parse_args()
-blender=os.environ.get('BLENDER') or next((str(x) for x in [Path('/Applications/Blender.app/Contents/MacOS/Blender'),ROOT/'.cache/tools/Blender.app/Contents/MacOS/Blender'] if x.is_file()),None) or shutil.which('blender')
-if not blender:raise SystemExit('Set BLENDER to Blender4.5')
-active=['xiaomi-18-fold','redmi-k90-pro-max']
-for name in active:
- if a.device and name!=a.device:continue
- states=['folded','unfolded'] if name=='xiaomi-18-fold' else ['portrait']
- for state in states:
-  script='build_xiaomi18_fold.py' if name=='xiaomi-18-fold' else 'build_redmi_k90.py'
-  command=[blender,'-b','--python',str(ROOT/'tools/blender'/script)]
-  if name=='xiaomi-18-fold':command+=['--',state]
-  if a.dry_run:print(name,state,command);continue
-  subprocess.run(command,check=True)
-if a.dry_run:raise SystemExit(0)
-subprocess.run([os.sys.executable,str(ROOT/'tools/sync_colorways.py')],check=True)
-subprocess.run([os.sys.executable,str(ROOT/'tools/blender/build_redmi_denim_variant.py')],check=True)
-catalog=[]
-for name in active:
- source=ROOT/'assets-source/devices'/name/'device.json';d=json.loads(source.read_text())
- for state in d['states'].values():state['assetHash']=hashlib.sha256((ROOT/'app/src/main/assets'/state['modelPath']).read_bytes()).hexdigest()
- text=json.dumps(d,ensure_ascii=False,indent=2)+'\n';source.write_text(text);target=ROOT/'app/src/main/assets/devices'/name;(target/'device.json').write_text(text)
- shutil.copytree(target,a.delivery_root/'models'/name,dirs_exist_ok=True);catalog.append(d)
-text=json.dumps({'schemaVersion':1,'defaultDevice':'redmi-k90-pro-max','devices':catalog},ensure_ascii=False,indent=2)+'\n'
-(ROOT/'app/src/main/assets/devices/catalog.json').write_text(text);(a.delivery_root/'models/catalog.json').write_text(text)
+def install_builtin_fold(staging):
+ """Copy validated Fold outputs and its existing metadata; never install a slab."""
+ assets=Path(staging)/'assets';manifest=json.loads((assets/'devices/xiaomi-18-fold/device.json').read_text())
+ if manifest['id']!='xiaomi-18-fold' or set(manifest['states'])!={'folded','unfolded'}:
+  raise ValueError('Only Xiaomi 18 Fold folded/unfolded may update bundled resources')
+ original=json.loads((ROOT/'assets-source/devices/xiaomi-18-fold/device.json').read_text())
+ for state,entry in manifest['states'].items():
+  if entry['modelPath']!=f'devices/xiaomi-18-fold/{state}.glb':raise ValueError('Unexpected Fold asset path')
+  original['states'][state]['assetHash']=manifest['states'][state]['assetHash']
+ target=ROOT/'app/src/main/assets/devices/xiaomi-18-fold';target.mkdir(parents=True,exist_ok=True)
+ for state in manifest['states'].values():
+  shutil.copyfile(assets/state['modelPath'],ROOT/'app/src/main/assets'/state['modelPath'])
+ (target/'device.json').write_text(json.dumps(original,ensure_ascii=False,indent=2)+'\n')
+ shutil.copyfile(ROOT/'assets-source/devices/xiaomi-18-fold/colorways.json',target/'colorways.json')
+ shutil.copyfile(ROOT/'model-library/builtin/xiaomi-18-fold/package.json',target/'package.json')
+ catalog={'schemaVersion':1,'defaultDevice':'xiaomi-18-fold','devices':[original]}
+ (target.parent/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n')
+
+def run(argv=None):
+ p=argparse.ArgumentParser(description=__doc__)
+ p.add_argument('--profile',type=Path);p.add_argument('--device',choices=list(model.ADAPTERS));p.add_argument('--staging-root','--delivery-root',dest='staging_root',type=Path)
+ p.add_argument('--blender');p.add_argument('--dry-run',action='store_true');p.add_argument('--all-states',action='store_true',help='Compatibility option: all profile states are always built')
+ p.add_argument('--update-builtin-fold',action='store_true',help='After staging validation, explicitly copy Fold-only GLBs/metadata into APK assets')
+ a=p.parse_args(argv)
+ if a.profile and a.device:p.error('--profile and --device are mutually exclusive')
+ if a.update_builtin_fold and (a.profile or a.device not in (None,'xiaomi-18-fold')):p.error('--update-builtin-fold only accepts the existing Xiaomi 18 Fold source')
+ blender=a.blender or os.environ.get('BLENDER') or next((str(x) for x in [ROOT/'.cache/tools/Blender.app/Contents/MacOS/Blender',Path('/Applications/Blender.app/Contents/MacOS/Blender')] if x.is_file()),None) or shutil.which('blender')
+ stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+ output=(a.staging_root or ROOT/'.cache/pipeline'/('build-'+stamp)).resolve()
+ model.safe_output(output)
+ if a.profile:
+  report=model.build(a.profile,output,blender,a.dry_run)
+ else:
+  device=a.device or 'xiaomi-18-fold'
+  # Keep replay input beside the new output, never under runtime or source trees.
+  profile_dir=output.with_name(output.name+'-profile')
+  if a.dry_run:
+   report={'status':'NOT_RUN','device':device,'stagingRoot':str(output),'profileRoot':str(profile_dir),'states':['folded','unfolded'] if device=='xiaomi-18-fold' else ['portrait']}
+  else:
+   model.existing(device,profile_dir)
+   report=model.build(profile_dir/'profile.json',output,blender)
+ if a.update_builtin_fold:
+  report['builtinUpdate']='NOT_RUN (dry run)' if a.dry_run else 'xiaomi-18-fold only'
+  if not a.dry_run:install_builtin_fold(output)
+ print(json.dumps(report,ensure_ascii=False,indent=2))
+ return report
+if __name__=='__main__':run()

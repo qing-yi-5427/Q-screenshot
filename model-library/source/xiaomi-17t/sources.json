@@ -1,0 +1,24 @@
+[
+  {
+    "sourceId": "specs",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-17t/specs",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17t/specs/entry-1782956833440.js",
+    "sha256": "3af7716fbe4472b8fc68f3c6dbb99ee930efd3f996d1816ce7a3f409bb68e7a3",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  },
+  {
+    "sourceId": "overview",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-17t",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17t/entry-1782956833440.js",
+    "sha256": "4b5d4894fb7aec909f07391737a6f709ef32742ae970439295c16b23fa9edb69",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  }
+]

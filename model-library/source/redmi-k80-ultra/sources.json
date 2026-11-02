@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-ultra/specs/entry-1777379191685.js",
+    "sha256": "22d3f2facc27bca590395a1b45f5bbd784248fccb0faf3caff3a065d7b275b7d",
+    "kind": "specs/",
+    "id": "redmi-k80-ultra-0",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k80-ultra route and matching REDMI product title in source body"
+  },
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-ultra/entry-1777379191685.js",
+    "sha256": "97c82b80054831d2b5c239f9c398d62019e61733cce32e976aa907df44a2eac4",
+    "kind": "overview",
+    "id": "redmi-k80-ultra-1",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k80-ultra route and matching REDMI product title in source body"
+  }
+]

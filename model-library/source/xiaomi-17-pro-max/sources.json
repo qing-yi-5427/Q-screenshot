@@ -1,0 +1,24 @@
+[
+  {
+    "sourceId": "specs",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-17-pro-max/specs",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-pro-max/specs/entry-1783045099007.js",
+    "sha256": "400190ee077da1faa1ad93719e8ba9ddbbb6f561e6014be562663ddb5cc05809",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  },
+  {
+    "sourceId": "overview",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-17-pro-max",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-pro-max/entry-1783045099007.js",
+    "sha256": "81bc2d1ead6e85db8153096d51f4a8ba714393cbfaa128abf829af9cef5e6733",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  }
+]

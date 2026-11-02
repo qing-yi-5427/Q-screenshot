@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi-k80-pro",
+  "name": "REDMI K80 Pro",
+  "modelVersion": "1.0.0",
+  "states": [
+    "portrait"
+  ],
+  "defaultState": "portrait",
+  "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+  "defaultColorwayId": "night-black",
+  "colors": [
+    {
+      "id": "night-black",
+      "title": "玄夜黑",
+      "backMaterial": "glass",
+      "thicknessMeters": 0.00839,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#343638",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#343638",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "snow-white",
+      "title": "雪岩白",
+      "backMaterial": "glass",
+      "thicknessMeters": 0.00839,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#DADDD9",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#DADDD9",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "mountain-green",
+      "title": "山峦青",
+      "backMaterial": "glass",
+      "thicknessMeters": 0.00839,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#BAD1C3",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#BAD1C3",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. "
+    },
+    {
+      "id": "champion-green",
+      "title": "冠军版 · 绿色",
+      "backMaterial": "glass",
+      "thicknessMeters": 0.00839,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#373A3D",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#145F39",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. Champion rear graphics/logos omitted; champion independent thickness not separately verified."
+    },
+    {
+      "id": "champion-gray",
+      "title": "冠军版 · 深灰色",
+      "backMaterial": "glass",
+      "thicknessMeters": 0.00839,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#373A3D",
+          "metallic": 0.9,
+          "roughness": 0.3
+        },
+        "back_estimated": {
+          "srgb": "#3E4245",
+          "metallic": 0,
+          "roughness": 0.4
+        }
+      },
+      "notes": "Official color name/material family only; original approximate PBR under vendor lighting. Champion rear graphics/logos omitted; champion independent thickness not separately verified."
+    }
+  ],
+  "validation": {
+    "contract": "PASS",
+    "khronos": "PASS",
+    "visual": "BLENDER_FOUR_VIEW_REVIEWED",
+    "android": "NOT_RUN"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "deviceId": "redmi-k90-pro-max",
+  "formalName": "REDMI K90 Pro Max",
+  "verificationStatus": "partial_reconstruction",
+  "selectedVariant": "流金白 standard7.9mm",
+  "excludedVariants": "丹宁8.3mm and champion graphics not mixed",
+  "fields": {
+    "height_mm": {
+      "value": 163.33,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body"
+    },
+    "width_mm": {
+      "value": 77.82,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body"
+    },
+    "thickness_mm": {
+      "value": 7.9,
+      "unit": "mm",
+      "confidence": "official",
+      "sourceId": "specs-body"
+    },
+    "display_pixels": {
+      "value": [
+        1200,
+        2608
+      ],
+      "confidence": "official",
+      "sourceId": "specs-body"
+    },
+    "material_family": {
+      "value": "6-series aluminum frame;glass fiber back for chosen standard white",
+      "confidence": "official",
+      "sourceId": "overview-body"
+    },
+    "corner_radius_mm": {
+      "value": 9.0,
+      "confidence": "estimated",
+      "notes": "Visual reconstruction; no factory component millimeter dimensions"
+    },
+    "screen_height_mm": {
+      "value": 158.8,
+      "confidence": "estimated",
+      "notes": "Modeling assumption; screen width uses estimated158.8mm active height × official1200/2608 pixel ratio"
+    },
+    "screen_width_mm": {
+      "value": 73.06748466257669,
+      "confidence": "estimated",
+      "notes": "Modeling assumption; screen width uses estimated158.8mm active height × official1200/2608 pixel ratio"
+    },
+    "default_variant": {
+      "value": "flowing-gold-white",
+      "confidence": "estimated",
+      "notes": "Visual reconstruction; no factory component millimeter dimensions"
+    },
+    "state": {
+      "value": "portrait",
+      "confidence": "estimated",
+      "notes": "Visual reconstruction; no factory component millimeter dimensions"
+    },
+    "camera_platform_width_mm": {
+      "value": 71,
+      "confidence": "estimated",
+      "notes": "Visual reconstruction; no factory component millimeter dimensions"
+    },
+    "camera_platform_height_mm": {
+      "value": 45,
+      "confidence": "estimated",
+      "notes": "Visual reconstruction; no factory component millimeter dimensions"
+    },
+    "camera_bump_mm": {
+      "value": 2.15,
+      "confidence": "estimated",
+      "notes": "Visual reconstruction; no factory component millimeter dimensions"
+    }
+  },
+  "unknown": [
+    "exact active screen millimeters",
+    "camera/platform/woofer protrusion and placements in factory CAD",
+    "measured optical material constants"
+  ],
+  "sourceLedger": "sources.json"
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "redmi-k80",
+  "adapter": "slab-front",
+  "geometry": {
+    "width_mm": 74.95,
+    "height_mm": 160.26,
+    "thickness_mm": 8.12,
+    "screen_width_mm": 69.52316290369026,
+    "screen_height_mm": 154.49591756375614,
+    "corner_radius_mm": 6.2,
+    "screen_corner_radius_mm": 4.6,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 75.03,
+        "radius_mm": 1.2
+      },
+      "frameCurve_mm": 0.35,
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 26,
+          "length_mm": 18,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 12,
+          "length_mm": 9,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [
+        {
+          "edge": "bottom",
+          "x_mm": 0,
+          "width_mm": 8.2,
+          "height_mm": 2.3
+        }
+      ],
+      "antennaBands": [],
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, e86ea0e4bed235820bc577e645cadaa8e8639e337faf3ede70f607b4c4ae57a1, e0fa4a13126f3ea6fbd73da48ab3b02a3361e236659cca21c073cef9aac8adfa, 98f340f5d7982e71e2e88a62df7de355b5fdfbb7c8dd301eba27d5702840d89d, 21e5061ee870d792e0c7febf9f48b56b184891b1987aa4e0d573b8130f1a3a2e, 088a263ca24c70e4e761d0367c898b059cbb35e87a889eee27a58f3f9bae70a2, 18679337655b255034fd7b31f265f26e7f2ceb862e7b0084d75d121259947077, 5ecfef4f25c627bdfcff91983ce35c6bb5c97319b48b31accec509d62cb37dcb, 17fd5ae6e9f2536f3c1077058e9a579d33ecd3224faab264f1098c37f1c03369, f7591ee2658575cb0081fc6bc5da96969413d4f98616ac3d34eb405c6338d766, fe25f8623d1df9cf71873c86bc1c29d0b32db4cbc72c5f74612d2fa87ebd26fc, fff0f6e3d84f44170e8bdfc5477ac01f7b5518a6171fc7aa5f5bb36f6ff6e6bd, 7094b52965f8fd54536c0a0b16658cb820578d2333be1730ba01868a86048aa5 USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "redmi-k80",
+    "deviceId": "redmi-k80",
+    "name": "REDMI K80",
+    "displayName": "REDMI K80",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07495,
+          0.16025999999999999,
+          0.008119999999999999
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/redmi-k80/portrait.glb",
+        "asset": "devices/redmi-k80/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.06952316290369026,
+          0.15449591756375614
+        ],
+        "bodySizeMeters": [
+          0.07495,
+          0.16025999999999999,
+          0.008119999999999999
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.45,
+        "inputSizeHints": [
+          {
+            "width": 1440,
+            "height": 3200,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "night-black",
+        "label": "玄夜黑"
+      },
+      {
+        "id": "snow-white",
+        "label": "雪岩白"
+      },
+      {
+        "id": "mountain-green",
+        "label": "山峦青"
+      },
+      {
+        "id": "moon-blue",
+        "label": "汐月蓝"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "coordinateSystem": "+X right, +Y up, +Z front; meters"
+  },
+  "research": {
+    "deviceId": "redmi-k80",
+    "formalName": "REDMI K80",
+    "fields": {
+      "width_mm": {
+        "value": 74.95,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-0"
+        ],
+        "evidence": "Explicit target specification width_mm 74.95; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "height_mm": {
+        "value": 160.26,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-0"
+        ],
+        "evidence": "Explicit target specification height_mm 160.26; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "thickness_mm": {
+        "value": 8.12,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-0"
+        ],
+        "evidence": "Explicit target specification thickness_mm 8.12; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "diagonal_inches": {
+        "value": 6.67,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-0"
+        ],
+        "evidence": "Explicit target specification diagonal_inches 6.67; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "display_pixels": {
+        "value": [
+          1440,
+          3200
+        ],
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k80-0"
+        ],
+        "evidence": "Explicit target specification display_pixels [1440, 3200]; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "corner_radius_mm": {
+        "value": 6.2,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, e86ea0e4bed235820bc577e645cadaa8e8639e337faf3ede70f607b4c4ae57a1, e0fa4a13126f3ea6fbd73da48ab3b02a3361e236659cca21c073cef9aac8adfa, 98f340f5d7982e71e2e88a62df7de355b5fdfbb7c8dd301eba27d5702840d89d, 21e5061ee870d792e0c7febf9f48b56b184891b1987aa4e0d573b8130f1a3a2e, 088a263ca24c70e4e761d0367c898b059cbb35e87a889eee27a58f3f9bae70a2, 18679337655b255034fd7b31f265f26e7f2ceb862e7b0084d75d121259947077, 5ecfef4f25c627bdfcff91983ce35c6bb5c97319b48b31accec509d62cb37dcb, 17fd5ae6e9f2536f3c1077058e9a579d33ecd3224faab264f1098c37f1c03369, f7591ee2658575cb0081fc6bc5da96969413d4f98616ac3d34eb405c6338d766, fe25f8623d1df9cf71873c86bc1c29d0b32db4cbc72c5f74612d2fa87ebd26fc, fff0f6e3d84f44170e8bdfc5477ac01f7b5518a6171fc7aa5f5bb36f6ff6e6bd, 7094b52965f8fd54536c0a0b16658cb820578d2333be1730ba01868a86048aa5"
+      },
+      "screen_corner_radius_mm": {
+        "value": 4.6,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 53917eb1a2d2cb76c6678b67d62ef06c5a4940ecc32dd58006777c6feb3a6f06, e86ea0e4bed235820bc577e645cadaa8e8639e337faf3ede70f607b4c4ae57a1, e0fa4a13126f3ea6fbd73da48ab3b02a3361e236659cca21c073cef9aac8adfa, 98f340f5d7982e71e2e88a62df7de355b5fdfbb7c8dd301eba27d5702840d89d, 21e5061ee870d792e0c7febf9f48b56b184891b1987aa4e0d573b8130f1a3a2e, 088a263ca24c70e4e761d0367c898b059cbb35e87a889eee27a58f3f9bae70a2, 18679337655b255034fd7b31f265f26e7f2ceb862e7b0084d75d121259947077, 5ecfef4f25c627bdfcff91983ce35c6bb5c97319b48b31accec509d62cb37dcb, 17fd5ae6e9f2536f3c1077058e9a579d33ecd3224faab264f1098c37f1c03369, f7591ee2658575cb0081fc6bc5da96969413d4f98616ac3d34eb405c6338d766, fe25f8623d1df9cf71873c86bc1c29d0b32db4cbc72c5f74612d2fa87ebd26fc, fff0f6e3d84f44170e8bdfc5477ac01f7b5518a6171fc7aa5f5bb36f6ff6e6bd, 7094b52965f8fd54536c0a0b16658cb820578d2333be1730ba01868a86048aa5"
+      },
+      "screen_height_mm": {
+        "value": 154.49591756375614,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Nominal full-rectangle diagonal/pixel aspect calculation; visible area unverified"
+      },
+      "screen_width_mm": {
+        "value": 69.52316290369026,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80/specs/entry-1775557304377.js",
+        "sha256": "bfffcd85986745a6b4214595176fb46b1154b7e39e19a2b0861da610432afe30",
+        "kind": "specs/",
+        "id": "redmi-k80-0",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k80 route and matching REDMI product title in source body"
+      },
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80/entry-1775557304377.js",
+        "sha256": "485645a1d2bc3c5fb0ee0a89212eabcb5c0a6b4688feed12fb0eb7440f6895ab",
+        "kind": "overview",
+        "id": "redmi-k80-1",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k80 route and matching REDMI product title in source body"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80/specs/entry-1775557304377.js",
+      "sha256": "bfffcd85986745a6b4214595176fb46b1154b7e39e19a2b0861da610432afe30",
+      "kind": "specs/",
+      "id": "redmi-k80-0",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k80 route and matching REDMI product title in source body"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80/entry-1775557304377.js",
+      "sha256": "485645a1d2bc3c5fb0ee0a89212eabcb5c0a6b4688feed12fb0eb7440f6895ab",
+      "kind": "overview",
+      "id": "redmi-k80-1",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k80 route and matching REDMI product title in source body"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament per-model appearance/export acceptance; Blender QA is separate"
+  ]
+}

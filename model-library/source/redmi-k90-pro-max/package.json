@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi-k90-pro-max",
+  "name": "REDMI K90 Pro Max · 外观重建",
+  "modelVersion": "1.2.0",
+  "states": [
+    "portrait"
+  ],
+  "defaultState": "portrait",
+  "notes": "官方核实黑色/流金白163.33×77.82×7.9mm、1200×2608像素OLED直屏、6系铝中框及玻纤背盖。支持黑色/流金白/丹宁/冠军版白的前侧配色，丹宁受控8.3mm派生；冠军背部联名图案/特殊后摄仍省略，独立厚度未核实；屏幕绝对有效毫米尺寸、圆角、倒角、按键/孔位/相机/扬声器细节尺寸及PBR数值为估计。三摄+辅助传感器阵列+背部独立低音单元按官方图重建，非原厂CAD。",
+  "defaultColorwayId": "flowing-gold-white",
+  "colors": [
+    {
+      "id": "flowing-gold-white",
+      "title": "流金白",
+      "backMaterial": "glass_fiber",
+      "materials": {
+        "k90_aircraft_aluminum": {
+          "srgb": "#DEDFDC",
+          "metallic": 0.95,
+          "roughness": 0.21
+        },
+        "k90_sculpted_aluminum_deco": {
+          "srgb": "#CDCDC7",
+          "metallic": 0.9,
+          "roughness": 0.26
+        },
+        "k90_warm_white_glass_fiber": {
+          "srgb": "#E5E2D8",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": " All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements.",
+      "thicknessMeters": 0.0079
+    },
+    {
+      "id": "black",
+      "title": "黑色",
+      "backMaterial": "glass_fiber",
+      "materials": {
+        "k90_aircraft_aluminum": {
+          "srgb": "#3F4245",
+          "metallic": 0.95,
+          "roughness": 0.21
+        },
+        "k90_sculpted_aluminum_deco": {
+          "srgb": "#3F4143",
+          "metallic": 0.9,
+          "roughness": 0.26
+        },
+        "k90_warm_white_glass_fiber": {
+          "srgb": "#27292C",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": " All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements.",
+      "thicknessMeters": 0.0079
+    },
+    {
+      "id": "denim",
+      "title": "丹宁色",
+      "backMaterial": "Tech-Denim",
+      "materials": {
+        "k90_aircraft_aluminum": {
+          "srgb": "#B8BEC6",
+          "metallic": 0.95,
+          "roughness": 0.21
+        },
+        "k90_sculpted_aluminum_deco": {
+          "srgb": "#C4C9CE",
+          "metallic": 0.9,
+          "roughness": 0.26
+        },
+        "k90_warm_white_glass_fiber": {
+          "srgb": "#405576",
+          "metallic": 0,
+          "roughness": 0.52
+        }
+      },
+      "notes": "Official220g versus standard218g. Silver-gray frame is separate from blue back. Pure PBR color does not reproduce textile weave. Front boundary unchanged; physical rear depth differs. Do not silently claim existing7.9mm GLB exactly represents8.3mm hardware. Global Zscale8.3/7.9 would also alter every protrusion and spacing; prefer explicit device-depth metadata or controlled rear/body depth adaptation; not implemented here. All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements.",
+      "thicknessMeters": 0.0083
+    },
+    {
+      "id": "champion-white",
+      "title": "K90 Pro Max 冠军版",
+      "backMaterial": "glass_fiber_family_exact_champion_substrate_not_separately_stated",
+      "materials": {
+        "k90_aircraft_aluminum": {
+          "srgb": "#9C9E9E",
+          "metallic": 0.95,
+          "roughness": 0.21
+        },
+        "k90_sculpted_aluminum_deco": {
+          "srgb": "#1E2122",
+          "metallic": 0.9,
+          "roughness": 0.26
+        },
+        "k90_warm_white_glass_fiber": {
+          "srgb": "#E2E2DB",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official FAQ calls冠军版（白色）. Front-visible trim is reflective silver/darkgray; not blue/gold invention. Official body states rear cameras redesigned andY-pattern/SC63/brand marks. Current front-focused palette omits rear graphics/logos and special rear geometry intentionally; do not claim full champion replica. Champion thickness not separately isolated in retrieved dimensional paragraph. All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements."
+    }
+  ]
+}

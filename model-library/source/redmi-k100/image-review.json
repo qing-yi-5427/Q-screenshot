@@ -1,0 +1,278 @@
+{
+  "method": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 0d98e7cb87c9766217f668f2a8a16c4a6e86c264bd3ff809ec4f3640d82ddaae, 895ab067a329d8bc964861688b45b9e2e467bb2fdbce19d700cda4232f4c1992, bc05e34a24afe519d543290fe8ee51b8e409c59d10b214077721d923a63277ef, 70fe508c8a4c9b023391c7e14cc9874947e6870f3539e5d5d1d749e25c22a594, 3480302489c1d6f351d4519a01c34869c6feb8e5907d98f9b59232886035c1c5, fbdfe850e78cb9be557986320043b191a4bd45966a46cd46cc1936a485276863, 988f8f341d34069af655fe13b7e03607d068b368b761598d4ffd3a0a0c8d5e39, 2df66a1a85f0b308afdca5a034fe740f4a3d4b2fc1148504bf7b988e161c3334, e4c190b020a771cc6e6618cb1a68a91b9249ed4bdf54b16f7030aeca65713185, 65629c38ef603d765400edaed2f763b7f694a3b634b0400f2f7290eaba9d3564, 26027e52d12ed1895c7e98497e3d505509493891c996d1ebc91a6c8119a81ac7, 2cf59165c6844162b446fef4820356f4121e7e4e8b578ad1b305a7c29c759ded, c14c50e28aa31d046828b812f71a2e9838ac3b62e37c26248645efcd7c88fe2a, d442c5bb8ff77da4ff0d9aff66d834f01f6bfb257e12004034c75b5e61693ff4",
+  "images": [
+    {
+      "index": 0,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/535.png",
+      "sha256": "0d98e7cb87c9766217f668f2a8a16c4a6e86c264bd3ff809ec4f3640d82ddaae",
+      "size": [
+        2560,
+        1156
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 1,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/3.png",
+      "sha256": "3ee2628ff78c9c5a82373304e6fd565119ee368784443150609af303139f18fe",
+      "size": [
+        1262,
+        5
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 2,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/9.png",
+      "sha256": "5a85417af9b75c9097d9299c106c8d7f0416702d1dc546172bd45206e622b306",
+      "size": [
+        1262,
+        5
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 3,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/15.png",
+      "sha256": "6221248c8771d5afb18966e0e2a3c81191f2017a17f87f975a2252fce0abdbd6",
+      "size": [
+        1262,
+        6
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 4,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/59.png",
+      "sha256": "895ab067a329d8bc964861688b45b9e2e467bb2fdbce19d700cda4232f4c1992",
+      "size": [
+        2560,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 5,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/22.png",
+      "sha256": "148377f9d4635463690fc0cfd1e8a96d8d48c9774a8c21c9025cea163b9e6fc6",
+      "size": [
+        1262,
+        4
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 6,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/62.png",
+      "sha256": "148377f9d4635463690fc0cfd1e8a96d8d48c9774a8c21c9025cea163b9e6fc6",
+      "size": [
+        1262,
+        4
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 7,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/70.png",
+      "sha256": "5a85417af9b75c9097d9299c106c8d7f0416702d1dc546172bd45206e622b306",
+      "size": [
+        1262,
+        5
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 8,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/79.png",
+      "sha256": "6221248c8771d5afb18966e0e2a3c81191f2017a17f87f975a2252fce0abdbd6",
+      "size": [
+        1262,
+        6
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 9,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/98.png",
+      "sha256": "148377f9d4635463690fc0cfd1e8a96d8d48c9774a8c21c9025cea163b9e6fc6",
+      "size": [
+        1262,
+        4
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 0,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3060.png",
+      "sha256": "bc05e34a24afe519d543290fe8ee51b8e409c59d10b214077721d923a63277ef",
+      "size": [
+        701,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 1,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3075.png",
+      "sha256": "70fe508c8a4c9b023391c7e14cc9874947e6870f3539e5d5d1d749e25c22a594",
+      "size": [
+        701,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 2,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3090.png",
+      "sha256": "3480302489c1d6f351d4519a01c34869c6feb8e5907d98f9b59232886035c1c5",
+      "size": [
+        701,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 7,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3120.png",
+      "sha256": "fbdfe850e78cb9be557986320043b191a4bd45966a46cd46cc1936a485276863",
+      "size": [
+        700,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 8,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3139.png",
+      "sha256": "988f8f341d34069af655fe13b7e03607d068b368b761598d4ffd3a0a0c8d5e39",
+      "size": [
+        700,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 9,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3159.png",
+      "sha256": "2df66a1a85f0b308afdca5a034fe740f4a3d4b2fc1148504bf7b988e161c3334",
+      "size": [
+        700,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 10,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3.png",
+      "sha256": "e4c190b020a771cc6e6618cb1a68a91b9249ed4bdf54b16f7030aeca65713185",
+      "size": [
+        2560,
+        1180
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 11,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/6.png",
+      "sha256": "65629c38ef603d765400edaed2f763b7f694a3b634b0400f2f7290eaba9d3564",
+      "size": [
+        2560,
+        500
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 12,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/10038.png",
+      "sha256": "26027e52d12ed1895c7e98497e3d505509493891c996d1ebc91a6c8119a81ac7",
+      "size": [
+        2560,
+        1340
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 13,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/71.png",
+      "sha256": "2cf59165c6844162b446fef4820356f4121e7e4e8b578ad1b305a7c29c759ded",
+      "size": [
+        2560,
+        1008
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 14,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/5237.png",
+      "sha256": "c14c50e28aa31d046828b812f71a2e9838ac3b62e37c26248645efcd7c88fe2a",
+      "size": [
+        2560,
+        940
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    },
+    {
+      "index": 15,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/10044.png",
+      "sha256": "d442c5bb8ff77da4ff0d9aff66d834f01f6bfb257e12004034c75b5e61693ff4",
+      "size": [
+        2560,
+        380
+      ],
+      "view": "unknown",
+      "notes": "Candidate cached for local reference; not relied on as a geometry measurement unless listed in reviewedGeometryReferences."
+    }
+  ],
+  "licensing": "Reference cache only; no manufacturer image redistributed",
+  "geometryConfidence": "estimated_visual_reference",
+  "limitations": "Coarse individually reviewed front/side reconstruction. Published dimensions are exact inputs; geometry of controls/ports/active screen/radii remains approximate. No rear camera hardware/graphics. No device-specific Android acceptance yet.",
+  "reviewedGeometryReferences": [
+    {
+      "index": 10,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_57715/images/3.png",
+      "sha256": "e4c190b020a771cc6e6618cb1a68a91b9249ed4bdf54b16f7030aeca65713185",
+      "size": [
+        2560,
+        1180
+      ],
+      "view": "detail",
+      "confidenceScore": 0.8,
+      "notes": "Official front/back/side triptych, punch and large corner silhouette",
+      "classification": "visual_observation"
+    },
+    {
+      "index": 4,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k100_86836/images/59.png",
+      "sha256": "895ab067a329d8bc964861688b45b9e2e467bb2fdbce19d700cda4232f4c1992",
+      "size": [
+        2560,
+        500
+      ],
+      "view": "detail",
+      "confidenceScore": 0.8,
+      "notes": "Official labeled front-side port diagram",
+      "classification": "visual_observation"
+    }
+  ]
+}

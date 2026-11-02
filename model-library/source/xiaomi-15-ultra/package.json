@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi-15-ultra",
+  "name": "Xiaomi 15 Ultra · 正面外观重建",
+  "modelVersion": "1.0.0",
+  "states": [
+    "portrait"
+  ],
+  "defaultState": "portrait",
+  "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。含全等深微曲盖板边缘与圆润中框；内容面保持可替换平面。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。",
+  "defaultColorwayId": "color-1",
+  "colors": [
+    {
+      "id": "color-1",
+      "title": "白色",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.009349999999999999,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#E4E4DF",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-2",
+      "title": "黑色",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.009349999999999999,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#292D30",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#292D30",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-3",
+      "title": "松柏绿",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00948,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#526A61",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-4",
+      "title": "经典黑银",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00948,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#4C5051",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-5",
+      "title": "樱花粉",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00948,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#D8BFCB",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-6",
+      "title": "微风蓝",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00948,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#A8CBCF",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-7",
+      "title": "鸢尾紫",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00948,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#87849D",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-8",
+      "title": "金棕色",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00948,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#B58F6D",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    }
+  ]
+}

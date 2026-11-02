@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-15-ultra",
+  "formalName": "Xiaomi 15 Ultra",
+  "fields": {
+    "width_mm": {
+      "value": 75.3,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['宽度：75.3mm 厚度：9.35mm（白色、黑色）；9.48mm（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色） 重量：226g（白色、黑色）；229g（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色）    *\\xa0以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。      外观尺寸  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "height_mm": {
+      "value": 161.3,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['长度：161.3mm 宽度：75.3mm 厚度：9.35mm（白色、黑色）；9.48mm（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色） 重量：226g（白色、黑色）；229g（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色）    *\\xa0以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。      外观尺寸  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "thickness_mm": {
+      "value": 9.35,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['厚度：9.35mm（白色、黑色）；9.48mm（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色） 重量：226g（白色、黑色）；229g（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色）    *\\xa0以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。      外观尺寸  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "display_pixels": {
+      "value": [
+        1440,
+        3200
+      ],
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Explicit portrait [width,height]; first/main display: ['分辨率：3200\\xa0x\\xa01440 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz \\xa0 专业原色屏｜DCI-P3｜超动态显示｜湿手触控｜多屏同色  对比度\\xa08,000,000：1丨HDR10+丨HDR\\xa0Vivid｜Dolby\\xa0Vision 多场景峰值亮度：3200nits 玻璃盖板：小米龙晶玻璃\\xa02.0   ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "diagonal_inches": {
+      "value": 6.73,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Official main display nominal diagonal; not used as exact active area"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "screen_height_mm": {
+      "value": 157.8,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 57cf8b2e74f1a1660249f9f896907b43de629dca41a6b8069f86118c4db35871 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15-ultra_478157/specs/images/ultra_7431.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.2mm corresponds to outer bend ~0.082 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "corner_radius_mm": {
+      "value": 6.2,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 57cf8b2e74f1a1660249f9f896907b43de629dca41a6b8069f86118c4db35871 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15-ultra_478157/specs/images/ultra_7431.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.2mm corresponds to outer bend ~0.082 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "screen_corner_radius_mm": {
+      "value": 4.9,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 57cf8b2e74f1a1660249f9f896907b43de629dca41a6b8069f86118c4db35871 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15-ultra_478157/specs/images/ultra_7431.png. Scale uses official body 75.3 x 161.3 mm. Corner radius 6.2mm corresponds to outer bend ~0.082 of body width; active height is body height minus 3.5mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-15-ultra/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-ultra/specs/entry-1751289276656.js",
+      "sha256": "f2937acf6a213727be0c797bb82fd426b65788011a28f3b8405f7f808d9b8608",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-15-ultra",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-ultra/entry-1751289276656.js",
+      "sha256": "6e7caf420feab7d0baf14bb26eccf3a2f97d132a6e80ce683a65fa9adf307272",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+  "imageObservations": [
+    {
+      "sha256": "57cf8b2e74f1a1660249f9f896907b43de629dca41a6b8069f86118c4db35871",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15-ultra_478157/specs/images/ultra_7431.png",
+      "view": "front",
+      "confidenceScore": 0.8,
+      "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+    },
+    {
+      "sha256": "bc90e14c6b2ebdc0b418c45f5ef24d0f950182bb8c050436bd669ee0c3e816f5",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/xiaomi-15-ultra_478157/specs/images/ultra_5865.png",
+      "view": "detail",
+      "confidenceScore": 0.7,
+      "notes": "Actually viewed official specification outline/side-control drawing in contact sheet. Supports placement/layout only; exact dimensions remain estimates."
+    }
+  ],
+  "officialExcerpts": {
+    "长度": [
+      "长度：161.3mm 宽度：75.3mm 厚度：9.35mm（白色、黑色）；9.48mm（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色） 重量：226g（白色、黑色）；229g（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色）    * 以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。      外观尺寸  "
+    ],
+    "宽度": [
+      "宽度：75.3mm 厚度：9.35mm（白色、黑色）；9.48mm（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色） 重量：226g（白色、黑色）；229g（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色）    * 以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。      外观尺寸  "
+    ],
+    "厚度": [
+      "厚度：9.35mm（白色、黑色）；9.48mm（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色） 重量：226g（白色、黑色）；229g（松柏绿、经典黑银、樱花粉、微风蓝、鸢尾紫、金棕色）    * 以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。      外观尺寸  "
+    ],
+    "分辨率": [
+      "分辨率：3200 x 1440 显示帧率：最高 120Hz 触控采样率：最高 300Hz   专业原色屏｜DCI-P3｜超动态显示｜湿手触控｜多屏同色  对比度 8,000,000：1丨HDR10+丨HDR Vivid｜Dolby Vision 多场景峰值亮度：3200nits 玻璃盖板：小米龙晶玻璃 2.0   "
+    ],
+    "类型": [
+      "类型：AMOLED (全等深微曲屏) 分辨率：3200 x 1440 显示帧率：最高 120Hz 触控采样率：最高 300Hz   专业原色屏｜DCI-P3｜超动态显示｜湿手触控｜多屏同色  对比度 8,000,000：1丨HDR10+丨HDR Vivid｜Dolby Vision 多场景峰值亮度：3200nits 玻璃盖板：小米龙晶玻璃 2.0   ",
+      "类型｜ 运动抓拍｜人像模式｜全景模式｜萌拍｜专业模式｜延时摄影｜超级夜景 2.0｜前后双景｜文档模式｜ 超级月亮｜慢动作拍摄｜长曝光｜人像虚化调节｜AI 美颜｜身份证影印模式｜视频滤镜｜视频美颜｜ 视频超级防抖｜动态照片｜倒计时拍照｜水平仪｜定时连拍｜人脸检测｜HDR｜自定义水印｜声控拍照  8K 视频拍摄：30fps 4K 视频拍摄：30 / 60/ 12"
+    ]
+  }
+}

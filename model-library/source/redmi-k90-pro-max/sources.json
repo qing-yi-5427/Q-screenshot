@@ -1,0 +1,191 @@
+[
+  {
+    "sourceId": "specs-shell",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max/specs",
+    "assetUrl": "https://www.mi.com/prod/redmi-k90-pro-max/specs",
+    "retrievedAt": "2026-10-29T13:48:24.615383+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/specs-shell.html",
+    "sha256": "1d2b2cf76664e8e4e531146b86de037434cecae5873adf2f8e38e46d9a0181f5",
+    "sourceType": "official_page_shell",
+    "mime": "text/html",
+    "verifiedProductIdentity": false,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Entry and official product metadata, not used alone for numeric specification"
+  },
+  {
+    "sourceId": "specs-wrapper",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max/specs",
+    "assetUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/redmi-k90-pro-max/specs/index.html",
+    "retrievedAt": "2026-10-29T13:48:24.615808+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/specs-wrapper.html",
+    "sha256": "756f6661db9afe246347b72edea5f22a030f364e3f02d6668bb567fe60e77d6e",
+    "sourceType": "official_page_resource",
+    "mime": "text/html",
+    "verifiedProductIdentity": false,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Public wrapper from actual prod-template mounted() route"
+  },
+  {
+    "sourceId": "specs-body",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max/specs",
+    "assetUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-pro-max/specs/entry-1778678001254.js",
+    "retrievedAt": "2026-10-29T13:48:24.615926+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/specs-entry.js",
+    "sha256": "803dbe25c6d8b6b780dbed9538443994f7037c25adfb8697241a45d538a626ab",
+    "sourceType": "official_product_body",
+    "mime": "text/javascript",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually read163.33×77.82×7.9mm standard colors;2608*1200 OLED;denim8.3mm220g separate;thickness excludes lenses"
+  },
+  {
+    "sourceId": "overview-wrapper",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/redmi-k90-pro-max/index.html",
+    "retrievedAt": "2026-10-29T13:48:24.616103+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/overview-wrapper.html",
+    "sha256": "ec5ff271d6bd186edf3cda86caa74e5e41f55c7d2ab75126cf02c12bc58879df",
+    "sourceType": "official_page_resource",
+    "mime": "text/html",
+    "verifiedProductIdentity": false,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Public wrapper points to exact overview bundle"
+  },
+  {
+    "sourceId": "overview-body",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90-pro-max/entry-1778678001254.js",
+    "retrievedAt": "2026-10-29T13:48:24.616316+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/overview-entry.js",
+    "sha256": "cbae838071265b16a6b1b35cbd1dc413e1a52321352cf76525bb11b12f4cbf26",
+    "sourceType": "official_product_body",
+    "mime": "text/javascript",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actual product FAQ:6-series aluminum frame;glass-fiber/Tech-Denim back;camera and rear subwoofer integrated platform"
+  },
+  {
+    "sourceId": "official-variants",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/3074.png",
+    "retrievedAt": "2026-10-29T13:48:24.616631+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/render-3074.png",
+    "sha256": "236fbd2ffaec105a90b09017a05436a4d76bca09225e246d6eed92a51dfa69d2",
+    "sourceType": "official_product_render",
+    "mime": "image/png",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually viewed white/black/denim slanted back trio; special champion render separately shown; only standard white modeled",
+    "imageSize": [
+      426,
+      301
+    ]
+  },
+  {
+    "sourceId": "official-rear-diagram",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_55474/images/3321.png",
+    "retrievedAt": "2026-10-29T13:48:24.616857+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/diagram.png",
+    "sha256": "06ce09cbc7d74cdcb8b235371cbaa389d22f07b56f52cc36aeb17299bf7ea9bc",
+    "sourceType": "official_product_diagram",
+    "mime": "image/png",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually viewed rear/port/key/IR/flash/loudspeaker diagram; not a factoryCAD",
+    "imageSize": [
+      757,
+      423
+    ]
+  },
+  {
+    "sourceId": "official-camera-detail",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_90396/images/25443.png",
+    "retrievedAt": "2026-10-29T13:48:24.617977+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/camera-detail.png",
+    "sha256": "2ce920bd438b8a1272dec4bfbe116c62ada5ee5eec73bac657b5fc27a9e33355",
+    "sourceType": "official_product_render",
+    "mime": "image/png",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually viewed volcano metalDeco/4-curved frame/rear speaker microholes; no texture copied",
+    "imageSize": [
+      1600,
+      1148
+    ]
+  },
+  {
+    "sourceId": "official-closeup",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_90396/images/32431.png",
+    "retrievedAt": "2026-10-29T13:48:24.619548+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/design.png",
+    "sha256": "80a496b88ff3fd22182b9d566ba5acb519044f1f61cff1d3ef5feccfe60fc25b",
+    "sourceType": "official_product_render",
+    "mime": "image/png",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually viewed three camera optics plus auxiliary circularsensor cluster and independent rearwoofer; square periscope lower-left when viewed from rear",
+    "imageSize": [
+      1612,
+      742
+    ]
+  },
+  {
+    "sourceId": "official-front",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_90396/images/32430.png",
+    "retrievedAt": "2026-10-29T13:48:24.621039+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/front.png",
+    "sha256": "0124778fcb5c641b33abbfe689776638c5bbb455bed7814632b940235a9ced85",
+    "sourceType": "official_product_render",
+    "mime": "image/png",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually viewed OLED front, centered selfie punch, flat panel and large corners",
+    "imageSize": [
+      2560,
+      1017
+    ]
+  },
+  {
+    "sourceId": "official-white-color",
+    "publisher": "Xiaomi / REDMI",
+    "pageUrl": "https://www.mi.com/prod/redmi-k90-pro-max",
+    "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-pro-max_90396/images/25457.png",
+    "retrievedAt": "2026-10-29T13:48:24.622600+00:00",
+    "localPath": ".cache/references/redmi-k90-pro-max/color-white.png",
+    "sha256": "aa15638f7fb36c340e9a565ce5410a4c2bdafdcff6271e36a2dbe4e134370d87",
+    "sourceType": "official_product_render",
+    "mime": "image/png",
+    "verifiedProductIdentity": true,
+    "usage": "local_visual_reference_only",
+    "redistributionPermission": "not_verified",
+    "notes": "Actually viewed white version aluminum frame, platform, back and side buttons",
+    "imageSize": [
+      1600,
+      750
+    ]
+  }
+]

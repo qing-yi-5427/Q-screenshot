@@ -1,0 +1,186 @@
+{
+  "catalogItems": 25,
+  "downloadablePackages": 24,
+  "packageBytes": 8965024,
+  "downloadableGlbs": 43,
+  "downloadableColors": 98,
+  "bundledColors": 4,
+  "checks": [
+    "ZIP limits",
+    "package/device/catalog identity+version",
+    "material override names",
+    "GLB hashes",
+    "No vendor images/textures/external buffers",
+    "Safe paths"
+  ],
+  "packages": [
+    {
+      "id": "redmi-k100-pro-max",
+      "packageBytes": 196935,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k100-pro",
+      "packageBytes": 195478,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k100",
+      "packageBytes": 196061,
+      "files": 3,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k80-pro",
+      "packageBytes": 195993,
+      "files": 3,
+      "colors": 5,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k80-ultra",
+      "packageBytes": 194742,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k80",
+      "packageBytes": 195996,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k90-max",
+      "packageBytes": 195257,
+      "files": 3,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k90-pro-max",
+      "packageBytes": 1641786,
+      "files": 4,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k90-ultra",
+      "packageBytes": 196738,
+      "files": 3,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "redmi-k90",
+      "packageBytes": 196468,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-15-pro",
+      "packageBytes": 357133,
+      "files": 4,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-15-ultra",
+      "packageBytes": 1245286,
+      "files": 9,
+      "colors": 8,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-15",
+      "packageBytes": 830051,
+      "files": 7,
+      "colors": 8,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-15s-pro",
+      "packageBytes": 179449,
+      "files": 3,
+      "colors": 2,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17-max",
+      "packageBytes": 337495,
+      "files": 4,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17-pro-max",
+      "packageBytes": 169577,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17-pro",
+      "packageBytes": 169902,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17-ultra-byleica",
+      "packageBytes": 587150,
+      "files": 5,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17-ultra",
+      "packageBytes": 169699,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17",
+      "packageBytes": 169485,
+      "files": 3,
+      "colors": 4,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17t-pro",
+      "packageBytes": 168631,
+      "files": 3,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-17t",
+      "packageBytes": 169849,
+      "files": 3,
+      "colors": 3,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-18-pro-max",
+      "packageBytes": 502576,
+      "files": 5,
+      "colors": 5,
+      "checks": "PASS"
+    },
+    {
+      "id": "xiaomi-18-pro",
+      "packageBytes": 503287,
+      "files": 5,
+      "colors": 5,
+      "checks": "PASS"
+    }
+  ]
+}

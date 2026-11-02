@@ -118,7 +118,7 @@ def validate_profile(p):
     if p.get('schemaVersion') != 1 or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', p['deviceId']):
         raise ValueError('Invalid profile schema/deviceId')
     adapter = p['adapter']
-    if adapter not in (*ADAPTERS.values(), 'slab-front'):
+    if adapter not in (*ADAPTERS.values(), 'slab-front', 'xiaomi-library'):
         raise ValueError('Unknown adapter')
     if adapter in ADAPTERS.values() and ADAPTERS.get(p['deviceId']) != adapter:
         raise ValueError('Dedicated adapters cannot be relabeled as a different phone')
@@ -185,6 +185,8 @@ def build(profile_path, output, blender=None, dry_run=False):
         path = out/'assets'/state['modelPath']
         state['assetHash'] = digest(path.read_bytes())
         accepted = ROOT/'app/src/main/assets'/state['modelPath']
+        if not accepted.exists():
+            accepted = ROOT/'model-library/baselines'/p['deviceId']/Path(state['modelPath']).name
         comparison=dict(modelPath=state['modelPath'], sha256=state['assetHash'],
                                 acceptedSha256=digest(accepted.read_bytes()) if accepted.exists() else None,
                                 byteIdentical=accepted.exists() and accepted.read_bytes()==path.read_bytes())

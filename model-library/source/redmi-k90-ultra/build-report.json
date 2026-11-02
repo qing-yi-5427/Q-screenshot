@@ -1,0 +1,17 @@
+{
+  "status": "contract_passed",
+  "models": [
+    {
+      "modelPath": "devices/redmi-k90-ultra/portrait.glb",
+      "sha256": "79292ad8f89f5a9c75a7601ef4f66656daf7dd986e712ac253192e7f58729432",
+      "acceptedSha256": null,
+      "byteIdentical": false
+    }
+  ],
+  "profileSha256": "40298eced4a3a4532be572aada3d740d7c8684867b9652389ce3ff826138f044",
+  "blenderVersion": "Blender 4.5.0",
+  "khronos": "PASS",
+  "scope": "Primary model per state; derived denim excluded",
+  "visualReview": "BLENDER_FOUR_VIEW_REVIEWED: front, left/right30deg, side85deg; neutral diagnostic screen; not Android",
+  "androidFilament": "NOT_RUN"
+}

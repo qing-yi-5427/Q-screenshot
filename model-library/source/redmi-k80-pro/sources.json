@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-pro/specs/entry-1775557342075.js",
+    "sha256": "c81fe99bbedb52bb29f385ef2c806c5acc2c4f3ff69851b582d90f91173ae009",
+    "kind": "specs/",
+    "id": "redmi-k80-pro-0",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k80-pro route and matching REDMI product title in source body"
+  },
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k80-pro/entry-1775557342075.js",
+    "sha256": "9aa15c9240d7889ce8ff34d928b46ff82a581bc77c4b9955a846b0c4ca19d9d8",
+    "kind": "overview",
+    "id": "redmi-k80-pro-1",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k80-pro route and matching REDMI product title in source body"
+  }
+]

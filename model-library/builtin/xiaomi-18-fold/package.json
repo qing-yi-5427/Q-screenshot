@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi-18-fold",
+  "name": "Xiaomi 18 Fold · 外观重建",
+  "modelVersion": "1.3.0",
+  "states": [
+    "folded",
+    "unfolded"
+  ],
+  "defaultState": "folded",
+  "notes": "官方专属正文与多视角核实正式机型、长宽厚、屏幕像素/标称对角、7系铝中框与普通玻璃背板。支持官方四款配色，机身分区PBR估计；按用户要求以正面套壳为范围：真实两层/两半实体、非对称圆角、侧厚、铰链与金属边缘保留，背面简化为遮挡/投影用闭合几何，不含相机Deco、镜头或背部外屏细节。有效屏幕毫米由官方正面栅格图校准并保持官方像素比，仍为估计；黑边与金属分层，黑mask约0.85mm为估计，局部圆角/孔位与PBR非原厂CAD。",
+  "defaultColorwayId": "warm-gold-white",
+  "colors": [
+    {
+      "id": "warm-gold-white",
+      "title": "暖金白",
+      "backMaterial": "Xiaomi_DragonCrystalGlass_3.0",
+      "materials": {
+        "x18_7series_warm_silver": {
+          "srgb": "#DDDBD2",
+          "metallic": 0.95,
+          "roughness": 0.3
+        },
+        "x18_front_satin_aluminum": {
+          "srgb": "#DDDBD2",
+          "metallic": 0.95,
+          "roughness": 0.38
+        },
+        "x18_warm_gold_white_AG_glass": {
+          "srgb": "#EDE8DE",
+          "metallic": 0,
+          "roughness": 0.37
+        }
+      },
+      "notes": " All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements."
+    },
+    {
+      "id": "black",
+      "title": "黑色",
+      "backMaterial": "Xiaomi_DragonCrystalGlass_3.0",
+      "materials": {
+        "x18_7series_warm_silver": {
+          "srgb": "#404143",
+          "metallic": 0.95,
+          "roughness": 0.3
+        },
+        "x18_front_satin_aluminum": {
+          "srgb": "#404143",
+          "metallic": 0.95,
+          "roughness": 0.38
+        },
+        "x18_warm_gold_white_AG_glass": {
+          "srgb": "#202122",
+          "metallic": 0,
+          "roughness": 0.37
+        }
+      },
+      "notes": " All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements."
+    },
+    {
+      "id": "xiye-red",
+      "title": "西野红",
+      "backMaterial": "Xiaomi_DragonCrystalGlass_3.0",
+      "materials": {
+        "x18_7series_warm_silver": {
+          "srgb": "#AA1D2E",
+          "metallic": 0.95,
+          "roughness": 0.3
+        },
+        "x18_front_satin_aluminum": {
+          "srgb": "#AA1D2E",
+          "metallic": 0.95,
+          "roughness": 0.38
+        },
+        "x18_warm_gold_white_AG_glass": {
+          "srgb": "#761529",
+          "metallic": 0,
+          "roughness": 0.37
+        }
+      },
+      "notes": " All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements."
+    },
+    {
+      "id": "ceramic-special",
+      "title": "陶瓷特别版",
+      "backMaterial": "silicon_nitride_ceramic",
+      "materials": {
+        "x18_7series_warm_silver": {
+          "srgb": "#D7B6AF",
+          "metallic": 0.95,
+          "roughness": 0.3
+        },
+        "x18_front_satin_aluminum": {
+          "srgb": "#D7B6AF",
+          "metallic": 0.95,
+          "roughness": 0.38
+        },
+        "x18_warm_gold_white_AG_glass": {
+          "srgb": "#E8CBC4",
+          "metallic": 0,
+          "roughness": 0.24
+        }
+      },
+      "notes": "Official name remains陶瓷特别版; FAQ describes粉色 and overview says color inspired by淡粉釉. Do not rename official selection粉色. Official nitrogen-silicon ceramic replaces ordinary glass back. Geometry difference beyond material not separately verified; simplified rear kept. All RGB/metallic/roughness are original visual estimates under manufacturer image lighting, not measured reflectance, official Pantone or CAD. Official status applies only to product color names and explicitly sourced material statements."
+    }
+  ]
+}

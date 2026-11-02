@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-17-pro-max",
+  "formalName": "Xiaomi 17 Pro Max",
+  "fields": {
+    "width_mm": {
+      "value": 77.6,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['宽度：77.6mm 厚度：8.0mm\\xa0 重量：219g    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "height_mm": {
+      "value": 162.9,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['长度：162.9mm 宽度：77.6mm 厚度：8.0mm\\xa0 重量：219g    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ', '长度是\\xa06.9\\xa0英寸、背屏对角线 长度是\\xa02.9\\xa0英寸\\xa0(实际可视区域较小)。     正屏   6.9″低功耗超级阳光屏 类型：AMOLED\\xa0 分辨率：2608\\xa0x\\xa01200\\xa0超级像素 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 色域：支持\\xa0P3\\xa0广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光* 玻璃盖板：小米龙']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "thickness_mm": {
+      "value": 8.0,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['厚度：8.0mm\\xa0 重量：219g    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "display_pixels": {
+      "value": [
+        1200,
+        2608
+      ],
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Explicit portrait [width,height]; first/main display: ['分辨率：2608\\xa0x\\xa01200\\xa0超级像素 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 色域：支持\\xa0P3\\xa0广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0      背屏   2.9″低功耗超级阳光屏 类型：AMOLED\\xa0 分辨率：976\\xa0x\\xa0596 显示帧率：最高\\xa0120Hz 触控采样']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "diagonal_inches": {
+      "value": 6.9,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Official main display nominal diagonal; not used as exact active area"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "screen_height_mm": {
+      "value": 159.5,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 c91cea1372164c4a02ba77e9761476a8ef8f4e891a57d7fd75dfbde84bb5e0e2 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-pro-max_6286/images/5665.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.4mm corresponds to outer bend ~0.134 of body width; active height is body height minus 3.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "corner_radius_mm": {
+      "value": 10.4,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 c91cea1372164c4a02ba77e9761476a8ef8f4e891a57d7fd75dfbde84bb5e0e2 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-pro-max_6286/images/5665.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.4mm corresponds to outer bend ~0.134 of body width; active height is body height minus 3.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "screen_corner_radius_mm": {
+      "value": 9.1,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 c91cea1372164c4a02ba77e9761476a8ef8f4e891a57d7fd75dfbde84bb5e0e2 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-pro-max_6286/images/5665.png. Scale uses official body 77.6 x 162.9 mm. Corner radius 10.4mm corresponds to outer bend ~0.134 of body width; active height is body height minus 3.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17-pro-max/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-pro-max/specs/entry-1783045099007.js",
+      "sha256": "400190ee077da1faa1ad93719e8ba9ddbbb6f561e6014be562663ddb5cc05809",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-17-pro-max",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-17-pro-max/entry-1783045099007.js",
+      "sha256": "81bc2d1ead6e85db8153096d51f4a8ba714393cbfaa128abf829af9cef5e6733",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+  "imageObservations": [
+    {
+      "sha256": "c91cea1372164c4a02ba77e9761476a8ef8f4e891a57d7fd75dfbde84bb5e0e2",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-pro-max_6286/images/5665.png",
+      "view": "front",
+      "confidenceScore": 0.8,
+      "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+    },
+    {
+      "sha256": "f19ddcb4b52a6fa52d17d6d93018f62a5dd294f82efea23fd8b32b31209290fe",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-17-pro-max_6286/images/6007.png",
+      "view": "detail",
+      "confidenceScore": 0.7,
+      "notes": "Actually viewed official specification outline/side-control drawing in contact sheet. Supports placement/layout only; exact dimensions remain estimates."
+    }
+  ],
+  "officialExcerpts": {
+    "长度": [
+      "长度：162.9mm 宽度：77.6mm 厚度：8.0mm  重量：219g    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  ",
+      "长度是 6.9 英寸、背屏对角线 长度是 2.9 英寸 (实际可视区域较小)。     正屏   6.9″低功耗超级阳光屏 类型：AMOLED  分辨率：2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光* 玻璃盖板：小米龙"
+    ],
+    "宽度": [
+      "宽度：77.6mm 厚度：8.0mm  重量：219g    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  "
+    ],
+    "厚度": [
+      "厚度：8.0mm  重量：219g    *以上数据为小米实验室测试数据，依据行业内测量方式不同，实际结果可能略有差异。  "
+    ],
+    "分辨率": [
+      "分辨率：2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0      背屏   2.9″低功耗超级阳光屏 类型：AMOLED  分辨率：976 x 596 显示帧率：最高 120Hz 触控采样"
+    ],
+    "类型": [
+      "类型：AMOLED  分辨率：2608 x 1200 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持 P3 广色域 最低亮度：1nit 多场景峰值亮度：3500nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0      背屏   2.9″低功耗超级阳光屏 类型：AMOLED  分辨率：976 x 596 显示帧率：最高"
+    ]
+  }
+}

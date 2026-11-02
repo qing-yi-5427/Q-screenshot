@@ -167,7 +167,7 @@ class PipelineTests(unittest.TestCase):
 
     @unittest.skipUnless(os.environ.get('Q_PIPELINE_BLENDER'),'Set Q_PIPELINE_BLENDER for real Blender integration')
     def test_actual_blender_replay_twice_and_new_slab(self):
-        protected={p: r.digest(p.read_bytes()) for base in ('app/src/main/assets','assets-source') for p in (m.ROOT/base).rglob('*') if p.is_file()}
+        protected={p: r.digest(p.read_bytes()) for base in ('app/src/main/assets','assets-source','model-library/baselines') for p in (m.ROOT/base).rglob('*') if p.is_file()}
         with tempfile.TemporaryDirectory() as td:
             td=Path(td)
             for device in m.ADAPTERS:

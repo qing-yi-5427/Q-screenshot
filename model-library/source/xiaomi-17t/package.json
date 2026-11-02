@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "xiaomi-17t",
+  "name": "Xiaomi 17T · 正面外观重建",
+  "modelVersion": "1.0.0",
+  "states": [
+    "portrait"
+  ],
+  "defaultState": "portrait",
+  "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 大陆专属参数页：不得混用国际版尺寸/配色/电池。 Android Filament逐机替图/导出待验。",
+  "defaultColorwayId": "color-1",
+  "colors": [
+    {
+      "id": "color-1",
+      "title": "黑色",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00817,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#292D30",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#292D30",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-2",
+      "title": "冰莓紫",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00817,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#BE9EC3",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "color-3",
+      "title": "幻彩白",
+      "backMaterial": "official_name_substrate_not_recertified",
+      "thicknessMeters": 0.00817,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C7CBCB",
+          "metallic": 0.92,
+          "roughness": 0.27
+        },
+        "back_estimated": {
+          "srgb": "#DEDCDC",
+          "metallic": 0,
+          "roughness": 0.42
+        }
+      },
+      "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    }
+  ]
+}

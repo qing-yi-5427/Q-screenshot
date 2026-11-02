@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90/specs/entry-1761296599918.js",
+    "sha256": "f47161758c5aaa46335043a2f13f1e26606fc7b1cdbbc2bd80aff2a8e474425d",
+    "kind": "specs/",
+    "id": "redmi-k90-0",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k90 route and matching REDMI product title in source body"
+  },
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k90/entry-1761296599918.js",
+    "sha256": "686cca4d82ed70cd9468e3bd4866263b3780e907c8584cc80553c10f5f71c8b8",
+    "kind": "overview",
+    "id": "redmi-k90-1",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k90 route and matching REDMI product title in source body"
+  }
+]

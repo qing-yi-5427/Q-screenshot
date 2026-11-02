@@ -68,3 +68,7 @@ Blender 便携包通过官方下载 SHA256 校验：
 - 本次 Khronos 为 NOT_RUN；Android、外观验收与联网采集未运行。未新增机型下载或联网运行时功能。
 
 本地验证日志位于 `.cache/review-research/fix-pipeline.log`、`fix-ci-version.log`、`fix-blender.log`；隔离构建及报告位于 `.cache/review-research/blender-check/`。这些忽略目录产物不纳入提交。
+
+## 0.8.0按需库基线回归
+
+2026-11-02在APK移除K90资源后，再以实际Blender4.5.0运行全16项，无skip，全部PASS（4.532s）。比较器从非APK `model-library/baselines/redmi-k90-pro-max` 读取原GLB，Fold与K90各两次构建仍语义一致，输出hash可复现。保护快照新增此源基线目录，确认app/assets-source/baselines在staging测试前后均未改动。日志 `.cache/model-library-staging/pipeline-full-regression.log`。

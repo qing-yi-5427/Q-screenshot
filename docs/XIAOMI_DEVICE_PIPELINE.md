@@ -15,9 +15,9 @@ python tools/xiaomi_pipeline.py replay --device redmi-k90-pro-max --output .cach
 python tools/build_assets.py --profile .cache/pipeline/redmi-profile/profile.json --staging-root .cache/pipeline/redmi-build
 ```
 
-每次用新的输出目录；已有目录拒绝覆盖。`--dry-run` 不需要 Blender，不创建产物。`--profile` 显式进入 staging 分支，不运行旧入口的 runtime 写入、配色同步或 catalog 发布步骤。**旧式 `build_assets.py --device ...` 仍是原有生产行为，会写入当前资源，回归时不要使用。**
+每次用新的输出目录；已有目录拒绝覆盖。`--dry-run` 不需要 Blender，不创建产物。`--profile` 显式进入 staging 分支，不运行旧入口的 runtime 写入、配色同步或 catalog 发布步骤。**旧式 `build_assets.py --device ...` 已改为默认新staging，不再写当前资源。无参数默认构建Fold；显式 `--update-builtin-fold` 才会在staging验证后更新唯一内置Fold两状态及元数据，拒绝红米或自定义profile内置更新。**
 
-复现范围为 K90 默认 portrait、Fold folded/unfolded 三份主模型；不重新生产丹宁派生款。现有运行时四份 GLB（包括丹宁）可用 `python tools/validate_assets.py --all` 验证。本次同时修复了旧验证器将丹宁误当独立 state、错误报告多余 GLB 的问题。
+复现范围为 K90 默认 portrait、Fold folded/unfolded 三份主模型；不重新生产丹宁派生款。0.8.0运行时只含Fold两份GLB，`python tools/validate_assets.py --all` 验证当前内置资源；原K90主/丹宁两份原字节在 `model-library/baselines`，按需包的完整合同验证使用对应staging assets目录。本次同时修复了旧验证器将丹宁误当独立 state、错误报告多余 GLB 的问题。
 
 输出：
 
@@ -132,3 +132,7 @@ Q_PIPELINE_BLENDER="$BLENDER" python -m unittest discover -s tools -p 'test_xiao
 ```
 
 第一条离线单元测试，真实 Blender 集成测试明确 SKIP。第二条实际构建两款机型各两次、比较哈希和现有模型语义、生成合成新直板机，并确认 app/assets-source 所有文件哈希不变。fixture 使用原创文本，无厂商图片。实际本轮结果见 `XIAOMI_PIPELINE_TEST_RESULTS.md`。
+
+## 按需库迁移后的验收基线
+
+0.8.0仅内置18Fold；原K90 Pro Max主/丹宁GLB与device.json原字节保留于 `model-library/baselines/redmi-k90-pro-max`，不会进入APK。profile/research/colorways仍来自 `assets-source/devices/redmi-k90-pro-max`。staging比较器先读内置asset，缺失时从此源基线回退；不将“现在APK没有K90”解释为不需要原资源比较。真实Blender集成测试包含此基线的全文件hash保护，删除APK资源后仍执行两次replay与语义比较。

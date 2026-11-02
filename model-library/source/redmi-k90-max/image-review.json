@@ -1,0 +1,365 @@
+{
+  "method": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: 8f0e4c70abd975209558a95c8eddeda37013ded3165880ea22f586317be81172, 65f4ce9d1d2dcab0bf584490f82cd9c75d3bdaf115acc92cb99e88d37e93e7ff, 45457d60dc890131b4fb71227394a6cd666ee74c0c725acc964c24f298c8efe8, 47df585f3685304517a21ce3a43eaef3572248591ddce25b320be553dec14a7e, 41852296e602fccf98497f050c9da3a960d4f7cd8d6684874eebb88ced7cdc1c, 127742cc0b914f92ac0fcbe3fdd47f11082cffecf5bc10bb1db6266bb60d1d94, b9542607049cbcff3aeda3ca2d47ca48e260fbc8350f6b9752938c409781fa67, 1b35977ea043d9928ce1c962f1c6bf679a099536d6af2627b369d8e72be8a660, a95fa1f0230b37169b153485c2a12a8747d51237cf1f1f2e820324bc05f8f7f0, 9c77d355001abd6caaf388e3a418aa34f1be7581afdbd080714d42dabec8fa5b, a9fed4fffd9a725c87f94b1910122636764a8f38b5c0ac5a988d56c9095db37b, 87cd2de5cb6db5327e2b03166a8c6f26939d129dc8adec0b8d53861cf6783398, aa58d08d32b085e256f9a179f1f533642eacdebdf16f48766ef216d3f009bcd6, 9740eb418742152b0f5f9bd8e358fc31542bd7194fc7e0a8597bd3b1973bb5e3",
+  "images": [
+    {
+      "index": 0,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/646.png",
+      "sha256": "8f0e4c70abd975209558a95c8eddeda37013ded3165880ea22f586317be81172",
+      "size": [
+        2560,
+        8694
+      ]
+    },
+    {
+      "index": 1,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/3087.png",
+      "sha256": "3c095c5aa78f6732f70a872a883ff3f03ec1697a0c4c849787525be5a7cbb7b4",
+      "size": [
+        212,
+        20
+      ]
+    },
+    {
+      "index": 2,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/3705.png",
+      "sha256": "65f4ce9d1d2dcab0bf584490f82cd9c75d3bdaf115acc92cb99e88d37e93e7ff",
+      "size": [
+        354,
+        358
+      ]
+    },
+    {
+      "index": 3,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/1809.png",
+      "sha256": "330d894064879dd798d4dbb1504f1c6a0709a912bcf19b7d477dac4eff5f846d",
+      "size": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 4,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/1818.png",
+      "sha256": "b2623c1085d5d6da942fac10e3066dc6e48f8bca2056d47bf5aff6d181b05a37",
+      "size": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 5,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/1822.png",
+      "sha256": "accd6b441ae268536afe6d04f799a451fc4b03b0f484b5e5af60e2af48b583df",
+      "size": [
+        19,
+        20
+      ]
+    },
+    {
+      "index": 6,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/3738.png",
+      "sha256": "32878829b2f099e39f377436f5e40b63f5e66661f7fa092f04e044c032ad8f86",
+      "size": [
+        338,
+        59
+      ]
+    },
+    {
+      "index": 7,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/3739.png",
+      "sha256": "e0f5215ccc999cc907b4c897fa30756b9d09061ca1aca45a4b2c3161e94d3342",
+      "size": [
+        84,
+        20
+      ]
+    },
+    {
+      "index": 8,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/150.png",
+      "sha256": "6bbc9efc3ed5e0781a3a1d0308bc7fcf40aee942b1148c29decffdf82667c30f",
+      "size": [
+        1283,
+        3
+      ]
+    },
+    {
+      "index": 9,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/3079.png",
+      "sha256": "6bbc9efc3ed5e0781a3a1d0308bc7fcf40aee942b1148c29decffdf82667c30f",
+      "size": [
+        1283,
+        3
+      ]
+    },
+    {
+      "index": 0,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner_1.png",
+      "sha256": "45457d60dc890131b4fb71227394a6cd666ee74c0c725acc964c24f298c8efe8",
+      "size": [
+        1448,
+        800
+      ]
+    },
+    {
+      "index": 5,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner_2.png",
+      "sha256": "47df585f3685304517a21ce3a43eaef3572248591ddce25b320be553dec14a7e",
+      "size": [
+        1448,
+        800
+      ]
+    },
+    {
+      "index": 6,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner_3.png",
+      "sha256": "41852296e602fccf98497f050c9da3a960d4f7cd8d6684874eebb88ced7cdc1c",
+      "size": [
+        1448,
+        800
+      ]
+    },
+    {
+      "index": 7,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner2_1.png",
+      "sha256": "127742cc0b914f92ac0fcbe3fdd47f11082cffecf5bc10bb1db6266bb60d1d94",
+      "size": [
+        1449,
+        863
+      ]
+    },
+    {
+      "index": 12,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner2_2.png",
+      "sha256": "b9542607049cbcff3aeda3ca2d47ca48e260fbc8350f6b9752938c409781fa67",
+      "size": [
+        1452,
+        863
+      ]
+    },
+    {
+      "index": 13,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner2_3.png",
+      "sha256": "1b35977ea043d9928ce1c962f1c6bf679a099536d6af2627b369d8e72be8a660",
+      "size": [
+        1452,
+        864
+      ]
+    },
+    {
+      "index": 14,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner3_1.png",
+      "sha256": "a95fa1f0230b37169b153485c2a12a8747d51237cf1f1f2e820324bc05f8f7f0",
+      "size": [
+        1450,
+        795
+      ]
+    },
+    {
+      "index": 18,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner3_2.png",
+      "sha256": "9c77d355001abd6caaf388e3a418aa34f1be7581afdbd080714d42dabec8fa5b",
+      "size": [
+        1450,
+        795
+      ]
+    },
+    {
+      "index": 19,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner4_1.png",
+      "sha256": "a9fed4fffd9a725c87f94b1910122636764a8f38b5c0ac5a988d56c9095db37b",
+      "size": [
+        2560,
+        1200
+      ]
+    },
+    {
+      "index": 20,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner4_2.png",
+      "sha256": "87cd2de5cb6db5327e2b03166a8c6f26939d129dc8adec0b8d53861cf6783398",
+      "size": [
+        2560,
+        1200
+      ]
+    },
+    {
+      "index": 21,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner4_3.png",
+      "sha256": "aa58d08d32b085e256f9a179f1f533642eacdebdf16f48766ef216d3f009bcd6",
+      "size": [
+        2560,
+        1200
+      ]
+    },
+    {
+      "index": 27,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner5_1.png",
+      "sha256": "9740eb418742152b0f5f9bd8e358fc31542bd7194fc7e0a8597bd3b1973bb5e3",
+      "size": [
+        1192,
+        999
+      ]
+    },
+    {
+      "index": 0,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/14064.png",
+      "sha256": "b10870bc6a51445e32da446489f97ce8fb918772c7a91245c99e92afe0d6179a",
+      "size": [
+        1450,
+        608
+      ]
+    },
+    {
+      "index": 1,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/2155.png",
+      "sha256": "6dcec0c3f7b6e60589f201c747310cfcd8d678783594bf9e910265f0855be4c2",
+      "size": [
+        2048,
+        1035
+      ]
+    },
+    {
+      "index": 2,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/10067.png",
+      "sha256": "95680d62707ee81b24fe8594549e08ed3ea5bf1cd0448ae591b99d6feac6dd4a",
+      "size": [
+        347,
+        137
+      ]
+    },
+    {
+      "index": 3,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/12652.png",
+      "sha256": "f2bac498dbe83fc3a0f6a9ea41c97e6c09117227b6fd723e8de2b0c73dd342a5",
+      "size": [
+        711,
+        560
+      ]
+    },
+    {
+      "index": 4,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/12650.png",
+      "sha256": "37d5600c49ff1badb9501e43a64be4d1344429f90b8ef0f29959ff70ec296c6b",
+      "size": [
+        709,
+        555
+      ]
+    },
+    {
+      "index": 5,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/2238.png",
+      "sha256": "e812888761eef83eb288f9b63a46428df523b3b6c38b71fae9e26c6e03115660",
+      "size": [
+        1297,
+        1124
+      ]
+    },
+    {
+      "index": 6,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/13884.png",
+      "sha256": "a1f15f0f499d87bd1d06219e7f444fcc307bc3b49d9fd1555886bdd283628962",
+      "size": [
+        2560,
+        936
+      ]
+    },
+    {
+      "index": 7,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/13057.png",
+      "sha256": "265c375660022feb7197b04019805a04a13f3c99880eb4a9bc81b817a7597d72",
+      "size": [
+        665,
+        750
+      ]
+    },
+    {
+      "index": 8,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/13055.png",
+      "sha256": "b66a4fdc482f1893947de1886fdca9b6dca0f7534c478b21d9c15b15958b2a6d",
+      "size": [
+        665,
+        750
+      ]
+    },
+    {
+      "index": 9,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/13053.png",
+      "sha256": "c78d1d84675c80e20af74fcd3f015174dfacae045aa673f7f5c68a0ad2da963a",
+      "size": [
+        665,
+        750
+      ]
+    },
+    {
+      "index": 10,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/9162.png",
+      "sha256": "437ab14c1925f53d99a27e1fadf99401a1d276ea5bb3b7e605cfbb1dde4f22ef",
+      "size": [
+        1286,
+        1115
+      ]
+    },
+    {
+      "index": 11,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/9167.png",
+      "sha256": "579a917664c35cf7d45c1f782d5e42375ec540e69a8b7b509710d282a0e00874",
+      "size": [
+        2560,
+        2544
+      ]
+    }
+  ],
+  "licensing": "Reference cache only; no manufacturer image redistributed",
+  "geometryConfidence": "estimated_visual_reference",
+  "reviewedGeometryReferences": [
+    {
+      "index": 2,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_89281/images/3705.png",
+      "sha256": "65f4ce9d1d2dcab0bf584490f82cd9c75d3bdaf115acc92cb99e88d37e93e7ff",
+      "size": [
+        354,
+        358
+      ],
+      "view": "back",
+      "confidenceScore": 0.8,
+      "notes": "Official Max three-color lineup; fan grille distinguishes it from Ultra rear unit. Front scope excludes rear grille."
+    },
+    {
+      "index": 18,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/banner3_2.png",
+      "sha256": "9c77d355001abd6caaf388e3a418aa34f1be7581afdbd080714d42dabec8fa5b",
+      "size": [
+        1450,
+        795
+      ],
+      "view": "side",
+      "confidenceScore": 0.8,
+      "notes": "Official side/control detail; original estimates for right button position/length, not scaled from Ultra"
+    },
+    {
+      "index": 3,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/12652.png",
+      "sha256": "f2bac498dbe83fc3a0f6a9ea41c97e6c09117227b6fd723e8de2b0c73dd342a5",
+      "size": [
+        711,
+        560
+      ],
+      "view": "front",
+      "confidenceScore": 0.8,
+      "notes": "Official upper front camera/round corner reference; active region estimated by official diagonal/pixels"
+    },
+    {
+      "index": 8,
+      "url": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/redmi-k90-max_44832/images/13055.png",
+      "sha256": "b66a4fdc482f1893947de1886fdca9b6dca0f7534c478b21d9c15b15958b2a6d",
+      "size": [
+        665,
+        750
+      ],
+      "view": "side",
+      "confidenceScore": 0.8,
+      "notes": "Official side profile with two controls and frame edges"
+    }
+  ],
+  "identityEvidence": "Independent official REDMI K90 Max specs/overview routes; explicit MediaTek Dimensity 9500 versus Ultra Snapdragon8Elite, Max fan grille; not an alias of Ultra.",
+  "materialUnknown": "No explicit frame/back substrate statement recovered from these public text sources; only original estimated PBR, not an official material claim."
+}

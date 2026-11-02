@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "xiaomi-18-pro-max",
+  "formalName": "Xiaomi 18 Pro Max",
+  "fields": {
+    "width_mm": {
+      "value": 77.6,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['宽度：77.6mm']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "height_mm": {
+      "value": 163.39,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['长度：163.39mm']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "thickness_mm": {
+      "value": 8.39,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "['厚度：玻纤（黑色、白色、冰桃粉）8.39mm\\xa0；\\xa0玻璃（星河蓝、透明版）\\xa08.47mm']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "display_pixels": {
+      "value": [
+        1208,
+        2624
+      ],
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Explicit portrait [width,height]; first/main display: ['分辨率：\\xa02624\\xa0x\\xa01208\\xa0超级像素 显示帧率：最高\\xa0120Hz 触控采样率：最高\\xa0300Hz 色域：支持BT.2020超广色域 最低亮度：1nit 多场景峰值亮度：4000nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0\\xa0     *\\xa0屏幕全亮度区间，默认支持单脉冲DC调光。     背屏 2.9英寸\\xa0低功耗超级阳光屏   类型：AMOLED']"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "diagonal_inches": {
+      "value": 6.9,
+      "confidence": "official",
+      "confidenceScore": 0.9,
+      "sourceIds": [
+        "specs"
+      ],
+      "evidence": [
+        "Official main display nominal diagonal; not used as exact active area"
+      ],
+      "identityEvidence": "Dedicated product specs entry",
+      "scopeEvidence": "Front/main display, standard default material; excludes camera bump"
+    },
+    "screen_height_mm": {
+      "value": 160.99,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "corner_radius_mm": {
+      "value": 12.2,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    },
+    "screen_corner_radius_mm": {
+      "value": 10.899999999999999,
+      "confidence": "estimated",
+      "confidenceScore": 0.55,
+      "notes": "Original proportional front reconstruction; Image SHA256 6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816 at https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png. Scale uses official body 77.6 x 163.39 mm. Corner radius 12.2mm corresponds to outer bend ~0.157 of body width; active height is body height minus 2.4mm, an estimated inner bezel contour from the referenced image. Pixel aspect retained exactly; promotional art is perspective/rounded so no metrology accuracy is claimed."
+    }
+  },
+  "sources": [
+    {
+      "sourceId": "specs",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-18-pro-max/specs",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-pro-max/specs/entry-1791460809618.js",
+      "sha256": "7a90871065c27bd8985c091018df6ad7bd538718ff9747ab4e1dccdf67718276",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    },
+    {
+      "sourceId": "overview",
+      "pageUrl": "https://www.mi.com/prod/xiaomi-18-pro-max",
+      "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-pro-max/entry-1791460809618.js",
+      "sha256": "2384a63d212f242147cb4e69ddebad3aca0c7e9a39ebe4e7464f687be40d3214",
+      "mode": "live",
+      "verifiedProductIdentity": true,
+      "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
+      "retrievedAt": "2026-11-02",
+      "redistributionPermission": "not_verified"
+    }
+  ],
+  "scope": "China mainland front-only; no rear cameras/logos/vendor textures",
+  "imageObservations": [
+    {
+      "sha256": "6cb1447d86434b6ba1272aaaba40560168f3a2c38590a7a89edc725a37286816",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/2146.png",
+      "view": "front",
+      "confidenceScore": 0.8,
+      "notes": "Actually viewed local contact sheet and front crop; central round punch and rounded outline observed; image may be promotional perspective. Side control layout checked in official specification diagram. No image redistribution rights inferred."
+    },
+    {
+      "sha256": "788e8313c4a0ba782b4c5186c5a790e74e6f7c74a53b4cb4fff833d78313f3cf",
+      "assetUrl": "https://cdn.cnbj1.fds.api.mi-img.com/product-images/new-product-images/xiaomi-18-pro-max_36195/images/xian.png",
+      "view": "detail",
+      "confidenceScore": 0.7,
+      "notes": "Actually viewed official specification outline/side-control drawing in contact sheet. Supports placement/layout only; exact dimensions remain estimates."
+    }
+  ],
+  "officialExcerpts": {
+    "长度": [
+      "长度：163.39mm"
+    ],
+    "宽度": [
+      "宽度：77.6mm"
+    ],
+    "厚度": [
+      "厚度：玻纤（黑色、白色、冰桃粉）8.39mm ； 玻璃（星河蓝、透明版） 8.47mm"
+    ],
+    "分辨率": [
+      "分辨率： 2624 x 1208 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持BT.2020超广色域 最低亮度：1nit 多场景峰值亮度：4000nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0      * 屏幕全亮度区间，默认支持单脉冲DC调光。     背屏 2.9英寸 低功耗超级阳光屏   类型：AMOLED"
+    ],
+    "类型": [
+      "类型：AMOLED  分辨率： 2624 x 1208 超级像素 显示帧率：最高 120Hz 触控采样率：最高 300Hz 色域：支持BT.2020超广色域 最低亮度：1nit 多场景峰值亮度：4000nits 全亮度DC调光* 玻璃盖板：小米龙晶玻璃3.0      * 屏幕全亮度区间，默认支持单脉冲DC调光。     背屏 2.9英寸 低功耗超级阳光屏 ",
+      "类型：AMOLED  分辨率： 976 x 596 显示帧率：最高 120Hz 触控采样率：最高 120Hz 色域：支持BT.2020超广色域 最低亮度：1nit 多场景峰值亮度：4000nits 全亮度DC调光*  硬件防窥屏｜专业原色屏｜全屏息屏显示｜超动态显示｜湿手触控｜多屏同色 正屏显示认证：HDR10+丨HDR Vivid｜Dolby Vision"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "redmi-k90-pro-max",
+  "deviceId": "redmi-k90-pro-max",
+  "name": "REDMI K90 Pro Max · 外观重建",
+  "displayName": "REDMI K90 Pro Max · 外观重建",
+  "manufacturer": "Xiaomi / REDMI",
+  "verificationStatus": "partial_reconstruction",
+  "assetVersion": "1.2.0",
+  "approximationNotes": "官方核实黑色/流金白163.33×77.82×7.9mm、1200×2608像素OLED直屏、6系铝中框及玻纤背盖。支持黑色/流金白/丹宁/冠军版白的前侧配色，丹宁受控8.3mm派生；冠军背部联名图案/特殊后摄仍省略，独立厚度未核实；屏幕绝对有效毫米尺寸、圆角、倒角、按键/孔位/相机/扬声器细节尺寸及PBR数值为估计。三摄+辅助传感器阵列+背部独立低音单元按官方图重建，非原厂CAD。",
+  "coordinateSystem": "+X right, +Y up, +Z front; meters",
+  "physicalDimensions": {
+    "units": "meters",
+    "includesCameraBump": false,
+    "states": {
+      "portrait": [
+        0.07782,
+        0.16333,
+        0.0079
+      ]
+    }
+  },
+  "states": {
+    "portrait": {
+      "id": "portrait",
+      "asset": "devices/redmi-k90-pro-max/portrait.glb",
+      "modelPath": "devices/redmi-k90-pro-max/portrait.glb",
+      "activeScreenNode": "screen_main_content",
+      "screenMaterial": "screen_content",
+      "screenSizeMeters": [
+        0.07306748466257669,
+        0.15880000000000002
+      ],
+      "bodySizeMeters": [
+        0.07782,
+        0.16333,
+        0.0079
+      ],
+      "glassNode": null,
+      "frontDirection": [
+        0,
+        0,
+        1
+      ],
+      "uvOrigin": "top-left",
+      "verificationStatus": "partial_reconstruction",
+      "screenBindings": [
+        {
+          "contentNode": "screen_main_content",
+          "glassNode": null,
+          "materialSlot": 0,
+          "active": true
+        }
+      ],
+      "screenAspectRatio": 0.4601226993865031,
+      "inputSizeHints": [
+        {
+          "width": 1200,
+          "height": 2608,
+          "source": "official_specification"
+        }
+      ],
+      "orientationPresets": [
+        "portrait",
+        "landscape"
+      ],
+      "assetHash": "4d4422eed3129c07749f8845d95b76f8e59d160b655766920f69d7d17f067134",
+      "colorwayAssets": {
+        "denim": "devices/redmi-k90-pro-max/portrait-denim.glb"
+      },
+      "colorwayAssetHashes": {
+        "denim": "476702da19950341ff39aca2d01a90b955fc8c2e58fcc0ff2a60ed4ae21f994a"
+      },
+      "colorwayBodySizeMeters": {
+        "denim": [
+          0.07782,
+          0.16333,
+          0.0083
+        ]
+      }
+    }
+  },
+  "materialVariants": [
+    {
+      "id": "flowing-gold-white",
+      "label": "流金白",
+      "basis": "Official name/material family; original region PBR estimates"
+    },
+    {
+      "id": "black",
+      "label": "黑色",
+      "basis": "Official name/material family; original region PBR estimates"
+    },
+    {
+      "id": "denim",
+      "label": "丹宁色",
+      "basis": "Official name/material family; original region PBR estimates"
+    },
+    {
+      "id": "champion-white",
+      "label": "K90 Pro Max 冠军版",
+      "basis": "Official name/material family; original region PBR estimates"
+    }
+  ],
+  "defaultPose": {
+    "yaw": -22,
+    "pitch": 12,
+    "roll": -5
+  },
+  "cameraFit": {
+    "margin": 1.18
+  },
+  "attribution": "Original parametric geometry; no vendor photos, logos or wallpaper embedded.",
+  "materialParameters": {
+    "k90_aircraft_aluminum": {
+      "baseColorLinear": [
+        0.72,
+        0.74,
+        0.76
+      ],
+      "metallic": 0.95,
+      "roughness": 0.21
+    },
+    "k90_sculpted_aluminum_deco": {
+      "baseColorLinear": [
+        0.58,
+        0.58,
+        0.55
+      ],
+      "metallic": 0.9,
+      "roughness": 0.26
+    },
+    "k90_warm_white_glass_fiber": {
+      "baseColorLinear": [
+        0.7,
+        0.685,
+        0.64
+      ],
+      "metallic": 0,
+      "roughness": 0.42
+    },
+    "k90_optical_coating": {
+      "baseColorLinear": [
+        0.008,
+        0.014,
+        0.02
+      ],
+      "metallic": 0,
+      "roughness": 0.12
+    }
+  },
+  "colorwayManifest": "devices/redmi-k90-pro-max/colorways.json"
+}

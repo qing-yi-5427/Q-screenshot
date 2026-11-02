@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "redmi-k100-pro",
+  "adapter": "slab-front",
+  "geometry": {
+    "width_mm": 75.25,
+    "height_mm": 157.49,
+    "thickness_mm": 8.55,
+    "screen_width_mm": 70.02153178598996,
+    "screen_height_mm": 152.0363709194073,
+    "corner_radius_mm": 10.7,
+    "screen_corner_radius_mm": 9.1,
+    "frontDetails": {
+      "camera": {
+        "x_mm": 0,
+        "y_mm": 73.14500000000001,
+        "radius_mm": 1.35
+      },
+      "frameCurve_mm": 0.7,
+      "buttons": [
+        {
+          "side": "right",
+          "y_mm": 25,
+          "length_mm": 18,
+          "depth_mm": 0.35
+        },
+        {
+          "side": "right",
+          "y_mm": 10.5,
+          "length_mm": 9,
+          "depth_mm": 0.35
+        }
+      ],
+      "ports": [
+        {
+          "edge": "bottom",
+          "x_mm": 0,
+          "width_mm": 8.2,
+          "height_mm": 2.3
+        }
+      ],
+      "antennaBands": [],
+      "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: ae54500df77589c6716f91209c988fe4dc418c74c8d4bc13a7e80c95aa909d58, 2a2c54706b736a56fba77a7d20cf0778ce33a3d0615ee81f830df02dd5cc9314, 127f238f085c0f8966ac96a3291d655df8ba3a6257078b3c9bcf22de99b6e7db, 93001cce85bdde24c2bb911bf939220d13105fc4da86a883e86904e1f362257c, 9796d3689a013c3b4d92ccdbe5096748bc4aba3a44a441b6a756194ab76676f3, 53903399f8300d91e89c2e51ce1eaf87c5b1fd1223a83f5970bb8d0f4dfb0a41, 25049ffc2042a6f283996fc6cfa01d0208ef1e3b055dfffecd2c017956f153e8, d504376269f9b63a1b5e9544f592e70665a6e6521f6b5d7873346ebf889bf6af, 0bf55e2757cb31aa521e8e9375ca219768a6dbb2a7e55bc84398d5e3914bf1bd, d2b98664b2cef0aec0723026150ff8362716aa336966065b84d19407ef99bc4e, 3eeeea0f35c3ad9b9a74c3b2c42d4aa87b906e62bbbb003514afc6ad6e66a316, ff4116acc0e1b27edcd287f97025b4c10c6526d9b637d8129558577830ceee70, 028ae8ec0ad2185af669b737730ddfa2723f8742a3d8feb7f884cf6ee424fabd, ddc1eff689d323fdc7d5e16bb161ac37eefe79f10f9128c15614955f8d35ec8b USB-C proxy size estimated; exact microphone/speaker arrays and antenna layout unknown, omitted rather than duplicated."
+    }
+  },
+  "device": {
+    "schemaVersion": 1,
+    "id": "redmi-k100-pro",
+    "deviceId": "redmi-k100-pro",
+    "name": "REDMI K100 Pro",
+    "displayName": "REDMI K100 Pro",
+    "manufacturer": "Xiaomi",
+    "verificationStatus": "partial_reconstruction",
+    "assetVersion": "1.0.0",
+    "physicalDimensions": {
+      "units": "meters",
+      "includesCameraBump": false,
+      "states": {
+        "portrait": [
+          0.07525,
+          0.15749000000000002,
+          0.00855
+        ]
+      }
+    },
+    "states": {
+      "portrait": {
+        "id": "portrait",
+        "modelPath": "devices/redmi-k100-pro/portrait.glb",
+        "asset": "devices/redmi-k100-pro/portrait.glb",
+        "activeScreenNode": "screen_main_content",
+        "screenMaterial": "screen_content",
+        "screenSizeMeters": [
+          0.07002153178598997,
+          0.15203637091940728
+        ],
+        "bodySizeMeters": [
+          0.07525,
+          0.15749000000000002,
+          0.00855
+        ],
+        "glassNode": null,
+        "frontDirection": [
+          0,
+          0,
+          1
+        ],
+        "uvOrigin": "top-left",
+        "verificationStatus": "partial_reconstruction",
+        "screenBindings": [
+          {
+            "contentNode": "screen_main_content",
+            "glassNode": null,
+            "materialSlot": 0,
+            "active": true
+          }
+        ],
+        "screenAspectRatio": 0.4605577689243028,
+        "inputSizeHints": [
+          {
+            "width": 1156,
+            "height": 2510,
+            "source": "research"
+          }
+        ],
+        "orientationPresets": [
+          "portrait",
+          "landscape"
+        ],
+        "assetHash": "pending"
+      }
+    },
+    "materialVariants": [
+      {
+        "id": "firefly",
+        "label": "流萤追光"
+      },
+      {
+        "id": "cabernet-red",
+        "label": "赤霞珠红"
+      },
+      {
+        "id": "white",
+        "label": "白色"
+      },
+      {
+        "id": "black",
+        "label": "黑色"
+      }
+    ],
+    "defaultPose": {
+      "yaw": -22,
+      "pitch": 12,
+      "roll": -5
+    },
+    "cameraFit": {
+      "margin": 1.18
+    },
+    "attribution": "Original parametric geometry; no vendor imagery embedded.",
+    "approximationNotes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。",
+    "coordinateSystem": "+X right, +Y up, +Z front; meters"
+  },
+  "research": {
+    "deviceId": "redmi-k100-pro",
+    "formalName": "REDMI K100 Pro",
+    "fields": {
+      "width_mm": {
+        "value": 75.25,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k100-pro-0"
+        ],
+        "evidence": "Explicit target specification width_mm 75.25; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "height_mm": {
+        "value": 157.49,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k100-pro-0"
+        ],
+        "evidence": "Explicit target specification height_mm 157.49; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "thickness_mm": {
+        "value": 8.55,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k100-pro-0"
+        ],
+        "evidence": "Explicit target specification thickness_mm 8.55; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "diagonal_inches": {
+        "value": 6.59,
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k100-pro-0"
+        ],
+        "evidence": "Explicit target specification diagonal_inches 6.59; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "display_pixels": {
+        "value": [
+          1156,
+          2510
+        ],
+        "confidence": "official",
+        "sourceIds": [
+          "redmi-k100-pro-0"
+        ],
+        "evidence": "Explicit target specification display_pixels [1156, 2510]; portrait pixels explicitly reordered [width,height] from printed landscape counts."
+      },
+      "corner_radius_mm": {
+        "value": 10.7,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: ae54500df77589c6716f91209c988fe4dc418c74c8d4bc13a7e80c95aa909d58, 2a2c54706b736a56fba77a7d20cf0778ce33a3d0615ee81f830df02dd5cc9314, 127f238f085c0f8966ac96a3291d655df8ba3a6257078b3c9bcf22de99b6e7db, 93001cce85bdde24c2bb911bf939220d13105fc4da86a883e86904e1f362257c, 9796d3689a013c3b4d92ccdbe5096748bc4aba3a44a441b6a756194ab76676f3, 53903399f8300d91e89c2e51ce1eaf87c5b1fd1223a83f5970bb8d0f4dfb0a41, 25049ffc2042a6f283996fc6cfa01d0208ef1e3b055dfffecd2c017956f153e8, d504376269f9b63a1b5e9544f592e70665a6e6521f6b5d7873346ebf889bf6af, 0bf55e2757cb31aa521e8e9375ca219768a6dbb2a7e55bc84398d5e3914bf1bd, d2b98664b2cef0aec0723026150ff8362716aa336966065b84d19407ef99bc4e, 3eeeea0f35c3ad9b9a74c3b2c42d4aa87b906e62bbbb003514afc6ad6e66a316, ff4116acc0e1b27edcd287f97025b4c10c6526d9b637d8129558577830ceee70, 028ae8ec0ad2185af669b737730ddfa2723f8742a3d8feb7f884cf6ee424fabd, ddc1eff689d323fdc7d5e16bb161ac37eefe79f10f9128c15614955f8d35ec8b"
+      },
+      "screen_corner_radius_mm": {
+        "value": 9.1,
+        "confidence": "estimated",
+        "confidenceScore": 0.45,
+        "notes": "Viewed official target contact sheets; rounded silhouette estimated relative to published width/height, camera centered at target front top. Side controls estimated from target side/back oblique and official labeled port diagram. Position uncertainty approximately 2mm, radius approximately 1mm; not metrology. Image SHA256 references: ae54500df77589c6716f91209c988fe4dc418c74c8d4bc13a7e80c95aa909d58, 2a2c54706b736a56fba77a7d20cf0778ce33a3d0615ee81f830df02dd5cc9314, 127f238f085c0f8966ac96a3291d655df8ba3a6257078b3c9bcf22de99b6e7db, 93001cce85bdde24c2bb911bf939220d13105fc4da86a883e86904e1f362257c, 9796d3689a013c3b4d92ccdbe5096748bc4aba3a44a441b6a756194ab76676f3, 53903399f8300d91e89c2e51ce1eaf87c5b1fd1223a83f5970bb8d0f4dfb0a41, 25049ffc2042a6f283996fc6cfa01d0208ef1e3b055dfffecd2c017956f153e8, d504376269f9b63a1b5e9544f592e70665a6e6521f6b5d7873346ebf889bf6af, 0bf55e2757cb31aa521e8e9375ca219768a6dbb2a7e55bc84398d5e3914bf1bd, d2b98664b2cef0aec0723026150ff8362716aa336966065b84d19407ef99bc4e, 3eeeea0f35c3ad9b9a74c3b2c42d4aa87b906e62bbbb003514afc6ad6e66a316, ff4116acc0e1b27edcd287f97025b4c10c6526d9b637d8129558577830ceee70, 028ae8ec0ad2185af669b737730ddfa2723f8742a3d8feb7f884cf6ee424fabd, ddc1eff689d323fdc7d5e16bb161ac37eefe79f10f9128c15614955f8d35ec8b"
+      },
+      "screen_height_mm": {
+        "value": 152.0363709194073,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Nominal full-rectangle diagonal/pixel aspect calculation; visible area unverified"
+      },
+      "screen_width_mm": {
+        "value": 70.02153178598996,
+        "confidence": "estimated",
+        "confidenceScore": 0.5,
+        "notes": "Screen height times explicitly oriented pixel aspect; not official active area"
+      }
+    },
+    "sources": [
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k100-pro/specs/entry-1786931360323.js",
+        "sha256": "f3c8e4565cbe8c5c9c14e6076dd56c840eb97f538f0031188dd2b59fa471dc11",
+        "kind": "specs/",
+        "id": "redmi-k100-pro-0",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k100-pro route and matching REDMI product title in source body"
+      },
+      {
+        "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k100-pro/entry-1786931360323.js",
+        "sha256": "798e484c4136b9d6b6ba6dc4c11f5e26d0ec73ebf5e414e0853a008e2361dd88",
+        "kind": "overview",
+        "id": "redmi-k100-pro-1",
+        "confidence": "official",
+        "retrievedAt": "2026-11-02",
+        "identityEvidence": "Product-specific redmi-k100-pro route and matching REDMI product title in source body"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k100-pro/specs/entry-1786931360323.js",
+      "sha256": "f3c8e4565cbe8c5c9c14e6076dd56c840eb97f538f0031188dd2b59fa471dc11",
+      "kind": "specs/",
+      "id": "redmi-k100-pro-0",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k100-pro route and matching REDMI product title in source body"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k100-pro/entry-1786931360323.js",
+      "sha256": "798e484c4136b9d6b6ba6dc4c11f5e26d0ec73ebf5e414e0853a008e2361dd88",
+      "kind": "overview",
+      "id": "redmi-k100-pro-1",
+      "confidence": "official",
+      "retrievedAt": "2026-11-02",
+      "identityEvidence": "Product-specific redmi-k100-pro route and matching REDMI product title in source body"
+    }
+  ],
+  "reviewRequired": [
+    "Android Filament per-model appearance/export acceptance; Blender QA is separate"
+  ]
+}

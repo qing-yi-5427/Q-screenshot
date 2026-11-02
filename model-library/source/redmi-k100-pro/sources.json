@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k100-pro/specs/entry-1786931360323.js",
+    "sha256": "f3c8e4565cbe8c5c9c14e6076dd56c840eb97f538f0031188dd2b59fa471dc11",
+    "kind": "specs/",
+    "id": "redmi-k100-pro-0",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k100-pro route and matching REDMI product title in source body"
+  },
+  {
+    "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/redmi-k100-pro/entry-1786931360323.js",
+    "sha256": "798e484c4136b9d6b6ba6dc4c11f5e26d0ec73ebf5e414e0853a008e2361dd88",
+    "kind": "overview",
+    "id": "redmi-k100-pro-1",
+    "confidence": "official",
+    "retrievedAt": "2026-11-02",
+    "identityEvidence": "Product-specific redmi-k100-pro route and matching REDMI product title in source body"
+  }
+]
