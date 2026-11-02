@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "id": "xiaomi-15",
   "name": "Xiaomi 15 · 正面外观重建",
-  "modelVersion": "1.0.0",
+  "modelVersion": "1.0.1",
   "states": [
     "portrait"
   ],
   "defaultState": "portrait",
-  "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。",
+  "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。 1.0.1补入官方定制版20背板色×亮银/亮黑PVD高亮中框40组合（全48配色），定制版官网独立规格8.08mm；颜色反射仍为原创估计。",
   "defaultColorwayId": "color-1",
   "colors": [
     {
@@ -161,6 +161,886 @@
         }
       },
       "notes": "Official product color name. Original visual RGB/metallic/roughness estimates, not manufacturer reflectance. Front-only proxy omits decorative patterns, embedded diamonds, rear graphics and logos."
+    },
+    {
+      "id": "custom-lavender-purple-bright-silver",
+      "title": "薰衣草紫 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#CBB2D8",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 薰衣草紫 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "薰衣草紫",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-lavender-purple-bright-black",
+      "title": "薰衣草紫 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#CBB2D8",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 薰衣草紫 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "薰衣草紫",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-earth-gray-bright-silver",
+      "title": "大地灰 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#B8B8B5",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 大地灰 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "大地灰",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-earth-gray-bright-black",
+      "title": "大地灰 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#B8B8B5",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 大地灰 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "大地灰",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-cream-blue-bright-silver",
+      "title": "奶油蓝 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#B5C9DB",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 奶油蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "奶油蓝",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-cream-blue-bright-black",
+      "title": "奶油蓝 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#B5C9DB",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 奶油蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "奶油蓝",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-khaki-bright-silver",
+      "title": "卡其色 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#C6C0B6",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 卡其色 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "卡其色",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-khaki-bright-black",
+      "title": "卡其色 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#C6C0B6",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 卡其色 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "卡其色",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-candy-green-bright-silver",
+      "title": "糖果绿 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#BCDBCF",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 糖果绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "糖果绿",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-candy-green-bright-black",
+      "title": "糖果绿 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#BCDBCF",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 糖果绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "糖果绿",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-sprout-yellow-bright-silver",
+      "title": "嫩芽黄 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#E1DF89",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 嫩芽黄 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "嫩芽黄",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-sprout-yellow-bright-black",
+      "title": "嫩芽黄 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#E1DF89",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 嫩芽黄 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "嫩芽黄",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-almond-white-bright-silver",
+      "title": "杏仁奶白 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#D6D7D4",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 杏仁奶白 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "杏仁奶白",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-almond-white-bright-black",
+      "title": "杏仁奶白 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#D6D7D4",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 杏仁奶白 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "杏仁奶白",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-royal-blue-bright-silver",
+      "title": "宝蓝色 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#284FD6",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 宝蓝色 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "宝蓝色",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-royal-blue-bright-black",
+      "title": "宝蓝色 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#284FD6",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 宝蓝色 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "宝蓝色",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-fluorescent-red-bright-silver",
+      "title": "荧光红 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#D62968",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 荧光红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "荧光红",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-fluorescent-red-bright-black",
+      "title": "荧光红 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#D62968",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 荧光红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "荧光红",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-cream-yellow-bright-silver",
+      "title": "奶油黄 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#F1CB51",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 奶油黄 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "奶油黄",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-cream-yellow-bright-black",
+      "title": "奶油黄 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#F1CB51",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 奶油黄 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "奶油黄",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-peacock-green-bright-silver",
+      "title": "孔雀绿 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#0CA991",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 孔雀绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "孔雀绿",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-peacock-green-bright-black",
+      "title": "孔雀绿 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#0CA991",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 孔雀绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "孔雀绿",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-ice-crystal-blue-bright-silver",
+      "title": "冰晶蓝 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#81D0D4",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 冰晶蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "冰晶蓝",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-ice-crystal-blue-bright-black",
+      "title": "冰晶蓝 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#81D0D4",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 冰晶蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "冰晶蓝",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-raspberry-pink-bright-silver",
+      "title": "树莓粉 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#D7B3C3",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 树莓粉 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "树莓粉",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-raspberry-pink-bright-black",
+      "title": "树莓粉 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#D7B3C3",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 树莓粉 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "树莓粉",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-avocado-green-bright-silver",
+      "title": "牛油果绿 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#9CAE50",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 牛油果绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "牛油果绿",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-avocado-green-bright-black",
+      "title": "牛油果绿 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#9CAE50",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 牛油果绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "牛油果绿",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-rouge-red-bright-silver",
+      "title": "胭脂红 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#9D1848",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 胭脂红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "胭脂红",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-rouge-red-bright-black",
+      "title": "胭脂红 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#9D1848",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 胭脂红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "胭脂红",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-fir-green-bright-silver",
+      "title": "冷杉绿 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#087B63",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 冷杉绿 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "冷杉绿",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-fir-green-bright-black",
+      "title": "冷杉绿 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#087B63",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 冷杉绿 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "冷杉绿",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-ruby-red-bright-silver",
+      "title": "宝石红 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#B9231E",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 宝石红 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "宝石红",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-ruby-red-bright-black",
+      "title": "宝石红 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#B9231E",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 宝石红 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "宝石红",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-gentian-blue-bright-silver",
+      "title": "龙胆蓝 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#301C99",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 龙胆蓝 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "龙胆蓝",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-gentian-blue-bright-black",
+      "title": "龙胆蓝 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#301C99",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 龙胆蓝 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "龙胆蓝",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-coral-orange-bright-silver",
+      "title": "珊瑚橙 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#EE681C",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 珊瑚橙 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "珊瑚橙",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-coral-orange-bright-black",
+      "title": "珊瑚橙 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#EE681C",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 珊瑚橙 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "珊瑚橙",
+      "officialFrameColor": "亮黑色"
+    },
+    {
+      "id": "custom-anemone-purple-bright-silver",
+      "title": "海葵紫 · 亮银色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#C9CDD1",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#9D4CCA",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 海葵紫 and aluminum PVD high-gloss 亮银色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "海葵紫",
+      "officialFrameColor": "亮银色"
+    },
+    {
+      "id": "custom-anemone-purple-bright-black",
+      "title": "海葵紫 · 亮黑色中框",
+      "backMaterial": "custom_back_color_substrate_not_recertified",
+      "thicknessMeters": 0.00808,
+      "materials": {
+        "frame_estimated": {
+          "srgb": "#25292D",
+          "metallic": 0.97,
+          "roughness": 0.12
+        },
+        "back_estimated": {
+          "srgb": "#9D4CCA",
+          "metallic": 0,
+          "roughness": 0.36
+        }
+      },
+      "notes": "Official custom-edition back color 海葵紫 and aluminum PVD high-gloss 亮黑色 frame; custom specs explicitly152.3x71.2x8.08mm. Original RGB/metallic/roughness visual estimates from official product photos, not official CSS label RGB, Pantone or reflectance measurements. Front-only reconstruction; rear trim/logos not reproduced.",
+      "edition": "custom",
+      "officialBackColor": "海葵紫",
+      "officialFrameColor": "亮黑色"
     }
   ]
 }

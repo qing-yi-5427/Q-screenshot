@@ -1,9 +1,9 @@
 {
   "catalogItems": 25,
   "downloadablePackages": 24,
-  "packageBytes": 8965024,
+  "packageBytes": 8966825,
   "downloadableGlbs": 43,
-  "downloadableColors": 98,
+  "downloadableColors": 138,
   "bundledColors": 4,
   "checks": [
     "ZIP limits",
@@ -100,10 +100,12 @@
     },
     {
       "id": "xiaomi-15",
-      "packageBytes": 830051,
+      "packageBytes": 831852,
       "files": 7,
-      "colors": 8,
-      "checks": "PASS"
+      "colors": 48,
+      "checks": "PASS",
+      "modelVersion": "1.0.1",
+      "release": "models-2026-11-r2"
     },
     {
       "id": "xiaomi-15s-pro",
@@ -182,5 +184,9 @@
       "colors": 5,
       "checks": "PASS"
     }
-  ]
+  ],
+  "androidVisualReview": {
+    "status": "PENDING",
+    "scope": "24 default colorways, front/angle exports; Xiaomi15 original1.0.0 geometry/default unchanged in1.0.1, new40color combinations require separate Android verification"
+  }
 }

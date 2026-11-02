@@ -20,5 +20,27 @@
     "identityEvidence": "Dedicated product slug/class/prodName and product-specific specifications in fetched public entry",
     "retrievedAt": "2026-11-02",
     "redistributionPermission": "not_verified"
+  },
+  {
+    "sourceId": "custom-specs",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-15-custom-version/specs",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-custom-version/specs/entry-1730685452750.js",
+    "sha256": "eb4c5af2ee9ade2a856c58c8a9787e2b83bfdc37093ec7e6d84b7f549b20ba2f",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Official Xiaomi15 overview links this custom-edition page; custom overview text and20 dedicated specs color names. Internal legacy image folder says limited-edition but payload explicitly covers custom20 colors.",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
+  },
+  {
+    "sourceId": "custom-overview",
+    "pageUrl": "https://www.mi.com/prod/xiaomi-15-custom-version",
+    "finalUrl": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-15-custom-version/entry-1730685452750.js",
+    "sha256": "57e9194a0e1fae1f02628a5972d0e2c27c644c603dfa609eee5532f715332485",
+    "mode": "live",
+    "verifiedProductIdentity": true,
+    "identityEvidence": "Official Xiaomi15 overview links this custom-edition page; custom overview text and20 dedicated specs color names. Internal legacy image folder says limited-edition but payload explicitly covers custom20 colors.",
+    "retrievedAt": "2026-11-02",
+    "redistributionPermission": "not_verified"
   }
 ]

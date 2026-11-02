@@ -232,12 +232,12 @@
         "portrait"
       ],
       "defaultState": "portrait",
-      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。",
-      "modelVersion": "1.0.0",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。 1.0.1补入官方定制版20背板色×亮银/亮黑PVD高亮中框40组合（全48配色），定制版官网独立规格8.08mm；颜色反射仍为原创估计。",
+      "modelVersion": "1.0.1",
       "minAppVersionCode": 8000,
-      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11/xiaomi-15-1.0.0.zip",
-      "packageSha256": "1a4d930366fa3417a8c43994e711ad763cb261da33cdf18222780f142f310fba",
-      "packageBytes": 830051,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r2/xiaomi-15-1.0.1.zip",
+      "packageSha256": "60986deb5510339e938cdd0631adc41e6b7b4bef7cf79e136e17f5fdffddafd1",
+      "packageBytes": 831852,
       "previewUrl": null,
       "downloadable": true,
       "verificationStatus": "partial_reconstruction"
