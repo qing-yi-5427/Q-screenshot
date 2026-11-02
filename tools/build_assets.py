@@ -3,6 +3,16 @@
 import argparse,hashlib,json,os,shutil,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+# Explicit staging mode bypasses all legacy runtime/catalog/colorway mutations.
+if any(arg == '--profile' or arg.startswith('--profile=') for arg in os.sys.argv[1:]):
+ from device_pipeline.model import build
+ stage=argparse.ArgumentParser(description='Build a research profile into a new staging directory')
+ stage.add_argument('--profile',required=True,type=Path);stage.add_argument('--staging-root',required=True,type=Path)
+ stage.add_argument('--blender');stage.add_argument('--dry-run',action='store_true')
+ opts=stage.parse_args()
+ print(json.dumps(build(opts.profile,opts.staging_root,opts.blender,opts.dry_run),indent=2))
+ raise SystemExit(0)
+
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('--device',choices=['xiaomi-18-fold','redmi-k90-pro-max']);p.add_argument('--all-states',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--delivery-root',type=Path,default=ROOT/'deliverables/colors-panels');a=p.parse_args()
 blender=os.environ.get('BLENDER') or next((str(x) for x in [Path('/Applications/Blender.app/Contents/MacOS/Blender'),ROOT/'.cache/tools/Blender.app/Contents/MacOS/Blender'] if x.is_file()),None) or shutil.which('blender')
 if not blender:raise SystemExit('Set BLENDER to Blender4.5')

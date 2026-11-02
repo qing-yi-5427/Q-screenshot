@@ -1,0 +1,23 @@
+{
+  "deviceId": "xiaomi-18-fold",
+  "aliases": [
+    "Xiaomi 18 Fold"
+  ],
+  "pages": [
+    {
+      "url": "https://www.mi.com/prod/xiaomi-18-fold"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-fold/specs/index.html"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/src/pages/xiaomi-18-fold/index.html"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-fold/specs/entry-1792032063000.js"
+    },
+    {
+      "url": "https://mishop-pc.cnbj1.mi-fds.com/mishop-pc/production/mishop_pc/xiaomi-18-fold/entry-1792032063000.js"
+    }
+  ]
+}

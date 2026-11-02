@@ -1,0 +1,44 @@
+{
+  "deviceId": "fixture-phone",
+  "formalName": "Synthetic Fixture",
+  "fields": {
+    "width_mm": {
+      "value": 75,
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    },
+    "height_mm": {
+      "value": 160,
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    },
+    "thickness_mm": {
+      "value": 8,
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    },
+    "display_pixels": {
+      "value": [
+        1080,
+        2400
+      ],
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    },
+    "diagonal_inches": {
+      "value": 6.5,
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    },
+    "corner_radius_mm": {
+      "value": 8,
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    },
+    "screen_corner_radius_mm": {
+      "value": 7,
+      "confidence": "estimated",
+      "notes": "Synthetic test fixture only; not a real phone specification"
+    }
+  }
+}
