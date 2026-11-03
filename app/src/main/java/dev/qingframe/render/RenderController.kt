@@ -22,7 +22,7 @@ import java.util.concurrent.Executors
 import kotlin.math.*
 
 /** All native calls and callbacks are owned by Android's main thread. */
-class RenderController(private val context:Context, private val store:ProjectStore,private val onStatus:(String)->Unit):AutoCloseable {
+class RenderController(private val context:Context, private val store:ProjectStore,private val library:ModelLibrary=ModelLibrary.get(context),private val onStatus:(String)->Unit):AutoCloseable {
  companion object { init { Utils.init(); Gltfio.init() } }
  val engine:Engine=Engine.create(Engine.Backend.OPENGL)
  private val renderer=engine.createRenderer()
@@ -118,7 +118,7 @@ class RenderController(private val context:Context, private val store:ProjectSto
   updateScene(state,width,height);requestFrames()
  }
  fun applyState(new:ProjectState){checkOwner();if(closed)return;if(exporting){pendingState=new;return};state=new.safe();try {
-  val modelChanged=applied?.deviceId!=state.deviceId || applied?.stateId!=state.stateId || (applied?.colorwayId=="denim")!=(state.colorwayId=="denim")
+  val modelChanged=applied?.deviceId!=state.deviceId || applied?.stateId!=state.stateId || applied?.modelVersion!=state.modelVersion || applied?.colorwayId!=state.colorwayId
   if(modelChanged)loadModel(state)
   updateScene(state,width,height)
   val key="${if(state.imagePath.isEmpty())"demo:${state.deviceId}"else state.imagePath}:${state.imageWidth}:${state.imageHeight}"
@@ -127,16 +127,19 @@ class RenderController(private val context:Context, private val store:ProjectSto
  }catch(e:Exception){onStatus("模型加载失败：${e.message}");Log.e("QF_RENDER","apply",e)} }
  private fun loadModel(s:ProjectState){
   ready=false;colorMaterials.clear();appliedColorKey="";asset?.let{scene.removeEntities(it.entities);loader.destroyAsset(it)};asset=null
-  val manifest=JSONObject(context.assets.open("devices/${s.deviceId}/device.json").bufferedReader().readText()).getJSONObject("states").getJSONObject(s.stateId)
+  val snapshot=library.snapshot(s)
+  require(s.colorwayId.isBlank()||snapshot.colors.any{it.id==s.colorwayId}){"此版本不包含草稿配色，请明确重新选择配色"}
+  val manifest=snapshot.manifest.getJSONObject("states").getJSONObject(s.stateId)
   val size=manifest.getJSONArray("bodySizeMeters");bodyWidth=size.getDouble(0).toFloat();bodyHeight=size.getDouble(1).toFloat();bodyDepth=ColorwayCatalog.depth(s,size.getDouble(2).toFloat())
   val screenSize=manifest.getJSONArray("screenSizeMeters");screenAspect=(screenSize.getDouble(0)/screenSize.getDouble(1)).toFloat()
   val assetPath=manifest.optJSONObject("colorwayAssets")?.optString(s.colorwayId)?.takeIf{it.isNotBlank()}?:manifest.getString("asset")
-  val loaded=loader.createAsset(readAsset(assetPath))?:error("GLB 无法解析")
+  val modelBytes=snapshot.read(context,assetPath)
+  val loaded=loader.createAsset(ByteBuffer.allocateDirect(modelBytes.size).order(ByteOrder.nativeOrder()).apply{put(modelBytes);flip()})?:error("GLB 无法解析")
   resources.loadResources(loaded)
   val expected=manifest.getString("activeScreenNode");val entity=loaded.entities.singleOrNull{loaded.getName(it)==expected}?:run{loader.destroyAsset(loaded);error("屏幕节点合同不匹配")}
   val instance=engine.renderableManager.getInstance(entity);require(instance!=0){"屏幕不是可绘制实体"};require(engine.renderableManager.getPrimitiveCount(instance)==1){"屏幕材质槽不唯一"}
   engine.renderableManager.setMaterialInstanceAt(instance,0,screenInstance)
-  val regions=ColorwayCatalog.find(s.deviceId,s.colorwayId).materials.keys
+  val regions=ColorwayCatalog.find(s.deviceId,s.colorwayId,s.modelVersion).materials.keys
   for(item in loaded.renderableEntities){val ri=engine.renderableManager.getInstance(item);for(slot in 0 until engine.renderableManager.getPrimitiveCount(ri)){
    val mi=engine.renderableManager.getMaterialInstanceAt(ri,slot)
    if(mi.name in regions)colorMaterials[mi.name]=mi
@@ -155,8 +158,8 @@ class RenderController(private val context:Context, private val store:ProjectSto
   old?.let{engine.destroyTexture(it)}
  }
  private fun applyColorway(s:ProjectState){
-  val key="${s.deviceId}/${s.stateId}/${s.colorwayId}";if(appliedColorKey==key)return
-  val palette=ColorwayCatalog.find(s.deviceId,s.colorwayId)
+  val key="${s.deviceId}/${s.stateId}/${s.modelVersion}/${s.colorwayId}";if(appliedColorKey==key)return
+  val palette=ColorwayCatalog.find(s.deviceId,s.colorwayId,s.modelVersion)
   for((name,pbr) in palette.materials){
    val mi=colorMaterials[name]?:error("机身材质不存在：$name");val rgb=pbr.linear()
    mi.setParameter("baseColorFactor",rgb[0],rgb[1],rgb[2],1f)

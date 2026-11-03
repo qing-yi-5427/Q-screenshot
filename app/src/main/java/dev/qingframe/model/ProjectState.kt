@@ -17,6 +17,7 @@ data class ProjectState(
     val schemaVersion:Int=1,
     val deviceId:String="xiaomi-18-fold", val stateId:String="folded", val portrait:Boolean=false,
     val colorwayId:String=if(deviceId=="redmi-k90-pro-max")"flowing-gold-white"else"warm-gold-white",
+    val modelVersion:String="",
     val imagePath:String="", val imageWidth:Int=1168,val imageHeight:Int=1712,
     val pose:Quaternion=Quaternion.euler(-22f,12f,-6f),val zoom:Float=1f,val offsetX:Float=0f,val offsetY:Float=0f,
     val fitMode:String="fit",val cropX:Float=0f,val cropY:Float=0f,

@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-02",
+  "devices": [
+    {
+      "id": "xiaomi-18-fold",
+      "name": "Xiaomi 18 Fold · 外观重建",
+      "states": [
+        "folded",
+        "unfolded"
+      ],
+      "defaultState": "folded",
+      "notes": "官方专属正文与多视角核实正式机型、长宽厚、屏幕像素/标称对角、7系铝中框与普通玻璃背板。支持官方四款配色，机身分区PBR估计；按用户要求以正面套壳为范围：真实两层/两半实体、非对称圆角、侧厚、铰链与金属边缘保留，背面简化为遮挡/投影用闭合几何，不含相机Deco、镜头或背部外屏细节。有效屏幕毫米由官方正面栅格图校准并保持官方像素比，仍为估计；黑边与金属分层，黑mask约0.85mm为估计，局部圆角/孔位与PBR非原厂CAD。",
+      "modelVersion": "1.3.0",
+      "minAppVersionCode": 8000,
+      "builtin": true,
+      "downloadable": false,
+      "packageUrl": null,
+      "packageSha256": null,
+      "packageBytes": 0,
+      "previewUrl": null,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k100-pro-max",
+      "name": "REDMI K100 Pro Max",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k100-pro-max-1.0.1.zip",
+      "packageSha256": "2f7ca97fde417ff0e6492e1c76de6e68041f76a7dede9d520fb0dc772c378c8f",
+      "packageBytes": 217336,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k100-pro",
+      "name": "REDMI K100 Pro",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k100-pro-1.0.1.zip",
+      "packageSha256": "ed029acf76216f2c7c66fc5c10858c312ba279c991a43b899cbe78360c345dd5",
+      "packageBytes": 216396,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k100",
+      "name": "REDMI K100",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k100-1.0.1.zip",
+      "packageSha256": "0b33c1c018b076a1be626788f37a846697afbe6ccb23470cf168f5b7cd65792c",
+      "packageBytes": 216297,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k80-pro",
+      "name": "REDMI K80 Pro",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k80-pro-1.0.1.zip",
+      "packageSha256": "3af0e3047657396a7c90c3f61a03436aa62d3573077980b33e3cf3963a025840",
+      "packageBytes": 217199,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k80-ultra",
+      "name": "REDMI K80 至尊版",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k80-ultra-1.0.1.zip",
+      "packageSha256": "50d0d118bc7fb4d759c1b7bb7e508bace8a53337984ada0e02ed5a32080a1a6f",
+      "packageBytes": 215712,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k80",
+      "name": "REDMI K80",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k80-1.0.1.zip",
+      "packageSha256": "1e50c97eac88f3bbb81b6458d7cc896545b0e45ba0210230d767aa97ad513ce3",
+      "packageBytes": 217201,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k90-max",
+      "name": "REDMI K90 Max",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k90-max-1.0.1.zip",
+      "packageSha256": "c0f3624f0c119372967afc7f237d4c6171722a948bd182e514199827493b3fd4",
+      "packageBytes": 216174,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k90-pro-max",
+      "name": "REDMI K90 Pro Max · 外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方核实黑色/流金白163.33×77.82×7.9mm、1200×2608像素OLED直屏、6系铝中框及玻纤背盖。支持黑色/流金白/丹宁/冠军版白的前侧配色，丹宁受控8.3mm派生；冠军背部联名图案/特殊后摄仍省略，独立厚度未核实；屏幕绝对有效毫米尺寸、圆角、倒角、按键/孔位/相机/扬声器细节尺寸及PBR数值为估计。三摄+辅助传感器阵列+背部独立低音单元按官方图重建，非原厂CAD。",
+      "modelVersion": "1.2.0",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11/redmi-k90-pro-max-1.2.0.zip",
+      "packageSha256": "aa098092534a3e7ea0d8385612d24042d27f9bb5e799f60a4c6319539db9e927",
+      "packageBytes": 1641786,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k90-ultra",
+      "name": "REDMI K90 至尊版",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k90-ultra-1.0.1.zip",
+      "packageSha256": "9436971f40542a83e2c0314822ad87d98e1b1f18fb5e87648fc7b3112e7bcba9",
+      "packageBytes": 216581,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "redmi-k90",
+      "name": "REDMI K90",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "原创前向重建；官方机身尺寸/像素/配色名，屏幕有效区由标称对角与像素比推算；圆角、镜头、按键、端口、天线、PBR为官网图比例的粗估，非原厂CAD。后摄/背面图案不在范围；未知微孔内部结构省略。Android逐机外观验收未完成。 r3基于本机官网图将等宽黑mask从active向外offset，余下前唇分层（金属感PBR为原创估计）；保持原active与像素比，未知不宣称精密测量。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/redmi-k90-1.0.1.zip",
+      "packageSha256": "55ab64343fd2eba940d079a894bd73eecafae609213ec66a4562fb55a2260b5a",
+      "packageBytes": 216283,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-15-pro",
+      "name": "Xiaomi 15 Pro · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。含全等深微曲盖板边缘与圆润中框；内容面保持可替换平面。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1依据官方正面三轮廓及真实Android候选图修正金属前唇/黑mask分层和有效区；局部仍为估计。 新版Android正/左右斜视觉验收待执行。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-15-pro-1.0.1.zip",
+      "packageSha256": "e5a32bc67bb387b316b7764de0c3317ca631b00307aed86e3d538ebe76c6e8cc",
+      "packageBytes": 396979,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-15-ultra",
+      "name": "Xiaomi 15 Ultra · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。含全等深微曲盖板边缘与圆润中框；内容面保持可替换平面。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-15-ultra-1.0.1.zip",
+      "packageSha256": "f24769971a9a76122ce360dbd1c6383d31dd7c201d2ba6711efce940fc55e32f",
+      "packageBytes": 1381498,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-15",
+      "name": "Xiaomi 15 · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 Android Filament逐机替图/导出待验。 1.0.1补入官方定制版20背板色×亮银/亮黑PVD高亮中框40组合（全48配色），定制版官网独立规格8.08mm；颜色反射仍为原创估计。 1.0.2按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.2",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-15-1.0.2.zip",
+      "packageSha256": "99f21b838891612a14df9ba9a7e3359a8168db1c3c537a8562dc380bc0ce6bc9",
+      "packageBytes": 940958,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-15s-pro",
+      "name": "Xiaomi 15S Pro · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。含全等深微曲盖板边缘与圆润中框；内容面保持可替换平面。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-15s-pro-1.0.1.zip",
+      "packageSha256": "653b541d529dbdff5ceb3ee091197aadc64943bc088ddb9c53ea95ee7d95abcd",
+      "packageBytes": 199071,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17-max",
+      "name": "Xiaomi 17 Max · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17-max-1.0.1.zip",
+      "packageSha256": "ea877db04621a699da0e29347a04c21f7f66044eb6e7d98d89ab1695d04ecf6b",
+      "packageBytes": 378342,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17-pro-max",
+      "name": "Xiaomi 17 Pro Max · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17-pro-max-1.0.1.zip",
+      "packageSha256": "96a8ab510d3b3f50a19a2068238b73ea00fcbae4cfa5da7cdeef1fd2e57485c8",
+      "packageBytes": 190626,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17-pro",
+      "name": "Xiaomi 17 Pro · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17-pro-1.0.1.zip",
+      "packageSha256": "f41056952701bd5bb68af765fe8052b51b8e7001582ad3d6525a2dc1d3c7daa9",
+      "packageBytes": 189910,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17-ultra-byleica",
+      "name": "Xiaomi 17 Ultra 徕卡版 · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 独立徕卡版含细条滚花中框几何；黑银8.32mm，黑/米白8.46mm分别重建；背部变焦环/商标省略。 1.0.1依据官方正面三轮廓及真实Android候选图修正金属前唇/黑mask分层和有效区；局部仍为估计。 新版Android正/左右斜视觉验收待执行。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17-ultra-byleica-1.0.1.zip",
+      "packageSha256": "91f68188925311cf9d59019b94492496ca9f5ad9be48d0b0a605af0e5ea4e952",
+      "packageBytes": 649243,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17-ultra",
+      "name": "Xiaomi 17 Ultra · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17-ultra-1.0.1.zip",
+      "packageSha256": "7446448028be98d9a5751d860c9e8a25e590c59d5dc7de673e62541531dd9249",
+      "packageBytes": 189998,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17",
+      "name": "Xiaomi 17 · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17-1.0.1.zip",
+      "packageSha256": "38a268d914802d189999a1e37bfe7365666469ff236ba91bd5a676f7fe728378",
+      "packageBytes": 189472,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17t-pro",
+      "name": "Xiaomi 17T Pro · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 大陆专属参数页：不得混用国际版尺寸/配色/电池。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17t-pro-1.0.1.zip",
+      "packageSha256": "fa8d5792a0ede11ec03c3bd0e2d6e6ec0e533219eb95e0018816fa39d59521ad",
+      "packageBytes": 188838,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-17t",
+      "name": "Xiaomi 17T · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 大陆专属参数页：不得混用国际版尺寸/配色/电池。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-17t-1.0.1.zip",
+      "packageSha256": "a2e8afe9621615a892f8b5811d452cd2e2ed5ea505462983b7bd56cd5c8261fc",
+      "packageBytes": 190224,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-18-pro-max",
+      "name": "Xiaomi 18 Pro Max · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1按本机官方三轮廓线稿修正金属前唇/黑mask分层与有效区、圆角/孔位；局部仍为估计，新Android同比验收待做。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-18-pro-max-1.0.1.zip",
+      "packageSha256": "f126d5ace4730ee5314c033c6b07d8585817dc1f7e37588622b4c6f1ca261e81",
+      "packageBytes": 564311,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    },
+    {
+      "id": "xiaomi-18-pro",
+      "name": "Xiaomi 18 Pro · 正面外观重建",
+      "states": [
+        "portrait"
+      ],
+      "defaultState": "portrait",
+      "notes": "官方机身尺寸、主屏像素与配色名称；正面轮廓、有效屏幕区域、圆角、孔位/按键尺寸和PBR为逐机图像估计。专属正面孔位与侧键；直屏、圆润中框。用户范围仅正面，不制作后摄/背屏/商标；未验原厂CAD或真机视觉。 1.0.1依据官方正面三轮廓及真实Android候选图修正金属前唇/黑mask分层和有效区；局部仍为估计。 新版Android正/左右斜视觉验收待执行。",
+      "modelVersion": "1.0.1",
+      "minAppVersionCode": 8000,
+      "packageUrl": "https://github.com/qing-yi-5427/Q-screenshot/releases/download/models-2026-11-r3/xiaomi-18-pro-1.0.1.zip",
+      "packageSha256": "ca1878eed6ebf6cc27dd4625db1a323abde0cda632172ed726772675d8f48a69",
+      "packageBytes": 561931,
+      "previewUrl": null,
+      "downloadable": true,
+      "verificationStatus": "partial_reconstruction"
+    }
+  ]
+}

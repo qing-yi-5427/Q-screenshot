@@ -21,10 +21,10 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
 data class ShareStatus(val id:String="",val phase:String="idle",val message:String="",val output:String="",val autoShared:Boolean=false) {
- val busy get()=phase in setOf("importing","rendering","saving")
+ val busy get()=phase in setOf("importing","rendering","saving","downloading")
 }
 /** Owns a headless Filament renderer on main; survives Activity recreation, never uses editor draft. */
-class ShareViewModel(app:Application,private val saved:SavedStateHandle):AndroidViewModel(app) {
+class ShareViewModel @JvmOverloads constructor(app:Application,private val saved:SavedStateHandle,val library:ModelLibrary=ModelLibrary.get(app)):AndroidViewModel(app) {
  private val mutable=MutableStateFlow(ShareStatus())
  val status=mutable.asStateFlow()
  private var worker:Job?=null
@@ -65,24 +65,28 @@ class ShareViewModel(app:Application,private val saved:SavedStateHandle):Android
    }catch(e:TimeoutCancellationException){if(mutable.value.id==id)publish(ShareStatus(id,"error",friendlyError(e)))}
    catch(e:CancellationException){throw e}
    catch(e:Exception){if(mutable.value.id==id)publish(ShareStatus(id,"error",friendlyError(e)));Log.e("QF_SHARE","FAILED $id",e)}
-   finally{withContext(NonCancellable+Dispatchers.IO){store.deleteShareSources()}}
+   finally{withContext(NonCancellable+Dispatchers.IO){cleanupSources(store)}}
   }
  }
  private fun render(store:ProjectStore,snapshot:ProjectState,id:String){worker=viewModelScope.launch{
   try{generate(store,snapshot,id)}catch(e:TimeoutCancellationException){if(mutable.value.id==id)publish(ShareStatus(id,"error",friendlyError(e)))}catch(e:CancellationException){throw e}catch(e:Exception){if(mutable.value.id==id)publish(ShareStatus(id,"error",friendlyError(e)))}
-  finally{withContext(NonCancellable+Dispatchers.IO){store.deleteShareSources()}}
+  finally{withContext(NonCancellable+Dispatchers.IO){cleanupSources(store)}}
  }}
  private suspend fun generate(store:ProjectStore,snapshot:ProjectState,id:String){
   currentCoroutineContext().ensureActive()
+  if(!library.available(snapshot)){
+   publish(ShareStatus(id,"waiting-resource","默认机型 ${DeviceCatalog.find(snapshot.deviceId,snapshot.modelVersion).compactTitle} 需要下载资源。图片和默认参数已保留，不会改用其他机型。"));return
+  }
+  val resolved=library.pin(snapshot)
   publish(ShareStatus(id,"rendering","正在按默认参数生成…"))
-  var failure="";val renderer=RenderController(getApplication(),store){if(it.isNotEmpty())failure=it};controller=renderer
+  var failure="";val renderer=RenderController(getApplication(),store,library){if(it.isNotEmpty())failure=it};controller=renderer
   try {
-  renderer.applyState(snapshot)
+  renderer.applyState(resolved)
   withTimeout(30_000){while(!renderer.ready){if(failure.isNotEmpty())error(failure);delay(50)}}
-  val (w,h)=snapshot.outputSize()
+  val (w,h)=resolved.outputSize()
   val bitmap=suspendCancellableCoroutine<Bitmap>{continuation->
    continuation.invokeOnCancellation{renderer.cancelExport()}
-   renderer.export(snapshot,w,h){result->result.fold(onSuccess={if(continuation.isActive)continuation.resume(it)else it.recycle()},onFailure={if(continuation.isActive)continuation.resumeWithException(it)})}
+   renderer.export(resolved,w,h){result->result.fold(onSuccess={if(continuation.isActive)continuation.resume(it)else it.recycle()},onFailure={if(continuation.isActive)continuation.resumeWithException(it)})}
   }
   publish(ShareStatus(id,"saving","正在准备分享 PNG…"))
   val name="$id.png"
@@ -99,6 +103,20 @@ class ShareViewModel(app:Application,private val saved:SavedStateHandle):Android
   Log.i("QF_SHARE","READY $id ${w}x$h colorway=${snapshot.colorwayId} output=$name")
   }finally{renderer.close();if(controller===renderer)controller=null}
  }
+ private fun cleanupSources(store:ProjectStore){if(mutable.value.phase !in setOf("waiting-resource","resource-error","downloading"))store.deleteShareSources()}
+ fun downloadResource(){
+  val current=mutable.value;if(current.phase !in setOf("waiting-resource","resource-error"))return
+  val store=ProjectStore(getApplication(),current.id,true);val snapshot=store.load()
+  worker=viewModelScope.launch{
+   try{
+    val entry=library.entry(snapshot.deviceId)
+    require(snapshot.modelVersion.isBlank()||entry?.choice?.modelVersion==snapshot.modelVersion){"默认参数需要 ${snapshot.modelVersion} 版资源，请先在编辑器明确选择可用版本"}
+    publish(current.copy(phase="downloading",message="正在下载默认机型资源…"))
+    val installed=library.download(snapshot.deviceId,"share:${current.id}");val resolved=snapshot.copy(modelVersion=installed.choice.modelVersion);withContext(Dispatchers.IO){store.save(resolved)};generate(store,resolved,current.id)
+   }catch(e:CancellationException){throw e}catch(e:Exception){publish(current.copy(phase="resource-error",message=e.message?:"机型下载失败，请重试"))}
+   finally{withContext(NonCancellable+Dispatchers.IO){cleanupSources(store)}}
+  }
+ }
  private fun friendlyError(e:Exception):String=when(e){
   is SecurityException->"没有读取这张图片的权限，请从原应用重新分享"
   is FileNotFoundException->"分享的图片已不可用，请从原应用重新分享"
@@ -109,6 +127,6 @@ class ShareViewModel(app:Application,private val saved:SavedStateHandle):Android
  fun outputFile(name:String):File {require(name.matches(Regex("share-[A-Za-z0-9-]+\\.png")));return File(getApplication<Application>().cacheDir,"exports/share-results/$name")}
  fun chooserStarted(){publish(mutable.value.copy(autoShared=true));Log.i("QF_SHARE","CHOOSER ${mutable.value.id}")}
  fun chooserFailed(message:String){publish(mutable.value.copy(phase="share-error",message="无法打开分享：$message"))}
- fun cancel(){if(!mutable.value.busy)return;worker?.cancel();controller?.cancelExport();publish(mutable.value.copy(phase="cancelled",message="已取消生成"))}
- override fun onCleared(){worker?.cancel();controller?.cancelExport();controller?.close();controller=null;super.onCleared()}
+ fun cancel(){val s=mutable.value;if(!s.busy&&s.phase !in setOf("waiting-resource","resource-error"))return;worker?.cancel();library.cancel("share:${s.id}");controller?.cancelExport();publish(s.copy(phase="cancelled",message="已取消生成"));if(s.id.isNotBlank())viewModelScope.launch(Dispatchers.IO){ProjectStore(getApplication(),s.id,true).deleteShareSources()}}
+ override fun onCleared(){library.cancel("share:${mutable.value.id}");worker?.cancel();controller?.cancelExport();controller?.close();controller=null;super.onCleared()}
 }

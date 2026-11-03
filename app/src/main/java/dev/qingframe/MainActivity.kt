@@ -71,7 +71,7 @@ class MainActivity:ComponentActivity() {
   if(BuildConfig.DEBUG&&isolatedSession()!=null&&intent.getBooleanExtra("test_import_fixture",false)){
    val model=intent.getStringExtra("test_import_model")?.takeIf{id->DeviceCatalog.choices.any{it.id==id}}?:"redmi-k90-pro-max"
    val source=if(model=="xiaomi-18-fold")"outer"else"redmi"
-   vm.update(false){it.copy(deviceId=model,stateId=DeviceCatalog.find(model).defaultState,portrait=false)}
+   vm.update(false){it.copy(deviceId=model,modelVersion=vm.library.version(model),stateId=DeviceCatalog.find(model).defaultState,portrait=false)}
    lifecycleScope.launch{
     val file=withContext(Dispatchers.IO){File(cacheDir,"exports/isolated-fixture-$source.png").apply{parentFile!!.mkdirs();assets.open("fixtures/$source.png").use{input->outputStream().use{input.copyTo(it)}}}}
     vm.import(FileProvider.getUriForFile(this@MainActivity,"${packageName}.files",file))
@@ -204,6 +204,8 @@ class MainActivity:ComponentActivity() {
  @OptIn(ExperimentalMaterial3Api::class,ExperimentalLayoutApi::class)
  @Composable private fun Editor(){
   val s by vm.state.collectAsState();val message by vm.message.collectAsState();val importing by vm.importBusy.collectAsState();val revision by vm.historyRevision.collectAsState()
+  val libraryStatus by vm.library.status.collectAsState()
+  val resourcesAvailable=remember(s.deviceId,s.modelVersion,libraryStatus.revision){vm.library.available(s)}
   val density=LocalDensity.current;val fontScale=density.fontScale
   val configuration=LocalConfiguration.current
   val dimensions=remember(configuration.screenWidthDp,configuration.screenHeightDp,density.density){
@@ -239,8 +241,15 @@ class MainActivity:ComponentActivity() {
     val ratio=s.canvasWidth.toFloat()/s.canvasHeight
     val canvasModifier=if(maxWidth/maxHeight>ratio)Modifier.fillMaxHeight().aspectRatio(ratio)else Modifier.fillMaxWidth().aspectRatio(ratio)
     Box(canvasModifier.clip(RoundedCornerShape(4.dp)).border(1.dp,Color(0xffe0e1df),RoundedCornerShape(4.dp)).background(if(s.background=="transparent")Color(0xffd8dbd8)else Color(s.colorA))){
-       AndroidView(factory={context->TextureView(context).also{target->try{val c=RenderController(context,vm.store){renderError=it};c.debugAllowSampling=BuildConfig.DEBUG&&isolatedSession()!=null&&intent.getBooleanExtra("test_sampling_budget",false);c.debugNativeSampling=BuildConfig.DEBUG&&intent.getBooleanExtra("test_native_sampling",false);c.debugCustomResolve=BuildConfig.DEBUG&&intent.getBooleanExtra("test_custom_resolve",false);controller=c;target.tag=c;if(testCase=="AXIS")c.addAxisDiagnostics();c.attach(target);c.applyState(s);scheduleTest()}catch(e:Throwable){renderError="渲染器启动失败：${e.message}";Log.e("QF_RENDER","init",e)}}},onReset=null,onRelease={target->val c=target.tag as? RenderController;if(controller===c)controller=null;c?.close()},update={controller?.applyState(s)},modifier=Modifier.fillMaxSize().pointerInput(Unit){detectTapGestures(onDoubleTap={vm.update{it.copy(zoom=1f,offsetX=0f,offsetY=0f)}})}.pointerInput(Unit){awaitEachGesture{awaitFirstDown(requireUnconsumed=false);vm.beginGesture();do{val e=awaitPointerEvent();val changes=e.changes.filter{it.pressed};if(changes.isNotEmpty()){val pan=e.calculatePan();if(changes.size==1){vm.update(false){FrontRotation.drag(it,pan.x,pan.y)}}else{val z=e.calculateZoom();val rotate=e.calculateRotation();vm.update(false){FrontRotation.roll(it.copy(zoom=it.zoom*z,offsetX=it.offsetX+pan.x/size.width*2,offsetY=it.offsetY+pan.y/size.height*2).safe(),-rotate)}};e.changes.forEach{it.consume()}}}while(e.changes.any{it.pressed});vm.endGesture()}})
-     if(renderError.isNotEmpty())Text(renderError,Modifier.align(Alignment.Center).padding(24.dp),color=MaterialTheme.colorScheme.error)
+       if(resourcesAvailable)AndroidView(factory={context->TextureView(context).also{target->try{val c=RenderController(context,vm.store){renderError=it};c.debugAllowSampling=BuildConfig.DEBUG&&isolatedSession()!=null&&intent.getBooleanExtra("test_sampling_budget",false);c.debugNativeSampling=BuildConfig.DEBUG&&intent.getBooleanExtra("test_native_sampling",false);c.debugCustomResolve=BuildConfig.DEBUG&&intent.getBooleanExtra("test_custom_resolve",false);controller=c;target.tag=c;if(testCase=="AXIS")c.addAxisDiagnostics();c.attach(target);c.applyState(s);scheduleTest()}catch(e:Throwable){renderError="渲染器启动失败：${e.message}";Log.e("QF_RENDER","init",e)}}},onReset=null,onRelease={target->val c=target.tag as? RenderController;if(controller===c)controller=null;c?.close()},update={controller?.applyState(s)},modifier=Modifier.fillMaxSize().pointerInput(Unit){detectTapGestures(onDoubleTap={vm.update{it.copy(zoom=1f,offsetX=0f,offsetY=0f)}})}.pointerInput(Unit){awaitEachGesture{awaitFirstDown(requireUnconsumed=false);vm.beginGesture();do{val e=awaitPointerEvent();val changes=e.changes.filter{it.pressed};if(changes.isNotEmpty()){val pan=e.calculatePan();if(changes.size==1){vm.update(false){FrontRotation.drag(it,pan.x,pan.y)}}else{val z=e.calculateZoom();val rotate=e.calculateRotation();vm.update(false){FrontRotation.roll(it.copy(zoom=it.zoom*z,offsetX=it.offsetX+pan.x/size.width*2,offsetY=it.offsetY+pan.y/size.height*2).safe(),-rotate)}};e.changes.forEach{it.consume()}}}while(e.changes.any{it.pressed});vm.endGesture()}})
+     if(!resourcesAvailable)Column(Modifier.align(Alignment.Center).padding(16.dp),horizontalAlignment=Alignment.CenterHorizontally,verticalArrangement=Arrangement.spacedBy(8.dp)){
+      Text(DeviceCatalog.find(s.deviceId,s.modelVersion).compactTitle,style=MaterialTheme.typography.titleSmall)
+      Text("此草稿的机型资源尚未下载。截图和参数已保留。",style=MaterialTheme.typography.bodySmall)
+      if(libraryStatus.busy){CircularProgressIndicator(Modifier.size(24.dp));TextButton(onClick={vm.cancelModelDownload()},modifier=Modifier.heightIn(min=48.dp)){Text("取消下载")}}
+      else Button(onClick={vm.downloadCurrent()},modifier=Modifier.heightIn(min=48.dp),shape=EditorStyle.pill){Text("下载机型资源")}
+      if(libraryStatus.phase=="error")Text(libraryStatus.message,style=MaterialTheme.typography.bodySmall)
+     }
+     if(resourcesAvailable&&renderError.isNotEmpty())Text(renderError,Modifier.align(Alignment.Center).padding(24.dp),color=MaterialTheme.colorScheme.error)
     }
    }
   }
@@ -294,7 +303,7 @@ class MainActivity:ComponentActivity() {
   Scaffold(containerColor=EditorStyle.background,contentWindowInsets=if(wide||fullPreview)WindowInsets(0,0,0,0)else ScaffoldDefaults.contentWindowInsets,topBar={
    val topModifier=if(wide||fullPreview)Modifier.padding(top=safe.top.dp).absolutePadding(left=max(safe.headerLeft,horizontalLeft+8f).dp,right=max(safe.headerRight,horizontalRight+8f).dp)else Modifier.statusBarsPadding().padding(horizontal=12.dp)
    Row(Modifier.fillMaxWidth().then(topModifier).heightIn(min=56.dp),horizontalArrangement=Arrangement.spacedBy(EditorStyle.gap),verticalAlignment=Alignment.CenterVertically){
-    if(fullPreview){TextButton(onClick={fullPreview=false},modifier=Modifier.heightIn(min=48.dp).semantics{contentDescription="qf-preview-back"}){Text("返回")};Text("预览",style=MaterialTheme.typography.titleMedium,modifier=Modifier.weight(1f));Button(onClick={showExport=true},enabled=!exportBusy,modifier=Modifier.heightIn(min=48.dp),shape=EditorStyle.control){Text("保存")}}
+    if(fullPreview){TextButton(onClick={fullPreview=false},modifier=Modifier.heightIn(min=48.dp).semantics{contentDescription="qf-preview-back"}){Text("返回")};Text("预览",style=MaterialTheme.typography.titleMedium,modifier=Modifier.weight(1f));Button(onClick={showExport=true},enabled=!exportBusy&&resourcesAvailable,modifier=Modifier.heightIn(min=48.dp),shape=EditorStyle.control){Text("保存")}}
     else {
     Surface(color=Color.White,shape=EditorStyle.pill){Row(horizontalArrangement=Arrangement.spacedBy(8.dp)){
      IconButton(onClick={vm.undo()},enabled=revision>=0&&vm.canUndo,modifier=Modifier.size(48.dp).semantics{contentDescription="撤销"}){EditorIcon("undo")}
@@ -304,7 +313,7 @@ class MainActivity:ComponentActivity() {
      Text(ratioLabel,maxLines=1,overflow=androidx.compose.ui.text.style.TextOverflow.Ellipsis,style=MaterialTheme.typography.labelLarge,color=MaterialTheme.colorScheme.onSurface)
      Spacer(Modifier.width(4.dp));EditorIcon("down",Modifier.size(16.dp),EditorStyle.secondary)
     }
-    Button(onClick={showExport=true},enabled=!exportBusy,modifier=Modifier.heightIn(min=48.dp),shape=EditorStyle.pill,contentPadding=PaddingValues(horizontal=20.dp)){Text("保存")}
+    Button(onClick={showExport=true},enabled=!exportBusy&&resourcesAvailable,modifier=Modifier.heightIn(min=48.dp),shape=EditorStyle.pill,contentPadding=PaddingValues(horizontal=20.dp)){Text("保存")}
 
     }
    }
@@ -394,15 +403,34 @@ class MainActivity:ComponentActivity() {
  }
 
  @Composable private fun DevicePanel(s:ProjectState){
-  val device=DeviceCatalog.find(s.deviceId)
+  val device=DeviceCatalog.find(s.deviceId,s.modelVersion)
+  val status by vm.library.status.collectAsState()
+  var libraryExpanded by rememberSaveable{mutableStateOf(false)}
   Label("模型",first=true)
-  Choices(DeviceCatalog.choices.map{it.compactTitle},device.compactTitle){title->
-   val selected=DeviceCatalog.choices.first{it.compactTitle==title}
-   vm.update{it.copy(deviceId=selected.id,stateId=selected.defaultState,colorwayId=ColorwayCatalog.defaultId(selected.id),portrait=false,cropX=0f,cropY=0f)}
+  Surface(onClick={libraryExpanded=!libraryExpanded},shape=EditorStyle.control,color=Color.White,modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics{contentDescription="qf-model-library"}){
+   Row(Modifier.padding(12.dp),verticalAlignment=Alignment.CenterVertically){Column(Modifier.weight(1f)){Text(device.compactTitle,style=MaterialTheme.typography.labelLarge);Text(if(vm.library.available(s))"已可用 · 更换机型"else"资源未下载 · 参数已保留",style=MaterialTheme.typography.labelSmall,color=EditorStyle.secondary)};EditorIcon(if(libraryExpanded)"up"else"down",Modifier.size(18.dp),EditorStyle.secondary)}
+  }
+  if(libraryExpanded){
+   TextButton(onClick={vm.refreshLibrary()},enabled=!status.busy,modifier=Modifier.heightIn(min=48.dp).semantics{contentDescription="qf-library-refresh"}){Text("刷新机型库")}
+   if(status.busy){Text(status.message,style=MaterialTheme.typography.bodySmall);if(status.total>0)LinearProgressIndicator(progress={status.received.toFloat()/status.total},modifier=Modifier.fillMaxWidth());TextButton(onClick={vm.cancelModelDownload()},modifier=Modifier.heightIn(min=48.dp)){Text("取消下载")}}
+   if(status.phase=="error")Text(status.message,style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.error)
+   Surface(shape=EditorStyle.control,color=Color.White){Column{
+    vm.library.choices.forEach{choice->
+     val installed=vm.library.version(choice.id).isNotBlank();val entry=vm.library.entry(choice.id)
+     EditorChoice(selected=s.deviceId==choice.id&&vm.library.available(s),onClick={if(!status.busy)vm.selectDevice(choice.id){libraryExpanded=false}},modifier=Modifier.fillMaxWidth().semantics{contentDescription="qf-library-device-${choice.id}"}){
+      Column{Text(choice.compactTitle);Text(when{choice.id==DeviceCatalog.FOLD->"内置 · 离线可用";installed->"已下载 · 离线可用";entry?.downloadable==true->"下载 · %.1f MB".format(entry.bytes/1048576.0);else->"资源待完善"},style=MaterialTheme.typography.labelSmall,color=EditorStyle.secondary)}
+     }
+     if(installed&&choice.id!=DeviceCatalog.FOLD&&entry?.downloadable==true&&entry.choice.modelVersion!=vm.library.version(choice.id))TextButton(onClick={vm.downloadNewVersion(choice.id)},enabled=!status.busy,modifier=Modifier.fillMaxWidth().heightIn(min=48.dp)){Text("下载新版 · %.1f MB".format(entry.bytes/1048576.0))}
+    }
+   }}
+  }
+  if(!vm.library.available(s)){
+   TextButton(onClick={vm.downloadCurrent()},enabled=!status.busy,modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics{contentDescription="qf-download-current-model"}){Text("下载当前机型")}
+   return
   }
   Label("官方配色")
-  val colorway=ColorwayCatalog.find(s.deviceId,s.colorwayId)
-  val colors:@Composable ()->Unit={ColorwayCatalog.choices(s.deviceId).forEach{choice->
+  val colorway=ColorwayCatalog.find(s.deviceId,s.colorwayId,s.modelVersion)
+  val colors:@Composable ()->Unit={ColorwayCatalog.choices(s.deviceId,s.modelVersion).forEach{choice->
     EditorChoice(selected=choice.id==colorway.id,onClick={vm.update{it.copy(colorwayId=choice.id)}},modifier=Modifier.then(if(LocalWorkspaceParameters.current)Modifier.fillMaxWidth()else Modifier).heightIn(min=48.dp).semantics{contentDescription="qf-color-${choice.id}"},label={Row(verticalAlignment=Alignment.CenterVertically){Box(Modifier.size(16.dp).background(Color(choice.swatch),RoundedCornerShape(8.dp)).border(1.dp,Color(0xffa0a0a5),RoundedCornerShape(8.dp)));Spacer(Modifier.width(EditorStyle.gap));Text(choice.title)}})
    }
   };if(LocalWorkspaceParameters.current)Surface(shape=EditorStyle.control,color=Color.White){Column(Modifier.fillMaxWidth()){colors()}}else Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),horizontalArrangement=Arrangement.spacedBy(8.dp)){colors()}
@@ -449,7 +477,7 @@ class MainActivity:ComponentActivity() {
  @Composable private fun BackgroundPanel(s:ProjectState){Label("背景",first=true);Choices(listOf("双色渐变","透明","纯白","浅灰","深灰"),when(s.background){"transparent"->"透明";"gradient"->"双色渐变";else->if(s.colorA==0xffffffff.toInt())"纯白"else if(s.colorA==0xff252b31.toInt())"深灰"else"浅灰"}){v->vm.update{it.copy(background=when(v){"透明"->"transparent";"双色渐变"->"gradient";else->"solid"},colorA=when(v){"纯白"->0xffffffff.toInt();"深灰"->0xff252b31.toInt();else->0xffe9ede8.toInt()},colorB=0xffa9bdb5.toInt())}};var hex by remember(s.colorA){mutableStateOf("%06X".format(s.colorA and 0xffffff))};EditorField(value=hex,onValueChange={v->hex=v.take(6);if(hex.length==6)runCatching{(0xff000000 or hex.toLong(16)).toInt()}.onSuccess{c->vm.update{it.copy(colorA=c,background="solid")}}},label="HEX 颜色",modifier=Modifier.semantics{contentDescription="自定义颜色 HEX"}.fillMaxWidth().padding(top=12.dp));Text("透明 PNG 可叠放在任意底色上；关闭阴影可获得干净抠图。",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant,modifier=Modifier.padding(top=EditorStyle.group))}
  @Composable private fun CanvasPanel(s:ProjectState){Label("默认参数");FilledTonalButton(shape=EditorStyle.control,contentPadding=PaddingValues(horizontal=8.dp,vertical=8.dp),onClick={vm.saveDefaultSettings()},modifier=Modifier.fillMaxWidth().heightIn(min=48.dp).semantics{contentDescription="qf-save-defaults"}){Text("设为默认参数")};Text("保存当前机型、配色、角度、光影与画布；不包含截图。",style=MaterialTheme.typography.bodySmall);Label("画布比例");val ratio="${s.canvasWidth}:${s.canvasHeight}";Choices(listOf("1:1","4:5","9:16","16:9"),ratio){v->val p=v.split(":");vm.update{it.copy(canvasWidth=p[0].toInt(),canvasHeight=p[1].toInt())}};var customW by remember{mutableStateOf(s.canvasWidth.toString())};var customH by remember{mutableStateOf(s.canvasHeight.toString())};if(LocalWorkspaceParameters.current)Column(verticalArrangement=Arrangement.spacedBy(EditorStyle.gap)){EditorField(customW,{v->customW=v.filter{it.isDigit()}.take(4)},label="宽",modifier=Modifier.fillMaxWidth());EditorField(customH,{v->customH=v.filter{it.isDigit()}.take(4)},label="高",modifier=Modifier.fillMaxWidth())}else Row(horizontalArrangement=Arrangement.spacedBy(8.dp)){EditorField(customW,{v->customW=v.filter{it.isDigit()}.take(4)},label="宽",modifier=Modifier.weight(1f));EditorField(customH,{v->customH=v.filter{it.isDigit()}.take(4)},label="高",modifier=Modifier.weight(1f))};TextButton(onClick={val w=customW.toIntOrNull();val h=customH.toIntOrNull();if(w!=null&&h!=null&&w>0&&h>0)vm.update{it.copy(canvasWidth=w,canvasHeight=h)}}){Text("应用自定义比例")};Label("PNG 长边");Choices(listOf("2048","2560","3840"),s.exportLongEdge.toString()){v->vm.update{it.copy(exportLongEdge=v.toInt())}};val(w,h)=s.outputSize();Text("输出 $w × $h 像素 · sRGB",style=MaterialTheme.typography.bodySmall,color=MaterialTheme.colorScheme.onSurfaceVariant);Text("原图仅存储在设备私有目录，不会上传。草稿自动保存。",style=MaterialTheme.typography.labelSmall,color=MaterialTheme.colorScheme.onSurfaceVariant,modifier=Modifier.padding(top=EditorStyle.group))}
 }
-@Composable private fun QingTheme(content:@Composable ()->Unit){
+@Composable internal fun QingTheme(content:@Composable ()->Unit){
  MaterialTheme(colorScheme=lightColorScheme(
   primary=EditorStyle.accent,onPrimary=Color.White,primaryContainer=EditorStyle.selection,onPrimaryContainer=EditorStyle.accent,
   secondary=EditorStyle.accent,onSecondary=Color.White,secondaryContainer=EditorStyle.selection,onSecondaryContainer=EditorStyle.accent,

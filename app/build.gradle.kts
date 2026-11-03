@@ -18,8 +18,8 @@ android {
         applicationId = "dev.qingframe"
         minSdk = 29
         targetSdk = 36
-        versionCode = ciVersionCode?.toInt() ?: 7006
-        versionName = ciVersionName ?: "0.7.6"
+        versionCode = ciVersionCode?.toInt() ?: 8000
+        versionName = ciVersionName ?: "0.8.0"
         ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

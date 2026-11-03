@@ -21,7 +21,8 @@ class DefaultSettingsStore(context:Context,testSession:String?=null) {
   val document=JSONObject(file.readText());require(document.getInt("version")==1)
   val settings=document.getJSONObject("settings");settings.remove("imagePath");settings.remove("imageWidth");settings.remove("imageHeight")
   val state=StateJson.decode(settings.toString())
-  val size=when {state.deviceId=="redmi-k90-pro-max"->1200 to 2608;state.stateId=="folded"->1168 to 1712;state.portrait->1672 to 2364;else->2364 to 1672}
+  val geometry=DeviceGeometryCatalog.find(state)
+  val size=geometry?.let{if(state.portrait)it.inputHeight to it.inputWidth else it.inputWidth to it.inputHeight}?:if(DeviceCatalog.find(state.deviceId,state.modelVersion).states==listOf("portrait"))1200 to 2608 else state.imageWidth to state.imageHeight
   state.copy(imagePath="",imageWidth=size.first,imageHeight=size.second)
  }.getOrNull()
  fun applyToImage(base:ProjectState,path:String,w:Int,h:Int):ProjectState=(loadOrNull()?:base).copy(imagePath=path,imageWidth=w,imageHeight=h).safe()

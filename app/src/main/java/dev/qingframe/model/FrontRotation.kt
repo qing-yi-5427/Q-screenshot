@@ -13,11 +13,11 @@ object FrontRotation {
   fun distance(sign:Float)=maxOf(abs(x.x-sign*y.x),abs(x.y-sign*y.y),abs(x.z-sign*y.z),abs(x.w-sign*y.w))
   return min(distance(1f),distance(-1f))<=tolerance
  }
- private fun body(s:ProjectState):FloatArray=if(DeviceCatalog.canonicalId(s.deviceId)=="redmi-k90-pro-max")floatArrayOf(.07782f,.16333f,ColorwayCatalog.depth(s,.0079f))else if(s.stateId=="unfolded")floatArrayOf(.1638f,.1178f,.00502f)else floatArrayOf(.0836f,.1178f,.01068f)
+ private fun body(s:ProjectState):FloatArray?=DeviceGeometryCatalog.find(s)?.let{floatArrayOf(it.width,it.height,ColorwayCatalog.depth(s,it.depth))}
  /** Perspective uses the actual panned camera eye; orthographic uses its parallel ray direction. */
  fun facing(s:ProjectState):Float {
   val m=s.pose.matrix();if(s.orthographic)return m[10]
-  val b=body(s);val matrix=(s.pose*if(s.portrait)Quaternion.axis(0f,0f,1f,90f)else Quaternion()).matrix()
+  val b=body(s)?:return m[10];val matrix=(s.pose*if(s.portrait)Quaternion.axis(0f,0f,1f,90f)else Quaternion()).matrix()
   val d=fitCamera(b[0],b[1],b[2]+.006f,matrix,s.canvasWidth.toFloat()/s.canvasHeight,s.fov,false).distance/s.zoom
   val bw=if(s.portrait)b[1]else b[0];val bh=if(s.portrait)b[0]else b[1]
   val z=b[2]/2+.0005f
@@ -31,6 +31,7 @@ object FrontRotation {
  }
  fun constrain(s:ProjectState):ProjectState {
   val q=s.pose.normalized();val normalized=s.copy(pose=q)
+  if(body(normalized)==null)return normalized // Missing pinned metadata must not borrow Fold geometry and rewrite a draft.
   if(allowed(normalized))return normalized
   val e=q.euler()
   // A loaded rear-facing pose is safely returned to a readable front, with no source/layout changes.

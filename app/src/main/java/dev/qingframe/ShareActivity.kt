@@ -20,10 +20,12 @@ import dev.qingframe.model.ShareViewModel
 class ShareActivity:ComponentActivity(){
  private val model:ShareViewModel by viewModels()
  override fun onCreate(savedInstanceState:Bundle?){super.onCreate(savedInstanceState);Log.i("QF_SHARE","ON_CREATE restored=${savedInstanceState!=null}");model.accept(intent)
-  setContent{MaterialTheme{val status by model.status.collectAsState()
+  setContent{QingTheme{val status by model.status.collectAsState();val resources by model.library.status.collectAsState()
    LaunchedEffect(status.id,status.phase,status.autoShared){if(status.phase=="ready"&&!status.autoShared)share()}
    Surface(Modifier.fillMaxSize()){Column(Modifier.fillMaxSize().safeDrawingPadding().padding(24.dp),verticalArrangement=Arrangement.Center,horizontalAlignment=Alignment.CenterHorizontally){
     Text("Q-screenshot · 图片套壳",style=MaterialTheme.typography.headlineSmall);Spacer(Modifier.height(20.dp));Text(status.message)
+    if(status.phase in setOf("waiting-resource","resource-error")){Button(onClick={model.downloadResource()},shape=EditorStyle.pill,modifier=Modifier.heightIn(min=48.dp).padding(top=16.dp)){Text("下载并继续")};TextButton(onClick={model.cancel()},modifier=Modifier.heightIn(min=48.dp)){Text("取消")}}
+    if(status.phase=="downloading")Text(resources.message,modifier=Modifier.padding(top=8.dp))
     if(status.busy){CircularProgressIndicator(Modifier.padding(24.dp));TextButton(onClick={model.cancel()}){Text("取消生成")}}
     if(status.output.isNotBlank()&&!status.busy){Button(onClick={share()},modifier=Modifier.padding(top=20.dp)){Text("再次分享 PNG")}}
     if(!status.busy)TextButton(onClick={finish()}){Text("返回")}

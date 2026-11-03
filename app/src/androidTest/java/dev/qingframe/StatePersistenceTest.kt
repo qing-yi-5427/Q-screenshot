@@ -142,12 +142,12 @@ class StatePersistenceTest {
 
     @Test fun refreshedDefaultDoesNotChangeExistingCanvas() = isolated { store,_ ->
         val fresh=store.load()
-        assertEquals("redmi-k90-pro-max",fresh.deviceId)
-        assertTrue(fresh.canvasWidth.toFloat()/fresh.canvasHeight in .52f.. .58f)
+        assertEquals("xiaomi-18-fold",fresh.deviceId)
+        assertTrue(fresh.canvasWidth.toFloat()/fresh.canvasHeight in .78f.. .84f)
         val old=ProjectState(canvasWidth=4,canvasHeight=5,zoom=.8f)
         store.save(old);assertSameState(old,store.load())
         val fitted=store.automaticCanvas(ProjectState(deviceId="redmi-k90-pro-max",stateId="portrait"))
-        assertTrue(fitted.canvasWidth.toFloat()/fitted.canvasHeight in .52f.. .58f)
+        assertEquals(4,fitted.canvasWidth);assertEquals(5,fitted.canvasHeight)
     }
 
     @Test fun removedModelsMigrateOnceWithoutLosingDraftOrSource() {

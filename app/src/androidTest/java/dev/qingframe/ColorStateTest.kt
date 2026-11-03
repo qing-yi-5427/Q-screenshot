@@ -15,7 +15,7 @@ import java.util.UUID
 @RunWith(AndroidJUnit4::class)
 class ColorStateTest {
     private val target get() = InstrumentationRegistry.getInstrumentation().targetContext
-    private val devices = listOf("xiaomi-18-fold", "redmi-k90-pro-max")
+    private val devices = listOf("xiaomi-18-fold") // Downloaded palettes are covered by ModelLibraryRenderTest.
     private fun state(device: String, color: String) = ProjectState(
         deviceId=device, stateId=if(device=="xiaomi-18-fold") "unfolded" else "portrait",
         portrait=device=="xiaomi-18-fold",colorwayId=color,
@@ -52,7 +52,7 @@ class ColorStateTest {
             assertSameState(original.copy(colorwayId=default),decoded)
         }
     }
-    @Test fun unknownAndForeignColorIdsFallBackToDeviceDefault() {
+    @Test fun unknownColorIdsRemainPreservedUntilExplicitResourceResolution() {
         for(device in devices) {
             val default=ColorwayCatalog.find(device,"").id
             val foreign=devices.filter{it!=device}.flatMap{ColorwayCatalog.choices(it)}
@@ -60,8 +60,8 @@ class ColorStateTest {
             for(invalid in listOf("unknown-color-state-test")+foreign) {
                 val baseline=state(device,default)
                 val raw=JSONObject(StateJson.encode(baseline)).put("colorwayId",invalid)
-                assertSameState(baseline,StateJson.decode(raw.toString()))
-                assertSameState(baseline,baseline.copy(colorwayId=invalid).safe())
+                assertSameState(baseline.copy(colorwayId=invalid),StateJson.decode(raw.toString()))
+                assertSameState(baseline.copy(colorwayId=invalid),baseline.copy(colorwayId=invalid).safe())
             }
         }
     }

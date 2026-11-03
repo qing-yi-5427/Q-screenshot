@@ -11,9 +11,11 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 
 class EditorViewModel(app:Application,testSession:String?=null):AndroidViewModel(app) {
+ private val downloadOwner="editor-${java.util.UUID.randomUUID()}"
+ val library=ModelLibrary.get(app)
  val store=ProjectStore(app,testSession)
  private val defaults=DefaultSettingsStore(app,testSession)
- private val mutable=MutableStateFlow(store.load())
+ private val mutable=MutableStateFlow(library.pin(store.load()))
  val state=mutable.asStateFlow()
  private val history=History<ProjectState>()
  private var saveJob:Job?=null
@@ -34,7 +36,7 @@ class EditorViewModel(app:Application,testSession:String?=null):AndroidViewModel
   }
  }
  fun update(record:Boolean=true,block:(ProjectState)->ProjectState){
-  val old=mutable.value;val new=block(old).safe();if(old==new)return
+  val old=mutable.value;val new=library.pin(block(old).safe());if(old==new)return
   if(record)history.push(old,new)
   mutable.value=new;historyRevision.value++;scheduleSave(new,450)
  }
@@ -59,6 +61,32 @@ class EditorViewModel(app:Application,testSession:String?=null):AndroidViewModel
    finally{importBusy.value=false}
   }
  }
+ fun cancelModelDownload(){library.cancel(downloadOwner)}
+ fun refreshLibrary(){viewModelScope.launch{library.refresh(downloadOwner)}}
+ fun selectDevice(id:String,onSelected:()->Unit={}){viewModelScope.launch{
+  try{
+   val known=library.version(id)
+   val snapshot=if(known.isNotBlank())library.snapshot(ProjectState(deviceId=id,modelVersion=known))else library.download(id,downloadOwner)
+   val device=snapshot.choice
+   update{store.demoState(it.copy(deviceId=id,modelVersion=device.modelVersion,stateId=device.defaultState,colorwayId=snapshot.defaultColor,portrait=false,cropX=0f,cropY=0f))}
+   onSelected();message.value="${device.compactTitle} 已可使用"
+  }catch(e:CancellationException){throw e}catch(e:Exception){message.value=e.message?:"下载失败，请重试"}
+ }}
+ fun downloadNewVersion(id:String){viewModelScope.launch{try{library.download(id,downloadOwner);message.value="新版资源已下载；点选机型后才会使用，当前作品保持原版本"}catch(e:CancellationException){throw e}catch(e:Exception){message.value=e.message?:"新版下载失败，已下载版本仍可使用"}}}
+ fun downloadCurrent(){val before=mutable.value;viewModelScope.launch{
+  try{
+   val entry=library.entry(before.deviceId)
+   require(before.modelVersion.isBlank()||entry?.choice?.modelVersion==before.modelVersion){"此草稿需要 ${before.modelVersion} 版资源；请重新选择机型后明确使用新版"}
+   val snapshot=library.download(before.deviceId,downloadOwner)
+   if(mutable.value.deviceId==before.deviceId&&mutable.value.modelVersion==before.modelVersion)update(false){it.copy(modelVersion=snapshot.choice.modelVersion)}
+  }catch(e:CancellationException){throw e}catch(e:Exception){message.value=e.message?:"机型下载失败，请重试"}
+ }}
  fun saveDefaultSettings(){val snapshot=mutable.value.copy();viewModelScope.launch{runCatching{withContext(Dispatchers.IO){defaults.save(snapshot)}}.fold(onSuccess={message.value="已保存默认参数；以后导入和分享图片时自动使用"},onFailure={message.value="默认参数保存失败：${it.message}"})}}
- fun reset(){update{current->val preset=defaults.loadOrNull();val base=preset?:store.automaticCanvas(store.productState().copy(deviceId=current.deviceId,stateId=current.stateId,portrait=current.portrait));base.copy(imagePath=current.imagePath,imageWidth=current.imageWidth,imageHeight=current.imageHeight)}}
+ override fun onCleared(){library.cancel(downloadOwner);super.onCleared()}
+ fun reset(){
+  val current=mutable.value
+  val base=defaults.loadOrNull()?:store.automaticCanvas(store.productState().copy(deviceId=current.deviceId,modelVersion=current.modelVersion,stateId=current.stateId,colorwayId=ColorwayCatalog.defaultId(current.deviceId,current.modelVersion),portrait=current.portrait))
+  if(!library.available(base)){message.value="默认机型资源未下载；请在机型库下载后再重置，当前作品已保留";return}
+  update{base.copy(imagePath=it.imagePath,imageWidth=it.imageWidth,imageHeight=it.imageHeight)}
+ }
 }

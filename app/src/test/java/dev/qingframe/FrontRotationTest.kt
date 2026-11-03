@@ -6,6 +6,20 @@ import org.junit.Test
 import kotlin.math.*
 
 class FrontRotationTest {
+ @Test fun downloadedGeometryAndPinnedVersionsConstrainExtremePanWithoutBorrowingFold(){
+  for((id,w,h) in listOf(Triple("test-small-slab",.0712f,.1523f),Triple("test-large-slab",.078f,.166f))){
+   DeviceGeometryCatalog.register(id,"1.0.0","portrait",DeviceGeometry(w,h,.008f,1200,2608))
+   DeviceGeometryCatalog.register(id,"2.0.0","portrait",DeviceGeometry(w*.9f,h*.95f,.009f,1220,2670))
+   val old=ProjectState(deviceId=id,stateId="portrait",modelVersion="1.0.0")
+   assertEquals(w,DeviceGeometryCatalog.find(old)!!.width,0f)
+   assertEquals(w*.9f,DeviceGeometryCatalog.find(old.copy(modelVersion="2.0.0"))!!.width,0f)
+   for(x in listOf(-1f,1f))for(y in listOf(-1f,1f))for(zoom in listOf(.35f,3f)){
+    val candidate=old.copy(pose=Quaternion.euler(60f,45f,30f),offsetX=x,offsetY=y,zoom=zoom,fov=65f)
+    val safe=FrontRotation.constrain(candidate);assertTrue(FrontRotation.allowed(safe));assertTrue(FrontRotation.equivalent(safe.pose,FrontRotation.constrain(safe).pose))
+   }
+   val missing=old.copy(modelVersion="not-installed",pose=Quaternion.euler(75f,55f,20f));assertEquals(missing.pose,FrontRotation.constrain(missing).pose)
+  }
+ }
  @Test fun validFrontPosesArePreservedExactly(){
   for(y in listOf(-55f,0f,55f))for(p in listOf(-40f,0f,40f))for(r in listOf(-170f,0f,170f)){
    val s=ProjectState(pose=Quaternion.euler(y,p,r));assertTrue(FrontRotation.allowed(s));assertEquals(s.pose,FrontRotation.constrain(s).pose)

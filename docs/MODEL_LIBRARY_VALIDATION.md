@@ -13,6 +13,10 @@
 
 新模型已将有效显示面、等宽黑色遮罩与外围金属前唇分层；有效区保留各自来源推算及屏像素比例，遮罩值根据各款官方图片估计，未使用统一放大屏幕的方法。微曲与徕卡滚花使用专属几何。官方机身尺寸、屏像素、配色名有来源；有效屏尺寸、圆角、孔位、倒角和 PBR 仍是明确记录的图片估计，不是厂商 CAD、实物测量或色准承诺。代表色目视不代表每种颜色均经过 2048 精细目视。Blender 诊断图不计入上述 Android 输出。
 
-网络证据当前属于先前 r2：`https-direct-timeout.txt` 记录直连 Release 超时；`https-proxy-index-and-24-packages.txt` 记录在既有 CONNECT 代理下真实 TLS 索引及 24 包检查成功。尚未发布的 r3 目前仅确认本地最终 SHA 与 Android 加载；发布后的 HTTPS 验证需追加，不能用 r2 记录代替。
+r3 发布后的公开 HTTPS 与 Android 实际下载验证均已通过：主机匿名 HTTPS 下载全部 23 个新 ZIP，共 8,160,580 字节，逐包核对大小、SHA256、身份、版本及 manifest 内 GLB 哈希，并匹配上述 Android 渲染所用 SHA。Release 索引、公开 raw 索引与源提交 `d8e9dd1` 一致；索引 SHA256 为 `f80bb00c7d75ea00fc737985d1389d93894d1a67555aa5018e33af21f5b3d611`。主机报告为 `.cache/model-library-review/public-https-r3/report.json`。原 K90 Pro Max 目录项与 URL 未变，主机复用此前完整 HTTPS 字节证据。
+
+Android 模拟器另从正式公开索引实际 HTTPS 下载全部 24 包，14.957 秒通过；`https-final-r3.txt` 与 `https-final-r3-results.json` 记录逐包 SHA/版本，均匹配正式索引。先前 `https-direct-timeout.txt` 的直连超时及 `https-proxy-index-and-24-packages.txt` 的既有 CONNECT 代理下 TLS 成功属于 r2 历史记录，不能当作无代理网络普遍可达的保证。
+
+已发布 `validation-report.json` 是发布前冻结的审计快照，保留其中当时的 r3 网络待验证状态，SHA256 仍为 `42cd886ae50b1ac1d2c8b7488a6512536a98857bde2c5c7dbca00d3957e3f269`；本节追加发布后结论，不修改已发布快照、索引或 ZIP。
 
 截图和用户图片始终本地处理；分发包不含官方商品图、厂商网格、纹理或外部图像引用。模型包的安全合同和运行时功能测试细节见 [机型库协议](MODEL_LIBRARY_FORMAT.md)、[任务记录](TASKS.md) 及对应 Android 测试报告。

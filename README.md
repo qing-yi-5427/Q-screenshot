@@ -4,7 +4,7 @@
 
 **[下载最新版 APK](https://github.com/qing-yi-5427/Q-screenshot/releases/latest/download/Q-screenshot.apk)** · [版本说明与历史下载](https://github.com/qing-yi-5427/Q-screenshot/releases)
 
-本地构建默认版本 **0.7.6**，发布版本以 [Releases](https://github.com/qing-yi-5427/Q-screenshot/releases) 为准。适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
+本地构建默认版本 **0.8.0**，发布版本以 [Releases](https://github.com/qing-yi-5427/Q-screenshot/releases) 为准。适用于 Android 10 及以上的 arm64 / x86_64 设备。当前提供 Debug 签名测试版，与此前安装的测试版可覆盖升级；也可按下方说明自行构建。
 
 ## 实机界面
 
@@ -13,7 +13,7 @@
   <img src="docs/images/fold-editor.png" width="320" alt="同一 Redmi 真机上的 Xiaomi 18 Fold 西野红模型编辑器">
 </p>
 
-两张均为 **Redmi K90 Pro Max / Android 16** 上通过系统 `screencap` 获取的原始应用屏幕，包含实际编辑器控件；屏内图片是原创离线示例。第二张展示的是在 Redmi 上编辑折叠机模型，并非另一台设备截图。详见[截图来源](docs/images/README.md)。
+两张为 **0.7.1 历史实机界面；当前布局与配色已优化**。均在 **Redmi K90 Pro Max / Android 16** 上通过系统 `screencap` 获取，包含当时的实际编辑器控件；屏内图片是原创离线示例。第二张展示的是在 Redmi 上编辑折叠机模型，并非另一台设备截图。详见[截图来源](docs/images/README.md)。
 
 ## 功能
 
@@ -22,16 +22,21 @@
 - **摄影棚光影**：PBR 机身材质、环境反射、灯光方向、玻璃弱反射与阴影；截图内容使用独立材质保持原色。
 - **PNG 导出**：透明、纯色或渐变背景；2048 / 2560 / 3840 长边，支持 2160×3840、3840×2160 等画布输出。预览与导出共用渲染管线。
 - **默认参数与外部分享**：保存渲染配置，自动处理其他应用分享来的单张图片，再打开系统分享面板。
-- **本地处理**：无需账号，无水印；不申请网络或整库照片读取权限。通过系统图片选择器、文件选择器或临时 URI 授权读取用户选定图片。
+- **本地处理**：无需账号，无水印；仅下载机型资源时联网，不申请整库照片读取权限；截图和导出始终在本地处理，不上传。通过系统图片选择器、文件选择器或临时 URI 授权读取用户选定图片。
 
-### 机型与官方配色
+### 0.8.0 按需机型库
 
-| 机型 | 状态 | 配色 / 版本 |
-|---|---|---|
-| REDMI K90 Pro Max | 直板主屏 | 流金白、黑色、丹宁色、K90 Pro Max 冠军版（白色） |
-| Xiaomi 18 Fold | 合拢外屏、展开内屏 | 暖金白、黑色、西野红、陶瓷特别版（淡粉外观） |
+APK 只内置 **Xiaomi 18 Fold**（合拢外屏、展开内屏），另提供 **24款 Xiaomi / REDMI 直板旗舰**按需下载。在「设备」页展开「机型库」选择资源，下载一次后即可离线编辑与导出；已下载机型可直接切换，下载更新为独立操作；模型更新按版本单独保存，已有草稿继续使用原版本，旧版本不会被新包覆盖。截图、照片和导出图片不上传，网络仅用于获取机型索引与资源包。
 
-框体与背盖分别设置材质，换色不会给截图加滤镜。丹宁版采用独立厚度资源；陶瓷特别版与普通玻璃背盖区分材质。详细来源见[配色研究](docs/COLORWAYS_RESEARCH.md)。
+| 来源 | 机型 |
+|---|---|
+| 内置 | Xiaomi 18 Fold |
+| Xiaomi 按需 | 15、15 Pro、15 Ultra、15S Pro、17、17 Pro、17 Pro Max、17 Ultra、17 Ultra 徕卡版、17 Max、17T、17T Pro、18 Pro、18 Pro Max |
+| REDMI 按需 | K80、K80 Pro、K80 至尊版、K90、K90 Pro Max、K90 Max、K90 至尊版、K100、K100 Pro、K100 Pro Max |
+
+每款收录本轮官方页面列出的全部配色名（含Xiaomi 15定制版20种背板×亮银/亮黑边框），共 **142种配色／中框组合**（内置4、下载138）；颜色、金属度和粗糙度是原创视觉估计，不是官方色度测量。已核实的配色厚度差异使用独立模型，框体与背盖分别设置材质，换色不会给截图加滤镜。
+
+几何以官方机身尺寸和屏幕像素为依据，再结合各机官方正面、侧面图估计有效屏区、圆角、中框与孔位按键；**不是原厂 CAD**。未知细节保留说明；Android 全配色加载与默认色正/左右三视图的验收范围见[验证记录](docs/MODEL_LIBRARY_VALIDATION.md)。范围与来源见[机型库](model-library/README.md)、[Xiaomi研究](docs/MODEL_LIBRARY_XIAOMI.md)及[REDMI研究](docs/MODEL_LIBRARY_REDMI.md)。
 
 ## 使用
 
@@ -86,3 +91,7 @@ Kotlin、Jetpack Compose / Material 3、Google Filament 1.79.0 / gltfio；GLB �
 ### 小米机型资料与隔离建模
 
 新增机型或回归模型请先阅读 [可复用资料采集与参数化建模流水线](docs/XIAOMI_DEVICE_PIPELINE.md)。支持官方资料候选采集、来源/置信度台账、隔离 GLB 构建及合同校验；[本轮测试结果](docs/XIAOMI_PIPELINE_TEST_RESULTS.md)。
+
+### 模型构建的安全默认值
+
+`python3 tools/build_assets.py` 默认仅重建Fold到新的 `.cache/pipeline/build-*` 目录，不改APK资源。`--device redmi-k90-pro-max` 同样只生成staging资源；`--profile ... --staging-root ...` 用于库机型的明确输入。需要审查并更新唯一内置Fold时，显式执行 `python3 tools/build_assets.py --update-builtin-fold --staging-root .cache/pipeline/fold-reviewed-new`：先完成staging合同验证，再仅复制Fold两状态与元数据，内置catalog始终只有Fold。可先加 `--dry-run` 查看目标。
